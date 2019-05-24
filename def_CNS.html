@@ -1,0 +1,4473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>NHSN Surveillance Definitions</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+ <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+ <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+ <link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+ <link href="jQueryAssets/jquery.ui.datepicker.min.css" rel="stylesheet" type="text/css">
+ <link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+ integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+ crossorigin="anonymous">
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+ crossorigin="anonymous"></script>
+ <script src="jQueryAssets/jquery-1.11.1.min.js" type="text/javascript"></script>
+ <script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js" type="text/javascript"></script>
+ <script src="jQueryAssets/jquery.ui-1.10.4.datepicker.min.js" type="text/javascript"></script>
+ <script src="jQueryAssets/jquery.ui-1.10.4.button.min.js" type="text/javascript"></script>
+ <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+ <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+ <script src="js/moment.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body style="background-color:white">
+
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">NHSN definitions <span class="far fa-square" style="color:orange"> &nbsp;</span><em>e-worksheets ver 1.0</em></a>
+  <div>
+   <ul class="navbar-nav">
+    <li class="nav-item active">
+     <a class="nav-link" href="index.html">
+      <span class="fas fa-home" style="color:orange">&nbsp;</span>HOME</a>
+    </li>
+   </ul>
+  </div>
+ </nav>
+ <!-- NHSN definitions nav -->
+
+ <div class="card text-blue bg-secondary">
+  <div class="card-body">
+   <nav>
+    <ul class="nav justify-content-center">
+     
+        
+        
+   <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_BJI.html" data-toggle="tooltip"
+      data-placement="top" title="BJI &mdash; Bone and Joint Infection">BJI</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_LCBI.html" data-toggle="tooltip"
+      data-placement="top" title="BSI &mdash; Bloodstream Infection">BSI</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-outline-warning" href="#" style="background-color:#lightgrey"
+      onclick="return false;" data-toggle="tooltip" data-placement="top" title="You are here">CNS</a>
+     </li>   
+      &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_CVS.html" role="button" data-toggle="tooltip"
+      data-placement="top" title="CVS &mdash; Cardiovascular System Infection">CVS</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_EENT.html" role="button" data-toggle="tooltip"
+      data-placement="top" title="EENT &mdash; Eye, Ear, Nose, Throat, or Mouth Infection">EENT</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_GI.html" data-toggle="tooltip"
+      data-placement="top" title="GI &mdash; Gastrointestinal System Infection">GI</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_LCBI.html" data-toggle="tooltip"
+      data-placement="top" title="LRI &mdash; Lower Respiratory System Infection, Other Than Pneumonia">LRI</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_PNEU.html" data-toggle="tooltip"
+      data-placement="top" title="PNEU-Pneumonia">PNEU</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_REPR.html" data-toggle="tooltip"
+      data-placement="top" title="REPR &mdash; Reproductive Tract Infection">REPR</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_SSI.html" data-toggle="tooltip"
+      data-placement="top" title="SSI &mdash; Surgical Site Infection">SSI</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_SST.html" data-placement="top"
+      title="SST-Skin and Soft Tissue Infection">SST</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_USI.html" data-placement="top"
+      title="USI-Urinary System Infection">USI</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_UTI.html" data-placement="top"
+      title="UTI-Urinary Tract Infection">UTI</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_VAE.html" data-placement="top"
+      title="VAE-Ventilator Associated Event">VAE</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_VAE_ped.html" data-placement="top"
+      title="VAE-Ped Ventilator Associated Events">Vped</a>
+     </li>
+
+    </ul>
+   </nav>
+  </div>
+ </div>
+
+<div class="container">
+<div id="Tabs1">
+        
+    <ul>
+      <li><a href="#tabs-cns1">CNS &mdash; Central Nervous System</a></li>
+      <li><a href="#tabs-cns2">2019 &mdash; Definitions</a></li>
+      <li><a href="#tabs-cns3">Reports</a></li>
+    </ul>
+    
+<div id="tabs-cns1">
+ <br>
+ 
+   <div class="card">
+     <div class="card-body">
+      <div class="alert alert-primary">
+      <h3> <strong>CNS &mdash; Central Nervous System</strong></h3>
+      </div>
+  
+
+         
+ <div class="alert alert-primary">
+       <strong>IC&mdash;Intracranial infection (brain abscess, subdural or epidural infection, encephalitis)</strong>
+      </div>        
+         
+  Intracranial infection must meet at least one of the following criteria:<br>
+  1. Patient has organisms cultured from brain tissue or dura.<br>
+  2. Patient has an abscess or evidence of intracranial infection on gross anatomic or histopathologic exam.<br>
+  3. Patient has at least two of the following signs or symptoms: headache*, dizziness*, fever (&gt;38.0°C±), localizing neurologic signs*, changing level of consciousness*, or confusion*<br>
+  <br>
+  And at least one of the following:<br>
+  a. organisms seen on microscopic examination of brain or abscess tissue obtained by needle aspiration or during an invasive procedure or autopsy<br>
+  b. positive non culture diagnostic laboratory test on blood or urine (e.g., antigen test, PCR)<br>
+  c. imaging test evidence of infection, (e.g., ultrasound, CT scan MRI, radionuclide brain scan, or arteriogram)<br>
+  d. diagnostic single antibody titer (IgM) or 4-fold increase in paired sera (IgG) for organism<br>
+  4. Patient ≤1 year of age has at least two of the following signs or symptoms: fever (&gt;38.0°C±), hypothermia (&lt;36.0°C±), apnea*, bradycardia*, localizing neurologic signs*, or changing level of consciousness* (e.g., irritability, poor feeding, lethargy)<br>
+  <br>
+  And at least one of the following:<br>
+  a. organisms seen on microscopic examination of brain or abscess tissue obtained by needle aspiration or during an invasive procedure or autopsy<br>
+  b. positive non culture diagnostic laboratory test on blood or urine (e.g., antigen test, PCR)<br>
+  c. imaging test evidence of infection, (e.g., ultrasound, CT scan, MRI, radionuclide brain scan, or arteriogram)<br>
+  d. diagnostic single antibody titer (IgM) or 4-fold increase in paired sera (IgG) for organism<br>
+  <br>
+  * With no other recognized cause<br>
+  ± As documented in the medical record<br>
+  <br>
+  <strong>Reporting instructions</strong><br>
+  • Report as MEN if meningitis (MEN) and encephalitis (IC) are present together.<br>
+  • Report as IC if meningitis (MEN) and a brain abscess (IC) are present together after operation.<br>
+  • Report as SA if meningitis and spinal abscess (SA) are present together after an operation.<br>
+
+ <br><br>
+         
+
+ <div class="alert alert-primary">
+       <strong>MEN&mdash;Meningitis or ventriculitis</strong>
+      </div>        
+                 
+Meningitis or ventriculitis must meet at least one of the following criteria:<br>
+  1. Patient has organisms cultured from cerebrospinal fluid (CSF).<br>
+  2. Patient has at least two of the following<br>
+  i. fever (&gt;38.0°C±) or headache (Note: Elements of “i” alone may not be used to meet the two required elements)<br>
+  ii. meningeal signs*<br>
+  iii. cranial nerve signs*<br>
+  <br>
+  And at least one of the following:<br>
+  a. increased white cells, elevated protein, and decreased glucose in CSF (per reporting laboratory’s reference range)<br>
+  b. organisms seen on Gram stain of CSF<br>
+  c. organisms cultured from blood<br>
+  d. positive non culture diagnostic laboratory test of CSF, blood, or urine<br>
+  e. diagnostic single antibody titer (IgM) or 4-fold increase in paired sera (IgG) for organism<br>
+  <br>
+  
+<div>
+  3. Patient ≤1 year of age has at least two of the following elements:<br>
+  i. Fever (&gt;38.0°C±), hypothermia (&lt;36.0°C±), apnea, bradycardia, or irritability (Note: Elements of “i” alone may not be used to meet the required two elements).<br>
+  ii. meningeal signs*<br>
+  iii. cranial nerve signs*<br>
+  <br>
+  And at least one of the following:<br>
+  a. increased white cells, elevated protein, and decreased glucose in CSF (per reporting laboratory’s reference range)<br>
+  b. organisms seen on Gram stain of CSF<br>
+  c. organisms cultured from blood<br>
+  d. positive non culture diagnostic laboratory test of CSF, blood, or urine<br>
+  e. diagnostic single antibody titer (IgM) or 4-fold increase in paired sera (IgG) for organism<br>
+  <br> </div>
+  <p>* With no other recognized cause<br>
+  ± As documented in the medical record<br>
+  <br>
+  <strong>Reporting instructions</strong><br>
+  • Report meningitis in the newborn as healthcare associated unless there is compelling evidence indicating the meningitis was acquired transplacentally (i.e., unless it was apparent on the day of birth or the next day).<br>
+  • Report CSF shunt infection as SSI-MEN if it occurs within 90 days of placement; if later or after manipulation/access, it is considered CNS-MEN and is not reportable under this module.<br>
+  • Report as ME if meningitis (MEN) and encephalitis (IC) are present together.<br>
+  • Report as IC if meningitis (MEN) and a brain abscess (IC) are present together after operation.<br>
+  • Report as SA if meningitis and spinal abscess (SA) are present together after an operation.<br>
+</p>
+   
+ <br>
+ 
+ 
+   <div class="alert alert-primary">
+       <strong>SA&mdash;Spinal abscess without meningitis</strong>
+      </div>              
+    
+         
+   An abscess of the spinal epidural or subdural space, without involvement of the cerebrospinal fluid or adjacent bone structures, must meet at least one of the following criteria:<br>
+  1. Patient has organisms cultured from abscess in the spinal epidural or subdural space.<br>
+  2. Patient has an abscess in the spinal epidural or subdural space on gross anatomic or histopathologic exam.<br>
+  3. Patient has at least one of the following localized signs or symptoms: fever (&gt;38.0°C±), back pain* or tenderness*, radiculitis*, paraparesis*, or paraplegia*<br>
+  <br>
+  And at least one of the following:<br>
+  a. organisms cultured from blood in a patient with imaging test evidence of spinal abscess<br>
+  b. imaging test evidence of a spinal abscess (e.g., myelography, ultrasound, CT scan, MRI, or other scans [gallium, technetium, etc.])<br>
+  <br>
+  * With no other recognized cause<br>
+  ± As documented in the medical record<br>
+  <br>
+  <strong>Reporting instructions</strong><br>
+  • Report as IC if meningitis (MEN) and a brain abscess (IC) are present together after operation.<br>
+  • Report as SA if meningitis and spinal abscess (SA) are present together after an operation.
+ 
+ </div>
+    </div>
+    
+   <br>
+    
+    <div class="card" align="center">
+     <div class="card-body">
+      <span class="fas fa-link" style="color:orange" aria-hidden="true"></span>Original document<a href="https://www.cdc.gov/nhsn/pdfs/pscmanual/pcsmanual_current.pdf"
+      target="_blank" style="color:blue" data-toggle="tooltip" data-placement="bottom"
+      title="https://www.cdc.gov/nhsn/pdfs/pscmanual/pcsmanual_current.pdf"> (source)</a> can be access here
+     </div>
+    </div>
+    
+<br>
+  
+   <p type="button" id="top-link-blockCNS1" class="btn btn-link">
+     <a href="#tabs-eent1" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+      <span class="fas fa-arrow-circle-up" style="color:orange">&nbsp;</span>Back to Top</a>
+    </p><!-- /top-link-block -->
+  
+  <script>
+  if ( ($(window).height() + 100) < $(document).height() ) {
+    $('#top-link-block').removeClass('hidden').affix({
+        // how far to scroll down before link "slides" into view
+        offset: {top:100}
+    });
+}
+  
+  </script>
+ 
+ <br>
+  
+  </div>
+  
+  <div id="tabs-cns2">
+    <div class="cnsDef2019">
+        
+      <div class="row">  
+        
+      <div class="col-md-6"><p></p></div>
+          
+    <div class="col-md-6">
+       <p align="right" id="admDateCns-19">
+        <strong>Admission Date:</strong>
+        <input type="text" id="DatepickerCNS3" placeholder="Date required" value="" required>
+       </p>
+      </div>
+     
+     <script>
+       $('#admDateCns-19').click(function() { 
+           var cbIsChecked = $(this).prop('checked');
+           $('#DatepickerCNS3').prop('disabled', !cbIsChecked); 
+           
+           });
+           
+           $('[type="checkbox"]').on('change', function() {
+         if (!this.checked) {
+           $('[type="text"][name="' + this.name + '"]').val('');
+         }
+       });
+            $("#DatepickerCNS3").datepicker({
+           maxDate: 0
+       });
+      </script>
+ 
+    </div>      
+        
+  <p id="topCNS2"></p>
+
+<nav>
+      <ul class="nav justify-content-center">
+       <li class="nav-item">
+        <a type="button" class="btn btn-outline-warning" href="#icSP" style="background-color:#lightgrey"
+        onclick="return false;" data-toggle="tooltip" data-placement="top" title="IC-Intracranial infection">IC</a>
+       </li>
+       &nbsp;
+       <li class="nav-item">
+        <a type="button" class="btn btn-outline-warning" href="#menSP" style="background-color:#lightgrey"
+        data-toggle="tooltip" data-placement="top" title="MEN-Meningitis or ventriculitis">MEN</a>
+       </li>
+       &nbsp;
+       <li class="nav-item">
+        <a type="button" class="btn btn-outline-warning" href="#saSP" style="background-color:#lightgrey"
+        data-toggle="tooltip" data-placement="top" title="SA-Spinal abscess without meningitis">JNT</a>
+       </li>
+       
+      </ul>
+</nav>        
+        
+<br><br>
+       
+<div class="text-left">
+      <h5 class="bg-warning" id="icSP" style="color:white">
+       <strong>IC &mdash; Intracranial infection</strong>
+      </h5>
+</div>
+
+          
+ <form name="icForm1"  id="icForm1">
+
+  <div class="card">
+       <div class="card-body">
+        <div class="custom-file">
+         <input type="" class="custom-file-input1" id="customFile">
+         <label class="custom-file-label" for="customFile">Histopathology</label>
+        </div>
+
+        <br><br>   
+     
+     
+   <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="ic2" id="ic2" data-toggle="collapse"
+         data-target="#Datepickeric2" value="Patient has evidence of osteomyelitis on gross anatomic or histopathologic exam">
+
+         <label class="custom-control-label" for="ic2">Patient has an abscess or evidence of intracranial infection on gross anatomic or histopathologic exam.  </label>
+
+         <input class="collapse" type="text" name="ic2" id="Datepickeric2" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+        </div>  
+     
+    <script>
+       $('#ic2').click(function() { 
+           var cbIsChecked = $(this).prop('checked');
+           $('#Datepickeric2').prop('disabled', !cbIsChecked); 
+           
+           });
+           
+           $('[type="checkbox"]').on('change', function() {
+         if (!this.checked) {
+           $('[type="text"][name="' + this.name + '"]').val('');
+         }
+       });
+            $("#Datepickeric2").datepicker({
+           maxDate: 0
+       });
+      </script> 
+   
+     
+   
+      </div>
+     </div>
+    
+ 
+
+
+<br>
+
+<p class="bg-primary">Imaging</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic4c" id="ic4c" value="">Radiographic evidence of infection (e.g. abnormal findings on x-ray, CT scan, MRI, radiolabel scan [gallium, technetium, etc])</label>
+  <input type="text" id="Datepickeric4c" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic4c').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric4c').prop('disabled', !cbIsChecked); 
+});
+
+</script>
+
+<br>
+<p class="bg-primary">Microbiology</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic4a" id="ic4a" value="">Organisms seen on microscopic examination of brain or abscess tissue obtained by needle aspiration or by biopsy during a surgical operation or autopsy </label>
+  <input type="text" id="Datepickeric4a" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic4a').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric4a').prop('disabled', !cbIsChecked); 
+});
+
+</script>
+
+<div class="checkbox">
+  <label><input name="ic1" type="checkbox" id="ic1" value="">Patient has organisms cultured from brain tissue or dura.</label>
+  <input type="text" id="Datepickeric1" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic1').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric1').prop('disabled', !cbIsChecked); 
+});
+
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic4b" id="ic4b" value="">Positive antigen test on blood or urine </label>
+  <input type="text" id="Datepickeric4b" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic4b').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric4b').prop('disabled', !cbIsChecked); 
+});
+
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic4d" id="ic4d" value="">Diagnostic single antibody titer (IgM) <u>OR</u> 4-fold increase in paired sera (IgG) for pathogen </label>
+  <input type="text" id="Datepickeric4d" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic4d').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric4d').prop('disabled', !cbIsChecked); 
+});
+
+</script>
+
+<br>
+
+<p class="bg-primary">Antimicrobial Therapy</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic4e" id="ic4e" value="">If diagnosis is made antemortem, physician institutes appropriate antimicrobial therapy.</label>
+  <input type="text" id="Datepickeric4e" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic4e').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric4e').prop('disabled', !cbIsChecked); 
+});
+
+</script>
+
+<br>
+<div id="OtherPatient">
+<p class="bg-primary">Signs and Symptoms</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic3a" id="ic3a" value="">Headache</label>
+  <input type="text" id="Datepickeric3a" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic3a').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric3a').prop('disabled', !cbIsChecked); 
+});
+
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic3b" id="ic3b" value="">Dizziness</label>
+  <input type="text" id="Datepickeric3b" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic3b').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric3b').prop('disabled', !cbIsChecked); 
+});
+
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic3c" id="ic3c" value="">Fever (&gt;38◦C)</label>
+  <input type="text" id="Datepickeric3c" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic3c').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric3c').prop('disabled', !cbIsChecked); 
+});
+
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic3d" id="ic3d" value="">Localizing neurologic signs </label>
+  <input type="text" id="Datepickeric3d" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic3d').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric3d').prop('disabled', !cbIsChecked); 
+});
+
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic3e" id="ic3e" value="">Changing level of consciousness</label>
+  <input type="text" id="Datepickeric3e" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic3e').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric3e').prop('disabled', !cbIsChecked); 
+});
+
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic3f" id="ic3f" value="">confusion</label>
+  <input type="text" id="Datepickeric3f" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic3f').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric3f').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+</div>
+<br>
+
+<button type="button" class="btn btn-success" data-toggle="collapse" data-target="#icTogglePed1" > <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Click this button for Patients ≤1 year of age</button>
+         
+<div id="icTogglePed1" class="collapse"> <br>
+         
+<p class="bg-primary">Signs and Symptoms (Patients ≤1 year of age)</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic5a" id="ic5a" value="">Fever (&gt;38◦C rectal)</label>
+  <input type="text" id="Datepickeric5a" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic5a').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric5a').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic5b" id="ic5b" value="">Hypothermia (&lt;37◦C rectal)</label>
+  <input type="text" id="Datepickeric5b" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic5b').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric5b').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic5c" id="ic5c" value="">Apnea</label>
+  <input type="text" id="Datepickeric5c" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic5c').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric5c').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic5d" id="ic5d" value="">Bradycardia</label>
+  <input type="text" id="Datepickeric5d" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic5d').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric5d').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic5e" id="ic5e" value="">Localizing neurologic signs</label>
+  <input type="text" id="Datepickeric5e" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic5e').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric5e').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic5f" id="ic5f" value="">Changing level of consciousness</label>
+  <input type="text" id="Datepickeric5f" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic5f').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric5f').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<br>
+
+<p class="bg-primary">Imaging (Patients ≤1 year of age)</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic6c" id="ic6c" value="">Radiographic evidence of infection, (e.g. abnormal findings on ultrasound, CT scan, MRI, radionuclide brain scan, or arteriogram)</label>
+  <input type="text" id="Datepickeric6c" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic5f').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric5f').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<br>
+
+<p class="bg-primary">Antimicrobial Therapy (Patients ≤1 year of age)</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic6f" id="ic6f" value="">If diagnosis is made antemortem, physician institutes appropriate antimicrobial therapy</label>
+  <input type="text" id="Datepickeric6f" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic6f').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric6f').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<br>
+
+<p class="bg-primary">Microbiology (Patients ≤1 year of age)</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic6a" id="ic6a" value="">Organisms seen on microscopic examination of brain or abscess tissue obtained by needle aspiration or by biopsy during a surgical operation or autopsy</label>
+  <input type="text" id="Datepickeric6a" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic6a').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric6a').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic6b" id="ic6b" value="">Positive antigen test on blood or urine</label>
+  <input type="text" id="Datepickeric6b" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic6b').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric6b').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic6d" id="ic6d" value="">Diagnostic single antibody titer (IgM)</label>
+  <input type="text" id="Datepickeric6d" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic6d').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric6d').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic6e" id="ic6e" value="">4-fold increase in paired sera (IgG) for pathogen</label>
+  <input type="text" id="Datepickeric6e" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#ic6e').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric6e').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+</div>
+    
+
+<br><br>
+<p class="bg-warning"><strong>Reporting instructions</strong></p>
+<p><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> If meningitis and a brain abscess are present together, report the infection as IC.</p>
+
+<br><br>
+<p><strong>Click the <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check Button after making your selection(s) and whenever you make any changes to your selection(s)</strong></p>
+
+<button type="button" class="btn btn-success" onclick="myFunctionIc1()"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check-IC</button>  
+
+<button type="reset" value="Clear IC" class="btn btn-danger" onclick="return confirm_reset();"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> Reset-IC</button> 
+
+
+<br><br>
+<div class="row">
+ <div class="col-md-6">
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><u><strong>Results</strong></u></h3>
+    <h6 class="panel-title">(If no results displayed, your findings don't meet NHSN defintions)</h6>
+  </div>
+    
+  <div class="panel-body">
+    <p id="icCrit1"></p>
+    <p id="icCrit2"></p>
+    <p id="icCrit3"></p>
+    <p id="icCrit4"></p>
+  </div>
+  </div>
+</div>
+<div class="col-md-6">
+                  <div class="panel panel-info">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">
+                        <u>
+                          <strong>Outcome</strong>
+                        </u>
+                      </h3>
+                      <h6 class="panel-title">Infection status (POA or HAI)</h6>
+                    </div>
+                    <div class="panel-body">
+                      <p id="ic2011CritOut_poa2"></p>
+                      <p id="ic2011CritOut_hai2"></p>
+                    </div>
+                  </div>
+                </div>
+</div>
+
+<br>
+ <p align="left"><a href="#topCNS2"><span class="glyphicon glyphicon-arrow-up" style="color:gray" aria-hidden="true"></span><b>TOP</b></a></p> 
+<br>
+
+<script>
+
+
+ function myFunctionIc1() {
+        var ic1 = document.getElementById("ic1"); 
+		
+		if 
+		(ic1.checked) 								
+	{
+      document.getElementById("icCrit1").innerHTML = "Your findings meet NHSN definitions for CNS-IC Criterion 1";
+        } else {
+     document.getElementById("icCrit1").innerHTML = "";
+        }
+		
+	var ic2 = document.getElementById("ic2"); 
+		
+		if 
+		(ic2.checked) 								
+	{
+      document.getElementById("icCrit2").innerHTML = "Your findings meet NHSN definitions for CNS-IC Criterion 2";
+        } else {
+     document.getElementById("icCrit2").innerHTML = "";
+        }	
+
+var ic3a = document.getElementById("ic3a");
+var ic3b = document.getElementById("ic3b"); 
+var ic3c = document.getElementById("ic3c"); 
+var ic3d = document.getElementById("ic3d"); 
+var ic3e = document.getElementById("ic3e"); 
+var ic3f = document.getElementById("ic3f"); 
+var ic4a = document.getElementById("ic4a"); 
+var ic4b = document.getElementById("ic4b"); 
+var ic4c = document.getElementById("ic4c"); 
+var ic4d = document.getElementById("ic4d"); 
+var ic4e = document.getElementById("ic4e"); 
+
+if
+((((((((((((((((((((((((((((((((((((((((((((((((((((((((
+(((ic3a.checked) && (ic3b.checked) && (ic4a.checked) && (ic4e.checked)))) ||
+(((ic3a.checked) && (ic3b.checked) && (ic4b.checked) && (ic4e.checked)))) ||
+(((ic3a.checked) && (ic3b.checked) && (ic4c.checked) && (ic4e.checked)))) ||
+(((ic3a.checked) && (ic3b.checked) && (ic4d.checked) && (ic4e.checked)))) ||
+(((ic3a.checked) && (ic3c.checked) && (ic4a.checked) && (ic4e.checked)))) ||
+(((ic3a.checked) && (ic3c.checked) && (ic4b.checked) && (ic4e.checked)))) ||
+(((ic3a.checked) && (ic3c.checked) && (ic4c.checked) && (ic4e.checked)))) ||
+(((ic3a.checked) && (ic3c.checked) && (ic4d.checked) && (ic4e.checked)))) ||
+(((ic3a.checked) && (ic3d.checked) && (ic4a.checked) && (ic4e.checked)))) ||
+(((ic3a.checked) && (ic3d.checked) && (ic4b.checked) && (ic4e.checked)))) ||
+(((ic3a.checked) && (ic3d.checked) && (ic4c.checked) && (ic4e.checked)))) ||
+(((ic3a.checked) && (ic3d.checked) && (ic4d.checked) && (ic4e.checked)))) ||
+(((ic3a.checked) && (ic3e.checked) && (ic4a.checked) && (ic4e.checked)))) ||
+(((ic3a.checked) && (ic3e.checked) && (ic4b.checked) && (ic4e.checked)))) ||
+(((ic3a.checked) && (ic3e.checked) && (ic4c.checked) && (ic4e.checked)))) ||
+(((ic3a.checked) && (ic3e.checked) && (ic4d.checked) && (ic4e.checked)))) ||
+(((ic3a.checked) && (ic3f.checked) && (ic4a.checked) && (ic4e.checked)))) ||
+(((ic3a.checked) && (ic3f.checked) && (ic4b.checked) && (ic4e.checked)))) ||
+(((ic3a.checked) && (ic3f.checked) && (ic4c.checked) && (ic4e.checked)))) ||
+(((ic3a.checked) && (ic3f.checked) && (ic4d.checked) && (ic4e.checked)))) ||
+(((ic3b.checked) && (ic3c.checked) && (ic4a.checked) && (ic4e.checked)))) ||
+(((ic3b.checked) && (ic3c.checked) && (ic4b.checked) && (ic4e.checked)))) ||
+(((ic3b.checked) && (ic3c.checked) && (ic4c.checked) && (ic4e.checked)))) ||
+(((ic3b.checked) && (ic3c.checked) && (ic4d.checked) && (ic4e.checked)))) ||
+(((ic3b.checked) && (ic3d.checked) && (ic4a.checked) && (ic4e.checked)))) ||
+(((ic3b.checked) && (ic3d.checked) && (ic4b.checked) && (ic4e.checked)))) ||
+(((ic3b.checked) && (ic3d.checked) && (ic4c.checked) && (ic4e.checked)))) ||
+(((ic3b.checked) && (ic3d.checked) && (ic4d.checked) && (ic4e.checked)))) ||
+(((ic3b.checked) && (ic3e.checked) && (ic4a.checked) && (ic4e.checked)))) ||
+(((ic3b.checked) && (ic3e.checked) && (ic4b.checked) && (ic4e.checked)))) ||
+(((ic3b.checked) && (ic3e.checked) && (ic4c.checked) && (ic4e.checked)))) ||
+(((ic3b.checked) && (ic3e.checked) && (ic4d.checked) && (ic4e.checked)))) ||
+(((ic3b.checked) && (ic3f.checked) && (ic4a.checked) && (ic4e.checked)))) ||
+(((ic3b.checked) && (ic3f.checked) && (ic4b.checked) && (ic4e.checked)))) ||
+(((ic3b.checked) && (ic3f.checked) && (ic4c.checked) && (ic4e.checked)))) ||
+(((ic3b.checked) && (ic3f.checked) && (ic4d.checked) && (ic4e.checked)))) ||
+(((ic3c.checked) && (ic3d.checked) && (ic4a.checked) && (ic4e.checked)))) ||
+(((ic3c.checked) && (ic3d.checked) && (ic4b.checked) && (ic4e.checked)))) ||
+(((ic3c.checked) && (ic3d.checked) && (ic4c.checked) && (ic4e.checked)))) ||
+(((ic3c.checked) && (ic3d.checked) && (ic4d.checked) && (ic4e.checked)))) ||
+(((ic3c.checked) && (ic3e.checked) && (ic4a.checked) && (ic4e.checked)))) ||
+(((ic3c.checked) && (ic3e.checked) && (ic4b.checked) && (ic4e.checked)))) ||
+(((ic3c.checked) && (ic3e.checked) && (ic4c.checked) && (ic4e.checked)))) ||
+(((ic3c.checked) && (ic3e.checked) && (ic4d.checked) && (ic4e.checked)))) ||
+(((ic3c.checked) && (ic3f.checked) && (ic4a.checked) && (ic4e.checked)))) ||
+(((ic3c.checked) && (ic3f.checked) && (ic4b.checked) && (ic4e.checked)))) ||
+(((ic3c.checked) && (ic3f.checked) && (ic4c.checked) && (ic4e.checked)))) ||
+(((ic3c.checked) && (ic3f.checked) && (ic4d.checked) && (ic4e.checked)))) ||
+(((ic3d.checked) && (ic3e.checked) && (ic4a.checked) && (ic4e.checked)))) ||
+(((ic3d.checked) && (ic3e.checked) && (ic4b.checked) && (ic4e.checked)))) ||
+(((ic3d.checked) && (ic3e.checked) && (ic4c.checked) && (ic4e.checked)))) ||
+(((ic3d.checked) && (ic3e.checked) && (ic4d.checked) && (ic4e.checked)))) ||
+(((ic3d.checked) && (ic3f.checked) && (ic4a.checked) && (ic4e.checked)))) ||
+(((ic3d.checked) && (ic3f.checked) && (ic4b.checked) && (ic4e.checked)))) ||
+(((ic3d.checked) && (ic3f.checked) && (ic4c.checked) && (ic4e.checked)))) ||
+(((ic3d.checked) && (ic3f.checked) && (ic4d.checked) && (ic4e.checked)))) 
+
+	
+	{
+      document.getElementById("icCrit3").innerHTML = "Your findings meet NHSN definitions for CNS-IC Criterion 3";
+        } else {
+     document.getElementById("icCrit3").innerHTML = "";
+        }	
+var ic5a = document.getElementById("ic5a");
+var ic5b = document.getElementById("ic5b"); 
+var ic5c = document.getElementById("ic5c"); 
+var ic5d = document.getElementById("ic5d"); 
+var ic5e = document.getElementById("ic5e"); 
+var ic5f = document.getElementById("ic5f"); 
+var ic6a = document.getElementById("ic6a"); 
+var ic6b = document.getElementById("ic6b"); 
+var ic6c = document.getElementById("ic6c"); 
+var ic6d = document.getElementById("ic6d"); 
+var ic6e = document.getElementById("ic6e"); 
+var ic6f = document.getElementById("ic6f"); 
+
+if 
+((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((
+(((ic5a.checked) && (ic5b.checked) && (ic6a.checked) && (ic6f.checked)))) ||
+(((ic5a.checked) && (ic5b.checked) && (ic6b.checked) && (ic6f.checked)))) ||
+(((ic5a.checked) && (ic5b.checked) && (ic6c.checked) && (ic6f.checked)))) ||
+(((ic5a.checked) && (ic5b.checked) && ((ic6d.checked) || (ic6e.checked)) && (ic6f.checked)))) ||
+(((ic5a.checked) && (ic5c.checked) && (ic6a.checked) && (ic6f.checked)))) ||
+(((ic5a.checked) && (ic5c.checked) && (ic6b.checked) && (ic6f.checked)))) ||
+(((ic5a.checked) && (ic5c.checked) && (ic6c.checked) && (ic6f.checked)))) ||
+(((ic5a.checked) && (ic5c.checked) && ((ic6d.checked) || (ic6e.checked)) && (ic6f.checked)))) ||
+(((ic5a.checked) && (ic5d.checked) && (ic6a.checked) && (ic6f.checked)))) ||
+(((ic5a.checked) && (ic5d.checked) && (ic6b.checked) && (ic6f.checked)))) ||
+(((ic5a.checked) && (ic5d.checked) && (ic6c.checked) && (ic6f.checked)))) ||
+(((ic5a.checked) && (ic5d.checked) && ((ic6d.checked) || (ic6e.checked)) && (ic6f.checked)))) ||
+(((ic5a.checked) && (ic5e.checked) && (ic6a.checked) && (ic6f.checked)))) ||
+(((ic5a.checked) && (ic5e.checked) && (ic6b.checked) && (ic6f.checked)))) ||
+(((ic5a.checked) && (ic5e.checked) && (ic6c.checked) && (ic6f.checked)))) ||
+(((ic5a.checked) && (ic5e.checked) && ((ic6d.checked) || (ic6e.checked)) && (ic6f.checked)))) ||
+(((ic5a.checked) && (ic5f.checked) && (ic6a.checked) && (ic6f.checked)))) ||
+(((ic5a.checked) && (ic5f.checked) && (ic6b.checked) && (ic6f.checked)))) ||
+(((ic5a.checked) && (ic5f.checked) && (ic6c.checked) && (ic6f.checked)))) ||
+(((ic5a.checked) && (ic5f.checked) && ((ic6d.checked) || (ic6e.checked)) && (ic6f.checked)))) ||
+(((ic5b.checked) && (ic5c.checked) && (ic6a.checked) && (ic6f.checked)))) ||
+(((ic5b.checked) && (ic5c.checked) && (ic6b.checked) && (ic6f.checked)))) ||
+(((ic5b.checked) && (ic5c.checked) && (ic6c.checked) && (ic6f.checked)))) ||
+(((ic5b.checked) && (ic5c.checked) && ((ic6d.checked) || (ic6e.checked)) && (ic6f.checked)))) ||
+(((ic5b.checked) && (ic5d.checked) && (ic6a.checked) && (ic6f.checked)))) ||
+(((ic5b.checked) && (ic5d.checked) && (ic6b.checked) && (ic6f.checked)))) ||
+(((ic5b.checked) && (ic5d.checked) && (ic6c.checked) && (ic6f.checked)))) ||
+(((ic5b.checked) && (ic5d.checked) && ((ic6d.checked) || (ic6e.checked)) && (ic6f.checked)))) ||
+(((ic5b.checked) && (ic5e.checked) && (ic6a.checked) && (ic6f.checked)))) ||
+(((ic5b.checked) && (ic5e.checked) && (ic6b.checked) && (ic6f.checked)))) ||
+(((ic5b.checked) && (ic5e.checked) && (ic6c.checked) && (ic6f.checked)))) ||
+(((ic5b.checked) && (ic5e.checked) && ((ic6d.checked) || (ic6e.checked)) && (ic6f.checked)))) ||
+(((ic5b.checked) && (ic5f.checked) && (ic6a.checked) && (ic6f.checked)))) ||
+(((ic5b.checked) && (ic5f.checked) && (ic6b.checked) && (ic6f.checked)))) ||
+(((ic5b.checked) && (ic5f.checked) && (ic6c.checked) && (ic6f.checked)))) ||
+(((ic5b.checked) && (ic5f.checked) && ((ic6d.checked) || (ic6e.checked)) && (ic6f.checked)))) ||
+(((ic5c.checked) && (ic5d.checked) && (ic6a.checked) && (ic6f.checked)))) ||
+(((ic5c.checked) && (ic5d.checked) && (ic6b.checked) && (ic6f.checked)))) ||
+(((ic5c.checked) && (ic5d.checked) && (ic6c.checked) && (ic6f.checked)))) ||
+(((ic5c.checked) && (ic5d.checked) && ((ic6d.checked) || (ic6e.checked)) && (ic6f.checked)))) ||
+(((ic5c.checked) && (ic5e.checked) && (ic6a.checked) && (ic6f.checked)))) ||
+(((ic5c.checked) && (ic5e.checked) && (ic6b.checked) && (ic6f.checked)))) ||
+(((ic5c.checked) && (ic5e.checked) && (ic6c.checked) && (ic6f.checked)))) ||
+(((ic5c.checked) && (ic5e.checked) && ((ic6d.checked) || (ic6e.checked)) && (ic6f.checked)))) ||
+(((ic5c.checked) && (ic5f.checked) && (ic6a.checked) && (ic6f.checked)))) ||
+(((ic5c.checked) && (ic5f.checked) && (ic6b.checked) && (ic6f.checked)))) ||
+(((ic5c.checked) && (ic5f.checked) && (ic6c.checked) && (ic6f.checked)))) ||
+(((ic5c.checked) && (ic5f.checked) && ((ic6d.checked) || (ic6e.checked)) && (ic6f.checked)))) ||
+(((ic5d.checked) && (ic5e.checked) && (ic6a.checked) && (ic6f.checked)))) ||
+(((ic5d.checked) && (ic5e.checked) && (ic6b.checked) && (ic6f.checked)))) ||
+(((ic5d.checked) && (ic5e.checked) && (ic6c.checked) && (ic6f.checked)))) ||
+(((ic5d.checked) && (ic5e.checked) && ((ic6d.checked)||(ic6e.checked))&& (ic6f.checked)))) ||
+(((ic5d.checked) && (ic5f.checked) && (ic6a.checked) && (ic6f.checked)))) ||
+(((ic5d.checked) && (ic5f.checked) && (ic6b.checked) && (ic6f.checked)))) ||
+(((ic5d.checked) && (ic5f.checked) && (ic6c.checked) && (ic6f.checked)))) ||
+(((ic5d.checked) && (ic5f.checked) && ((ic6d.checked)||(ic6e.checked)) && (ic6f.checked)))) ||
+(((ic5e.checked) && (ic5f.checked) && (ic6a.checked) && (ic6f.checked)))) ||
+(((ic5e.checked) && (ic5f.checked) && (ic6b.checked) && (ic6f.checked)))) ||
+(((ic5e.checked) && (ic5f.checked) && (ic6c.checked) && (ic6f.checked)))) ||
+(((ic5e.checked) && (ic5f.checked) && ((ic6d.checked)||(ic6e.checked)) && (ic6f.checked)))) 				
+	{
+      document.getElementById("icCrit4").innerHTML = "Your findings meet NHSN definitions for CNS-IC Criterion 4";
+        } else {
+     document.getElementById("icCrit4").innerHTML = "";
+        }	
+}
+ 
+</script>		
+ </form>
+
+</div>
+
+<form name="menForm1"> 
+  
+  <h3><a id="menSP"></a><span class="label label-warning">MEN – Meningitis or ventriculitis</span></h3>
+ 
+ <p class="bg-primary">Microbiology</p>
+
+<div class="checkbox">
+  <label><input name="men1" type="checkbox" id="men1" value="">Patient has organisms cultured from cerebrospinal fluid (CSF).</label>
+  <input type="text" id="Datepickermen1" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#men1').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen1').prop('disabled', !cbIsChecked); 
+});
+</script>
+ 
+ <div class="checkbox">
+  <label><input name="men2g" type="checkbox" id="men2g" value="">Increased white cells, elevated protein, and/or decreased glucose in CSF</label>
+  <input type="text" id="Datepickermen2g" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#men2g').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen2g').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+ <div class="checkbox">
+  <label><input name="men2h" type="checkbox" id="men2h" value="">Organisms seen on Gram’s stain of CSF </label>
+  <input type="text" id="Datepickermen2h" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#men2h').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen2h').prop('disabled', !cbIsChecked); 
+});
+</script>
+ 
+  <div class="checkbox">
+  <label><input name="men2j" type="checkbox" id="men2j" value="">Positive antigen test of CSF, blood, or urine</label>
+  <input type="text" id="Datepickermen2j" placeholder="Enter date" disabled>
+</div>
+ 
+ <script>
+$('#men2j').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen2j').prop('disabled', !cbIsChecked); 
+});
+</script>
+ 
+ <div class="checkbox">
+  <label><input name="men2k" type="checkbox" id="men2k" value="">Diagnostic single antibody titer (IgM) <u>OR</u> 4-fold increase in paired sera (IgG) for pathogen</label>
+  <input type="text" id="Datepickermen2k" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#men2k').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen2k').prop('disabled', !cbIsChecked); 
+});
+</script>
+ 
+  <div class="checkbox">
+  <label><input type="checkbox" name="men2i" id="men2i" value=""><a href="#" onclick="return false;" data-toggle="tooltip" data-placement="top" title="For a bloodstream infection to be determined secondary to another site of infection, the blood culture must be collected during the site-specific infection Secondary BSI Attribution Period and satisfy one of the following: 1. The blood culture must contain at least one organism that matches an organism found in a site-specific infection culture used to meet the site-specific infection criterion OR 2. The blood culture must be an element used to meet the site-specific infection criterion. 
+"><span class="glyphicon glyphicon-flag" style="color:red" aria-hidden="true"></span> <em>Organisms cultured from blood</em></a></label>
+  <input type="text" id="Datepickermen2i" placeholder="Enter date" disabled>
+
+ </div>
+ 
+  <script>
+$('#men2i').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen2i').prop('disabled', !cbIsChecked); 
+});
+</script>
+  
+<br>
+   
+   <div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><strong>Select organism(s)</strong></h3>
+  </div>
+  <div class="panel-body">
+  
+ <div id="myformMenOrg1">
+<table>
+      <tr>
+        <td>Organism:</td>
+        <td>
+              
+        <select name="organisms" id="orgMenOrg1">
+<option value="0">Select an Organism</option>
+<option value="Abiotrophia adiacens ">Abiotrophia adiacens - GRADJ</option>
+<option value="Abiotrophia spp. ">Abiotrophia spp. - ABISP</option>
+<option value="Acanthamoeba ">Acanthamoeba - ACANT</option>
+<option value="Achromobacter spp. ">Achromobacter spp. - ACHSP</option>
+<option value="Achromobacter xylosoxidans ">Achromobacter xylosoxidans - ALCXYL</option>
+<option value="Achromobacter xylosoxidans xylosoxidans ">Achromobacter xylosoxidans xylosoxidans - ACHXYL</option>
+<option value="Achromobacter, group Vd biotype 1 ">Achromobacter, group Vd biotype 1 - ACHVD1</option>
+<option value="Achromobacter, group Vd biotype 2 ">Achromobacter, group Vd biotype 2 - ACHVD2</option>
+<option value="Acidaminococcus fermentans ">Acidaminococcus fermentans - ACIFE</option>
+<option value="Acidaminococcus spp. ">Acidaminococcus spp. - ACISP</option>
+<option value="Acidovorax delafieldii ">Acidovorax delafieldii - ACDEL</option>
+<option value="Acidovorax Genus  ">Acidovorax Genus  - ACIDSP </option>
+<option value="Acidovorax spp. ">Acidovorax spp. - ACIDSP</option>
+<option value="Acinetobacter anitratus ">Acinetobacter anitratus - ACICBA</option>
+<option value="Acinetobacter baumannii ">Acinetobacter baumannii - ACBA</option>
+<option value="Acinetobacter calcoaceticus ">Acinetobacter calcoaceticus - ACICBA</option>
+<option value="Acinetobacter calcoaceticus ss. Lwoffii ">Acinetobacter calcoaceticus ss. Lwoffii - ACLW</option>
+<option value="Acinetobacter calcoaceticus-baumannii complex ">Acinetobacter calcoaceticus-baumannii complex - ACCA</option>
+<option value="Acinetobacter genospecies 3 ">Acinetobacter genospecies 3 - ACIGEN</option>
+<option value="Acinetobacter hemolyticus ">Acinetobacter hemolyticus - ACHA</option>
+<option value="Acinetobacter johnsonii ">Acinetobacter johnsonii - ACJH</option>
+<option value="Acinetobacter junii ">Acinetobacter junii - ACJU</option>
+<option value="Acinetobacter lwoffii ">Acinetobacter lwoffii - ACLW</option>
+<option value="Acinetobacter spp. ">Acinetobacter spp. - ACS</option>
+<option value="Acremonium spp. ">Acremonium spp. - ACRE</option>
+</select>
+       <input type="button" id="addMenOrg1" value="Add" onclick="Javascript:addRowMenOrg1()"></td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+</div>
+<div id="mydataMenOrg1">
+
+<p class="bg-warning"><b>Selected:</b></p>                       
+<table id="myTableDataMenOrg1">
+    <tr>
+        <td>&nbsp;</td>
+        <td> </td>
+    </tr>
+</table>
+ 
+</div>
+</div>
+</div>
+<script>
+
+function addRowMenOrg1() {
+          
+    var org = document.getElementById("orgMenOrg1");
+    var table = document.getElementById("myTableDataMenOrg1");
+ 
+    var rowCount = table.rows.length;
+    var row = table.insertRow(rowCount);
+ 
+    row.insertCell(0).innerHTML= '<input type="button" value = "Remove" onClick="Javacsript:deleteRowMenOrg1(this)">';
+    row.insertCell(1).innerHTML= org.value;
+ 
+}
+ 
+function deleteRowMenOrg1(obj) {
+      
+    var index = obj.parentNode.parentNode.rowIndex;
+    var table = document.getElementById("myTableDataMenOrg1");
+    table.deleteRow(index);
+    
+}
+ 
+function load() {
+    
+    console.log("Page load finished");
+ 
+}
+
+</script>
+ 
+ <br>
+ 
+<p class="bg-primary">Antimicrobial therapy</p>
+
+<div class="checkbox">
+  <label><input name="men2m" type="checkbox" id="men2m" value=""> If diagnosis is made antemortem, physician institutes appropriate antimicrobial therapy </label>
+  <input type="text" id="Datepickermen2m" placeholder="Enter date" disabled>
+</div>
+ 
+ <script>
+$('#men2m').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen2m').prop('disabled', !cbIsChecked); 
+});
+</script> 
+ 
+ <br>
+ 
+ <p class="bg-primary">Signs and Symptoms</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men2a" id="men2a" value="">Fever (&gt;38◦C)</label>
+  <input type="text" id="Datepickermen2a" placeholder="Enter date" disabled>
+</div>
+
+ <script>
+$('#men2a').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen2a').prop('disabled', !cbIsChecked); 
+});
+</script>
+ 
+ <div class="checkbox">
+  <label><input type="checkbox" name="men2b" id="men2b" value="">Headache </label>
+  <input type="text" id="Datepickermen2b" placeholder="Enter date" disabled>
+</div>
+ 
+  <script>
+$('#men2b').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen2b').prop('disabled', !cbIsChecked); 
+});
+</script>
+ 
+ <div class="checkbox">
+  <label><input type="checkbox" name="men2c" id="men2c" value="">Stiff neck </label>
+  <input type="text" id="Datepickermen2c" placeholder="Enter date" disabled>
+</div>
+ 
+   <script>
+$('#men2c').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen2c').prop('disabled', !cbIsChecked); 
+});
+</script>
+ 
+ <div class="checkbox">
+  <label><input type="checkbox" name="men2d" id="men2d" value="">Meningeal signs</label>
+  <input type="text" id="Datepickermen2d" placeholder="Enter date" disabled>
+</div>
+ 
+    <script>
+$('#men2d').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen2d').prop('disabled', !cbIsChecked); 
+});
+</script>
+ 
+ <div class="checkbox">
+  <label><input type="checkbox" name="men2e" id="men2e" value="">Cranial nerve signs</label>
+  <input type="text" id="Datepickermen2e" placeholder="Enter date" disabled>
+</div>
+
+    <script>
+$('#men2e').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen2e').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men2f" id="men2f" value="">Irritability </label>
+  <input type="text" id="Datepickermen2f" placeholder="Enter date" disabled>
+</div>
+
+   <script>
+$('#men2f').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen2f').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+ <br><br>
+  
+<button type="button" class="btn btn-success" data-toggle="collapse" data-target="#menTogglePed1"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Click this button for Patient ≤1 year of age</button>
+
+<div id="menTogglePed1" class="collapse"> <br>
+
+
+<p class="bg-primary">Signs and Symptoms (Patient ≤1 year of age)</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men3a" id="men3a" value="">Fever (&gt;38◦C rectal)</label>
+  <input type="text" id="Datepickermen3a" placeholder="Enter date" disabled>
+    
+     <script>
+$('#men3a').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen3a').prop('disabled', !cbIsChecked); 
+});
+</script>
+    
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name="men3b" id="men3b" value="">Hypothermia (&lt;37◦C rectal)</label>
+  <input type="text" id="Datepickermen3b" placeholder="Enter date" disabled>
+</div>
+
+    <script>
+$('#men3b').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen3b').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men3c" id="men3c" value="">Apnea</label>
+  <input type="text" id="Datepickermen3c" placeholder="Enter date" disabled>
+</div>
+
+   <script>
+$('#men3c').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen3c').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men3d" id="men3d" value="">Bradycardia</label>
+  <input type="text" id="Datepickermen3d" placeholder="Enter date" disabled>
+</div>
+
+ <script>
+$('#men3d').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen3d').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men3e" id="men3e" value="">Stiff neck </label>
+  <input type="text" id="Datepickermen3e" placeholder="Enter date" disabled>
+</div>
+
+ <script>
+$('#men3e').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen3e').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men3f" id="men3f" value="">Meningeal signs </label>
+  <input type="text" id="Datepickermen3f" placeholder="Enter date" disabled>
+</div>
+
+ <script>
+$('#men3f').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen3f').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men3g" id="men3g" value="">Cranial nerve signs </label>
+  <input type="text" id="Datepickermen3g" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#men3g').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen3g').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men3h" id="men3h" value="">Irritability </label>
+  <input type="text" id="Datepickermen3h" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#men3h').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen3h').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<p class="bg-primary">Microbiology (Patient ≤1 year of age)</p>
+
+<div class="checkbox">
+  <label><input name="men3i" type="checkbox" id="men3i" value="">Positive CSF examination with increased white cells, elevated protein, and/or decreased glucose</label>
+  <input type="text" id="Datepickermen3i" placeholder="Enter date" disabled>
+</div>
+ 
+ <script>
+$('#men3i').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen3i').prop('disabled', !cbIsChecked); 
+});
+</script>
+ 
+ <div class="checkbox">
+  <label><input name="men3j" type="checkbox" id="men3j" value="">Positive Gram’s stain of CSF</label>
+  <input type="text" id="Datepickermen3j" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#men3j').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen3j').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+  <div class="checkbox">
+  <label><input name="men3l" type="checkbox" id="men3l" value="">Positive antigen test of CSF, blood, or urine</label>
+  <input type="text" id="Datepickermen3l" placeholder="Enter date" disabled>
+</div>
+ 
+ <script>
+$('#men3l').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen3l').prop('disabled', !cbIsChecked); 
+});
+</script>
+ 
+ <div class="checkbox">
+  <label><input name="men3m" type="checkbox" id="men3m" value="">Diagnostic single antibody titer (IgM) <u>OR</u> 4-fold increase in paired sera (IgG) for pathogen </label>
+  <input type="text" id="Datepickermen3m" placeholder="Enter date" disabled>
+</div>
+ 
+  <script>
+$('#men3m').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen3m').prop('disabled', !cbIsChecked); 
+});
+</script>
+  
+ <div class="checkbox">
+  <label><input name="men3k" type="checkbox" id="men3k" value=""><a href="#" onclick="return false;" data-toggle="tooltip" data-placement="top" title="For a bloodstream infection to be determined secondary to another site of infection, the blood culture must be collected during the site-specific infection Secondary BSI Attribution Period and satisfy one of the following: 1. The blood culture must contain at least one organism that matches an organism found in a site-specific infection culture used to meet the site-specific infection criterion OR 2. The blood culture must be an element used to meet the site-specific infection criterion. 
+"><span class="glyphicon glyphicon-flag" style="color:red" aria-hidden="true"></span><em>Organisms cultured from blood</em></a></label>
+  <input type="text" id="Datepickermen3k" placeholder="Enter date" disabled>
+</div>
+ 
+  <script>
+$('#men3k').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen3k').prop('disabled', !cbIsChecked); 
+});
+</script>
+ 
+<br>
+   
+   <div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><strong>Select organism(s)</strong></h3>
+  </div>
+  <div class="panel-body">
+  
+ <div id="myformMenOrg2">
+<table>
+      <tr>
+        <td>Organism:</td>
+        <td>
+              
+        <select name="organisms" id="orgMenOrg2">
+<option value="0">Select an Organism</option>
+<option value="Abiotrophia adiacens ">Abiotrophia adiacens - GRADJ</option>
+<option value="Abiotrophia spp. ">Abiotrophia spp. - ABISP</option>
+<option value="Acanthamoeba ">Acanthamoeba - ACANT</option>
+<option value="Achromobacter spp. ">Achromobacter spp. - ACHSP</option>
+<option value="Achromobacter xylosoxidans ">Achromobacter xylosoxidans - ALCXYL</option>
+<option value="Achromobacter xylosoxidans xylosoxidans ">Achromobacter xylosoxidans xylosoxidans - ACHXYL</option>
+<option value="Achromobacter, group Vd biotype 1 ">Achromobacter, group Vd biotype 1 - ACHVD1</option>
+<option value="Achromobacter, group Vd biotype 2 ">Achromobacter, group Vd biotype 2 - ACHVD2</option>
+<option value="Acidaminococcus fermentans ">Acidaminococcus fermentans - ACIFE</option>
+<option value="Acidaminococcus spp. ">Acidaminococcus spp. - ACISP</option>
+<option value="Acidovorax delafieldii ">Acidovorax delafieldii - ACDEL</option>
+<option value="Acidovorax Genus  ">Acidovorax Genus  - ACIDSP </option>
+<option value="Acidovorax spp. ">Acidovorax spp. - ACIDSP</option>
+<option value="Acinetobacter anitratus ">Acinetobacter anitratus - ACICBA</option>
+<option value="Acinetobacter baumannii ">Acinetobacter baumannii - ACBA</option>
+<option value="Acinetobacter calcoaceticus ">Acinetobacter calcoaceticus - ACICBA</option>
+<option value="Acinetobacter calcoaceticus ss. Lwoffii ">Acinetobacter calcoaceticus ss. Lwoffii - ACLW</option>
+<option value="Acinetobacter calcoaceticus-baumannii complex ">Acinetobacter calcoaceticus-baumannii complex - ACCA</option>
+<option value="Acinetobacter genospecies 3 ">Acinetobacter genospecies 3 - ACIGEN</option>
+<option value="Acinetobacter hemolyticus ">Acinetobacter hemolyticus - ACHA</option>
+<option value="Acinetobacter johnsonii ">Acinetobacter johnsonii - ACJH</option>
+<option value="Acinetobacter junii ">Acinetobacter junii - ACJU</option>
+<option value="Acinetobacter lwoffii ">Acinetobacter lwoffii - ACLW</option>
+<option value="Acinetobacter spp. ">Acinetobacter spp. - ACS</option>
+<option value="Acremonium spp. ">Acremonium spp. - ACRE</option>
+</select>
+       <input type="button" id="addMenOrg2" value="Add" onclick="Javascript:addRowMenOrg2()"></td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+</div>
+<div id="mydataMenOrg2">
+
+<p class="bg-warning"><b>Selected:</b></p>                       
+<table id="myTableDataMenOrg2">
+    <tr>
+        <td>&nbsp;</td>
+        <td></td>
+    </tr>
+</table>
+ 
+</div>
+</div>
+</div>
+<script>
+
+function addRowMenOrg2() {
+          
+    var org = document.getElementById("orgMenOrg2");
+    var table = document.getElementById("myTableDataMenOrg2");
+ 
+    var rowCount = table.rows.length;
+    var row = table.insertRow(rowCount);
+ 
+    row.insertCell(0).innerHTML= '<input type="button" value = "Remove" onClick="Javacsript:deleteRowMenOrg2(this)">';
+    row.insertCell(1).innerHTML= org.value;
+ 
+}
+ 
+function deleteRowMenOrg2(obj) {
+      
+    var index = obj.parentNode.parentNode.rowIndex;
+    var table = document.getElementById("myTableDataMenOrg2");
+    table.deleteRow(index);
+    
+}
+ 
+function load() {
+    
+    console.log("Page load finished");
+ 
+}
+
+</script>
+ 
+ 
+<br>
+
+
+<p class="bg-primary">Antimicrobial therapy (Patient ≤1 year of age)</p>
+
+<div class="checkbox">
+  <label><input name="men3n" type="checkbox" id="men3n" value=""> If diagnosis is made antemortem, physician institutes appropriate antimicrobial therapy </label>
+  <input type="text" id="Datepickermen3n" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#men3n').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen3n').prop('disabled', !cbIsChecked); 
+});
+</script> 
+
+</div>
+    
+ <br> <br>
+<p class="bg-warning"><strong>Reporting instructions</strong></p>
+<p><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> Report meningitis in the newborn as healthcare-associated unless there is compelling evidence indicating the meningitis was acquired transplacentally (i.e., unless it was apparent on the day of birth or the next day).</p>
+
+<p><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> Report CSF shunt infection as SSI-MEN if it occurs ≤1 year of placement; if later or after manipulation/access of the shunt, report as CNS-MEN.</p>
+
+<p><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> Report meningoencephalitis as MEN.</p>
+
+<p><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> Report spinal abscess with meningitis as MEN.</p>
+
+<br><br>
+  
+<p><strong>Click the <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check Button after making your selection(s) and whenever you make any changes to your selection(s)</strong></p>
+
+<button type="button" class="btn btn-success" onclick="myFunctionMen1()"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check-MEN</button>   
+
+<button type="reset" value="Clear MEN" class="btn btn-danger" onclick="return confirm_reset();"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> Reset-MEN</button>
+
+<br><br>
+<div class="row">
+ <div class="col-md-6">
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><u><strong>Results</strong></u></h3>
+    <h6 class="panel-title">(If no results displayed, your findings don't meet NHSN defintions)</h6>
+  </div>
+    
+  <div class="panel-body">
+    <p id="menCrit1"></p>
+    <p id="menCrit2"></p>
+    <p id="menCrit3"></p>
+  </div>
+  </div>
+</div>
+<div class="col-md-6">
+                  <div class="panel panel-info">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">
+                        <u>
+                          <strong>Outcome</strong>
+                        </u>
+                      </h3>
+                      <h6 class="panel-title">Infection status (POA or HAI)</h6>
+                    </div>
+                    <div class="panel-body">
+                      <p id="men2011CritOut_poa2"></p>
+                      <p id="men2011CritOut_hai2"></p>
+                    </div>
+                  </div>
+                </div>
+
+</div>
+<br>
+ <p align="left"><a href="#topSST2"><span class="glyphicon glyphicon-arrow-up" style="color:gray" aria-hidden="true"></span><b>TOP</b></a></p> 
+ 
+ <br>
+
+
+<script>
+
+
+ function myFunctionMen1() {
+        var men1 = document.getElementById("men1"); 
+		
+		if 
+		(men1.checked) 								
+	{
+      document.getElementById("menCrit1").innerHTML = "Your findings meet NHSN definitions for CNS-MEN Criterion 1";
+        } else {
+     document.getElementById("menCrit1").innerHTML = "";
+        }
+	var men2a = document.getElementById("men2a"); 
+	var men2b = document.getElementById("men2b"); 
+	var men2c = document.getElementById("men2c");
+	var men2d = document.getElementById("men2d"); 
+	var men2e = document.getElementById("men2e"); 
+	var men2f = document.getElementById("men2f");  
+	var men2m = document.getElementById("men2m");
+if 
+((((((((((((((((((((((((((((((
+((men2a.checked) && (men2g.checked) && (men2m.checked))) ||
+((men2a.checked) && (men2h.checked) && (men2m.checked))) ||
+((men2a.checked) && (men2i.checked) && (men2m.checked))) ||
+((men2a.checked) && (men2j.checked) && (men2m.checked))) ||
+((men2a.checked) && (men2k.checked) && (men2m.checked))) ||
+((men2b.checked) && (men2g.checked) && (men2m.checked))) ||
+((men2b.checked) && (men2h.checked) && (men2m.checked))) ||
+((men2b.checked) && (men2i.checked) && (men2m.checked))) ||
+((men2b.checked) && (men2j.checked) && (men2m.checked))) ||
+((men2b.checked) && (men2k.checked) && (men2m.checked))) ||
+((men2c.checked) && (men2g.checked) && (men2m.checked))) ||
+((men2c.checked) && (men2h.checked) && (men2m.checked))) ||
+((men2c.checked) && (men2i.checked) && (men2m.checked))) ||
+((men2c.checked) && (men2j.checked) && (men2m.checked))) ||
+((men2c.checked) && (men2k.checked) && (men2m.checked))) ||
+((men2d.checked) && (men2g.checked) && (men2m.checked))) ||
+((men2d.checked) && (men2h.checked) && (men2m.checked))) ||
+((men2d.checked) && (men2i.checked) && (men2m.checked))) ||
+((men2d.checked) && (men2j.checked) && (men2m.checked))) ||
+((men2d.checked) && (men2k.checked) && (men2m.checked))) ||
+((men2e.checked) && (men2g.checked) && (men2m.checked))) ||
+((men2e.checked) && (men2h.checked) && (men2m.checked))) ||
+((men2e.checked) && (men2i.checked) && (men2m.checked))) ||
+((men2e.checked) && (men2j.checked) && (men2m.checked))) ||
+((men2e.checked) && (men2k.checked) && (men2m.checked))) ||
+((men2f.checked) && (men2g.checked) && (men2m.checked))) ||
+((men2f.checked) && (men2h.checked) && (men2m.checked))) ||
+((men2f.checked) && (men2i.checked) && (men2m.checked))) ||
+((men2f.checked) && (men2j.checked) && (men2m.checked))) ||
+((men2f.checked) && (men2k.checked) && (men2m.checked))) 
+
+   {
+      document.getElementById("menCrit2").innerHTML = "Your findings meet NHSN definitions for CNS-MEN Criterion 2";
+        } else {
+     document.getElementById("menCrit2").innerHTML = "";
+        }	
+	var men3a = document.getElementById("men3a"); 
+	var men3b = document.getElementById("men3b"); 
+	var men3c = document.getElementById("men3c");
+	var men3d = document.getElementById("men3d"); 
+	var men3e = document.getElementById("men3e"); 
+	var men3f = document.getElementById("men3f");  
+	var men3g = document.getElementById("men3g");
+	var men3h = document.getElementById("men3h");
+	var men3i = document.getElementById("men3i");
+	var men3j = document.getElementById("men3j");
+	var men3k = document.getElementById("men3k");
+	var men3l = document.getElementById("men3l");
+	var men3m = document.getElementById("men3m");
+	var men3n = document.getElementById("men3n");	
+		
+if 
+((((((((((((((((((((((((((((((((((((((((
+((men3a.checked) && (men3i.checked) && (men3n.checked))) ||
+((men3a.checked) && (men3j.checked) && (men3n.checked))) ||
+((men3a.checked) && (men3k.checked) && (men3n.checked))) ||
+((men3a.checked) && (men3l.checked) && (men3n.checked))) ||
+((men3a.checked) && (men3m.checked) && (men3n.checked))) ||
+((men3b.checked) && (men3i.checked) && (men3n.checked))) ||
+((men3b.checked) && (men3j.checked) && (men3n.checked))) ||
+((men3b.checked) && (men3k.checked) && (men3n.checked))) ||
+((men3b.checked) && (men3l.checked) && (men3n.checked))) ||
+((men3b.checked) && (men3m.checked) && (men3n.checked))) ||
+((men3c.checked) && (men3i.checked) && (men3n.checked))) ||
+((men3c.checked) && (men3j.checked) && (men3n.checked))) ||
+((men3c.checked) && (men3k.checked) && (men3n.checked))) ||
+((men3c.checked) && (men3l.checked) && (men3n.checked))) ||
+((men3c.checked) && (men3m.checked) && (men3n.checked))) ||
+((men3d.checked) && (men3i.checked) && (men3n.checked))) ||
+((men3d.checked) && (men3j.checked) && (men3n.checked))) ||
+((men3d.checked) && (men3k.checked) && (men3n.checked))) ||
+((men3d.checked) && (men3l.checked) && (men3n.checked))) ||
+((men3d.checked) && (men3m.checked) && (men3n.checked))) ||
+((men3e.checked) && (men3i.checked) && (men3n.checked))) ||
+((men3e.checked) && (men3j.checked) && (men3n.checked))) ||
+((men3e.checked) && (men3k.checked) && (men3n.checked))) ||
+((men3e.checked) && (men3l.checked) && (men3n.checked))) ||
+((men3e.checked) && (men3m.checked) && (men3n.checked))) ||
+((men3f.checked) && (men3i.checked) && (men3n.checked))) ||
+((men3f.checked) && (men3j.checked) && (men3n.checked))) ||
+((men3f.checked) && (men3k.checked) && (men3n.checked))) ||
+((men3f.checked) && (men3l.checked) && (men3n.checked))) ||
+((men3f.checked) && (men3m.checked) && (men3n.checked))) ||
+((men3g.checked) && (men3i.checked) && (men3n.checked))) ||
+((men3g.checked) && (men3j.checked) && (men3n.checked))) ||
+((men3g.checked) && (men3k.checked) && (men3n.checked))) ||
+((men3g.checked) && (men3l.checked) && (men3n.checked))) ||
+((men3g.checked) && (men3m.checked) && (men3n.checked))) ||
+((men3h.checked) && (men3i.checked) && (men3n.checked))) ||
+((men3h.checked) && (men3j.checked) && (men3n.checked))) ||
+((men3h.checked) && (men3k.checked) && (men3n.checked))) ||
+((men3h.checked) && (men3l.checked) && (men3n.checked))) ||
+((men3h.checked) && (men3m.checked) && (men3n.checked))) 
+
+   {
+      document.getElementById("menCrit3").innerHTML = "Your findings meet NHSN definitions for CNS-MEN Criterion 3";
+        } else {
+     document.getElementById("menCrit3").innerHTML = "";
+        }			
+ }
+
+</script>
+
+</form>
+  <form name="saForm1"> 
+  <h3><a id="saSP"></a><span class="label label-warning">SA – Spinal abscess without meningitis</span></h3>
+  
+  <p><span class="glyphicon glyphicon-info-sign" style="color:orange" aria-hidden="true"></span> Criteria for an abscess of the spinal epidural or subdural space, without involvement of the cerebrospinal fluid or adjacent bone structures.  </p>
+ 
+ <p class="bg-primary">Histopathology</p>
+  
+  <div class="checkbox">
+  <label><input type="checkbox" name="sa2" id="sa2" value="">Patient has an abscess in the spinal epidural or subdural space seen during a surgical operation or at autopsy or evidence of an abscess seen during a histopathologic examination </label>
+  <input type="text" id="Datepickersa2" placeholder="Enter date" disabled>
+  </div>
+  
+  <script>
+$('#sa2').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickersa2').prop('disabled', !cbIsChecked); 
+});
+</script> 
+  
+   <p class="bg-primary">Imaging</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="sa3h" id="sa3h" value="">Radiographic evidence of a spinal abscess (e.g. abnormal findings on myelography, ultrasound, CT scan, MRI, or other scans [gallium, technetium, etc]) </label>
+  <input type="text" id="Datepickersa3h" placeholder="Enter date" disabled>
+</div>
+
+  <script>
+$('#sa3h').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickersa3h').prop('disabled', !cbIsChecked); 
+});
+</script> 
+
+<p class="bg-primary">Microbiology</p>
+
+<div class="checkbox">
+  <label><input name="sa1" type="checkbox" id="sa1" value="">Patient has organisms cultured from abscess in the spinal epidural or subdural space </label>
+  <input type="text" id="Datepickersa1" placeholder="Enter date" disabled>
+</div>
+
+  <script>
+$('#sa1').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickersa1').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+ <div class="checkbox">
+  <label><input type="checkbox" name="sa3g" id="sa3g" value=""><a href="#" onclick="return false;" data-toggle="tooltip" data-placement="top" title="For a bloodstream infection to be determined secondary to another site of infection, the blood culture must be collected during the site-specific infection Secondary BSI Attribution Period and satisfy one of the following: 1. The blood culture must contain at least one organism that matches an organism found in a site-specific infection culture used to meet the site-specific infection criterion OR 2. The blood culture must be an element used to meet the site-specific infection criterion. 
+"><span class="glyphicon glyphicon-flag" style="color:red" aria-hidden="true"></span><em>Organisms cultured from blood</em></a></label>
+  <input type="text" id="Datepickersa3g" placeholder="Enter date" disabled>
+ </div>
+ 
+ <script>
+$('#sa3g').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickersa3g').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<br>
+   
+   <div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><strong>Select organism(s)</strong></h3>
+  </div>
+  <div class="panel-body">
+  
+ <div id="myformSaOrg1">
+<table>
+      <tr>
+        <td>Organism:</td>
+        <td>
+              
+        <select name="organisms" id="orgSaOrg1">
+<option value="0">Select an Organism</option>
+<option value="Abiotrophia adiacens ">Abiotrophia adiacens - GRADJ</option>
+<option value="Abiotrophia spp. ">Abiotrophia spp. - ABISP</option>
+<option value="Acanthamoeba ">Acanthamoeba - ACANT</option>
+<option value="Achromobacter spp. ">Achromobacter spp. - ACHSP</option>
+<option value="Achromobacter xylosoxidans ">Achromobacter xylosoxidans - ALCXYL</option>
+<option value="Achromobacter xylosoxidans xylosoxidans ">Achromobacter xylosoxidans xylosoxidans - ACHXYL</option>
+<option value="Achromobacter, group Vd biotype 1 ">Achromobacter, group Vd biotype 1 - ACHVD1</option>
+<option value="Achromobacter, group Vd biotype 2 ">Achromobacter, group Vd biotype 2 - ACHVD2</option>
+<option value="Acidaminococcus fermentans ">Acidaminococcus fermentans - ACIFE</option>
+<option value="Acidaminococcus spp. ">Acidaminococcus spp. - ACISP</option>
+<option value="Acidovorax delafieldii ">Acidovorax delafieldii - ACDEL</option>
+<option value="Acidovorax Genus  ">Acidovorax Genus  - ACIDSP </option>
+<option value="Acidovorax spp. ">Acidovorax spp. - ACIDSP</option>
+<option value="Acinetobacter anitratus ">Acinetobacter anitratus - ACICBA</option>
+<option value="Acinetobacter baumannii ">Acinetobacter baumannii - ACBA</option>
+<option value="Acinetobacter calcoaceticus ">Acinetobacter calcoaceticus - ACICBA</option>
+<option value="Acinetobacter calcoaceticus ss. Lwoffii ">Acinetobacter calcoaceticus ss. Lwoffii - ACLW</option>
+<option value="Acinetobacter calcoaceticus-baumannii complex ">Acinetobacter calcoaceticus-baumannii complex - ACCA</option>
+<option value="Acinetobacter genospecies 3 ">Acinetobacter genospecies 3 - ACIGEN</option>
+<option value="Acinetobacter hemolyticus ">Acinetobacter hemolyticus - ACHA</option>
+<option value="Acinetobacter johnsonii ">Acinetobacter johnsonii - ACJH</option>
+<option value="Acinetobacter junii ">Acinetobacter junii - ACJU</option>
+<option value="Acinetobacter lwoffii ">Acinetobacter lwoffii - ACLW</option>
+<option value="Acinetobacter spp. ">Acinetobacter spp. - ACS</option>
+<option value="Acremonium spp. ">Acremonium spp. - ACRE</option>
+</select>
+       <input type="button" id="addSaOrg1" value="Add" onclick="Javascript:addRowSaOrg1()"></td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+</div>
+<div id="mydataSaOrg1">
+
+<p class="bg-warning"><b>Selected:</b></p>                       
+<table id="myTableDataSaOrg1">
+    <tr>
+        <td>&nbsp;</td>
+        <td></td>
+    </tr>
+</table>
+ 
+</div>
+</div>
+</div>
+<script>
+
+function addRowSaOrg1() {
+          
+    var org = document.getElementById("orgSaOrg1");
+    var table = document.getElementById("myTableDataSaOrg1");
+ 
+    var rowCount = table.rows.length;
+    var row = table.insertRow(rowCount);
+ 
+    row.insertCell(0).innerHTML= '<input type="button" value = "Remove" onClick="Javacsript:deleteRowSaOrg1(this)">';
+    row.insertCell(1).innerHTML= org.value;
+ 
+}
+ 
+function deleteRowSaOrg1(obj) {
+      
+    var index = obj.parentNode.parentNode.rowIndex;
+    var table = document.getElementById("myTableDataSaOrg1");
+    table.deleteRow(index);
+    
+}
+ 
+function load() {
+    
+    console.log("Page load finished");
+ }
+
+</script>
+  
+<br>
+
+<p class="bg-primary">Antimicrobial therapy</p>
+
+<div class="checkbox">
+  <label><input name="sa3i" type="checkbox" id="sa3i" value=""> If diagnosis is made antemortem, physician institutes appropriate antimicrobial therapy</label>
+  <input type="text" id="Datepickersa3i" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#sa3i').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickersa3i').prop('disabled', !cbIsChecked); 
+});
+</script> 
+
+<p class="bg-primary">Signs and Symptoms</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="sa3a" id="sa3a" value="">Fever (&gt;38◦C) </label>
+  <input type="text" id="Datepickersa3a" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#sa3a').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickersa3a').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="sa3b" id="sa3b" value="">Back pain</label>
+  <input type="text" id="Datepickersa3b" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#sa3b').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickersa3b').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="sa3c" id="sa3c" value="">Focal tenderness</label>
+  <input type="text" id="Datepickersa3c" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#sa3c').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickersa3c').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="sa3d" id="sa3d" value="">Radiculitis </label>
+  <input type="text" id="Datepickersa3d" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#sa3d').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickersa3d').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="sa3e" id="sa3e" value="">Paraparesis </label>
+  <input type="text" id="Datepickersa3e" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#sa3e').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickersa3e').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="sa3f" id="sa3f" value="">Paraplegia  </label>
+  <input type="text" id="Datepickersa3f" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#sa3f').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickersa3f').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+ <br>
+<p class="bg-warning"><strong>Reporting instructions</strong></p>
+<p><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> Report spinal abscess with meningitis as MEN.</p>
+
+ <hr align="center" width="3" size="4" color="#1318E8" >
+
+<p><strong>Click the <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check Button after making your selection(s) and whenever you make any changes to your selection(s)</strong></p>
+
+<button type="button" class="btn btn-success" onclick="myFunctionSa1()"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check-SA</button>
+
+<button type="reset" value="Clear IC!" class="btn btn-danger" onclick="return confirm_reset();"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> Reset-SA</button>
+ 
+ <br><br>
+ <div class="row">
+ <div class="col-md-6">
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><u><strong>Results</strong></u></h3>
+    <h6 class="panel-title">(If no results displayed, your findings don't meet NHSN defintions)</h6>
+  </div>
+    
+  <div class="panel-body">
+    <p id="saCrit1"></p>
+    <p id="saCrit2"></p>
+    <p id="saCrit3"></p>
+  </div>
+ 
+ </div>
+ </div>
+ <div class="col-md-6">
+                  <div class="panel panel-info">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">
+                        <u>
+                          <strong>Outcome</strong>
+                        </u>
+                      </h3>
+                      <h6 class="panel-title">Infection status (POA or HAI)</h6>
+                    </div>
+                    <div class="panel-body">
+                      <p id="sa2011CritOut_poa2"></p>
+                      <p id="sa2011CritOut_hai2"></p>
+                    </div>
+                  </div>
+                </div>
+ </div>
+
+<br>
+ <p align="left"><a href="#topSST2"><span class="glyphicon glyphicon-arrow-up" style="color:gray" aria-hidden="true"></span><b>TOP</b></a></p> 
+ 
+ <br>
+
+<script>
+function myFunctionSa1() {
+        var sa1 = document.getElementById("sa1"); 
+		
+		if 
+		(sa1.checked) 								
+	{
+      document.getElementById("saCrit1").innerHTML = "Your findings meet NHSN definitions for CNS-SA Criterion 1";
+        } else {
+     document.getElementById("saCrit1").innerHTML = "";
+        }
+		
+	var sa2 = document.getElementById("sa2"); 
+		
+		if 
+		(sa2.checked) 								
+	{
+      document.getElementById("saCrit2").innerHTML = "Your findings meet NHSN definitions for CNS-SA Criterion 2";
+        } else {
+     document.getElementById("saCrit2").innerHTML = "";
+        }	
+var sa3a = document.getElementById("sa3a");
+var sa3b = document.getElementById("sa3b"); 
+var sa3c = document.getElementById("sa3c"); 
+var sa3d = document.getElementById("sa3d"); 
+var sa3e = document.getElementById("sa3e"); 
+var sa3f = document.getElementById("sa3f"); 
+var sa3g = document.getElementById("sa3g"); 
+var sa3h = document.getElementById("sa3h"); 
+var sa3i = document.getElementById("sa3i"); 
+
+if 
+((((((((((((
+((sa3a.checked) && (sa3g.checked) && (sa3i.checked))) ||
+((sa3a.checked) && (sa3h.checked) && (sa3i.checked))) ||
+((sa3b.checked) && (sa3g.checked) && (sa3i.checked))) ||
+((sa3b.checked) && (sa3h.checked) && (sa3i.checked))) ||
+((sa3c.checked) && (sa3g.checked) && (sa3i.checked))) ||
+((sa3c.checked) && (sa3h.checked) && (sa3i.checked))) ||
+((sa3d.checked) && (sa3g.checked) && (sa3i.checked))) ||
+((sa3d.checked) && (sa3h.checked) && (sa3i.checked))) ||
+((sa3e.checked) && (sa3g.checked) && (sa3i.checked))) ||
+((sa3e.checked) && (sa3h.checked) && (sa3i.checked))) ||
+((sa3f.checked) && (sa3g.checked) && (sa3i.checked))) ||
+((sa3f.checked) && (sa3h.checked) && (sa3i.checked))) 
+
+	{
+      document.getElementById("saCrit3").innerHTML = "Your findings meet NHSN definitions for CNS-SA Criterion 3";
+        } else {
+     document.getElementById("saCrit3").innerHTML = "";
+        }	
+ }
+
+</script>		
+
+</form>
+ 
+<br><br>
+<div class="panel panel-primary" align="center" style="color:navy">
+  <div class="panel-heading">
+    <h3 class="panel-title"> Notes <span class="glyphicon glyphicon-pencil" style="color:orange" aria-hidden="true"></span></h3>
+  </div>
+  <div class="panel-body">
+   <div class="table-responsive">
+   <textarea rows="4" cols="100" placeholder="Use this area to take notes as need..."></textarea>
+  </div>
+</div> 
+</div> 
+ <br><br>
+  
+  <span id="top-link-blockCNS2" class="hidden">
+    <a href="#tabs-cns1" class="well well-sm"  onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+        <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+    </a>
+</span><!-- /top-link-block -->
+  
+  <script>
+  if ( ($(window).height() + 100) < $(document).height() ) {
+    $('#top-link-blockCNS2').removeClass('hidden').affix({
+        // how far to scroll down before link "slides" into view
+        offset: {top:100}
+    });
+}
+  
+  </script>
+ 
+
+ </div>
+  
+  <div id="tabs-cns3">
+  <div class="bjDef2015">
+  
+  <div class="row">
+    <div class="col-md-6">
+      
+    </div>
+    <div class="col-md-6"> 
+      <p><p align="right"><strong>Admission date:</strong>
+  <input type="text" id="DatepickerCNS3"></p></p>
+    </div>
+    
+</div>
+  
+     
+<div class="row">
+    <div class="col-md-6">
+    <h3 align="left">CNS – Central Nervous System</h3>
+    </div>
+    <p id="topCNS"></p>
+    <div class="col-md-6"> 
+      <nav>
+  <ul class="pager" style="float:right">
+    <li><a href="#icSP2" data-toggle="tooltip" data-placement="top" title="IC-Intracranial infection">IC</a></li>
+    <li><a href="#menSP2" data-toggle="tooltip" data-placement="top" title="MEN-Meningitis or ventriculitis">MEN</a></li>
+   <li><a href="#saSP2" data-toggle="tooltip" data-placement="top" title="SA-Spinal abscess without meningitis">SA</a></li>
+
+  </ul>
+  </nav>  
+    </div>
+    
+</div>
+
+<h3><a id="icSP2"></a><span class="label label-warning">IC – Intracranial infection</span></h3>
+ 
+<form name="icForm2">
+
+<p class="bg-primary">Histopathology</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic25" id="ic25" value="">Patient has an abscess or evidence of intracranial infection on gross anatomic or histopathologic exam.</label>
+  <input type="text" id="Datepickeric25" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="Patient has an abscess or evidence of intracranial infection on gross anatomic or histopathologic exam">Yes</label>
+</div>
+
+<script>
+$('#ic25').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric25').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<br>
+
+<p class="bg-primary">Imaging</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic35i" id="ic35i"  value="">Imaging test evidence suggestive of infection, (e.g., ultrasound, CT scan MRI, radionuclide brain scan, or arteriogram), which if equivocal is supported by clinical correlation.</label>
+  <input type="text" id="Datepickeric35i" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="Imaging test evidence suggestive of infection, (e.g., ultrasound, CT scan MRI, radionuclide brain scan, or arteriogram), which if equivocal is supported by clinical correlation">Yes</label>
+</div>
+
+<script>
+$('#ic35i').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric35i').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<br>
+
+<p class="bg-primary">Microbiology</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic15" id="ic15" value="">Patient has organisms cultured from brain tissue or dura.</label>
+  <input type="text" id="Datepickeric15" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="Patient has organisms cultured from brain tissue or dura">Yes</label>
+</div>
+
+<script>
+$('#ic15').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric15').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic35g" id="ic35g" value="">Organisms seen on microscopic examination of brain or abscess tissue obtained by needle aspiration or during an invasive procedure or autopsy</label>
+  <input type="text" id="Datepickeric35g" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="Organisms seen on microscopic examination of brain or abscess tissue obtained by needle aspiration or during an invasive procedure or autopsy">Yes</label>
+</div>
+
+<script>
+$('#ic35g').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric35g').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic35h" id="ic35h" value="">Positive non culture diagnostic laboratory test on blood or urine (e.g., antigen test, PCR) </label>
+  <input type="text" id="Datepickeric35h" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="Positive non culture diagnostic laboratory test on blood or urine (e.g., antigen test, PCR)">Yes</label>
+</div>
+
+<script>
+$('#ic35h').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric35h').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic35j" id="ic35j" value="">Diagnostic single antibody titer (IgM)</label>
+  <input type="text" id="Datepickeric35j" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="Diagnostic single antibody titer (IgM)">Yes</label>
+ </div>
+ 
+ <script>
+$('#ic35j').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric35j').prop('disabled', !cbIsChecked); 
+});
+</script>
+ 
+ <div class="checkbox">
+  <label><input type="checkbox" name="ic35k" id="ic35k" value="">4-fold increase in paired sera (IgG) for organism</label>
+  <input type="text" id="Datepickeric35k" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="4-fold increase in paired sera (IgG) for organism">Yes</label>
+ </div>
+
+<script>
+$('#ic35k').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric35k').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<br>
+
+<p class="bg-primary">Signs and Symptoms</p>
+
+<div class="checkbox">
+  <label><input type="checkbox"  name="ic35a" id="ic35a" value="">Headache*</label>
+  <input type="text" id="Datepickeric35a" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="Headache">Yes</label>
+</div>
+
+<script>
+$('#ic35a').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric35a').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic35b" id="ic35b"  value="">Dizziness*</label>
+  <input type="text" id="Datepickeric35b" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="Dizziness">Yes</label>
+</div>
+
+<script>
+$('#ic35b').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric35b').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic35c" id="ic35c" value="">Fever (&gt;38.0°C±)</label>
+  <input type="text" id="Datepickeric35c" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="Fever">Yes</label>
+</div>
+
+<script>
+$('#ic35c').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric35c').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic35d" id="ic35d" value="">Localizing neurologic signs*</label>
+  <input type="text" id="Datepickeric35d" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="Localizing neurologic signs">Yes</label>
+</div>
+
+<script>
+$('#ic35d').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric35d').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic35e" id="ic35e"  value="">Changing level of consciousness*</label>
+  <input type="text" id="Datepickeric35e" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="Changing level of consciousness">Yes</label>
+</div>
+
+<script>
+$('#ic35e').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric35e').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic35f" id="ic35f"  value="">Confusion*</label>
+  <input type="text" id="Datepickeric35f" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="Confusion">Yes</label>
+</div>
+
+<script>
+$('#ic35f').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric35f').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<br>
+      <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#PatientOneYear315" > <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Click this button for Patients ≤1 year of age</button>
+
+<div id="PatientOneYear315" class="collapse"> 
+         
+<br>    
+
+<p class="bg-primary">Signs and Symptoms (Patient ≤1 year of age)</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic45a" id="ic45a" value="">Fever (&gt;38.0°C±)</label>
+  <input type="text" id="Datepickeric45a" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"> <input type="radio" name="radioIC" value="Fever">Yes</label>
+</div>
+
+<script>
+$('#ic45a').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric45a').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic45b" id="ic45b" value="">Hypothermia (&lt;36.0°C±) </label>
+  <input type="text" id="Datepickeric45b" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="Hypothermia">Yes</label>
+</div>
+
+<script>
+$('#ic45b').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric45b').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic45c" id="ic45c" value="">Apnea*</label>
+  <input type="text" id="Datepickeric45c" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="Apnea">Yes</label>
+</div>
+
+<script>
+$('#ic45c').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric45c').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic45d" id="ic45d" value="">Bradycardia*</label>
+  <input type="text" id="Datepickeric45d" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="Bradycardia">Yes</label>
+</div>
+
+<script>
+$('#ic45d').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric45d').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic45e" id="ic45e" value="">Localizing neurologic signs*</label>
+  <input type="text" id="Datepickeric45e" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="Localizing neurologic signs">Yes</label>
+</div>
+
+<script>
+$('#ic45e').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric45e').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic45f" id="ic45f" value="">Changing level of consciousness* (e.g., irritability, poor feeding, lethargy)</label>
+  <input type="text" id="Datepickeric45f" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="Changing level of consciousness">Yes</label>
+</div>
+
+<script>
+$('#ic45f').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric45f').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<br>
+
+<p class="bg-primary">Microbiology (Patient ≤1 year of age)</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic45g" id="ic45g" value="">Organisms seen on microscopic examination of brain or abscess tissue obtained by needle aspiration or during an invasive procedure or autopsy</label>
+  <input type="text" id="Datepickeric45g" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="Organisms seen on microscopic examination of brain or abscess tissue obtained by needle aspiration or during an invasive procedure or autopsy">Yes</label>
+</div>
+
+<script>
+$('#ic45g').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric45g').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic45h" id="ic45h" value="">Positive non culture diagnostic laboratory test on blood or urine (e.g., antigen test, PCR) </label>
+  <input type="text" id="Datepickeric45h" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="Positive non culture diagnostic laboratory test on blood or urine (e.g., antigen test, PCR)">Yes</label>
+</div>
+
+<script>
+$('#ic45h').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric45h').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic45j" id="ic45j" value="">Diagnostic single antibody titer (IgM)</label>
+  <input type="text" id="Datepickeric45j" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="Diagnostic single antibody titer (IgM)">Yes</label>
+ </div>
+ 
+ <script>
+$('#ic45j').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric45j').prop('disabled', !cbIsChecked); 
+});
+</script>
+ 
+ <div class="checkbox">
+  <label><input type="checkbox" name="ic45k" id="ic45k" value="">4-fold increase in paired sera (IgG) for organism</label>
+  <input type="text" id="Datepickeric45k" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="4-fold increase in paired sera (IgG) for organism">Yes</label>
+ </div>
+
+<script>
+$('#ic45k').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric45k').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<br>
+
+<p class="bg-primary">Imaging (Patient ≤1 year of age)</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="ic45i" id="ic45i" value="">Imaging test evidence suggestive of infection, (e.g., ultrasound, CT scan, MRI, radionuclide brain scan, or arteriogram), which if equivocal is supported by clinical correlationy</label>
+  <input type="text" id="Datepickeric45i" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioIC" value="Imaging test evidence suggestive of infection, (e.g., ultrasound, CT scan, MRI, radionuclide brain scan, or arteriogram), which if equivocal is supported by clinical correlationy">Yes</label>
+</div>
+
+<script>
+$('#ic45i').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickeric45i').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+</div>
+
+<br><br>
+
+<p class="bg-warning"><strong>Reporting instructions</strong></p>
+<p>* With no other recognized cause</p>
+<p>± As documented in the medical record</p>
+
+<br>
+
+ <p><strong>Click the <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check Button after making your selection(s) and whenever you make any changes to your selection(s)</strong></p>
+
+<button type="button" class="btn btn-success" onclick="myFunctionIc2()"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check-IC</button>  
+
+<button type="reset" value="Clear IC" class="btn btn-danger" onclick="return confirm_reset();"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> Reset-IC</button> 
+
+<br><br>
+<div class="row">
+ <div class="col-md-6">
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><u><strong>Results</strong></u></h3>
+    <h6 class="panel-title">(If no results displayed, your findings don't meet NHSN defintions)</h6>
+  </div>
+    
+  <div class="panel-body">
+    <p id="icCrit15"></p>
+    <p id="icCrit25"></p>
+    <p id="icCrit35"></p>
+    <p id="icCrit45"></p>
+   </div>
+  </div>
+</div>
+<div class="col-md-6">
+                  <div class="panel panel-info">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">
+                        <u>
+                          <strong>Outcome</strong>
+                        </u>
+                      </h3>
+                      <h6 class="panel-title">Infection status (POA or HAI)</h6>
+                    </div>
+                    <div class="panel-body">
+                      <p id="ic2015CritOut_poa"></p>
+                      <p id="ic2015CritOut_hai"></p>
+                    </div>
+                  </div>
+                </div>
+</div>
+
+<br>
+              <div class="panel panel-info" align="center">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Event Window Period</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="table-responsive">
+                    <table class="table table-striped table-hover table-bordered">
+                      <tbody>
+                        <tr>
+                          <th scope="col" class="primary" width="20%">Date</th>
+                          <th scope="col" class="primary">Event</th>
+                        </tr>
+                        <tr class="warning">
+                          <td>
+                            <span id="dateOfEventMin3ic" class="doeCalDate_ic">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptomMin3ic"></span>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span id="dateOfEventMin2ic" class="doeCalDate_ic">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptomMin2ic">&nbsp;</span>
+                          </td>
+                        </tr>
+                        <tr class="warning">
+                          <td>
+                            <span id="dateOfEventMin1ic" class="doeCalDate_ic">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptomMin1ic">&nbsp;</span>
+                          </td>
+                        </tr>
+                        <tr class="danger">
+                          <td>
+                            <span id="dateOfEventMin0ic">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptomMin0ic"></span>&nbsp;</td>
+                        </tr>
+                        <tr class="warning">
+                          <td>
+                            <span id="dateOfEvent1ic" class="doeCalDate_ic">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptom1ic"></span>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span id="dateOfEvent2ic" class="doeCalDate_ic">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptom2ic"></span>&nbsp;</td>
+                        </tr>
+                        <tr class="warning">
+                          <td>
+                            <span id="dateOfEvent3ic" class="doeCalDate_ic">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptom3ic">&nbsp;</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+<br>
+ <p align="left"><a href="#topCNS"><span class="glyphicon glyphicon-arrow-up" style="color:gray" aria-hidden="true"></span><b>TOP</b></a></p> 
+ 
+ <br>
+
+<script>
+function myFunctionIc2() {
+        var ic15 = document.getElementById("ic15"); 
+		
+		if 
+		(ic15.checked) 								
+	{
+      document.getElementById("icCrit15").innerHTML = "Your findings meet NHSN definitions for CNS-IC Criterion 1";
+        } else {
+     document.getElementById("icCrit15").innerHTML = "";
+        }
+		
+	var ic25 = document.getElementById("ic25"); 
+		
+		if 
+		(ic25.checked) 								
+	{
+      document.getElementById("icCrit25").innerHTML = "Your findings meet NHSN definitions for CNS-IC Criterion 2";
+        } else {
+     document.getElementById("icCrit25").innerHTML = "";
+        }	
+	
+var ic35a = document.getElementById("ic35a");
+var ic35b = document.getElementById("ic35b"); 
+var ic35c = document.getElementById("ic35c"); 
+var ic35d = document.getElementById("ic35d"); 
+var ic35e = document.getElementById("ic35e"); 
+var ic35f = document.getElementById("ic35f"); 
+var ic35g = document.getElementById("ic35g"); 
+var ic35h = document.getElementById("ic35h"); 
+var ic35i = document.getElementById("ic35i"); 
+var ic35j = document.getElementById("ic35j"); 
+var ic35k = document.getElementById("ic35k"); 
+	
+
+if 
+((((((((((((((((((((((((((((((((((((((((((((((((((((((((
+((ic35a.checked) && (ic35b.checked) && (ic35g.checked))) ||
+((ic35a.checked) && (ic35b.checked) && (ic35h.checked))) ||
+((ic35a.checked) && (ic35b.checked) && (ic35i.checked))) ||
+((ic35a.checked) && (ic35b.checked) && ((ic35j.checked) || (ic35k.checked)))) ||
+((ic35a.checked) && (ic35c.checked) && (ic35g.checked))) ||
+((ic35a.checked) && (ic35c.checked) && (ic35h.checked))) ||
+((ic35a.checked) && (ic35c.checked) && (ic35i.checked))) ||
+((ic35a.checked) && (ic35c.checked) && ((ic35j.checked) || (ic35k.checked)))) ||
+((ic35a.checked) && (ic35d.checked) && (ic35g.checked))) ||
+((ic35a.checked) && (ic35d.checked) && (ic35h.checked))) ||
+((ic35a.checked) && (ic35d.checked) && (ic35i.checked))) ||
+((ic35a.checked) && (ic35d.checked) && ((ic35j.checked) || (ic35k.checked)))) ||
+((ic35a.checked) && (ic35e.checked) && (ic35g.checked))) ||
+((ic35a.checked) && (ic35e.checked) && (ic35h.checked))) ||
+((ic35a.checked) && (ic35e.checked) && (ic35i.checked))) ||
+((ic35a.checked) && (ic35e.checked) && ((ic35j.checked) || (ic35k.checked)))) ||
+((ic35a.checked) && (ic35f.checked) && (ic35g.checked))) ||
+((ic35a.checked) && (ic35f.checked) && (ic35h.checked))) ||
+((ic35a.checked) && (ic35f.checked) && (ic35i.checked))) ||
+((ic35a.checked) && (ic35f.checked) && ((ic35j.checked) || (ic35k.checked)))) ||
+((ic35b.checked) && (ic35c.checked) && (ic35g.checked))) ||
+((ic35b.checked) && (ic35c.checked) && (ic35h.checked))) ||
+((ic35b.checked) && (ic35c.checked) && (ic35i.checked))) ||
+((ic35b.checked) && (ic35c.checked) && ((ic35j.checked) || (ic35k.checked)))) ||
+((ic35b.checked) && (ic35d.checked) && (ic35g.checked))) ||
+((ic35b.checked) && (ic35d.checked) && (ic35h.checked))) ||
+((ic35b.checked) && (ic35d.checked) && (ic35i.checked))) ||
+((ic35b.checked) && (ic35d.checked) && ((ic35j.checked) || (ic35k.checked)))) ||
+((ic35b.checked) && (ic35e.checked) && (ic35g.checked))) ||
+((ic35b.checked) && (ic35e.checked) && (ic35h.checked))) ||
+((ic35b.checked) && (ic35e.checked) && (ic35i.checked))) ||
+((ic35b.checked) && (ic35e.checked) && ((ic35j.checked) || (ic35k.checked)))) ||
+((ic35b.checked) && (ic35f.checked) && (ic35g.checked))) ||
+((ic35b.checked) && (ic35f.checked) && (ic35h.checked))) ||
+((ic35b.checked) && (ic35f.checked) && (ic35i.checked))) ||
+((ic35b.checked) && (ic35f.checked) && ((ic35j.checked) || (ic35k.checked)))) ||
+((ic35c.checked) && (ic35d.checked) && (ic35g.checked))) ||
+((ic35c.checked) && (ic35d.checked) && (ic35h.checked))) ||
+((ic35c.checked) && (ic35d.checked) && (ic35i.checked))) ||
+((ic35c.checked) && (ic35d.checked) && ((ic35j.checked) || (ic35k.checked)))) ||
+((ic35c.checked) && (ic35e.checked) && (ic35g.checked))) ||
+((ic35c.checked) && (ic35e.checked) && (ic35h.checked))) ||
+((ic35c.checked) && (ic35e.checked) && (ic35i.checked))) ||
+((ic35c.checked) && (ic35e.checked) && ((ic35j.checked) || (ic35k.checked)))) ||
+((ic35c.checked) && (ic35f.checked) && (ic35g.checked))) ||
+((ic35c.checked) && (ic35f.checked) && (ic35h.checked))) ||
+((ic35c.checked) && (ic35f.checked) && (ic35i.checked))) ||
+((ic35c.checked) && (ic35f.checked) && ((ic35j.checked) || (ic35k.checked)))) ||
+((ic35d.checked) && (ic35e.checked) && (ic35g.checked))) ||
+((ic35d.checked) && (ic35e.checked) && (ic35h.checked))) ||
+((ic35d.checked) && (ic35e.checked) && (ic35i.checked))) ||
+((ic35d.checked) && (ic35e.checked) && ((ic35j.checked) || (ic35k.checked)))) ||
+((ic35d.checked) && (ic35f.checked) && (ic35g.checked))) ||
+((ic35d.checked) && (ic35f.checked) && (ic35h.checked))) ||
+((ic35d.checked) && (ic35f.checked) && (ic35i.checked))) ||
+((ic35d.checked) && (ic35f.checked) && ((ic35j.checked) || (ic35k.checked)))) 
+
+	{
+      document.getElementById("icCrit35").innerHTML = "Your findings meet NHSN definitions for CNS-IC Criterion 3";
+        } else {
+     document.getElementById("icCrit35").innerHTML = "";
+        }	
+
+
+var ic45a = document.getElementById("ic45a");
+var ic45b = document.getElementById("ic45b"); 
+var ic45c = document.getElementById("ic45c"); 
+var ic45d = document.getElementById("ic45d"); 
+var ic45e = document.getElementById("ic45e"); 
+var ic45f = document.getElementById("ic45f"); 
+var ic45g = document.getElementById("ic45g"); 
+var ic45h = document.getElementById("ic45h"); 
+var ic45i = document.getElementById("ic45i"); 
+var ic45j = document.getElementById("ic45j"); 
+var ic45k = document.getElementById("ic45k"); 
+
+if 
+((((((((((((((((((((((((((((((((((((((((((((((((((((((((
+((ic45a.checked) && (ic45b.checked) && (ic45g.checked))) ||
+((ic45a.checked) && (ic45b.checked) && (ic45h.checked))) ||
+((ic45a.checked) && (ic45b.checked) && (ic45i.checked))) ||
+((ic45a.checked) && (ic45b.checked) && ((ic45j.checked) || (ic45k.checked)))) ||
+((ic45a.checked) && (ic45c.checked) && (ic45g.checked))) ||
+((ic45a.checked) && (ic45c.checked) && (ic45h.checked))) ||
+((ic45a.checked) && (ic45c.checked) && (ic45i.checked))) ||
+((ic45a.checked) && (ic45c.checked) && ((ic45j.checked) || (ic45k.checked)))) ||
+((ic45a.checked) && (ic45d.checked) && (ic45g.checked))) ||
+((ic45a.checked) && (ic45d.checked) && (ic45h.checked))) ||
+((ic45a.checked) && (ic45d.checked) && (ic45i.checked))) ||
+((ic45a.checked) && (ic45d.checked) && ((ic45j.checked) || (ic45k.checked)))) ||
+((ic45a.checked) && (ic45e.checked) && (ic45g.checked))) ||
+((ic45a.checked) && (ic45e.checked) && (ic45h.checked))) ||
+((ic45a.checked) && (ic45e.checked) && (ic45i.checked))) ||
+((ic45a.checked) && (ic45e.checked) && ((ic45j.checked) || (ic45k.checked)))) ||
+((ic45a.checked) && (ic45f.checked) && (ic45g.checked))) ||
+((ic45a.checked) && (ic45f.checked) && (ic45h.checked))) ||
+((ic45a.checked) && (ic45f.checked) && (ic45i.checked))) ||
+((ic45a.checked) && (ic45f.checked) && ((ic45j.checked) || (ic45k.checked)))) ||
+((ic45b.checked) && (ic45c.checked) && (ic45g.checked))) ||
+((ic45b.checked) && (ic45c.checked) && (ic45h.checked))) ||
+((ic45b.checked) && (ic45c.checked) && (ic45i.checked))) ||
+((ic45b.checked) && (ic45c.checked) && ((ic45j.checked) || (ic45k.checked)))) ||
+((ic45b.checked) && (ic45d.checked) && (ic45g.checked))) ||
+((ic45b.checked) && (ic45d.checked) && (ic45h.checked))) ||
+((ic45b.checked) && (ic45d.checked) && (ic45i.checked))) ||
+((ic45b.checked) && (ic45d.checked) && ((ic45j.checked) || (ic45k.checked)))) ||
+((ic45b.checked) && (ic45e.checked) && (ic45g.checked))) ||
+((ic45b.checked) && (ic45e.checked) && (ic45h.checked))) ||
+((ic45b.checked) && (ic45e.checked) && (ic45i.checked))) ||
+((ic45b.checked) && (ic45e.checked) && ((ic45j.checked) || (ic45k.checked)))) ||
+((ic45b.checked) && (ic45f.checked) && (ic45g.checked))) ||
+((ic45b.checked) && (ic45f.checked) && (ic45h.checked))) ||
+((ic45b.checked) && (ic45f.checked) && (ic45i.checked))) ||
+((ic45b.checked) && (ic45f.checked) && ((ic45j.checked) || (ic45k.checked)))) ||
+((ic45c.checked) && (ic45d.checked) && (ic45g.checked))) ||
+((ic45c.checked) && (ic45d.checked) && (ic45h.checked))) ||
+((ic45c.checked) && (ic45d.checked) && (ic45i.checked))) ||
+((ic45c.checked) && (ic45d.checked) && ((ic45j.checked) || (ic45k.checked)))) ||
+((ic45c.checked) && (ic45e.checked) && (ic45g.checked))) ||
+((ic45c.checked) && (ic45e.checked) && (ic45h.checked))) ||
+((ic45c.checked) && (ic45e.checked) && (ic45i.checked))) ||
+((ic45c.checked) && (ic45e.checked) && ((ic45j.checked) || (ic45k.checked)))) ||
+((ic45c.checked) && (ic45f.checked) && (ic45g.checked))) ||
+((ic45c.checked) && (ic45f.checked) && (ic45h.checked))) ||
+((ic45c.checked) && (ic45f.checked) && (ic45i.checked))) ||
+((ic45c.checked) && (ic45f.checked) && ((ic45j.checked) || (ic45k.checked)))) ||
+((ic45d.checked) && (ic45e.checked) && (ic45g.checked))) ||
+((ic45d.checked) && (ic45e.checked) && (ic45h.checked))) ||
+((ic45d.checked) && (ic45e.checked) && (ic45i.checked))) ||
+((ic45d.checked) && (ic45e.checked) && ((ic45j.checked) || (ic45k.checked)))) ||
+((ic45d.checked) && (ic45f.checked) && (ic45g.checked))) ||
+((ic45d.checked) && (ic45f.checked) && (ic45h.checked))) ||
+((ic45d.checked) && (ic45f.checked) && (ic45i.checked))) ||
+((ic45d.checked) && (ic45f.checked) && ((ic45j.checked) || (ic45k.checked)))) 
+								
+	{
+      document.getElementById("icCrit45").innerHTML = "Your findings meet NHSN definitions for CNS-IC Criterion 4";
+        } else {
+     document.getElementById("icCrit45").innerHTML = "";
+        }	
+}
+		
+</script>
+
+</form>
+
+<form name="discForm2"> 
+
+  <h3><a id="menSP2"></a><span class="label label-warning">MEN – Meningitis or ventriculitis</span></h3>
+ 
+ <p class="bg-primary">Microbiology</p>
+
+<div class="checkbox">
+  <label><input  type="checkbox" name="men15" id="men15" value=""> Patient has organisms cultured from cerebrospinal fluid (CSF). </label>
+  <input type="text" id="Datepickermen15" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="Patient has organisms cultured from cerebrospinal fluid (CSF)">Yes</label>
+</div>
+ 
+  <script>
+$('#men15').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen15').prop('disabled', !cbIsChecked); 
+});
+</script> 
+ 
+ <div class="checkbox">
+  <label><input name="men25e" type="checkbox" id="men25e" value="">Increased white cells, elevated protein, and decreased glucose in CSF (per reporting laboratory’s reference range)</label>
+  <input type="text" id="Datepickermen25e" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="Increased white cells, elevated protein, and decreased glucose in CSF (per reporting laboratory’s reference range)">Yes</label>
+</div>
+ 
+  <script>
+$('#men25e').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen25e').prop('disabled', !cbIsChecked); 
+});
+</script> 
+ 
+ <div class="checkbox">
+  <label><input  type="checkbox" name="men25f" id="men25f" value="">Organisms seen on Gram stain of CSF</label>
+  <input type="text" id="Datepickermen25f" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="Organisms seen on Gram stain of CSF">Yes</label>
+</div>
+
+  <script>
+$('#men25f').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen25f').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input  type="checkbox" name="men25h" id="men25h" value="">Positive non culture diagnostic laboratory test of CSF, blood, or urine</label>
+  <input type="text" id="Datepickermen25h" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="Positive non culture diagnostic laboratory test of CSF, blood, or urine">Yes</label>
+</div>
+
+<script>
+$('#men25h').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen25h').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input  type="checkbox" name="men25i" id="men25i" value="">Diagnostic single antibody titer (IgM)</label>
+  <input type="text" id="Datepickermen25i" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="Diagnostic single antibody titer (IgM)">Yes</label>
+</div>
+
+<script>
+$('#men25i').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen25i').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input  type="checkbox" name="men25j" id="men25j" value="">4-fold increase in paired sera (IgG) for organism</label>
+  <input type="text" id="Datepickermen25j" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="4-fold increase in paired sera (IgG) for organism">Yes</label>
+</div>
+
+<script>
+$('#men25i').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen25i').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men25g" id="men25g" value=""><a href="#" onclick="return false;" data-toggle="tooltip" data-placement="top" title="For a bloodstream infection to be determined secondary to another site of infection, the blood culture must be collected during the site-specific infection Secondary BSI Attribution Period and satisfy one of the following: 1. The blood culture must contain at least one organism that matches an organism found in a site-specific infection culture used to meet the site-specific infection criterion OR 2. The blood culture must be an element used to meet the site-specific infection criterion. 
+"><span class="glyphicon glyphicon-flag" style="color:red" aria-hidden="true"></span><em>Organisms cultured from blood</em></a></label>
+  <input type="text" id="Datepickermen25g" placeholder="Enter date" disabled>
+  
+   &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="Organisms cultured from blood">Yes</label>
+
+ </div>
+
+<script>
+$('#men25g').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen25g').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<br>
+   
+   <div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><strong>Select organism(s)</strong></h3>
+  </div>
+  <div class="panel-body">
+  
+ <div id="myformMenOrg15">
+<table>
+      <tr>
+        <td>Organism:</td>
+        <td>
+              
+        <select name="organisms" id="orgMenOrg15">
+<option value="0">Select an Organism</option>
+<option value="Abiotrophia adiacens ">Abiotrophia adiacens - GRADJ</option>
+<option value="Abiotrophia spp. ">Abiotrophia spp. - ABISP</option>
+<option value="Acanthamoeba ">Acanthamoeba - ACANT</option>
+<option value="Achromobacter spp. ">Achromobacter spp. - ACHSP</option>
+<option value="Achromobacter xylosoxidans ">Achromobacter xylosoxidans - ALCXYL</option>
+<option value="Achromobacter xylosoxidans xylosoxidans ">Achromobacter xylosoxidans xylosoxidans - ACHXYL</option>
+<option value="Achromobacter, group Vd biotype 1 ">Achromobacter, group Vd biotype 1 - ACHVD1</option>
+<option value="Achromobacter, group Vd biotype 2 ">Achromobacter, group Vd biotype 2 - ACHVD2</option>
+<option value="Acidaminococcus fermentans ">Acidaminococcus fermentans - ACIFE</option>
+<option value="Acidaminococcus spp. ">Acidaminococcus spp. - ACISP</option>
+<option value="Acidovorax delafieldii ">Acidovorax delafieldii - ACDEL</option>
+<option value="Acidovorax Genus  ">Acidovorax Genus  - ACIDSP </option>
+<option value="Acidovorax spp. ">Acidovorax spp. - ACIDSP</option>
+<option value="Acinetobacter anitratus ">Acinetobacter anitratus - ACICBA</option>
+<option value="Acinetobacter baumannii ">Acinetobacter baumannii - ACBA</option>
+<option value="Acinetobacter calcoaceticus ">Acinetobacter calcoaceticus - ACICBA</option>
+<option value="Acinetobacter calcoaceticus ss. Lwoffii ">Acinetobacter calcoaceticus ss. Lwoffii - ACLW</option>
+<option value="Acinetobacter calcoaceticus-baumannii complex ">Acinetobacter calcoaceticus-baumannii complex - ACCA</option>
+<option value="Acinetobacter genospecies 3 ">Acinetobacter genospecies 3 - ACIGEN</option>
+<option value="Acinetobacter hemolyticus ">Acinetobacter hemolyticus - ACHA</option>
+<option value="Acinetobacter johnsonii ">Acinetobacter johnsonii - ACJH</option>
+<option value="Acinetobacter junii ">Acinetobacter junii - ACJU</option>
+<option value="Acinetobacter lwoffii ">Acinetobacter lwoffii - ACLW</option>
+<option value="Acinetobacter spp. ">Acinetobacter spp. - ACS</option>
+<option value="Acremonium spp. ">Acremonium spp. - ACRE</option>
+</select>
+       <input type="button" id="addMenOrg15" value="Add" onclick="Javascript:addRowMenOrg15()"></td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+</div>
+<div id="mydataMenOrg15">
+
+<p class="bg-warning"><b>Selected:</b></p>                       
+<table id="myTableDataMenOrg15">
+    <tr>
+        <td>&nbsp;</td>
+        <td></td>
+    </tr>
+</table>
+ 
+</div>
+</div>
+</div>
+<script>
+
+function addRowMenOrg15() {
+          
+    var org = document.getElementById("orgMenOrg15");
+    var table = document.getElementById("myTableDataMenOrg15");
+ 
+    var rowCount = table.rows.length;
+    var row = table.insertRow(rowCount);
+ 
+    row.insertCell(0).innerHTML= '<input type="button" value = "Remove" onClick="Javacsript:deleteRowMenOrg15(this)">';
+    row.insertCell(1).innerHTML= org.value;
+ }
+ 
+function deleteRowMenOrg15(obj) {
+      
+    var index = obj.parentNode.parentNode.rowIndex;
+    var table = document.getElementById("myTableDataMenOrg15");
+    table.deleteRow(index);
+ }
+ function load() {
+    
+    console.log("Page load finished");
+ }
+
+</script>
+ 
+ <br>
+ 
+ <p class="bg-primary">Signs and Symptoms</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men25a" id="men25a" value="">Fever (&gt;38.0°C±) </label>
+  <input type="text" id="Datepickermen25a" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="Fever">Yes</label>
+</div>
+ 
+ <script>
+$('#men25a').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen25a').prop('disabled', !cbIsChecked); 
+});
+</script> 
+ 
+ <div class="checkbox">
+  <label><input type="checkbox" name="men25b" id="men25b" value="">Headache</label>
+  <input type="text" id="Datepickermen25b" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="Headache">Yes</label>
+ </div>
+ 
+  <script>
+$('#men25b').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen25b').prop('disabled', !cbIsChecked); 
+});
+</script>
+ 
+ <div class="checkbox">
+  <label><input type="checkbox" name="men25c" id="men25c" value="">Meningeal sign(s)* </label>
+  <input type="text" id="Datepickermen25c" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="Meningeal sign(s)">Yes</label>
+ </div>
+ 
+   <script>
+$('#men25c').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen25c').prop('disabled', !cbIsChecked); 
+});
+</script>
+ 
+ <div class="checkbox">
+  <label><input type="checkbox" name="men25d" id="men25d" value="">Cranial nerve sign(s)* </label>
+  <input type="text" id="Datepickermen25d" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="Cranial nerve sign(s)">Yes</label>
+ </div>
+ 
+    <script>
+$('#men25d').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen25d').prop('disabled', !cbIsChecked); 
+});
+</script>
+ 
+ <br>
+ 
+ <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#PatientOneYear9" > <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Click this button for Patients ≤1 year of age</button>
+         <div id="PatientOneYear9" class="collapse"> <br>
+         
+<p class="bg-primary">Signs and Symptoms (Patients ≤1 year of age)</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men35a" id="men35a" value="">Fever (&gt;38.0°C±)</label>
+  <input type="text" id="Datepickermen35a" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="Fever">Yes</label>
+</div>
+
+   <script>
+$('#men35a').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen35a').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men35b" id="men35b" value="">Hypothermia (&lt;36.0°C±)</label>
+  <input type="text" id="Datepickermen35b" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="Hypothermia">Yes</label>
+</div>
+
+  <script>
+$('#men35b').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen35b').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men35c" id="men35c" value="">Apnea</label>
+  <input type="text" id="Datepickermen35c" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="Apnea">Yes</label>
+</div>
+
+ <script>
+$('#men35c').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen35c').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men35d" id="men35d" value="">Bradycardia</label>
+  <input type="text" id="Datepickermen35d" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="Bradycardia">Yes</label>
+</div>
+
+ <script>
+$('#men35d').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen35d').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men35e" id="men35e" value="">Irritability</label>
+  <input type="text" id="Datepickermen35e" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="Irritability">Yes</label>
+</div>
+
+ <script>
+$('#men35e').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen35e').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men35f" id="men35f" value="">Meningeal signs*</label>
+  <input type="text" id="Datepickermen35f" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="Meningeal signs">Yes</label>
+</div>
+
+ <script>
+$('#men35f').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen35f').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men35g" id="men35g" value="">Cranial nerve signs*</label>
+  <input type="text" id="Datepickermen35g" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="Cranial nerve signs">Yes</label>
+</div>
+
+ <script>
+$('#men35g').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen35g').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<br>
+
+<p class="bg-primary">Microbiology (Patients ≤1 year of age)</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men35h" id="men35h" value="">Increased white cells, elevated protein, and decreased glucose in CSF (per reporting laboratory’s reference range)</label>
+  <input type="text" id="Datepickermen35h" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="Increased white cells, elevated protein, and decreased glucose in CSF (per reporting laboratory’s reference range)">Yes</label>
+</div>
+
+<script>
+$('#men35h').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen35h').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men35i" id="men35i" value="">Organisms seen on Gram stain of CSF</label>
+  <input type="text" id="Datepickermen35i" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="Organisms seen on Gram stain of CSF">Yes</label>
+</div>
+
+<script>
+$('#men35i').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen35i').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men35k" id="men35k" value="">Positive non culture diagnostic laboratory test of CSF, blood, or urine</label>
+  <input type="text" id="Datepickermen35k" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="Positive non culture diagnostic laboratory test of CSF, blood, or urine">Yes</label>
+</div>
+
+<script>
+$('#men35k').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen35k').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men35m" id="men35m" value="">Diagnostic single antibody titer (IgM)</label>
+  <input type="text" id="Datepickermen35m" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="Diagnostic single antibody titer (IgM)">Yes</label>
+</div>
+
+<script>
+$('#men35m').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen35m').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men35n" id="men35n" value="">4-fold increase in paired sera (IgG) for organism</label>
+  <input type="text" id="Datepickermen35n" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="4-fold increase in paired sera (IgG) for organism">Yes</label>
+</div>
+
+<script>
+$('#men35n').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen35n').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="men35j" id="men35j" value=""><a href="#" onclick="return false;" data-toggle="tooltip" data-placement="top" title="For a bloodstream infection to be determined secondary to another site of infection, the blood culture must be collected during the site-specific infection Secondary BSI Attribution Period and satisfy one of the following: 1. The blood culture must contain at least one organism that matches an organism found in a site-specific infection culture used to meet the site-specific infection criterion OR 2. The blood culture must be an element used to meet the site-specific infection criterion. 
+"><span class="glyphicon glyphicon-flag" style="color:red" aria-hidden="true"></span> <em>Organisms cultured from blood</em></a></label>
+  <input type="text" id="Datepickermen35j" placeholder="Enter date" disabled>
+ &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioMEN" value="Organisms cultured from blood">Yes</label>
+ </div>
+
+<script>
+$('#men35j').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickermen35j').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<br>
+   
+   <div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><strong>Select organism(s)</strong></h3>
+  </div>
+  <div class="panel-body">
+  
+ <div id="myformMenOrg152">
+<table>
+      <tr>
+        <td>Organism:</td>
+        <td>
+        <select name="organisms" id="orgMenOrg152">
+<option value="0">Select an Organism</option>
+<option value="Abiotrophia adiacens ">Abiotrophia adiacens - GRADJ</option>
+<option value="Abiotrophia spp. ">Abiotrophia spp. - ABISP</option>
+<option value="Acanthamoeba ">Acanthamoeba - ACANT</option>
+<option value="Achromobacter spp. ">Achromobacter spp. - ACHSP</option>
+<option value="Achromobacter xylosoxidans ">Achromobacter xylosoxidans - ALCXYL</option>
+<option value="Achromobacter xylosoxidans xylosoxidans ">Achromobacter xylosoxidans xylosoxidans - ACHXYL</option>
+<option value="Achromobacter, group Vd biotype 1 ">Achromobacter, group Vd biotype 1 - ACHVD1</option>
+<option value="Achromobacter, group Vd biotype 2 ">Achromobacter, group Vd biotype 2 - ACHVD2</option>
+<option value="Acidaminococcus fermentans ">Acidaminococcus fermentans - ACIFE</option>
+<option value="Acidaminococcus spp. ">Acidaminococcus spp. - ACISP</option>
+<option value="Acidovorax delafieldii ">Acidovorax delafieldii - ACDEL</option>
+<option value="Acidovorax Genus  ">Acidovorax Genus  - ACIDSP </option>
+<option value="Acidovorax spp. ">Acidovorax spp. - ACIDSP</option>
+<option value="Acinetobacter anitratus ">Acinetobacter anitratus - ACICBA</option>
+<option value="Acinetobacter baumannii ">Acinetobacter baumannii - ACBA</option>
+<option value="Acinetobacter calcoaceticus ">Acinetobacter calcoaceticus - ACICBA</option>
+<option value="Acinetobacter calcoaceticus ss. Lwoffii ">Acinetobacter calcoaceticus ss. Lwoffii - ACLW</option>
+<option value="Acinetobacter calcoaceticus-baumannii complex ">Acinetobacter calcoaceticus-baumannii complex - ACCA</option>
+<option value="Acinetobacter genospecies 3 ">Acinetobacter genospecies 3 - ACIGEN</option>
+<option value="Acinetobacter hemolyticus ">Acinetobacter hemolyticus - ACHA</option>
+<option value="Acinetobacter johnsonii ">Acinetobacter johnsonii - ACJH</option>
+<option value="Acinetobacter junii ">Acinetobacter junii - ACJU</option>
+<option value="Acinetobacter lwoffii ">Acinetobacter lwoffii - ACLW</option>
+<option value="Acinetobacter spp. ">Acinetobacter spp. - ACS</option>
+<option value="Acremonium spp. ">Acremonium spp. - ACRE</option>
+</select>
+       <input type="button" id="addMenOrg152" value="Add" onclick="Javascript:addRowMenOrg152()"></td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+</div>
+<div id="mydataMenOrg152">
+
+<p class="bg-warning"><b>Selected:</b></p>                       
+<table id="myTableDataMenOrg152">
+    <tr>
+        <td>&nbsp;</td>
+        <td></td>
+    </tr>
+</table>
+ 
+</div>
+</div>
+</div>
+<script>
+
+function addRowMenOrg152() {
+   var org = document.getElementById("orgMenOrg152");
+    var table = document.getElementById("myTableDataMenOrg152");
+    var rowCount = table.rows.length;
+    var row = table.insertRow(rowCount);
+ 
+    row.insertCell(0).innerHTML= '<input type="button" value = "Remove" onClick="Javacsript:deleteRowMenOrg152(this)">';
+    row.insertCell(1).innerHTML= org.value;
+ }
+ 
+function deleteRowMenOrg152(obj) {
+      
+    var index = obj.parentNode.parentNode.rowIndex;
+    var table = document.getElementById("myTableDataMenOrg152");
+    table.deleteRow(index);
+ }
+ function load() {
+    
+    console.log("Page load finished");
+ }
+
+</script>
+ 
+ <br>
+
+<p><b>Note:</b> Patient ≤1 year of age fever (&gt;38.0°C±), hypothermia (&lt;36.0°C±), apnea, bradycardia or irritability alone may not be used to meet the two required elements</p>
+
+</div>
+
+<br><br>
+
+ <p class="bg-warning"><strong>Reporting instructions</strong></p>
+<p><b>Note:</b> Fever (&gt;38.0°C±) and headache alone may not be used to meet the two required elements</p>
+<p>* With no other recognized cause;</p>
+<p>± As documented in the medical record</p>
+ 
+<br>
+
+<p><strong>Click the <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check Button after making your selection(s) and whenever you make any changes to your selection(s)</strong></p>
+
+<button type="button" class="btn btn-success" onclick="myFunctionMen2()"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check-MEN</button>  
+  
+<button type="reset" value="Clear MEN" class="btn btn-danger" onclick="return confirm_reset();"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> Reset-MEN</button> 
+
+<br><br>
+<div class="row">
+ <div class="col-md-6">
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><u><strong>Results</strong></u></h3>
+    <h6 class="panel-title">(If no results displayed, your findings don't meet NHSN defintions)</h6>
+  </div>
+    
+  <div class="panel-body">
+    <p id="menCrit15"></p>
+    <p id="menCrit25"></p>
+    <p id="menCrit35"></p>
+  </div>
+</div>
+</div>
+<div class="col-md-6">
+                  <div class="panel panel-info">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">
+                        <u>
+                          <strong>Outcome</strong>
+                        </u>
+                      </h3>
+                      <h6 class="panel-title">Infection status (POA or HAI)</h6>
+                    </div>
+                    <div class="panel-body">
+                      <p id="men2015CritOut_poa"></p>
+                      <p id="men2015CritOut_hai"></p>
+                    </div>
+                  </div>
+                </div>
+ </div>
+
+<br>
+              <div class="panel panel-info" align="center">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Event Window Period</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="table-responsive">
+                    <table class="table table-striped table-hover table-bordered">
+                      <tbody>
+                        <tr>
+                          <th scope="col" class="primary" width="20%">Date</th>
+                          <th scope="col" class="primary">Event</th>
+                        </tr>
+                        <tr class="warning">
+                          <td>
+                            <span id="dateOfEventMin3men" class="doeCalDate_men">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptomMin3men"></span>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span id="dateOfEventMin2men" class="doeCalDate_men">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptomMin2men">&nbsp;</span>
+                          </td>
+                        </tr>
+                        <tr class="warning">
+                          <td>
+                            <span id="dateOfEventMin1men" class="doeCalDate_men">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptomMin1men">&nbsp;</span>
+                          </td>
+                        </tr>
+                        <tr class="danger">
+                          <td>
+                            <span id="dateOfEventMin0men">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptomMin0men"></span>&nbsp;</td>
+                        </tr>
+                        <tr class="warning">
+                          <td>
+                            <span id="dateOfEvent1men" class="doeCalDate_men">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptom1men"></span>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span id="dateOfEvent2men" class="doeCalDate_men">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptom2men"></span>&nbsp;</td>
+                        </tr>
+                        <tr class="warning">
+                          <td>
+                            <span id="dateOfEvent3men" class="doeCalDate_men">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptom3men">&nbsp;</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+<br>
+ <p align="left"><a href="#topCNS"><span class="glyphicon glyphicon-arrow-up" style="color:gray" aria-hidden="true"></span><b>TOP</b></a></p> 
+ 
+ <br>
+
+<script>
+function myFunctionMen2() {
+        var men15 = document.getElementById("men15"); 
+		
+		if 
+		(men15.checked) 								
+	{
+      document.getElementById("menCrit15").innerHTML = "Your findings meet NHSN definitions for CNS-MEN Criterion 1";
+        } else {
+     document.getElementById("menCrit15").innerHTML = "";
+        }
+	var men25a = document.getElementById("men25a"); 
+	var men25b = document.getElementById("men25b"); 
+	var men25c = document.getElementById("men25c");
+	var men25d = document.getElementById("men25d"); 
+	var men25e = document.getElementById("men25e"); 
+	var men25f = document.getElementById("men25f");  
+	var men25g = document.getElementById("men25g");
+	var men25h = document.getElementById("men25h");
+	var men25i = document.getElementById("men25i");
+	var men25j = document.getElementById("men25j");
+		
+if 
+(((((((((((((((
+(((men25a.checked) || (men25b.checked)) && (men25c.checked) && (men25e.checked))) ||
+(((men25a.checked) || (men25b.checked)) && (men25c.checked) && (men25f.checked))) ||
+(((men25a.checked) || (men25b.checked)) && (men25c.checked) && (men25g.checked))) ||
+(((men25a.checked) || (men25b.checked)) && (men25c.checked) && (men25h.checked))) ||
+(((men25a.checked) || (men25b.checked)) && (men25c.checked) && ((men25i.checked) || (men25j.checked)))) ||
+(((men25a.checked) || (men25b.checked)) && (men25d.checked) && (men25e.checked))) ||
+(((men25a.checked) || (men25b.checked)) && (men25d.checked) && (men25f.checked))) ||
+(((men25a.checked) || (men25b.checked)) && (men25d.checked) && (men25g.checked))) ||
+(((men25a.checked) || (men25b.checked)) && (men25d.checked) && (men25h.checked))) ||
+(((men25a.checked) || (men25b.checked)) && (men25d.checked) && ((men25i.checked) || (men25j.checked)))) ||
+((men25c.checked) && (men25d.checked) && (men25e.checked))) ||	
+((men25c.checked) && (men25d.checked) && (men25f.checked))) ||	
+((men25c.checked) && (men25d.checked) && (men25g.checked))) ||	
+((men25c.checked) && (men25d.checked) && (men25h.checked))) ||	
+((men25c.checked) && (men25d.checked) && ((men25i.checked) || (men25j.checked)))) 
+
+  {
+      document.getElementById("menCrit25").innerHTML = "Your findings meet NHSN definitions for CNS-MEN Criterion 2";
+        } else {
+     document.getElementById("menCrit25").innerHTML = "";
+        }	
+var men35a = document.getElementById("men35a");
+var men35b = document.getElementById("men35b"); 
+var men35c = document.getElementById("men35c"); 
+var men35d = document.getElementById("men35d"); 
+var men35e = document.getElementById("men35e"); 
+var men35f = document.getElementById("men35f"); 
+var men35g = document.getElementById("men35g"); 
+var men35h = document.getElementById("men35h"); 
+var men35i = document.getElementById("men35i"); 
+var men35j = document.getElementById("men35j"); 
+var men35k = document.getElementById("men35k"); 
+var men35m = document.getElementById("men35m"); 
+var men35n = document.getElementById("men35n"); 
+
+if 
+(((((((((((((((
+(((men35a.checked) || (men35b.checked) || (men35c.checked) || (men35d.checked) || (men35e.checked)) && (men35f.checked) && (men35h.checked))) ||
+(((men35a.checked) || (men35b.checked) || (men35c.checked) || (men35d.checked) || (men35e.checked)) && (men35f.checked) && (men35i.checked))) ||
+(((men35a.checked) || (men35b.checked) || (men35c.checked) || (men35d.checked) || (men35e.checked)) && (men35f.checked) && (men35j.checked))) ||
+(((men35a.checked) || (men35b.checked) || (men35c.checked) || (men35d.checked) || (men35e.checked)) && (men35f.checked) && (men35k.checked))) ||
+(((men35a.checked) || (men35b.checked) || (men35c.checked) || (men35d.checked) || (men35e.checked)) && (men35f.checked) && ((men35m.checked) || (men35n.checked)))) ||
+(((men35a.checked) || (men35b.checked) || (men35c.checked) || (men35d.checked) || (men35e.checked)) && (men35g.checked) && (men35h.checked))) ||
+(((men35a.checked) || (men35b.checked) || (men35c.checked) || (men35d.checked) || (men35e.checked)) && (men35g.checked) && (men35i.checked))) ||
+(((men35a.checked) || (men35b.checked) || (men35c.checked) || (men35d.checked) || (men35e.checked)) && (men35g.checked) && (men35j.checked))) ||
+(((men35a.checked) || (men35b.checked) || (men35c.checked) || (men35d.checked) || (men35e.checked)) && (men35g.checked) && (men35k.checked))) ||
+(((men35a.checked) || (men35b.checked) || (men35c.checked) || (men35d.checked) || (men35e.checked)) && (men35g.checked) && ((men35m.checked) || (men35n.checked)))) ||
+((men35f.checked) && (men35g.checked) && (men35h.checked))) ||	
+((men35f.checked) && (men35g.checked) && (men35i.checked))) ||	
+((men35f.checked) && (men35g.checked) && (men35j.checked))) ||	
+((men35f.checked) && (men35g.checked) && (men35k.checked))) ||	
+((men35f.checked) && (men35g.checked) && ((men35m.checked) || (men35n.checked)))) 
+
+ {
+      document.getElementById("menCrit35").innerHTML = "Your findings meet NHSN definitions for CNS-MEN Criterion 3";
+        } else {
+     document.getElementById("menCrit35").innerHTML = "";
+        }	
+
+ }
+</script>
+
+</form>  
+ 
+  
+  <form name="menForm2"> 
+  <h3><a id="saSP2"></a><span class="label label-warning">SA – Spinal abscess without meningitis</span></h3>
+ 
+ <p class="bg-primary">Histopathology</p>
+  
+  <div class="checkbox">
+  <label><input type="checkbox" name="sa25" id="sa25" value=""> Patient has an abscess in the spinal epidural or subdural space on gross anatomic or histopathologic exam.</label>
+  <input type="text" id="Datepickersa25" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioSA" value="Patient has an abscess in the spinal epidural or subdural space on gross anatomic or histopathologic exam">Yes</label>
+  </div>
+  
+<script>
+$('#sa25').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickersa25').prop('disabled', !cbIsChecked); 
+});
+</script> 
+
+ <p class="bg-primary">Imaging</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="sa35g" id="sa35g" value="">Imaging test evidence of a spinal abscess (e.g., myelography, ultrasound, CT scan, MRI, or other scans [gallium, technetium, etc.])</label>
+  <input type="text" id="Datepickersa35g" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioSA" value="Imaging test evidence of a spinal abscess (e.g., myelography, ultrasound, CT scan, MRI, or other scans [gallium, technetium, etc.])">Yes</label>
+</div>
+
+ <script>
+$('#sa35g').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickersa35g').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<p class="bg-primary">Microbiology</p>
+
+<div class="checkbox">
+  <label><input name="sa15" type="checkbox" id="sa15" value="">Patient has organisms cultured from abscess in the spinal epidural or subdural space.</label>
+  <input type="text" id="Datepickersa15" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioSA" value="Patient has organisms cultured from abscess in the spinal epidural or subdural space">Yes</label>
+</div>
+
+ <script>
+$('#sa15').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickersa15').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="sa35f" id="sa35f" value=""><a href="#" onclick="return false;" data-toggle="tooltip" data-placement="top" title="For a bloodstream infection to be determined secondary to another site of infection, the blood culture must be collected during the site-specific infection Secondary BSI Attribution Period and satisfy one of the following: 1. The blood culture must contain at least one organism that matches an organism found in a site-specific infection culture used to meet the site-specific infection criterion OR 2. The blood culture must be an element used to meet the site-specific infection criterion. 
+"><span class="glyphicon glyphicon-flag" style="color:red" aria-hidden="true"></span> <em>Organisms cultured from blood</em></a> in a patient with imaging test evidence of spinal abscess</label>
+  <input type="text" id="Datepickersa35f" placeholder="Enter date" disabled>
+  
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioSA" value="Organisms cultured from blood in a patient with imaging test evidence of spinal abscess">Yes</label>
+</div>
+
+ <script>
+$('#sa35f').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickersa35f').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+ <br>
+   
+   <div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><strong>Select organism(s)</strong></h3>
+  </div>
+  <div class="panel-body">
+  
+ <div id="myformSaOrg15">
+<table>
+      <tr>
+        <td>Organism:</td>
+        <td>
+        <select name="organisms" id="orgSaOrg15">
+<option value="0">Select an Organism</option>
+<option value="Abiotrophia adiacens ">Abiotrophia adiacens - GRADJ</option>
+<option value="Abiotrophia spp. ">Abiotrophia spp. - ABISP</option>
+<option value="Acanthamoeba ">Acanthamoeba - ACANT</option>
+<option value="Achromobacter spp. ">Achromobacter spp. - ACHSP</option>
+<option value="Achromobacter xylosoxidans ">Achromobacter xylosoxidans - ALCXYL</option>
+<option value="Achromobacter xylosoxidans xylosoxidans ">Achromobacter xylosoxidans xylosoxidans - ACHXYL</option>
+<option value="Achromobacter, group Vd biotype 1 ">Achromobacter, group Vd biotype 1 - ACHVD1</option>
+<option value="Achromobacter, group Vd biotype 2 ">Achromobacter, group Vd biotype 2 - ACHVD2</option>
+<option value="Acidaminococcus fermentans ">Acidaminococcus fermentans - ACIFE</option>
+<option value="Acidaminococcus spp. ">Acidaminococcus spp. - ACISP</option>
+<option value="Acidovorax delafieldii ">Acidovorax delafieldii - ACDEL</option>
+<option value="Acidovorax Genus  ">Acidovorax Genus  - ACIDSP </option>
+<option value="Acidovorax spp. ">Acidovorax spp. - ACIDSP</option>
+<option value="Acinetobacter anitratus ">Acinetobacter anitratus - ACICBA</option>
+<option value="Acinetobacter baumannii ">Acinetobacter baumannii - ACBA</option>
+<option value="Acinetobacter calcoaceticus ">Acinetobacter calcoaceticus - ACICBA</option>
+<option value="Acinetobacter calcoaceticus ss. Lwoffii ">Acinetobacter calcoaceticus ss. Lwoffii - ACLW</option>
+<option value="Acinetobacter calcoaceticus-baumannii complex ">Acinetobacter calcoaceticus-baumannii complex - ACCA</option>
+<option value="Acinetobacter genospecies 3 ">Acinetobacter genospecies 3 - ACIGEN</option>
+<option value="Acinetobacter hemolyticus ">Acinetobacter hemolyticus - ACHA</option>
+<option value="Acinetobacter johnsonii ">Acinetobacter johnsonii - ACJH</option>
+<option value="Acinetobacter junii ">Acinetobacter junii - ACJU</option>
+<option value="Acinetobacter lwoffii ">Acinetobacter lwoffii - ACLW</option>
+<option value="Acinetobacter spp. ">Acinetobacter spp. - ACS</option>
+<option value="Acremonium spp. ">Acremonium spp. - ACRE</option>
+</select>
+       <input type="button" id="addSaOrg15" value="Add" onclick="Javascript:addRowSaOrg15()"></td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+</div>
+<div id="mydataSaOrg15">
+
+<p class="bg-warning"><b>Selected:</b></p>                       
+<table id="myTableDataSaOrg15">
+    <tr>
+        <td>&nbsp;</td>
+        <td></td>
+    </tr>
+</table>
+ 
+</div>
+</div>
+</div>
+<script>
+
+function addRowSaOrg15() {
+          
+    var org = document.getElementById("orgSaOrg15");
+    var table = document.getElementById("myTableDataSaOrg15");
+ 
+    var rowCount = table.rows.length;
+    var row = table.insertRow(rowCount);
+ 
+    row.insertCell(0).innerHTML= '<input type="button" value = "Remove" onClick="Javacsript:deleteRowSaOrg15(this)">';
+    row.insertCell(1).innerHTML= org.value;
+ }
+ 
+function deleteRowSaOrg15(obj) {
+      
+    var index = obj.parentNode.parentNode.rowIndex;
+    var table = document.getElementById("myTableDataSaOrg15");
+    table.deleteRow(index);
+}
+ function load() {
+    
+    console.log("Page load finished");
+ }
+
+</script>
+ 
+ <br>
+
+<p class="bg-primary">Signs and Symptoms</p>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="sa35a" id="sa35a" value="">Fever (&gt;38.0°C±)</label>
+  <input type="text" id="Datepickersa35a" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioSA" value="Fever">Yes</label>
+</div>
+
+<script>
+$('#sa35a').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickersa35a').prop('disabled', !cbIsChecked); 
+});
+</script> 
+
+<div class="checkbox">
+  <label><input type="checkbox" name="sa35b" id="sa35b" value="">Back pain* or tenderness* </label>
+  <input type="text" id="Datepickersa35b" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioSA" value="Back pain or tenderness">Yes</label>
+</div>
+
+<script>
+$('#sa35b').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickersa35b').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="sa35c" id="sa35c" value="">Radiculitis* </label>
+  <input type="text" id="Datepickersa35c" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioSA" value="Radiculitis">Yes</label>
+</div>
+
+<script>
+$('#sa35c').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickersa35c').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="sa35d" id="sa35d" value="">Paraparesis*</label>
+  <input type="text" id="Datepickersa35d" placeholder="Enter date" disabled>
+   &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioSA" value="Paraparesis">Yes</label>
+</div>
+
+<script>
+$('#sa35d').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickersa35d').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<div class="checkbox">
+  <label><input type="checkbox" name="sa35e" id="sa35e" value="">Paraplegia*</label>
+  <input type="text" id="Datepickersa35e" placeholder="Enter date" disabled>
+  &nbsp;  &nbsp;  &nbsp; <strong>DOE:</strong><label class="radio-inline"><input type="radio" name="radioSA" value="Paraplegia">Yes</label>
+</div>
+
+<script>
+$('#sa35e').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickersa35e').prop('disabled', !cbIsChecked); 
+});
+</script>
+
+<br>
+
+<p class="bg-warning"><strong>Reporting instructions</strong></p>
+<p>* With no other recognized cause;</p>
+<p>± As documented in the medical record</p>
+
+<br>
+
+<p><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> Report as IC if meningitis (MEN) and a brain abscess (IC) are present together after operation. </p>
+<p><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> Report as SA if meningitis and spinal abscess (SA) are present together after an operation.</p>
+
+<br>
+
+<p><strong>Click the <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check Button after making your selection(s) and whenever you make any changes to your selection(s)</strong></p>
+
+<button type="button" class="btn btn-success" onclick="myFunctionSa2()"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check-SA</button>
+
+<button type="reset" value="Clear SA" class="btn btn-danger" onclick="return confirm_reset();"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> Reset-SA</button>
+
+<br> <br>
+<div class="row">
+ <div class="col-md-6">
+<div class="panel panel-info">
+  <div class="panel-heading">
+ <h3 class="panel-title"><u><strong>Results</strong></u></h3>
+    <h6 class="panel-title">(If no results displayed, your findings don't meet NHSN defintions)</h6></div>
+    
+  <div class="panel-body">
+    <p id="saCrit15"></p>
+    <p id="saCrit25"></p>
+    <p id="saCrit35"></p>
+  </div>
+ 
+</div>
+</div>
+
+<div class="col-md-6">
+                  <div class="panel panel-info">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">
+                        <u>
+                          <strong>Outcome</strong>
+                        </u>
+                      </h3>
+                      <h6 class="panel-title">Infection status (POA or HAI)</h6>
+                    </div>
+                    <div class="panel-body">
+                      <p id="sa2015CritOut_poa"></p>
+                      <p id="sa2015CritOut_hai"></p>
+                    </div>
+                  </div>
+                </div>
+</div>
+<br><br>
+              <div class="panel panel-info" align="center">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Event Window Period</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="table-responsive">
+                    <table class="table table-striped table-hover table-bordered">
+                      <tbody>
+                        <tr>
+                          <th scope="col" class="primary" width="20%">Date</th>
+                          <th scope="col" class="primary">Event</th>
+                        </tr>
+                        <tr class="warning">
+                          <td>
+                            <span id="dateOfEventMin3sa" class="doeCalDate_sa">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptomMin3sa"></span>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span id="dateOfEventMin2sa" class="doeCalDate_sa">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptomMin2sa">&nbsp;</span>
+                          </td>
+                        </tr>
+                        <tr class="warning">
+                          <td>
+                            <span id="dateOfEventMin1sa" class="doeCalDate_sa">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptomMin1sa">&nbsp;</span>
+                          </td>
+                        </tr>
+                        <tr class="danger">
+                          <td>
+                            <span id="dateOfEventMin0sa">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptomMin0sa"></span>&nbsp;</td>
+                        </tr>
+                        <tr class="warning">
+                          <td>
+                            <span id="dateOfEvent1sa" class="doeCalDate_sa">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptom1sa"></span>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span id="dateOfEvent2sa" class="doeCalDate_sa">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptom2sa"></span>&nbsp;</td>
+                        </tr>
+                        <tr class="warning">
+                          <td>
+                            <span id="dateOfEvent3sa" class="doeCalDate_sa">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptom3sa">&nbsp;</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+<br>
+ <p align="left"><a href="#topCNS"><span class="glyphicon glyphicon-arrow-up" style="color:gray" aria-hidden="true"></span><b>TOP</b></a></p> 
+ 
+ <br>
+
+<script>
+function myFunctionSa2() {
+        var sa15 = document.getElementById("sa15"); 
+	if 
+		(sa15.checked) 								
+	{
+      document.getElementById("saCrit15").innerHTML = "Your findings meet NHSN definitions for CNS-SA Criterion 1";
+        } else {
+     document.getElementById("saCrit15").innerHTML = "";
+        }
+		
+	var sa25 = document.getElementById("sa25"); 
+		
+		if 
+		(sa25.checked) 								
+	{
+      document.getElementById("saCrit25").innerHTML = "Your findings meet NHSN definitions for CNS-SA Criterion 2";
+        } else {
+     document.getElementById("saCrit25").innerHTML = "";
+        }	
+
+var sa35a = document.getElementById("sa35a");
+var sa35b = document.getElementById("sa35b"); 
+var sa35c = document.getElementById("sa35c"); 
+var sa35d = document.getElementById("sa35d"); 
+var sa35e = document.getElementById("sa35e"); 
+var sa35f = document.getElementById("sa35f"); 
+var sa35g = document.getElementById("sa35g"); 
+
+if
+((((((((((
+(sa35a.checked) && (sa35f.checked)) ||
+(sa35a.checked) && (sa35g.checked)) ||
+(sa35b.checked) && (sa35f.checked)) ||
+(sa35b.checked) && (sa35g.checked)) ||
+(sa35c.checked) && (sa35f.checked)) ||
+(sa35c.checked) && (sa35g.checked)) ||
+(sa35d.checked) && (sa35f.checked)) ||
+(sa35d.checked) && (sa35g.checked)) ||
+(sa35e.checked) && (sa35f.checked)) ||
+(sa35e.checked) && (sa35g.checked))
+
+	{
+      document.getElementById("saCrit35").innerHTML = "Your findings meet NHSN definitions for CNS-SA Criterion 3";
+        } else {
+     document.getElementById("saCrit35").innerHTML = "";
+        }	
+}
+
+</script>
+
+ </form>
+ 
+  <br>
+  
+  <div class="panel panel-primary" align="center" style="color:navy">
+  <div class="panel-heading">
+    <h3 class="panel-title"> Notes <span class="glyphicon glyphicon-pencil" style="color:orange" aria-hidden="true"></span></h3>
+  </div>
+  <div class="panel-body">
+  <div class="table-responsive">
+   <textarea rows="4" cols="100" placeholder="Use this area to take notes as need..."></textarea>
+  </div>
+</div> 
+  </div>
+</div>
+ 
+   <br>
+  
+  <span id="top-link-blockCNS3" class="hidden">
+    <a href="#tabs-cns1" class="well well-sm"  onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+        <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+    </a>
+</span><!-- /top-link-block -->
+  
+  <script>
+  if ( ($(window).height() + 100) < $(document).height() ) {
+    $('#top-link-blockCNS3').removeClass('hidden').affix({
+        // how far to scroll down before link "slides" into view
+        offset: {top:100}
+    });
+}
+  
+  </script>
+ 
+ </div>
+ 
+  </div>
+    
+    </div>
+    
+   <div class="row">
+    <div class="col-md-3">
+      <p>UNDER CONSTRUCTION</p>
+    </div>
+    <div class="col-md-3"> 
+      <p>DISCLAIMER - COMING</p>
+    </div>
+    <div class="col-md-3"> 
+      <p>UNDER CONSTRUCTION</p>
+    </div>
+    <div class="col-md-3"> 
+      <p>DISCLAIMER - COMING</p>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+$(function() {
+	$( "#Datepickeric1" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickeric2" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickeric3a" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickeric3b" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickeric3c" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickeric3d" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickeric3e" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickeric3f" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickeric4a" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickeric4b" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickeric4c" ).datepicker();  
+});
+$(function() {
+	$( "#Datepickeric4d" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickeric4e" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickeric4f" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickeric4g" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric5a" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric5b" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric5c" ).datepicker(); 
+});
+
+
+$(function() {
+	$( "#Datepickeric5d" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric5e" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric5f" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric6a" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric6b" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric6c" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric6d" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric6e" ).datepicker(); 
+});
+
+
+$(function() {
+	$( "#Datepickeric6f" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen1" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickermen2a" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickermen2b" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen3a" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen3b" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen3c" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen3d" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen3e" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen3f" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen3g" ).datepicker(); 
+});
+
+$(function() {
+	$( "#DatepickerCNS1" ).datepicker();
+});
+
+$(function() {
+	$( "#DatepickerCNS2" ).datepicker();
+});
+
+$(function() {
+	$( "#Datepickermen2c" ).datepicker(); 
+});
+$(function() {
+	$( "#Button1" ).button(); 
+});
+
+$(function() {
+	$( "#DatepickerCNS3" ).datepicker(); 
+});
+
+
+$(function() {
+	$( "#Datepickermen2d" ).datepicker(); 
+});
+
+
+$(function() {
+	$( "#Datepickermen2e" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickermen2f" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickermen2g" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickermen2h" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickermen2i" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickermen2j" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickermen2k" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen2m" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen3h" ).datepicker(); 
+
+	
+$(function() {
+	$( "#Datepickermen3i" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen3j" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickermen3k" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickermen3l" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickermen3m" ).datepicker(); 
+});
+$(function() {
+	$( "#Datepickermen3n" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickersa1" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickersa2" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickersa3a" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickersa3b" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickersa3c" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickersa3d" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickersa3e" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickersa3f" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickersa3g" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickersa3h" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickersa3i" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepicker22" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric15" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric25" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric35a" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric35b" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric35c" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric35d" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric35e" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric35f" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric35g" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric35h" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric35i" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric35j" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric35k" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric45a" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric45b" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric45c" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric45d" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric45e" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric45f" ).datepicker(); 
+});
+
+
+$(function() {
+	$( "#Datepickermen15" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen25a" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen25b" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen25c" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen25d" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen25e" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen25f" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen25g" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen25h" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen25i" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen25j" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen35a" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen35b" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen35c" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen35d" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen35e" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen35f" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen35g" ).datepicker(); 
+});
+
+
+$(function() {
+	$( "#Datepickermen35h" ).datepicker(); 
+});
+
+
+$(function() {
+	$( "#Datepickermen35i" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen35j" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen35k" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen35m" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickermen35n" ).datepicker(); 
+});
+
+
+$(function() {
+	$( "#Datepickersa15" ).datepicker(); 
+});
+
+
+$(function() {
+	$( "#Datepickersa25" ).datepicker(); 
+});
+
+
+$(function() {
+	$( "#Datepickersa35a" ).datepicker(); 
+});
+
+
+$(function() {
+	$( "#Datepickersa35b" ).datepicker(); 
+});
+
+
+$(function() {
+	$( "#Datepickersa35c" ).datepicker(); 
+});
+
+
+$(function() {
+	$( "#Datepickersa35d" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickersa35e" ).datepicker(); 
+});
+
+Datepickersa35f
+
+$(function() {
+	$( "#Datepickersa35f" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickersa35g" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric45g" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric45h" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric45i" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric45j" ).datepicker(); 
+});
+
+$(function() {
+	$( "#Datepickeric45k" ).datepicker(); 
+});
+
+});
+
+function confirm_reset() {
+    return confirm("Are you sure you want to delete your changes?");
+}
+
+</script>
+</body>
+</html>
+
