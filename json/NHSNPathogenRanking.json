@@ -1,0 +1,40 @@
+{
+  "url" : "http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking",
+  "version" : "1.0.0",
+  "name" : "NHSNPathogenRanking",
+  "status" : "draft",
+  "date" : "2019-03-08T08:48:19+11:00",
+  "description" : "Ordinal rankings for the relative importance of a pathogen in that set with respect to its role in the infection.",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US",
+          "display" : "United States of America"
+        }
+      ]
+    }
+  ],
+  "compose" : {
+    "include" : [
+      {
+        "system" : "http://snomed.info/sct",
+        "concept" : [
+          {
+            "code" : "255216001",
+            "display" : "First"
+          },
+          {
+            "code" : "81170007",
+            "display" : "Second"
+          },
+          {
+            "code" : "70905002",
+            "display" : "Third"
+          }
+        ]
+      }
+    ]
+  }
+}
