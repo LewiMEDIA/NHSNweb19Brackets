@@ -1,0 +1,4131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <title>NHSN Surveillance Definitions</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+ <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+ <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+ <link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+ <link href="jQueryAssets/jquery.ui.datepicker.min.css" rel="stylesheet" type="text/css">
+ <link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+ integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+ crossorigin="anonymous">
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+ crossorigin="anonymous"></script>
+ <script src="jQueryAssets/jquery-1.11.1.min.js" type="text/javascript"></script>
+ <script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js" type="text/javascript"></script>
+ <script src="jQueryAssets/jquery.ui-1.10.4.datepicker.min.js" type="text/javascript"></script>
+ <script src="jQueryAssets/jquery.ui-1.10.4.button.min.js" type="text/javascript"></script>
+ <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+ <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+ <script src="js/moment.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body style="background-color:white">
+
+ <nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">NHSN definitions <span class="far fa-square" style="color:orange"> &nbsp;</span><em>e-worksheets ver 1.0</em></a>
+  <div>
+   <ul class="navbar-nav">
+    <li class="nav-item active">
+     <a class="nav-link" href="index.html">
+      <span class="fas fa-home" style="color:orange">&nbsp;</span>HOME</a>
+    </li>
+   </ul>
+  </div>
+ </nav>
+ <!-- NHSN definitions nav -->
+
+ <div class="card text-blue bg-secondary">
+  <div class="card-body">
+   <nav>
+    <ul class="nav justify-content-center">
+     <li class="nav-item">
+      <a type="button" class="btn btn-outline-warning" href="#" style="background-color:#lightgrey"
+      onclick="return false;" data-toggle="tooltip" data-placement="top" title="You are here">BJI</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_LCBI.html" data-toggle="tooltip"
+      data-placement="top" title="BSI &mdash; Bloodstream Infection">BSI</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_CNS.html" data-toggle="tooltip"
+      data-placement="top" title="CNS &mdash; Central Nervous System">CNS</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_CVS.html" role="button" data-toggle="tooltip"
+      data-placement="top" title="CVS &mdash; Cardiovascular System Infection">CVS</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_EENT.html" role="button" data-toggle="tooltip"
+      data-placement="top" title="EENT &mdash; Eye, Ear, Nose, Throat, or Mouth Infection">EENT</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_GI.html" data-toggle="tooltip"
+      data-placement="top" title="GI &mdash; Gastrointestinal System Infection">GI</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_LCBI.html" data-toggle="tooltip"
+      data-placement="top" title="LRI &mdash; Lower Respiratory System Infection, Other Than Pneumonia">LRI</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_PNEU.html" data-toggle="tooltip"
+      data-placement="top" title="PNEU-Pneumonia">PNEU</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_REPR.html" data-toggle="tooltip"
+      data-placement="top" title="REPR &mdash; Reproductive Tract Infection">REPR</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_SSI.html" data-toggle="tooltip"
+      data-placement="top" title="SSI &mdash; Surgical Site Infection">SSI</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_SST.html" data-placement="top"
+      title="SST-Skin and Soft Tissue Infection">SST</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_USI.html" data-placement="top"
+      title="USI-Urinary System Infection">USI</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_UTI.html" data-placement="top"
+      title="UTI-Urinary Tract Infection">UTI</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_VAE.html" data-placement="top"
+      title="VAE-Ventilator Associated Event">VAE</a>
+     </li>
+     &nbsp;
+     <li class="nav-item">
+      <a type="button" class="btn btn-warning" href="def_VAE_ped.html" data-placement="top"
+      title="VAE-Ped Ventilator Associated Events">Vped</a>
+     </li>
+
+    </ul>
+   </nav>
+  </div>
+ </div>
+
+ <div class="container">
+  <div id="Tabs1">
+   <ul>
+    <li><a href="#tabs-1">BJ &mdash; Bone and Joint Infection</a></li>
+    <!--<li><a href="#tabs-2">2011 - Definitions</a></li> -->
+    <li><a href="#tabs-3">2019 - Definitions</a></li>
+    <li><a href="#tabs-4">Reports</a></li>
+   </ul>
+
+   <div id="tabs-1">
+    <br>
+    <div class="card">
+     <div class="card-body">
+      <div class="alert alert-primary">
+       <h3><strong>BONE &mdash; Osteomyelitis</strong></h3>
+      </div>
+
+      <p>
+       <strong>Osteomyelitis</strong> must meet at least <u>one</u> of the following criteria:
+       <br>1. Patient has organism(s) identified from bone by culture or non-culture
+       based microbiologic testing method, which is performed for purposes of clinical
+       diagnosis and treatment, for example, not Active Surveillance Culture/Testing
+       (ASC/AST)..
+       <br>2. Patient has evidence of osteomyelitis on gross anatomic or histopathologic
+       exam.
+       <br>3. Patient has at least two of the following localized signs or symptoms:
+       fever (&gt;38.0&deg;C), swelling*, pain or tenderness*, heat*, or drainage*
+       <br>
+
+       <strong>And at least one of the following:</strong>
+       <br>AND at least one of the following:
+       <br>a. Organism(s) identified from blood by culture or non-culture based microbiologic
+       testing method, which is performed for purposes of clinical diagnosis and
+       treatment, for example, not Active Surveillance Culture/Testing (ASC/AST)
+
+       <br>
+
+       <strong>AND</strong>
+
+       <br>Imaging test evidence suggestive of infection (for example, x-ray, CT scan,
+       MRI, radiolabel scan [gallium, technetium, etc.]), which if equivocal is
+       supported by clinical correlation, specifically, physician documentation
+       of antimicrobial treatment for osteomyelitis. b. Imaging test evidence suggestive
+       of infection (for example, x-ray, CT scan, MRI, radiolabel scan [gallium,
+       technetium, etc.]), which if equivocal is supported by clinical correlation,
+       specifically, physician documentation of antimicrobial treatment for osteomyelitis.
+       <br>
+
+       <br>
+
+      </p>
+
+      <p>* With no other recognized cause</p>
+
+      <br>
+
+      <dl>
+
+       <dt>Reporting instruction</dt>
+
+       <dd>- Report mediastinitis following cardiac surgery that is accompanied by
+        osteomyelitis as SSI-MED rather than SSI- BONE.</dd>
+
+       <dd>- If a patient meets both organ space JNT and BONE report the SSI as BONE.</dd>
+
+       <dd>- After an HPRO or a KPRO if a patient meets both organ space PJI and BONE
+        report the SSI as BONE.</dd>
+
+      </dl>
+
+      <div class="alert alert-primary">
+       <strong>DISC-Disc space infection</strong>
+      </div>
+
+      <p>
+       <strong>Vertebral disc space infection</strong>must meet at least one of the following
+       criteria:
+       <br>1. Patient has organism(s) identified from vertebral disc space by culture
+       or non-culture based microbiologic testing method, which is performed for
+       purposes of clinical diagnosis and treatment, for example, not Active Surveillance
+       Culture/Testing (ASC/AST).
+       <br>2. Patient has evidence of vertebral disc space infection on gross anatomic
+       or histopathologic exam.
+       <br>3. Patient has at least one of the following localized signs or symptoms:
+       fever (&gt;38.0&deg;C), pain* at the involved vertebral disc space
+       <br>And at least one of the following:
+       <br>a. Organism(s) identified from blood by culture or non-culture based microbiologic
+       testing method, which is performed for purposes of clinical diagnosis and
+       treatment, for example, not Active Surveillance Culture/Testing (ASC/AST)
+
+       <br>
+       <strong>AND</strong>
+
+       Imaging test evidence suggestive of infection (for example, x-ray, CT scan, MRI,
+       radiolabel scan [gallium, technetium, etc.]), which if equivocal is supported
+       by clinical correlation, specifically, physician documentation of antimicrobial
+       treatment for vertebral disc space infection
+       <br>b. Imaging test evidence suggestive of infection (for example, x-ray, CT
+       scan, MRI, radiolabel scan [gallium, technetium, etc.]), which if equivocal
+       is supported by clinical correlation, specifically, physician documentation
+       of antimicrobial treatment for vertebral disc space infection.
+       <br>
+
+      </p>
+
+      <p>* With no other recognized cause</p>
+      <br>
+      <div class="alert alert-primary">
+       <strong>JNT-Joint or bursa infection (not for use as Organ/Space SSI after HPRO
+        or KPRO procedures)</strong>
+      </div>
+
+      <p>Joint or bursa infections must meet at least
+       <strong>one</strong>of the following criteria:
+       <br>1. Patient has organism(s) identified from joint fluid or synovial biopsy
+       by culture or non-culture based microbiologic testing method, which is performed
+       for purposes of clinical diagnosis and treatment, for example, not Active
+       Surveillance Culture/Testing (ASC/AST).
+       <br>2. Patient has evidence of joint or bursa infection on gross anatomic or
+       histopathologic exam.
+       <br>3. Patient has at least two of the following: swelling*, pain* or tenderness*,
+       heat*, evidence of effusion*, limitation of motion*
+       <br>
+
+       <strong>AND</strong>at least
+       <strong>one</strong>of the following:
+       <br>a. Elevated joint fluid white blood cell count (per reporting laboratory
+       reference range)
+       <strong>OR</strong>positive leukocyte esterase test strip of joint fluid.
+       <br>b. Organism(s) and white blood cells seen on Gram stain of joint fluid.
+       <br>c. Organism(s) identified from blood by culture or non-culture based microbiologic
+       testing method, which is performed for purposes of clinical diagnosis and
+       treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).
+       <br>d. Imaging test evidence suggestive of infection (for example, x-ray, CT
+       scan, MRI, radiolabel scan [gallium, technetium, etc.]), which if equivocal
+       is supported by clinical correlation, specifically, physician documentation
+       of antimicrobial treatment for joint or bursa infection.
+       <br>
+
+       <br>
+
+      </p>
+
+      <p>* With no other recognized cause</p>
+
+      <dl>
+       <dt>Reporting instruction</dt>
+
+       <dd>- If a patient meets both organ space JNT and BONE report the SSI as BONE.</dd>
+
+      </dl>
+      <br>
+
+      <div class="alert alert-primary">
+       <strong>PJI-Periprosthetic Joint Infection (for use as Organ/Space SSI following
+        HPRO and KPRO only)</strong>
+      </div>
+
+      <p>Joint or bursa infections must meet at least
+       <strong>one</strong>of the following criteria:
+       <br>1.
+       <strong>Two</strong>positive periprosthetic specimens (tissue or fluid) with at
+       least one matching organism, identified by culture or non-culture based
+       microbiologic testing method, which is performed for purposes of clinical
+       diagnosis and treatment, for example, not Active Surveillance Culture/Testing
+       (ASC/AST).
+       <br>2. A sinus tract* communicating with the joint identified on gross anatomic
+       exam.
+       <br>3.
+       <strong>Three</strong>of the following minor criteria:
+       <br>a. Elevated serum C-reactive protein (CRP; &gt;100 mg/L) and erythrocyte
+       sedimentation rate (ESR; &gt;30 mm/hr)
+       <br>b. Elevated synovial fluid white blood cell (WBC; &gt;10,000 cells/uL) count
+       OR ++ (or greater) change on leukocyte esterase test strip of synovial fluid
+       <br>c. Elevated synovial fluid polymorphonuclear neutrophil percentage (PMN%
+       &gt;90%)
+       <br>d. Positive histological analysis of periprosthetic tissue (&gt;5 neutrophils
+       (PMNs) per high power field)
+       <br>e. Organism(s) identified from a single positive periprosthetic specimen
+       (tissue or fluid) by culture or non-culture based microbiologic testing
+       method, which is performed for purposes of clinical diagnosis and treatment,
+       for example, not Active Surveillance Culture/Testing (ASC/AST).
+      </p>
+
+      <p>*A sinus tract is defined as a narrow opening or passageway that can extend
+       in any direction through soft tissue and results in dead space with potential
+       for abscess formation.</p>
+
+      <dl>
+       <dt>COMMENTS</dt>
+       <dd>- A matching organism is defined on page 17-1. Organism(s) identified from
+        hip or knee hardware can be used to meet criterion 1.</dd>
+       <dd>- The NHSN definition of PJI is closely adapted from the Musculoskeletal
+        Infection Society's (MSIS's) definition of PJI (Proceedings of the International
+        Consensus Meeting on Periprosthetic Joint Infection, 2013).
+       </dd>
+       <dd>- The standard laboratory cutoff values in criteria 3a - 3d are provided
+        by NHSN for HPRO and KPRO SSI surveillance purposes only. The NHSN laboratory
+        cutoffs are not intended to guide clinicians in the actual clinical diagnosis
+        and management of acute or chronic PJI. Clinicians should refer to the
+        MSIS consensus definition for clinical use.</dd>
+      </dl>
+
+      <dl>
+       <dt>Reporting instruction</dt>
+       <dd>- After an HPRO or a KPRO if a patient meets both organ space PJI and BONE
+        report the SSI as BONE.</dd>
+      </dl>
+
+     </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="card" align="center">
+     <div class="card-body">
+      <span class="fas fa-link" style="color:orange" aria-hidden="true"></span>Original document<a href="https://www.cdc.gov/nhsn/pdfs/pscmanual/pcsmanual_current.pdf"
+      target="_blank" style="color:blue" data-toggle="tooltip" data-placement="bottom"
+      title="https://www.cdc.gov/nhsn/pdfs/pscmanual/pcsmanual_current.pdf"> (source)</a> can
+      be access here
+     </div>
+    </div>
+    <br>
+
+    <p type="button" id="top-link-blockBONE1" class="btn btn-link">
+     <a href="#tabs-eent1" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+      <span class="fas fa-arrow-circle-up" style="color:orange">&nbsp;</span>Back to Top</a>
+    </p>
+    <!-- /top-link-block -->
+
+    <!--<script>
+  if ( ($(window).height() + 100) < $(document).height() ) {
+    $('#top-link-blockBONE1').removeClass('hidden').affix({
+        // how far to scroll down before link "slides" into view
+        offset: {top:100}
+    });
+}
+  
+  </script>-->
+   </div>
+
+   <div id="tabs-3">
+    <div class="bjDef2019">
+        
+      <div class="row">
+      <div class="col-md-6">
+       <p></p>
+      </div>
+      <div class="col-md-6">
+       <p align="right" id="admDateBone-19">
+        <strong>Admission Date:</strong>
+        <input type="text" id="DatepickerBJ3" placeholder="Date required" value="" required>
+       </p>
+      </div>
+
+      <script>
+       $('#admDateBone-19').click(function() { 
+           var cbIsChecked = $(this).prop('checked');
+           $('#DatepickerBJ3').prop('disabled', !cbIsChecked); 
+           });
+           
+           $('[type="checkbox"]').on('change', function() {
+         if (!this.checked) {
+           $('[type="text"][name="' + this.name + '"]').val('');
+         }
+       });
+            $("#DatepickerBJ3").datepicker({
+           maxDate: 0
+       });
+      </script>
+
+      <!--<script>    
+$(document).ready(function () {
+    $('#txtDate').datepicker();
+    //$('#follow_Date').datepicker();
+});
+
+function getdate() {
+    var tt = document.getElementById('txtDate').value;
+    var date = new Date(tt);
+    var newdate = new Date(date);
+    newdate.setDate(newdate.getDate() - 1);
+    var dd = newdate.getDate();
+    var mm = newdate.getMonth() + 1;
+    var y = newdate.getFullYear();
+    var someFormattedDate = mm + '/' + dd + '/' + y;
+    document.getElementById('follow_Date1').value = someFormattedDate;
+  
+    newdate.setDate(newdate.getDate() - 1);
+    var dd = newdate.getDate();
+    var mm = newdate.getMonth() + 1;
+    var y = newdate.getFullYear();
+    var someFormattedDate = mm + '/' + dd + '/' + y;
+    document.getElementById('follow_Date2').value = someFormattedDate;
+  
+    newdate.setDate(newdate.getDate() - 1);
+    var dd = newdate.getDate();
+    var mm = newdate.getMonth() + 1;
+    var y = newdate.getFullYear();
+    var someFormattedDate = mm + '/' + dd + '/' + y;
+    document.getElementById('follow_Date3').value = someFormattedDate;
+  }  
+    
+    </script> -->
+ </div>
+        
+        
+     <p id="topBJ2"></p>
+     <nav>
+      <ul class="nav justify-content-center">
+       <li class="nav-item">
+        <a type="button" class="btn btn-outline-warning" href="#boneSP5" style="background-color:#lightgrey"
+        onclick="return false;" data-toggle="tooltip" data-placement="top" title="BONE-Osteomyelitis">BONE</a>
+       </li>
+       &nbsp;
+       <li class="nav-item">
+        <a type="button" class="btn btn-outline-warning" href="#discSP5" style="background-color:#lightgrey"
+        data-toggle="tooltip" data-placement="top" title="DISC-Disc space infection">DISC</a>
+       </li>
+       &nbsp;
+       <li class="nav-item">
+        <a type="button" class="btn btn-outline-warning" href="#jntSP5" style="background-color:#lightgrey"
+        data-toggle="tooltip" data-placement="top" title="JNT-Joint or Bursa infection">JNT</a>
+       </li>
+       &nbsp;
+       <li class="nav-item">
+        <a type="button" class="btn btn-outline-warning" href="#pjiSP5" style="background-color:#lightgrey"
+        role="button" data-toggle="tooltip" data-placement="top" title="PJI-Periprosthetic Joint Infection">PJI</a>
+       </li>
+
+      </ul>
+     </nav>
+
+     <br><br>
+
+     <div class="text-left">
+      <h5 class="bg-warning" id="boneSP5" style="color:white">
+       <strong>BONE &mdash; Osteomyelitis</strong>
+      </h5>
+     </div>
+
+     <form name="boneForm2" id="boneForm2">
+      <div class="card">
+       <div class="card-body">
+        <div class="custom-file">
+         <input type="" class="custom-file-input1" id="customFile">
+         <label class="custom-file-label" for="customFile">Histopathology</label>
+        </div>
+
+        <br><br>
+        <!--<div class="alert alert-primary" role="alert">Histopathology</div>-->
+
+        <!--<div class="custom-control custom-checkbox">
+  <label><input type="checkbox" name="bone15" id="bone25" value="Patient has evidence of osteomyelitis on gross anatomic or histopathologic exam">Patient has evidence of osteomyelitis on gross anatomic or histopathologic exam</label>
+    
+    
+  <input type="text" id="Datepickerbone25" placeholder="Enter date" disabled, required>
+  &nbsp;  &nbsp;  &nbsp; 
+</div>-->
+
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="bone25" id="bone25" data-toggle="collapse"
+         data-target="#Datepickerbone25" value="Patient has evidence of osteomyelitis on gross anatomic or histopathologic exam">
+
+         <label class="custom-control-label" for="bone25">Patient has evidence of osteomyelitis on gross anatomic or histopathologic
+          exam.
+         </label>
+
+         <input class="collapse" type="text" name="bone25" id="Datepickerbone25" placeholder="Enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+
+        <!--  <script>  
+       $("#bone25").keyup(function () {
+    if (this.value == this.checked) {
+      var $next = $(this).next('#Datepickerbone25');
+      if ($next."")
+          $(this).next('#Datepickerbone25').focus();
+      else
+          $(this).blur();
+    }
+});
+ $( "#bone25" ).click(function() {
+  $( "#Datepickerbone25" ).focus();
+});
+      $(':input').keypress(function() {
+    $(this).next(':input').focus();
+});  
+ </script>
+
+<script>
+var $conditionalInput = $('input.conditionally-loaded');
+var $subscribeInput = $('input[name="bone25"]');
+    $conditionalInput.hide();
+    $subscribeInput.on('click', function(){
+    if ( $(this).is(':checked') )
+        $conditionalInput.show();
+    else
+        $conditionalInput.hide();
+        $conditionalInput.val('');
+});
+      </script>-->
+       </div>
+      </div>
+      <!--<script>
+$('#bone25').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickerbone25').prop('disabled', !cbIsChecked); 
+});
+</script>-->
+
+      <script>
+       $('#bone25').click(function() { 
+           var cbIsChecked = $(this).prop('checked');
+           $('#Datepickerbone25').prop('disabled', !cbIsChecked); 
+           
+           });
+           
+           $('[type="checkbox"]').on('change', function() {
+         if (!this.checked) {
+           $('[type="text"][name="' + this.name + '"]').val('');
+         }
+       });
+            $("#Datepickerbone25").datepicker({
+           maxDate: 0
+       });
+      </script>
+
+      <br>
+
+      <div class="card">
+       <div class="card-body">
+        <div class="custom-file">
+         <input type="" class="custom-file-input1">
+         <label class="custom-file-label" for="customFile">Imaging</label>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="bone35i" id="bone35i"
+         data-toggle="collapse" data-target="#Datepickerbone35i" value="Imaging test evidence suggestive of infection (e.g.,  x-ray, CT scan, MRI, radiolabel scan [gallium, technetium, etc.]), which if equivocal is supported by clinical correlation">
+         <label class="custom-control-label" for="bone35i">Imaging test evidence suggestive of infection (e.g., x-ray, CT scan, MRI,
+          radiolabel scan [gallium, technetium, etc.]), which if equivocal is supported
+          by clinical correlation.
+         </label>
+         <input class="collapse" type="text" name="bone35i" id="Datepickerbone35i" placeholder="Enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+       </div>
+      </div>
+
+      <script>
+       $('#bone35i').click(function() { 
+           var cbIsChecked = $(this).prop('checked');
+           $('#Datepickerbone35i').prop('disabled', !cbIsChecked); 
+           
+           });
+           
+           $('[type="checkbox"]').on('change', function() {
+         if (!this.checked) {
+           $('[type="text"][name="' + this.name + '"]').val('');
+         }
+       });
+           $("#Datepickerbone35i").datepicker({
+           maxDate: 0
+       });
+      </script>
+      <br>
+
+      <!--<script>  
+    $(function() {
+    $("#bone35i").click(function() {
+        ToggleSection();
+    });
+
+    ToggleSection();
+});
+
+function ToggleSection() {    
+    var $txt = $("#Datepickerbone35i"); // Save textbox's reference
+    
+    // The right way to check if a checkbox is checked is with .prop method
+    if ($("#bone35i").prop("checked")) {
+        $txt.prop("disabled", false);
+    }
+    else {
+        $txt.prop("disabled", true).val("");
+    }
+    
+}
+    </script>-->
+      <div class="card">
+       <div class="card-body">
+        <div class="custom-file">
+         <input type="" class="custom-file-input1" id="customFile3">
+         <label class="custom-file-label" for="customFile3">Microbiology</label>
+        </div>
+        <br>
+        <br>
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="bone15" id="bone15" data-toggle="collapse"
+         data-target="#Datepickerbone15" value="Patient has organisms cultured from bone">
+         <label class="custom-control-label" for="bone15">Patient has organisms cultured from bone.
+         </label>
+         <input type="text" class="collapse" name="bone15" id="Datepickerbone15" placeholder="Please enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+
+        <script>
+         $('#bone15').click(function() { 
+             var cbIsChecked = $(this).prop('checked');
+             $('#Datepickerbone15').prop('disabled', !cbIsChecked); 
+             
+             });
+             
+             $('[type="checkbox"]').on('change', function() {
+           if (!this.checked) {
+             $('[type="text"][name="' + this.name + '"]').val('');
+           }
+         });
+             $("#Datepickerbone15").datepicker({
+             maxDate: 0
+         });
+        </script>
+
+        <!-- <script>  
+    $(function() {
+    $("#bone15").click(function() {
+        ToggleSection();
+    });
+
+    ToggleSection();
+});
+
+function ToggleSection() {    
+    var $txt = $("#Datepickerbone15"); // Save textbox's reference
+    
+    // The right way to check if a checkbox is checked is with .prop method
+    if ($("#bone15").prop("checked")) {
+        $txt.prop("disabled", false);
+    }
+    else {
+        $txt.prop("disabled", true).val("");
+    }
+    
+}
+    </script>-->
+
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="bone35h" id="bone35h"
+         data-toggle="collapse" data-target="#Datepickerbone35h" value="Positive non-culture diagnostic lab test on blood (e.g., antigen test, PCR)">
+         <label class="custom-control-label" for="bone35h">
+          Positive non-culture diagnostic lab test on blood (e.g., antigen test, PCR).
+         </label>
+         <input type="text" class="collapse" name="bone35h" id="Datepickerbone35h" placeholder="Enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+
+        <!--<script>
+$('#bone35h').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickerbone35h').prop('disabled', !cbIsChecked); 
+});
+</script>-->
+
+        <script>
+         $('#bone35h').click(function() { 
+             var cbIsChecked = $(this).prop('checked');
+             $('#Datepickerbone35h').prop('disabled', !cbIsChecked); 
+             
+             });
+             
+             $('[type="checkbox"]').on('change', function() {
+           if (!this.checked) {
+             $('[type="text"][name="' + this.name + '"]').val('');
+           }
+         });
+              $("#Datepickerbone35h").datepicker({
+             maxDate: 0
+         });
+        </script>
+
+        <div class="custom-control custom-checkbox">
+
+         <input type="checkbox" class="custom-control-input" name="bone35g" id="bone35g"
+         data-toggle="collapse" data-target="#organismBONE-1919, #Datepickerbone35g"
+         value="Organisms cultured from blood in a patient with imaging test evidence suggestive of infection (e.g.,  x-ray, CT scan, MRI, radiolabel scan [gallium, technetium, etc.]), which if equivocal is supported by clinical correlation">
+         <a href="#" onclick="return false;" data-toggle="tooltip" data-placement="top"
+         title="For a bloodstream infection to be determined secondary to another site of infection, the blood culture must be collected during the site-specific infection Secondary BSI Attribution Period and satisfy one of the following: 1. The blood culture must contain at least one organism that matches an organism found in a site-specific infection culture used to meet the site-specific infection criterion OR 2. The blood culture must be an element used to meet the site-specific infection criterion."></a>
+
+         <label class="custom-control-label" for="bone35g">Organisms cultured from blood in a patient with imaging test evidence
+          suggestive of infection (e.g., x-ray, CT scan, MRI, radiolabel scan [gallium,
+          technetium, etc.]), which if equivocal is supported by clinical correlation.
+         </label>
+         <input type="text" class="collapse" name="bone35g" id="Datepickerbone35g" placeholder="Enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+       </div>
+      </div>
+
+      <!--<script>
+$('#bone35g').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickerbone35g').prop('disabled', !cbIsChecked); 
+});
+</script>-->
+
+      <script>
+       $('#bone35g').click(function() { 
+           var cbIsChecked = $(this).prop('checked');
+           $('#Datepickerbone35g').prop('disabled', !cbIsChecked); 
+           
+           });
+           
+           $('[type="checkbox"]').on('change', function() {
+         if (!this.checked) {
+           $('[type="text"][name="' + this.name + '"]').val('');
+         }
+       });
+            $("#Datepickerbone35g").datepicker({
+           maxDate: 0
+       });
+      </script>
+
+      <div id="organismBONE-1919" class="collapse">
+       <div class="card">
+        <div class="card-body">
+         <p>
+          <strong></strong>
+         </p>
+         <div class="panel-body">
+
+          <div class="card">
+           <div class="card-body">
+            <p>
+             <strong>Please Select an organism:</strong>
+            </p>
+
+            <select id="sel" onchange="show(this)">
+             <option value="">-- Select HERE--</option>
+            </select>
+            <br>
+            <br>
+            <p id="msg"></p>
+
+           </div>
+          </div>
+
+          <script>
+           $(document).ready(function(){
+            
+            window.onload = populateSelect();
+        
+            function populateSelect() {
+        
+                // CREATE AN XMLHttpRequest OBJECT, WITH GET METHOD.
+                var xhr = new XMLHttpRequest(), 
+                    method = 'GET',
+                    overrideMimeType = 'application/json',
+                    url = 'https://api.myjson.com/bins/c429u';        // ADD THE URL OF THE FILE.
+        
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                        
+                        // PARSE JSON DATA.
+                        var pathogens = JSON.parse(xhr.responseText);
+        
+                        var ele = document.getElementById('sel');
+                        for (var i = 0; i < pathogens.length; i++) {
+                            // BIND DATA TO <select> ELEMENT.
+                            ele.innerHTML = ele.innerHTML +
+                                '<option value="' + pathogens[i].code + '">' + pathogens[i].display + '</option>';
+                        }
+                    }
+                };
+                xhr.open(method, url, true);
+                xhr.send();
+            }
+           }
+        
+            function show(ele) {
+                // GET THE SELECTED VALUE FROM <select> ELEMENT AND SHOW IT.
+                var msg = document.getElementById('msg');
+                msg.innerHTML = 'Selected Organism: <b>' + ele.options[ele.selectedIndex].text + '</b> </br>' +
+                    'Code: <b>' + ele.value + '</b>';
+            }
+          </script>
+
+          <div id="myformBoneOrg2">
+           <!--<table>
+      <tr>
+        &nbsp;  &nbsp;<td>Organism:</td>
+        <td>
+              
+        <select name="organisms" id="orgBoneOrg2">
+<option value="0">Select an Organism</option>
+<option value="Abiotrophia adiacens ">Abiotrophia adiacens - GRADJ</option>
+<option value="Abiotrophia spp. ">Abiotrophia spp. - ABISP</option>
+<option value="Acanthamoeba ">Acanthamoeba - ACANT</option>
+<option value="Achromobacter spp. ">Achromobacter spp. - ACHSP</option>
+<option value="Achromobacter xylosoxidans ">Achromobacter xylosoxidans - ALCXYL</option>
+<option value="Achromobacter xylosoxidans xylosoxidans ">Achromobacter xylosoxidans xylosoxidans - ACHXYL</option>
+<option value="Achromobacter, group Vd biotype 1 ">Achromobacter, group Vd biotype 1 - ACHVD1</option>
+<option value="Achromobacter, group Vd biotype 2 ">Achromobacter, group Vd biotype 2 - ACHVD2</option>
+<option value="Acidaminococcus fermentans ">Acidaminococcus fermentans - ACIFE</option>
+<option value="Acidaminococcus spp. ">Acidaminococcus spp. - ACISP</option>
+<option value="Acidovorax delafieldii ">Acidovorax delafieldii - ACDEL</option>
+<option value="Acidovorax Genus  ">Acidovorax Genus  - ACIDSP </option>
+<option value="Acidovorax spp. ">Acidovorax spp. - ACIDSP</option>
+<option value="Acinetobacter anitratus ">Acinetobacter anitratus - ACICBA</option>
+<option value="Acinetobacter baumannii ">Acinetobacter baumannii - ACBA</option>
+<option value="Acinetobacter calcoaceticus ">Acinetobacter calcoaceticus - ACICBA</option>
+<option value="Acinetobacter calcoaceticus ss. Lwoffii ">Acinetobacter calcoaceticus ss. Lwoffii - ACLW</option>
+<option value="Acinetobacter calcoaceticus-baumannii complex ">Acinetobacter calcoaceticus-baumannii complex - ACCA</option>
+<option value="Acinetobacter genospecies 3 ">Acinetobacter genospecies 3 - ACIGEN</option>
+<option value="Acinetobacter hemolyticus ">Acinetobacter hemolyticus - ACHA</option>
+<option value="Acinetobacter johnsonii ">Acinetobacter johnsonii - ACJH</option>
+<option value="Acinetobacter junii ">Acinetobacter junii - ACJU</option>
+<option value="Acinetobacter lwoffii ">Acinetobacter lwoffii - ACLW</option>
+<option value="Acinetobacter spp. ">Acinetobacter spp. - ACS</option>
+<option value="Acremonium spp. ">Acremonium spp. - ACRE</option>
+</select>
+<input type="button" id="addBoneOrg2" value="Add" onclick="Javascript:addRowBoneOrg2()"></td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+</div>
+<div id="mydataBoneOrg2">
+
+<p class="bg-warning"><b>Selected:</b></p>                       
+
+    <table id="myTableDataBoneOrg2">
+    <tr>
+        <td></td>
+        <td> </td>
+    </tr>
+</table>-->
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+
+      <script>
+       function addRowBoneOrg2() {
+           var org = document.getElementById("orgBoneOrg2");
+           var table = document.getElementById("myTableDataBoneOrg2");
+           var rowCount = table.rows.length;
+           var row = table.insertRow(rowCount);
+           row.insertCell(0).innerHTML= '<input type="button" value = "Remove" onClick="Javacsript:deleteRowBoneOrg2(this)">';
+           row.insertCell(1).innerHTML= org.value;
+       }
+        
+       function deleteRowBoneOrg2(obj) {
+           var index = obj.parentNode.parentNode.rowIndex;
+           var table = document.getElementById("myTableDataBoneOrg2");
+           table.deleteRow(index);
+       }
+        
+       function load() {
+           console.log("Page load finished");
+       }
+      </script>
+
+      <br>
+
+      <div class="card">
+       <div class="card-body">
+        <div class="custom-file">
+         <input type="" class="custom-file-input2">
+         <label class="custom-file-label" for="customFile">Signs and Symptoms</label>
+        </div>
+        <br>
+        <br>
+
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="bone35a" id="bone35a"
+         data-toggle="collapse" data-target="#Datepickerbone35a" value="Fever (&gt;38.0&deg;C)">
+         <label class="custom-control-label" for="bone35a">
+          Fever (&gt;38.0&deg;C&Dagger;)
+         </label>
+         <input type="text" name="bone35a" class="collapse" id="Datepickerbone35a" placeholder="Enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+
+        <script>
+         $('#bone35a').click(function() { 
+             var cbIsChecked = $(this).prop('checked');
+             $('#Datepickerbone35a').prop('disabled', !cbIsChecked); 
+         });
+             
+              $('[type="checkbox"]').on('change', function() {
+           if (!this.checked) {
+             $('[type="text"][name="' + this.name + '"]').val('');
+           }
+         });
+             
+             $("#Datepickerbone35a").datepicker({
+             maxDate: 0
+         });
+        </script>
+
+        <br>
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="bone35b" id="bone35b"
+         value="Swelling" data-toggle="collapse" data-target="#Datepickerbone35b">
+         <label class="custom-control-label" for="bone35b">Swelling*</label>
+         <input type="text" name="bone35b" class="collapse" id="Datepickerbone35b" placeholder="Enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+
+        <script>
+         $('#bone35b').click(function() { 
+             var cbIsChecked = $(this).prop('checked');
+             $('#Datepickerbone35b').prop('disabled', !cbIsChecked); 
+         });
+              $('[type="checkbox"]').on('change', function() {
+           if (!this.checked) {
+             $('[type="text"][name="' + this.name + '"]').val('');
+           }
+         });
+              $("#Datepickerbone35b").datepicker({
+             maxDate: 0
+         });
+        </script>
+        <br>
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="bone35c" id="bone35c"
+         value="Pain or Tenderness" data-toggle="collapse" data-target="#Datepickerbone35c">
+         <label class="custom-control-label" for="bone35c">Pain or Tenderness*</label>
+         <input type="text" name="bone35c" class="collapse" id="Datepickerbone35c" placeholder="Enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+
+        <script>
+         $('#bone35c').click(function() { 
+             var cbIsChecked = $(this).prop('checked');
+             $('#Datepickerbone35c').prop('disabled', !cbIsChecked); 
+         });
+             
+              $('[type="checkbox"]').on('change', function() {
+           if (!this.checked) {
+             $('[type="text"][name="' + this.name + '"]').val('');
+           }
+         });
+              $("#Datepickerbone35c").datepicker({
+             maxDate: 0
+         });
+        </script>
+        <br>
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="bone35e" id="bone35e"
+         value="Heat" data-toggle="collapse" data-target="#Datepickerbone35e">
+         <label class="custom-control-label" for="bone35e">Heat*</label>
+         <input type="text" name="bone35e" class="collapse" id="Datepickerbone35e" placeholder="Enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+
+        <script>
+         $('#bone35e').click(function() { 
+             var cbIsChecked = $(this).prop('checked');
+             $('#Datepickerbone35e').prop('disabled', !cbIsChecked); 
+         });
+              $('[type="checkbox"]').on('change', function() {
+           if (!this.checked) {
+             $('[type="text"][name="' + this.name + '"]').val('');
+           }
+         });
+              $("#Datepickerbone35e").datepicker({
+             maxDate: 0
+         });
+        </script>
+        <br>
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="bone35f" id="bone35f"
+         value="Drainage" data-toggle="collapse" data-target="#Datepickerbone35f">
+         <label class="custom-control-label" for="bone35f">Drainage*</label>
+         <input type="text" name="bone35f" class="collapse" id="Datepickerbone35f" placeholder="Please enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+       </div>
+      </div>
+
+      <script>
+       $('#bone35f').click(function() { 
+           var cbIsChecked = $(this).prop('checked');
+           $('#Datepickerbone35f').prop('disabled', !cbIsChecked); 
+       });
+            $('[type="checkbox"]').on('change', function() {
+         if (!this.checked) {
+           $('[type="text"][name="' + this.name + '"]').val('');
+         }
+       });
+            $("#Datepickerbone35f").datepicker({
+           maxDate: 0
+       });
+      </script>
+
+      <br>
+      <div class="card">
+       <div class="card-body">
+        <div class="text-left">
+         <h5 class="bg-warning" style="color:black">
+          <strong>Reporting instructions</strong>
+         </h5>
+        </div>
+        <p>
+         <strong>*</strong>With no other recognized cause</p>
+        <p>
+         <strong>&Dagger;</strong>As documented in the medical record</p>
+
+        <br>
+
+        <p>
+         <span class="fas fa-arrow-circle-right" style="color:black" aria-hidden="true"></span>Report mediastinitis following cardiac surgery that is accompanied
+         by osteomyelitis as SSI-MED rather than SSI-BONE</p>
+
+        <br>
+
+        <p>
+         <strong>Click the
+          <span class="fas fa-check-circle" aria-hidden="true"></span>Check Button after making your selection(s) and whenever you make
+          any changes to your selection(s)</strong>
+        </p>
+
+        <button type="button" class="btn btn-success" onclick="myFunctionBone2()">
+         <span class="fas fa-check-circle" aria-hidden="true"></span>Check-BONE</button>
+        <button type="button" value="Reset-BONE" class="btn btn-danger" data-toggle="modal"
+        data-target="#myModalBone15">
+         <span class="fas fa-ban" aria-hidden="true"></span>Reset-BONE</button>
+        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#reportBONE-19"
+        aria-expanded="false" aria-controls="reportBONE-19">
+         <span class="fas fa-book-open" aria-hidden="true"></span>Report-BONE</button>
+
+        <br>
+        <br>
+
+        <div class="row">
+         <div class="col-sm-6">
+          <div class="card border-dark mb-3">
+           <div class="card-header">
+            <strong>Results</strong>
+           </div>
+           <div class="card-body text-dark">
+            <h6 class="card-title">(If no results, your findings don't meet HNSN definition)</h6>
+            <p class="card-text" id="boneCrit15"></p>
+            <p class="card-text" id="boneCrit25"></p>
+            <p class="card-text" id="boneCrit35"></p>
+           </div>
+          </div>
+         </div>
+         <div class="col-sm-6">
+          <div class="card border-dark mb-3">
+           <div class="card-header">
+            <strong>Outcome</strong>
+           </div>
+           <div class="card-body text-dark">
+            <h6 class="card-title">Infection status (POA or HAI)</h6>
+            <p class="card-text" id="bone2015CritOut_poa"></p>
+            <p class="card-text" id="bone2015CritOut_hai"></p>
+           </div>
+          </div>
+         </div>
+        </div>
+
+       </div>
+      </div>
+      <br>
+
+      <div class="collapse" id="reportBONE-19">
+
+       <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg .tg-b0iq{font-weight:bold;background-color:#c0c0c0;color:#343434;border-color:#343434;text-align:left}
+        .tg .tg-88nc{font-weight:bold;border-color:inherit;text-align:center}
+        .tg .tg-kiyi{font-weight:bold;border-color:inherit;text-align:left}
+        .tg .tg-14fs{background-color:#ffffff;color:#343434;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-uvoc{font-weight:bold;background-color:#ffffff;color:#343434;text-align:left;vertical-align:top}
+        .tg .tg-3sxx{font-weight:bold;background-color:#f8a102;color:#343434;border-color:#343434;text-align:left}
+        .tg .tg-b7xv{background-color:#c0c0c0;color:#343434;border-color:#343434;text-align:left}
+        .tg .tg-vujd{background-color:#f8a102;color:#343434;border-color:inherit;text-align:center}
+        .tg .tg-21r5{font-weight:bold;border-color:inherit;text-align:right}
+        .tg .tg-fymr{font-weight:bold;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-7btt{font-weight:bold;border-color:inherit;text-align:center;vertical-align:top}
+        .tg .tg-ce03{background-color:#ffffff;color:#343434;border-color:inherit;text-align:center}
+        .tg .tg-4a2s{background-color:#f8a102;color:#343434;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-dgc8{font-weight:bold;background-color:#f8a102;color:#343434;border-color:inherit;text-align:center}
+        .tg .tg-hmwk{font-weight:bold;background-color:#ffffff;color:#343434;border-color:inherit;text-align:center}
+        .tg .tg-znq9{background-color:#ffffff;color:#343434;text-align:center;vertical-align:top}
+        .tg .tg-orwz{background-color:#ffffff;color:#343434;text-align:left;vertical-align:top}
+        .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-66je{font-weight:bold;background-color:#f8a102;border-color:inherit;text-align:left;vertical-align:top}
+       </style>
+       <table class="tg" style="undefined;table-layout: fixed; width: 641px">
+        <colgroup>
+         <col style="width: 128px">
+          <col style="width: 87px">
+           <col style="width: 271px">
+            <col style="width: 155px">
+        </colgroup>
+        <tr>
+         <th class="tg-21r5">Admission Date:</th>
+         <th class="tg-fymr" colspan="3">04/10/2019</th>
+        </tr>
+        <tr>
+         <td class="tg-88nc">Hospital Day</td>
+         <td class="tg-7btt">Dates</td>
+         <td class="tg-88nc">Signs/Symptoms/Diagnostics</td>
+         <td class="tg-kiyi">Status (POA or HAI)</td>
+        </tr>
+        <tr>
+         <td class="tg-ce03">-2</td>
+         <td class="tg-14fs">4/8/2019</td>
+         <td class="tg-b7xv"></td>
+         <td class="tg-ce03"></td>
+        </tr>
+        <tr>
+         <td class="tg-ce03">-1</td>
+         <td class="tg-14fs">4/9/2019</td>
+         <td class="tg-b7xv"></td>
+         <td class="tg-ce03"></td>
+        </tr>
+        <tr>
+         <td class="tg-vujd">1</td>
+         <td class="tg-4a2s">4/10/2019</td>
+         <td class="tg-3sxx">Fever &gt; 38.0 C, Swelling</td>
+         <td class="tg-dgc8">POA</td>
+        </tr>
+        <tr>
+         <td class="tg-ce03">2</td>
+         <td class="tg-14fs">4/11/2019</td>
+         <td class="tg-b0iq">Imaging test suggestive of infection</td>
+         <td class="tg-hmwk"></td>
+        </tr>
+        <tr>
+         <td class="tg-ce03">3</td>
+         <td class="tg-14fs">4/12/2019</td>
+         <td class="tg-b7xv"></td>
+         <td class="tg-ce03"></td>
+        </tr>
+        <tr>
+         <td class="tg-ce03">4</td>
+         <td class="tg-14fs">4/13/2019</td>
+         <td class="tg-b0iq"></td>
+         <td class="tg-ce03"></td>
+        </tr>
+        <tr>
+         <td class="tg-ce03">5</td>
+         <td class="tg-14fs">4/14/2019</td>
+         <td class="tg-b0iq"></td>
+         <td class="tg-ce03"></td>
+        </tr>
+        <tr>
+         <td class="tg-znq9">6</td>
+         <td class="tg-orwz"></td>
+         <td class="tg-uvoc"></td>
+         <td class="tg-orwz"></td>
+        </tr>
+        <tr>
+         <td class="tg-0pky"></td>
+         <td class="tg-0pky"></td>
+
+         <td class="tg-66je" colspan="2">BONE - Osteomyelitis - POA</td>
+        </tr>
+       </table>
+      </div>
+
+      <br>
+      <p type="button" id="" class="btn btn-link">
+       <a href="#tabs-eent1" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+        <span class="fas fa-arrow-circle-up" style="color:orange">&nbsp;</span>Back to Top</a>
+      </p>
+      <!-- /top-link-block -->
+
+      <br>
+
+      <div class="modal fade" id="myModalBone15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+      aria-hidden="true">
+       <div class="modal-dialog" role="document">
+        <div class="modal-content">
+         <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabelBone15">Confirm delete</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+          </button>
+         </div>
+         <div class="modal-body">
+          Are you sure you want to delete your changes?
+         </div>
+         <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" onclick="clearForm(this.form);" class="btn btn-primary" data-dismiss="modal">Reset</button>
+         </div>
+        </div>
+       </div>
+      </div>
+
+     </form>
+
+     <script>
+      function myFunctionBone2() {
+              var bone15 = document.getElementById("bone15"); 
+      		if 
+      		(bone15.checked) 								
+      	{
+            document.getElementById("boneCrit15").innerHTML = "Your findings meet NHSN definitions for BJ-BONE Criterion 1";
+              } else {
+           document.getElementById("boneCrit15").innerHTML = "";
+              }
+      		
+      	var bone25 = document.getElementById("bone25"); 
+      		if 
+      		(bone25.checked) 								
+      	{
+            document.getElementById("boneCrit25").innerHTML = "Your findings meet NHSN definitions for BJ-BONE Criterion 2";
+              } else {
+           document.getElementById("boneCrit25").innerHTML = "";
+              }	
+      		
+      	var bone35a = document.getElementById("bone35a"); 
+      	var bone35b = document.getElementById("bone35b"); 
+      	var bone35c = document.getElementById("bone35c"); 
+      	var bone35e = document.getElementById("bone35e"); 
+      	var bone35f = document.getElementById("bone35f"); 
+      	var bone35g = document.getElementById("bone35g"); 
+      	var bone35h = document.getElementById("bone35h"); 
+      	var bone35i = document.getElementById("bone35i"); 
+      		
+      		if 
+      		
+      		((((((((((((((((((((((((((((((
+      ((bone35a.checked) && (bone35b.checked) && (bone35g.checked))) ||
+      ((bone35a.checked) && (bone35b.checked) && (bone35h.checked))) ||
+      ((bone35a.checked) && (bone35b.checked) && (bone35i.checked))) ||
+      ((bone35a.checked) && (bone35c.checked) && (bone35g.checked))) ||
+      ((bone35a.checked) && (bone35c.checked) && (bone35h.checked))) ||
+      ((bone35a.checked) && (bone35c.checked) && (bone35i.checked))) ||
+      ((bone35a.checked) && (bone35e.checked) && (bone35g.checked))) ||
+      ((bone35a.checked) && (bone35e.checked) && (bone35h.checked))) ||
+      ((bone35a.checked) && (bone35e.checked) && (bone35i.checked))) ||
+      ((bone35a.checked) && (bone35f.checked) && (bone35g.checked))) ||
+      ((bone35a.checked) && (bone35f.checked) && (bone35h.checked))) ||
+      ((bone35a.checked) && (bone35f.checked) && (bone35i.checked))) ||
+      ((bone35b.checked) && (bone35c.checked) && (bone35g.checked))) ||
+      ((bone35b.checked) && (bone35c.checked) && (bone35h.checked))) ||
+      ((bone35b.checked) && (bone35c.checked) && (bone35i.checked))) ||
+      ((bone35b.checked) && (bone35e.checked) && (bone35g.checked))) ||
+      ((bone35b.checked) && (bone35e.checked) && (bone35h.checked))) ||
+      ((bone35b.checked) && (bone35e.checked) && (bone35i.checked))) ||
+      ((bone35b.checked) && (bone35f.checked) && (bone35g.checked))) ||
+      ((bone35b.checked) && (bone35f.checked) && (bone35h.checked))) ||
+      ((bone35b.checked) && (bone35f.checked) && (bone35i.checked))) ||
+      ((bone35c.checked) && (bone35e.checked) && (bone35g.checked))) ||
+      ((bone35c.checked) && (bone35e.checked) && (bone35h.checked))) ||
+      ((bone35c.checked) && (bone35e.checked) && (bone35i.checked))) ||
+      ((bone35c.checked) && (bone35f.checked) && (bone35g.checked))) ||
+      ((bone35c.checked) && (bone35f.checked) && (bone35h.checked))) ||
+      ((bone35c.checked) && (bone35f.checked) && (bone35i.checked))) ||
+      ((bone35e.checked) && (bone35f.checked) && (bone35g.checked))) ||
+      ((bone35e.checked) && (bone35f.checked) && (bone35h.checked))) ||
+      ((bone35e.checked) && (bone35f.checked) && (bone35i.checked))) 
+      
+       	{
+            document.getElementById("boneCrit35").innerHTML = "Your findings meet NHSN definitions for BJ-BONE Criterion 3";
+              } else {
+           document.getElementById("boneCrit35").innerHTML = "";
+              }	
+      	}
+     </script>
+        
+        <br><br>
+
+     <form name="discForm2">
+
+      <div class="text-left">
+       <h5 class="bg-warning" id="discSP5" style="color:white">
+        <strong>DISC &mdash; Disc space infection</strong>
+       </h5>
+      </div>
+
+      <div class="card">
+       <div class="card-body">
+        <div class="custom-file">
+         <input type="" class="custom-file-input1" id="histoBoneTitle19">
+         <label class="custom-file-label" for="histoBoneTitle19">Histopathology</label>
+        </div>
+        &nbsp;
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="disc25" id="disc25" data-toggle="collapse"
+         data-target="#Datepickerdisc25" value="Patient has evidence of vertebral disc space infection on gross anatomic or histopathologic exam">
+
+         <label class="custom-control-label" for="disc25">Patient has evidence of vertebral disc space infection on gross anatomic
+          or histopathologic exam.</label>
+
+         <input type="text" class="collapse" name="disc25" id="Datepickerdisc25" placeholder="Enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+
+       </div>
+      </div>
+
+      <script>
+       $('#disc25').click(function() { 
+           var cbIsChecked = $(this).prop('checked');
+           $('#Datepickerdisc25').prop('disabled', !cbIsChecked); 
+           
+           });
+           
+           $('[type="checkbox"]').on('change', function() {
+         if (!this.checked) {
+           $('[type="text"][name="' + this.name + '"]').val('');
+         }
+       });
+            $("#Datepickerdisc25").datepicker({
+           maxDate: 0
+       });
+      </script>
+
+      <br>
+
+      <div class="card">
+       <div class="card-body">
+        <div class="custom-file">
+         <input type="" class="custom-file-input1">
+         <label class="custom-file-label" for="customFile">Imaging</label>
+        </div>
+        &nbsp;
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="disc45cDate" id="disc45c"
+         data-toggle="collapse" data-target="#Datepickerdisc45c" value="Imaging test evidence suggestive of infection (e.g., x-ray, CT scan, MRI, radiolabel scan [gallium, technetium, etc.]), which if equivocal is supported by clinical correlation">
+
+         <label class="custom-control-label" for="disc45c">Imaging test evidence suggestive of infection (for example, x-ray, CT
+          scan, MRI, radiolabel scan [gallium, technetium, etc.]), which if equivocal
+          is supported by clinical correlation, specifically, physician documentation
+          of antimicrobial treatment for vertebral disc space infection.</label>
+
+         <input type="text" class="collapse" name="disc45cDate" id="Datepickerdisc45c" placeholder="Enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+       </div>
+      </div>
+
+      <br>
+      <script>
+       $('#disc45c').click(function() { 
+           var cbIsChecked = $(this).prop('checked');
+           $('#Datepickerdisc45c').prop('disabled', !cbIsChecked); 
+           
+           });
+           
+           $('[type="checkbox"]').on('change', function() {
+         if (!this.checked) {
+           $('[type="text"][name="' + this.name + '"]').val('');
+         }
+       });
+            $("#Datepickerdisc45c").datepicker({
+           maxDate: 0
+       });
+      </script>
+
+      <div class="card">
+       <div class="card-body">
+        <div class="custom-file">
+         <input type="" class="custom-file-input1" id="customFileDisc">
+         <label class="custom-file-label" for="customFileDisc">Microbiology</label>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="disc15Date" id="disc15"
+         data-toggle="collapse" data-target="#Datepickerdisc15" value="Patient has organisms cultured from vertebral disc space"
+         />
+         <label class="custom-control-label" for="disc15">Patient has organism(s) identified from vertebral disc space by culture
+          or non-culture based microbiologic testing method, which is performed
+          for purposes of clinical diagnosis and treatment, for example, not Active
+          Surveillance Culture/Testing (ASC/AST).</label>
+         <input type="text" class="collapse" name="disc15Date" id="Datepickerdisc15" placeholder="Please enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+
+        <script>
+         $('#disc15').click(function() { 
+             var cbIsChecked = $(this).prop('checked');
+             $('#Datepickerdisc15').prop('disabled', !cbIsChecked); 
+             
+             });
+             
+             $('[type="checkbox"]').on('change', function() {
+           if (!this.checked) {
+             $('[type="text"][name="' + this.name + '"]').val('');
+           }
+         });
+             $("#Datepickerdisc15").datepicker({
+             maxDate: 0
+         });
+        </script>
+
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="disc15Date" id="disc45b"
+         data-toggle="collapse" data-target="#Datepickerdisc45b" value="Patient has organisms cultured from vertebral disc space"
+         />
+         <label class="custom-control-label" for="disc45b">Organism(s) identified from blood by <u>non-culture</u> based microbiologic
+          testing method, which is performed for purposes of clinical diagnosis
+          and treatment, for example, not Active Surveillance Culture/Testing (ASC/AST)
+         </label>
+         <input type="text" class="collapse" name="disc15Date" id="Datepickerdisc45b" placeholder="Please enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+
+
+        <script>
+         $('#disc45b').click(function() { 
+             var cbIsChecked = $(this).prop('checked');
+             $('#Datepickerdisc45b').prop('disabled', !cbIsChecked); 
+             
+             });
+             
+             $('[type="checkbox"]').on('change', function() {
+           if (!this.checked) {
+             $('[type="text"][name="' + this.name + '"]').val('');
+           }
+         });
+             $("#Datepickerdisc45b").datepicker({
+             maxDate: 0
+         });
+        </script>
+
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="disc15Date" id="disc45a"
+         data-toggle="collapse" data-target="#Datepickerdisc45a, #discOrgSelect-19"
+         value="Patient has organisms cultured from vertebral disc space" />
+         <label class="custom-control-label" for="disc45a">Organism(s) identified from blood by <u>culture</u> based microbiologic
+          testing method, which is performed for purposes of clinical diagnosis
+          and treatment.
+         </label>
+         <input type="text" class="collapse" name="disc15Date" id="Datepickerdisc45a" placeholder="Please enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+
+
+      <script>
+       $('#disc45a').click(function() { 
+           var cbIsChecked = $(this).prop('checked');
+           $('#Datepickerdisc45a').prop('disabled', !cbIsChecked); 
+           
+           });
+           
+           $('[type="checkbox"]').on('change', function() {
+         if (!this.checked) {
+           $('[type="text"][name="' + this.name + '"]').val('');
+         }
+       });
+           $("#Datepickerdisc45a").datepicker({
+           maxDate: 0
+       });
+      </script>
+         
+             
+        
+       </div>
+      </div> 
+         
+
+      <div id="discOrgSelect-19" class="collapse">
+
+       <div class="card">
+        <div class="card-body">
+         <div class="text-left">
+          <h5 class="bg-warning" style="color:black">
+           <strong>Select organism(s)</strong>
+          </h5>
+         </div>
+
+         <div id="myformDiscOrg2-19">
+          <table>
+           <tr>
+            <td>Organism:</td>
+            <td>
+             <select name="organisms" id="orgDiscOrg2">
+              <option value="0">Select an Organism</option>
+              <option value="Abiotrophia adiacens ">Abiotrophia adiacens - GRADJ</option>
+              <option value="Abiotrophia spp. ">Abiotrophia spp. - ABISP</option>
+              <option value="Acanthamoeba ">Acanthamoeba - ACANT</option>
+              <option value="Achromobacter spp. ">Achromobacter spp. - ACHSP</option>
+              <option value="Achromobacter xylosoxidans ">Achromobacter xylosoxidans - ALCXYL</option>
+              <option value="Achromobacter xylosoxidans xylosoxidans ">Achromobacter xylosoxidans xylosoxidans - ACHXYL</option>
+              <option value="Achromobacter, group Vd biotype 1 ">Achromobacter, group Vd biotype 1 - ACHVD1</option>
+              <option value="Achromobacter, group Vd biotype 2 ">Achromobacter, group Vd biotype 2 - ACHVD2</option>
+              <option value="Acidaminococcus fermentans ">Acidaminococcus fermentans - ACIFE</option>
+              <option value="Acidaminococcus spp. ">Acidaminococcus spp. - ACISP</option>
+              <option value="Acidovorax delafieldii ">Acidovorax delafieldii - ACDEL</option>
+              <option value="Acidovorax Genus  ">Acidovorax Genus - ACIDSP</option>
+              <option value="Acidovorax spp. ">Acidovorax spp. - ACIDSP</option>
+              <option value="Acinetobacter anitratus ">Acinetobacter anitratus - ACICBA</option>
+              <option value="Acinetobacter baumannii ">Acinetobacter baumannii - ACBA</option>
+              <option value="Acinetobacter calcoaceticus ">Acinetobacter calcoaceticus - ACICBA</option>
+              <option value="Acinetobacter calcoaceticus ss. Lwoffii ">Acinetobacter calcoaceticus ss. Lwoffii - ACLW</option>
+              <option value="Acinetobacter calcoaceticus-baumannii complex ">Acinetobacter calcoaceticus-baumannii complex - ACCA</option>
+              <option value="Acinetobacter genospecies 3 ">Acinetobacter genospecies 3 - ACIGEN</option>
+              <option value="Acinetobacter hemolyticus ">Acinetobacter hemolyticus - ACHA</option>
+              <option value="Acinetobacter johnsonii ">Acinetobacter johnsonii - ACJH</option>
+              <option value="Acinetobacter junii ">Acinetobacter junii - ACJU</option>
+              <option value="Acinetobacter lwoffii ">Acinetobacter lwoffii - ACLW</option>
+              <option value="Acinetobacter spp. ">Acinetobacter spp. - ACS</option>
+              <option value="Acremonium spp. ">Acremonium spp. - ACRE</option>
+             </select>
+             <input type="button" id="addDiscOrg2" value="Add" onclick="Javascript:addRowDiscOrg2()">
+            </td>
+           </tr>
+           <tr>
+            <td>&nbsp;</td>
+           </tr>
+          </table>
+         </div>
+        </div>
+
+        <!--<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><strong>Select organism(s)</strong></h3>
+  </div>
+<div class="panel-body">
+  
+<div id="myformDiscOrg2">
+<table>
+      <tr>
+        <td>Organism:</td>
+        <td>
+        <select name="organisms" id="orgDiscOrg2--">
+<option value="0">Select an Organism</option>
+<option value="Abiotrophia adiacens ">Abiotrophia adiacens - GRADJ</option>
+<option value="Abiotrophia spp. ">Abiotrophia spp. - ABISP</option>
+<option value="Acanthamoeba ">Acanthamoeba - ACANT</option>
+<option value="Achromobacter spp. ">Achromobacter spp. - ACHSP</option>
+<option value="Achromobacter xylosoxidans ">Achromobacter xylosoxidans - ALCXYL</option>
+<option value="Achromobacter xylosoxidans xylosoxidans ">Achromobacter xylosoxidans xylosoxidans - ACHXYL</option>
+<option value="Achromobacter, group Vd biotype 1 ">Achromobacter, group Vd biotype 1 - ACHVD1</option>
+<option value="Achromobacter, group Vd biotype 2 ">Achromobacter, group Vd biotype 2 - ACHVD2</option>
+<option value="Acidaminococcus fermentans ">Acidaminococcus fermentans - ACIFE</option>
+<option value="Acidaminococcus spp. ">Acidaminococcus spp. - ACISP</option>
+<option value="Acidovorax delafieldii ">Acidovorax delafieldii - ACDEL</option>
+<option value="Acidovorax Genus  ">Acidovorax Genus  - ACIDSP </option>
+<option value="Acidovorax spp. ">Acidovorax spp. - ACIDSP</option>
+<option value="Acinetobacter anitratus ">Acinetobacter anitratus - ACICBA</option>
+<option value="Acinetobacter baumannii ">Acinetobacter baumannii - ACBA</option>
+<option value="Acinetobacter calcoaceticus ">Acinetobacter calcoaceticus - ACICBA</option>
+<option value="Acinetobacter calcoaceticus ss. Lwoffii ">Acinetobacter calcoaceticus ss. Lwoffii - ACLW</option>
+<option value="Acinetobacter calcoaceticus-baumannii complex ">Acinetobacter calcoaceticus-baumannii complex - ACCA</option>
+<option value="Acinetobacter genospecies 3 ">Acinetobacter genospecies 3 - ACIGEN</option>
+<option value="Acinetobacter hemolyticus ">Acinetobacter hemolyticus - ACHA</option>
+<option value="Acinetobacter johnsonii ">Acinetobacter johnsonii - ACJH</option>
+<option value="Acinetobacter junii ">Acinetobacter junii - ACJU</option>
+<option value="Acinetobacter lwoffii ">Acinetobacter lwoffii - ACLW</option>
+<option value="Acinetobacter spp. ">Acinetobacter spp. - ACS</option>
+<option value="Acremonium spp. ">Acremonium spp. - ACRE</option>
+</select>
+       <input type="button" id="addDiscOrg2" value="Add" onclick="Javascript:addRowDiscOrg2()"></td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+</div>-->
+
+        <!--<div id="mydataDiscOrg2">
+ <p class="bg-primary"><strong>Selected:</strong></p>
+ <table id="myTableDataDiscOrg2">
+    <tr>
+        <td>&nbsp;</td>
+        <td> </td>
+    </tr>
+</table>
+ 
+</div>-->
+
+        <div class="card" id="mydataDiscOrg2">
+         <div class="card-body">
+          <div class="text-left">
+           <h5 class="bg-warning" style="color:black">
+            <strong>Selected:</strong>
+           </h5>
+          </div>
+          <table id="myTableDataDiscOrg2">
+           <tr>
+            <td>&nbsp;</td>
+            <td></td>
+           </tr>
+          </table>
+
+         </div>
+        </div>
+
+       </div>
+
+      </div>
+
+      <br>
+      <br>
+
+      <script>
+       function addRowDiscOrg2() {
+           var org = document.getElementById("orgDiscOrg2");
+           var table = document.getElementById("myTableDataDiscOrg2");
+           var rowCount = table.rows.length;
+           var row = table.insertRow(rowCount);
+           row.insertCell(0).innerHTML= '<input type="button" value = "Remove" onClick="Javacsript:deleteRowDiscOrg2(this)">';
+           row.insertCell(1).innerHTML= org.value;
+       }
+        
+       function deleteRowDiscOrg2(obj) {
+           var index = obj.parentNode.parentNode.rowIndex;
+           var table = document.getElementById("myTableDataDiscOrg2");
+           table.deleteRow(index);
+       }
+        
+       function load() {
+           console.log("Page load finished");
+       }
+      </script>
+
+      <div class="card">
+       <div class="card-body">
+        <div class="custom-file">
+         <input type="" class="custom-file-input2">
+         <label class="custom-file-label" for="customFile">Signs and Symptoms</label>
+        </div>
+        <br>
+        <br>
+
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="disc35aDate" id="disc35a"
+         data-toggle="collapse" data-target="#Datepickerdisc35a" value="Fever (&gt;38.0&deg;C)">
+         <label class="custom-control-label" for="disc35a">Fever (&gt;38.0&deg;C&Dagger;)</label>
+         <input type="text" name="disc35aDate" class="collapse" id="Datepickerdisc35a" placeholder="Enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+
+
+        <script>
+         $('#disc35a').click(function() { 
+             var cbIsChecked = $(this).prop('checked');
+             $('#Datepickerdisc35a').prop('disabled', !cbIsChecked); 
+         });
+             
+              $('[type="checkbox"]').on('change', function() {
+           if (!this.checked) {
+             $('[type="text"][name="' + this.name + '"]').val('');
+           }
+         });
+             
+             $("#Datepickerdisc35a").datepicker({
+             maxDate: 0
+         });
+        </script>
+
+        <br>
+
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="disc35bDate" id="disc35b"
+         data-toggle="collapse" data-target="#Datepickerdisc35b" value="Pain* at the involved vertebral disc space">
+         <label class="custom-control-label" for="disc35b">Pain* at the involved vertebral disc space.</label>
+         <input type="text" name="disc35bDate" class="collapse" id="Datepickerdisc35b" placeholder="Enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+
+        <script>
+         $('#disc35b').click(function() { 
+             var cbIsChecked = $(this).prop('checked');
+             $('#Datepickerdisc35b').prop('disabled', !cbIsChecked); 
+         });
+             
+              $('[type="checkbox"]').on('change', function() {
+           if (!this.checked) {
+             $('[type="text"][name="' + this.name + '"]').val('');
+           }
+         });
+             
+             $("#Datepickerdisc35b").datepicker({
+             maxDate: 0
+         });
+        </script>
+       </div>
+      </div>
+
+      <br>
+
+      <div class="card">
+       <div class="card-body">
+        <div class="text-left">
+         <h5 class="bg-warning" style="color:black">
+          <strong>Reporting instructions</strong>
+         </h5>
+        </div>
+        <p>
+         <strong>*</strong>With no other recognized cause;</p>
+        <p>
+         <strong>&Dagger;</strong>As documented in the medical record</p>
+
+        <br>
+
+        <p>
+         <strong>Click the
+          <span class="fas fa-check-circle" aria-hidden="true"></span>Check Button after making your selection(s) and whenever you make
+          any changes to your selection(s)</strong>
+        </p>
+
+        <button type="button" class="btn btn-success" onclick="myFunctionDisc2()">
+         <span class="fas fa-check-circle" aria-hidden="true"></span>Check-DISC</button>
+        <button type="button" value="Reset-BONE" class="btn btn-danger" data-toggle="modal"
+        data-target="#myModalDisc15">
+         <span class="fas fa-ban" aria-hidden="true"></span>Reset-DISC</button>
+        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#reportDISC-19"
+        aria-expanded="false" aria-controls="reportDISC-19">
+         <span class="fas fa-book-open" aria-hidden="true"></span>Report-DISC</button>
+
+        <br>
+        <br>
+
+        <div class="row">
+         <div class="col-sm-6">
+          <div class="card border-dark mb-3">
+           <div class="card-header">
+            <strong>Results</strong>
+           </div>
+           <div class="card-body text-dark">
+            <h6 class="card-title">(If no results, your findings don't meet HNSN definition)</h6>
+            <p class="card-text" id="discCrit15"></p>
+            <p class="card-text" id="discCrit25"></p>
+            <p class="card-text" id="discCrit35"></p>
+           </div>
+          </div>
+         </div>
+         <div class="col-sm-6">
+          <div class="card border-dark mb-3">
+           <div class="card-header">
+            <strong>Outcome</strong>
+           </div>
+           <div class="card-body text-dark">
+            <h6 class="card-title">Infection status (POA or HAI)</h6>
+            <p class="card-text" id="disc2015CritOut_poa"></p>
+            <p class="card-text" id="disc2015CritOut_hai"></p>
+           </div>
+          </div>
+         </div>
+        </div>
+
+        <!--<div class="row">
+ <div class="col-md-6">
+<div class="panel panel-info">
+  <div class="panel-heading">
+ <h3 class="panel-title"><u><strong>Results</strong></u></h3>
+    <h6 class="panel-title">(If no results displayed, your findings don't meet NHSN defintions)</h6>  </div>
+    
+  <div class="panel-body">
+    <p id="discCrit15"></p>
+    <p id="discCrit25"></p>
+    <p id="discCrit35"></p>
+ </div>
+
+  </div>
+</div>
+    
+    <div class="col-sm-6">
+    <div class="card border-dark mb-3">
+        <div class="card-header"><strong>Outcome</strong></div>
+  <div class="card-body text-dark">
+      <h6 class="card-title">Infection status (POA or HAI)</h6>
+        <p class="card-text" id="disc2015CritOut_poa"></p>
+        <p class="card-text" id="disc2015CritOut_hai"></p>
+ </div>
+</div>
+  </div>
+
+<div class="col-md-6">
+                  <div class="panel panel-info">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">
+                        <u>
+                          <strong>Outcome</strong>
+                        </u>
+                      </h3>
+                      <h6 class="panel-title">Infection status (POA or HAI)</h6>
+                    </div>
+                    <div class="panel-body">
+                      <p id="disc2015CritOut_poa"></p>
+                      <p id="disc2015CritOut_hai"></p>
+                    </div>
+                  </div>
+   
+
+       </div>-->
+       </div>
+
+       <br>
+       <!--     
+      <div class="panel panel-info" align="center">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Event Window Period</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="table-responsive">
+                    <table class="table table-striped table-hover table-bordered">
+                      <tbody>
+                        <tr>
+                          <th scope="col" class="primary" width="20%">Date</th>
+                          <th scope="col" class="primary">Event</th>
+                        </tr>
+                        <tr class="primary">
+                          <td>
+                            <span id="dateOfEventMin3Disc" class="doeCalDate_Disc">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptomMin3Disc"></span>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span id="dateOfEventMin2Disc" class="doeCalDate_Disc">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptomMin2Disc">&nbsp;</span>
+                          </td>
+                        </tr>
+                        <tr class="primary">
+                          <td>
+                            <span id="dateOfEventMin1Disc" class="doeCalDate_Disc">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptomMin1Disc">&nbsp;</span>
+                          </td>
+                        </tr>
+                        <tr class="danger">
+                          <td>
+                            <span id="dateOfEventMin0Disc">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptomMin0Disc"></span>&nbsp;</td>
+                        </tr>
+                        <tr class="primary">
+                          <td>
+                            <span id="dateOfEvent1Disc" class="doeCalDate_Bone">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptom1Disc"></span>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span id="dateOfEvent2Disc" class="doeCalDate_Bone">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptom2Disc"></span>&nbsp;</td>
+                        </tr>
+                        <tr class="primary">
+                          <td>
+                            <span id="dateOfEvent3Disc" class="doeCalDate_Bone">&nbsp;</span>
+                          </td>
+                          <td>
+                            <span id="symptom3Disc">&nbsp;</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div> -->
+      </div>
+
+      <br>
+      <!--<p align="left"><a href="#topBJ2"><span class="glyphicon glyphicon-arrow-up" style="color:gray" aria-hidden="true"></span><strong>TOP</strong></a></p>-->
+
+      <p type="button" id="" class="btn btn-link">
+       <a href="#tabs-eent1" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+        <span class="fas fa-arrow-circle-up" style="color:orange">&nbsp;</span>Back to Top</a>
+      </p>
+      <!-- /top-link-block -->
+
+      <br>
+
+      <div class="modal fade" id="myModalDisc15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+       <div class="modal-dialog" role="document">
+        <div class="modal-content">
+         <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabelDisc15">Confirm delete</h4>
+         </div>
+         <div class="modal-body">
+          Are you sure you want to delete your changes?
+         </div>
+         <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" onclick="clearForm(this.form);" class="btn btn-primary" data-dismiss="modal">Reset</button>
+         </div>
+        </div>
+       </div>
+      </div>
+     </form>
+     
+
+     <script>
+      function myFunctionDisc2() {
+          var disc15 = document.getElementById("disc15"); 
+     		if 
+     		(disc15.checked) 								
+     	{
+           document.getElementById("discCrit15").innerHTML = "Your findings meet NHSN definitions for BJ-DISC Criterion 1";
+             } else {
+          document.getElementById("discCrit15").innerHTML = "";
+             }
+     		
+     var disc25 = document.getElementById("disc25"); 
+     		if 
+     		(disc25.checked) 								
+     	{
+           document.getElementById("discCrit25").innerHTML = "Your findings meet NHSN definitions for BJ-DISC Criterion 2";
+             } else {
+          document.getElementById("discCrit25").innerHTML = "";
+             }		
+     	
+     	var disc35a = document.getElementById("disc35a"); 
+     	var disc35b = document.getElementById("disc35b"); 
+     	var disc45a = document.getElementById("disc45a"); 
+     	var disc45b = document.getElementById("disc45b"); 
+     	var disc45c = document.getElementById("disc45c"); 
+     		
+     		if
+     (((((( 
+     (disc35a.checked) && (disc45a.checked)) ||
+     (disc35a.checked) && (disc45b.checked)) ||
+     (disc35a.checked) && (disc45c.checked)) ||
+     (disc35b.checked) && (disc45a.checked)) ||
+     (disc35b.checked) && (disc45b.checked)) ||
+     (disc35b.checked) && (disc45c.checked))
+     									
+     	{
+           document.getElementById("discCrit35").innerHTML = "Your findings meet NHSN definitions for BJ-DISC Criterion 3";
+             } else {
+          document.getElementById("discCrit35").innerHTML = "";
+             }		
+     		
+     	}
+     </script>
+
+        <br><br>
+        
+        
+        
+     <form name="jntForm2">
+               
+      <div class="text-left">
+       <h5 class="bg-warning" id="jntSP5" style="color:white"><strong>JNT &mdash; Joint or bursa infection</strong></h5>
+      </div>   
+         
+         
+     <div class="card">
+       <div class="card-body">
+        <div class="custom-file">
+         <input type="" class="custom-file-input1" id="histoJntTitle19">
+         <label class="custom-file-label" for="histoBoneTitle19">Histopathology</label>
+        </div>
+        &nbsp;
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="jnt25" id="jnt25" data-toggle="collapse"
+         data-target="#Datepickerjnt25" value="Patient has evidence of joint or bursa infection on gross anatomic or histopathologic exam">
+
+         <label class="custom-control-label" for="jnt25">Patient has evidence of joint or bursa infection on gross anatomic or
+          histopathologic exam.</label>
+
+         <input type="text" class="collapse" name="jnt25" id="Datepickerjnt25" placeholder="Enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+
+       </div>
+      </div>
+
+      <script>
+       $('#jnt25').click(function() { 
+             var cbIsChecked = $(this).prop('checked');
+             $('#Datepickerjnt25').prop('disabled', !cbIsChecked); 
+             
+             });
+             
+             $('[type="checkbox"]').on('change', function() {
+           if (!this.checked) {
+             $('[type="text"][name="' + this.name + '"]').val('');
+           }
+         });
+             $("#Datepickerjnt25").datepicker({
+             maxDate: 0
+         });
+      </script>
+
+
+
+
+      <br />
+
+      <div class="card">
+       <div class="card-body">
+        <div class="custom-file">
+         <input type="" class="custom-file-input1">
+         <label class="custom-file-label" for="customFile">Imaging</label>
+        </div>
+        &nbsp;
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="jnt45e" id="jnt45e" data-toggle="collapse"
+         data-target="#Datepickerjnt45e" value="Imaging test evidence suggestive of infection (e.g.,  x-ray, CT scan, MRI, radiolabel scan [gallium, technetium, etc.]), which if equivocal is supported by clinical correlation">
+
+         <label class="custom-control-label" for="jnt45e">Imaging test evidence suggestive of infection (e.g., x-ray, CT scan, MRI,
+          radiolabel scan [gallium, technetium, etc.]), which if equivocal is supported
+          by clinical correlation.</label>
+
+         <input type="text" class="collapse" name="jnt45e" id="Datepickerjnt45e" placeholder="Enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+       </div>
+      </div>
+
+      <br />
+
+      <script>
+       $('#jnt45e').click(function() { 
+             var cbIsChecked = $(this).prop('checked');
+             $('#Datepickerjnt45e').prop('disabled', !cbIsChecked); 
+             
+             });
+             
+             $('[type="checkbox"]').on('change', function() {
+           if (!this.checked) {
+             $('[type="text"][name="' + this.name + '"]').val('');
+           }
+         });
+             $("#Datepickerjnt45e").datepicker({
+             maxDate: 0
+         });
+      </script>
+
+
+      <div class="card">
+       <div class="card-body">
+        <div class="custom-file">
+         <input type="" class="custom-file-input1" id="customFileDisc">
+         <label class="custom-file-label" for="customFileDisc">Microbiology</label>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="jnt15" id="jnt15" data-toggle="collapse"
+         data-target="#Datepickerjnt15" value="Patient has organisms cultured from joint fluid or synovial biopsy">
+         <label class="custom-control-label" for="jnt15">Patient has organism(s) identified from joint fluid or synovial biopsy
+          by culture or non-culture based microbiologic testing method, which is
+          performed for purposes of clinical diagnosis and treatment, for example,
+          not Active Surveillance Culture/Testing (ASC/AST).
+         </label>
+         <input type="text" class="collapse" name="jnt15" id="Datepickerjnt15" placeholder="Please enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+
+        <script>
+         $('#jnt15').click(function() { 
+             var cbIsChecked = $(this).prop('checked');
+             $('#Datepickerjnt15').prop('disabled', !cbIsChecked); 
+             
+             });
+             
+             $('[type="checkbox"]').on('change', function() {
+           if (!this.checked) {
+             $('[type="text"][name="' + this.name + '"]').val('');
+           }
+         });
+             $("#Datepickerjnt15").datepicker({
+             maxDate: 0
+         });
+        </script>
+
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="jnt45a" id="jnt45a" data-toggle="collapse"
+         data-target="#Datepickerjnt45a" value="Elevated  joint fluid white blood cell count (per reporting laboratory's reference range) OR Positive leukocyte esterase test strip of joint fluid">
+         <label class="custom-control-label" for="jnt45a">Elevated joint fluid white blood cell count (per reporting laboratory's
+          reference range) <u>OR</u> Positive leukocyte esterase test strip of joint.
+         </label>
+         <input type="text" class="collapse" name="jnt45a" id="Datepickerjnt45a" placeholder="Please enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+
+        <script>
+         $('#jnt45a').click(function() { 
+             var cbIsChecked = $(this).prop('checked');
+             $('#Datepickerjnt45a').prop('disabled', !cbIsChecked); 
+             
+             });
+             
+             $('[type="checkbox"]').on('change', function() {
+           if (!this.checked) {
+             $('[type="text"][name="' + this.name + '"]').val('');
+           }
+         });
+             $("#Datepickerjnt45a").datepicker({
+             maxDate: 0
+         });
+        </script>
+
+
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="jnt45b" id="jnt45b" data-toggle="collapse"
+         data-target="#Datepickerjnt45b" value="Organisms and white blood cells seen on Gram stain of joint fluid">
+         <label class="custom-control-label" for="jnt45b">Organisms and white blood cells seen on Gram stain of joint fluid.
+         </label>
+         <input type="text" class="collapse" name="jnt45b" id="Datepickerjnt45b" placeholder="Please enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+
+        <script>
+         $('#jnt45b').click(function() { 
+             var cbIsChecked = $(this).prop('checked');
+             $('#Datepickerjnt45b').prop('disabled', !cbIsChecked); 
+             
+             });
+             
+             $('[type="checkbox"]').on('change', function() {
+           if (!this.checked) {
+             $('[type="text"][name="' + this.name + '"]').val('');
+           }
+         });
+             $("#Datepickerjnt45b").datepicker({
+             maxDate: 0
+         });
+        </script>
+        <br />
+
+       
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="jnt15Date" id="jnt45c"
+         data-toggle="collapse" data-target="#Datepickerjnt45c, #jntOrgSelect-19"
+         value="Patient has organisms cultured from vertebral disc space" />
+         <label class="custom-control-label" for="jnt45c">Organism(s) identified from blood by culture or non-culture based microbiologic
+          testing method, which is performed for purposes of clinical diagnosis
+          and treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).
+         </label>
+         <input type="text" class="collapse" name="jnt15Date" id="Datepickerjnt45c" placeholder="Please enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+
+        <br />
+
+        <script>
+         $('#jnt45c').click(function() { 
+             var cbIsChecked = $(this).prop('checked');
+             $('#Datepickerjnt45c').prop('disabled', !cbIsChecked); 
+             
+             });
+             
+             $('[type="checkbox"]').on('change', function() {
+           if (!this.checked) {
+             $('[type="text"][name="' + this.name + '"]').val('');
+           }
+         });
+             $("#Datepickerjnt45c").datepicker({
+             maxDate: 0
+         });
+        </script>
+
+
+        <div id="jntOrgSelect-19" class="collapse">
+
+         <div class="card">
+          <div class="card-body">
+           <div class="text-left">
+            <h5 class="bg-warning" style="color:black">
+             <strong>Select organism(s)</strong>
+            </h5>
+           </div>
+
+           <div id="myformJntOrg2-19">
+            <table>
+             <tr>
+              <td>Organism:</td>
+              <td>
+               <select name="organisms" id="orgJntOrg2">
+                <option value="0">Select an Organism</option>
+                <option value="Abiotrophia adiacens ">Abiotrophia adiacens - GRADJ</option>
+                <option value="Abiotrophia spp. ">Abiotrophia spp. - ABISP</option>
+                <option value="Acanthamoeba ">Acanthamoeba - ACANT</option>
+                <option value="Achromobacter spp. ">Achromobacter spp. - ACHSP</option>
+                <option value="Achromobacter xylosoxidans ">Achromobacter xylosoxidans - ALCXYL</option>
+                <option value="Achromobacter xylosoxidans xylosoxidans ">Achromobacter xylosoxidans xylosoxidans - ACHXYL</option>
+                <option value="Achromobacter, group Vd biotype 1 ">Achromobacter, group Vd biotype 1 - ACHVD1</option>
+                <option value="Achromobacter, group Vd biotype 2 ">Achromobacter, group Vd biotype 2 - ACHVD2</option>
+                <option value="Acidaminococcus fermentans ">Acidaminococcus fermentans - ACIFE</option>
+                <option value="Acidaminococcus spp. ">Acidaminococcus spp. - ACISP</option>
+                <option value="Acidovorax delafieldii ">Acidovorax delafieldii - ACDEL</option>
+                <option value="Acidovorax Genus  ">Acidovorax Genus - ACIDSP</option>
+                <option value="Acidovorax spp. ">Acidovorax spp. - ACIDSP</option>
+                <option value="Acinetobacter anitratus ">Acinetobacter anitratus - ACICBA</option>
+                <option value="Acinetobacter baumannii ">Acinetobacter baumannii - ACBA</option>
+                <option value="Acinetobacter calcoaceticus ">Acinetobacter calcoaceticus - ACICBA</option>
+                <option value="Acinetobacter calcoaceticus ss. Lwoffii ">Acinetobacter calcoaceticus ss. Lwoffii - ACLW</option>
+                <option value="Acinetobacter calcoaceticus-baumannii complex ">Acinetobacter calcoaceticus-baumannii complex - ACCA</option>
+                <option value="Acinetobacter genospecies 3 ">Acinetobacter genospecies 3 - ACIGEN</option>
+                <option value="Acinetobacter hemolyticus ">Acinetobacter hemolyticus - ACHA</option>
+                <option value="Acinetobacter johnsonii ">Acinetobacter johnsonii - ACJH</option>
+                <option value="Acinetobacter junii ">Acinetobacter junii - ACJU</option>
+                <option value="Acinetobacter lwoffii ">Acinetobacter lwoffii - ACLW</option>
+                <option value="Acinetobacter spp. ">Acinetobacter spp. - ACS</option>
+                <option value="Acremonium spp. ">Acremonium spp. - ACRE</option>
+               </select>
+               <input type="button" id="addJntOrg2" value="Add" onclick="Javascript:addRowJntOrg2()">
+              </td>
+             </tr>
+             <tr>
+              <td>&nbsp;</td>
+             </tr>
+            </table>
+           </div>
+          </div>
+
+
+
+          <div class="card" id="mydataJntOrg22">
+           <div class="card-body">
+            <div class="text-left">
+             <h5 class="bg-warning" style="color:black">
+              <strong>Selected:</strong>
+              <!-- selected not firing, need to fix -->
+             </h5>
+            </div>
+            <table id="myTableDataJntOrg2">
+             <tr>
+              <td>&nbsp;</td>
+              <td></td>
+             </tr>
+            </table>
+
+           </div>
+          </div>
+
+         </div>
+
+        </div>
+
+
+
+<br />
+
+        <div id="organismJNT-1919" class="collapse">
+         <div class="card">
+          <div class="card-body">
+           <p>
+            <strong></strong>
+           </p>
+           <div class="panel-body">
+
+            <div class="card">
+             <div class="card-body">
+              <p>
+               <strong>Please Select an organism:</strong>
+              </p>
+
+              <select id="selJNT" onchange="show(this)">
+               <option value="">-- Select HERE--</option>
+              </select>
+              <br>
+              <br>
+              <p id="msgJNT"></p>
+
+             </div>
+            </div>
+
+            <script>
+             $(document).ready(function(){
+              
+              window.onload = populateSelect();
+          
+              function populateSelect() {
+          
+                  // CREATE AN XMLHttpRequest OBJECT, WITH GET METHOD.
+                  var xhr = new XMLHttpRequest(), 
+                      method = 'GET',
+                      overrideMimeType = 'application/json',
+                      url = 'https://api.myjson.com/bins/c429u';        // ADD THE URL OF THE FILE.
+          
+                  xhr.onreadystatechange = function () {
+                      if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                          
+                          // PARSE JSON DATA.
+                          var pathogens = JSON.parse(xhr.responseText);
+          
+                          var ele = document.getElementById('selJNT2');
+                          for (var i = 0; i < pathogens.length; i++) {
+                              // BIND DATA TO <select> ELEMENT.
+                              ele.innerHTML = ele.innerHTML +
+                                  '<option value="' + pathogens[i].code + '">' + pathogens[i].display + '</option>';
+                          }
+                      }
+                  };
+                  xhr.open(method, url, true);
+                  xhr.send();
+              }
+             }
+          
+              function show(ele) {
+                  // GET THE SELECTED VALUE FROM <select> ELEMENT AND SHOW IT.
+                  var msg = document.getElementById('msgJNT2');
+                  msg.innerHTML = 'Selected Organism: <b>' + ele.options[ele.selectedIndex].text + '</b> </br>' +
+                      'Code: <b>' + ele.value + '</b>';
+              }
+            </script>
+
+            <div id="myformJntOrg22">-->
+
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+
+      <br>
+
+       <div class="card">
+         <div class="card-body">
+          <div class="custom-file">
+           <input type="" class="custom-file-input2">
+           <label class="custom-file-label" for="customFile">Signs and Symptoms</label>
+          </div>
+             
+          <br>
+          <br>
+
+
+          <div class="custom-control custom-checkbox">
+           <input type="checkbox" class="custom-control-input" name="jnt35a" id="jnt35a" data-toggle="collapse"
+           data-target="#Datepickerjnt35a" value="Swelling">
+           <label class="custom-control-label" for="jnt35a">Swelling&lowast;
+           </label>
+           <input type="text" name="jnt35a" class="collapse" id="Datepickerjnt35a" placeholder="Enter date"
+           value="" required />&nbsp; &nbsp; &nbsp;
+          </div>
+
+          <script>
+           $('#jnt35a').click(function() { 
+               var cbIsChecked = $(this).prop('checked');
+               $('#Datepickerjnt35a').prop('disabled', !cbIsChecked); 
+           });
+               
+                $('[type="checkbox"]').on('change', function() {
+             if (!this.checked) {
+               $('[type="text"][name="' + this.name + '"]').val('');
+             }
+           });
+               
+               $("#Datepickerjnt35a").datepicker({
+               maxDate: 0
+           });
+          </script>
+
+
+              <br>
+             
+             
+             <div class="custom-control custom-checkbox">
+           <input type="checkbox" class="custom-control-input" name="jnt35b" id="jnt35b" data-toggle="collapse"
+           data-target="#Datepickerjnt35b" value="Pain or Tenderness">
+           <label class="custom-control-label" for="jnt35b">Pain or Tenderness&lowast;
+           </label>
+           <input type="text" name="jnt35b" class="collapse" id="Datepickerjnt35b" placeholder="Enter date"
+           value="" required />&nbsp; &nbsp; &nbsp;
+          </div>
+
+          <script>
+           $('#jnt35b').click(function() { 
+               var cbIsChecked = $(this).prop('checked');
+               $('#Datepickerjnt35b').prop('disabled', !cbIsChecked); 
+           });
+               
+                $('[type="checkbox"]').on('change', function() {
+             if (!this.checked) {
+               $('[type="text"][name="' + this.name + '"]').val('');
+             }
+           });
+               
+               $("#Datepickerjnt35b").datepicker({
+               maxDate: 0
+           });
+          </script>
+             
+             <br> 
+             
+             
+         <div class="custom-control custom-checkbox">
+           <input type="checkbox" class="custom-control-input" name="jnt35c" id="jnt35c" data-toggle="collapse"
+           data-target="#Datepickerjnt35c" value="Heat">
+           <label class="custom-control-label" for="jnt35c">Heat&lowast;
+           </label>
+           <input type="text" name="jnt35c" class="collapse" id="Datepickerjnt35c" placeholder="Enter date"
+           value="" required />&nbsp; &nbsp; &nbsp;
+          </div>
+
+          <script>
+           $('#jnt35c').click(function() { 
+               var cbIsChecked = $(this).prop('checked');
+               $('#Datepickerjnt35c').prop('disabled', !cbIsChecked); 
+           });
+               
+                $('[type="checkbox"]').on('change', function() {
+             if (!this.checked) {
+               $('[type="text"][name="' + this.name + '"]').val('');
+             }
+           });
+               
+               $("#Datepickerjnt35c").datepicker({
+               maxDate: 0
+           });
+          </script>
+             
+                 
+            <br>  
+             
+             <div class="custom-control custom-checkbox">
+           <input type="checkbox" class="custom-control-input" name="jnt35d" id="jnt35d" data-toggle="collapse"
+           data-target="#Datepickerjnt35d" value="Evidence of effusion">
+           <label class="custom-control-label" for="jnt35d">Evidence of effusion&lowast;
+           </label>
+           <input type="text" name="jnt35d" class="collapse" id="Datepickerjnt35d" placeholder="Enter date"
+           value="" required />&nbsp; &nbsp; &nbsp;
+          </div>
+
+          <script>
+           $('#jnt35d').click(function() { 
+               var cbIsChecked = $(this).prop('checked');
+               $('#Datepickerjnt35d').prop('disabled', !cbIsChecked); 
+           });
+               
+                $('[type="checkbox"]').on('change', function() {
+             if (!this.checked) {
+               $('[type="text"][name="' + this.name + '"]').val('');
+             }
+           });
+               
+               $("#Datepickerjnt35d").datepicker({
+               maxDate: 0
+           });
+          </script>
+             
+             <br>
+
+
+           <div class="custom-control custom-checkbox">
+           <input type="checkbox" class="custom-control-input" name="jnt35e" id="jnt35e" data-toggle="collapse"
+           data-target="#Datepickerjnt35e" value="Limitation of motion">
+           <label class="custom-control-label" for="jnt35e">Limitation of motion&lowast;
+           </label>
+           <input type="text" name="jnt35e" class="collapse" id="Datepickerjnt35e" placeholder="Enter date"
+           value="" required />&nbsp; &nbsp; &nbsp;
+          </div>
+
+          <script>
+           $('#jnt35e').click(function() { 
+               var cbIsChecked = $(this).prop('checked');
+               $('#Datepickerjnt35e').prop('disabled', !cbIsChecked); 
+           });
+               
+                $('[type="checkbox"]').on('change', function() {
+             if (!this.checked) {
+               $('[type="text"][name="' + this.name + '"]').val('');
+             }
+           });
+               
+               $("#Datepickerjnt35e").datepicker({
+               maxDate: 0
+           });
+          </script>
+             
+            
+          <br>
+
+         </div>
+        </div>
+           
+        <br>
+
+    <div class="card">
+       <div class="card-body">
+        <div class="text-left">
+         <h5 class="bg-warning" style="color:black">
+          <strong>Reporting instructions</strong>
+         </h5>
+        </div>
+           
+        <p><strong>*</strong>With no other recognized cause;</p>
+           
+        <p><strong>NOTE:</strong>If a patient meets both organ space JNT and BONE report the SSI as BONE.</p>
+        
+        <br>
+
+        <p>
+         <strong>Click the
+          <span class="fas fa-check-circle" aria-hidden="true"></span>Check Button after making your selection(s) and whenever you make
+          any changes to your selection(s)</strong>
+        </p>
+
+        <button type="button" class="btn btn-success" onclick="myFunctionJnt2()">
+         <span class="fas fa-check-circle" aria-hidden="true"></span>Check-DISC</button>
+        <button type="button" value="Reset-JNT" class="btn btn-danger" data-toggle="modal"
+        data-target="#myModalJnt15">
+         <span class="fas fa-ban" aria-hidden="true"></span>Reset-JNT</button>
+        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#reportJNT-19"
+        aria-expanded="false" aria-controls="reportJNT-19">
+         <span class="fas fa-book-open" aria-hidden="true"></span>Report-JNT</button>
+
+        <br>
+        <br>
+
+        <div class="row">
+         <div class="col-sm-6">
+          <div class="card border-dark mb-3">
+           <div class="card-header">
+            <strong>Results</strong>
+           </div>
+           <div class="card-body text-dark">
+            <h6 class="card-title">(If no results, your findings don't meet HNSN definition)</h6>
+            <p class="card-text" id="jntCrit15"></p>
+            <p class="card-text" id="jntCrit25"></p>
+            <p class="card-text" id="jntCrit35"></p>
+           </div>
+          </div>
+         </div>
+         <div class="col-sm-6">
+          <div class="card border-dark mb-3">
+           <div class="card-header">
+            <strong>Outcome</strong>
+           </div>
+           <div class="card-body text-dark">
+            <h6 class="card-title">Infection status (POA or HAI)</h6>
+            <p class="card-text" id="jnt2015CritOut_poa"></p>
+            <p class="card-text" id="jnt2015CritOut_hai"></p>
+           </div>
+          </div>
+         </div>
+        </div>
+
+       </div>
+
+       <br>
+      
+      </div>
+
+       <br>
+         
+       
+        <p type="button" id="" class="btn btn-link">
+         <a href="#tabs-eent1" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+          <span class="fas fa-arrow-circle-up" style="color:orange">&nbsp;</span>Back to Top</a>
+        </p>
+        <!-- /top-link-block -->
+
+        <br>
+
+        <div class="modal fade" id="myModalJnt15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-dialog" role="document">
+          <div class="modal-content">
+           <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabelJnt15">Confirm delete</h4>
+           </div>
+           <div class="modal-body">
+            Are you sure you want to delete your changes?
+           </div>
+           <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" onclick="clearForm(this.form);" class="btn btn-primary" data-dismiss="modal">Reset</button>
+           </div>
+          </div>
+         </div>
+        </div>
+
+     </form>
+
+     <script>
+      function myFunctionJnt2() {
+     var jnt15 = document.getElementById("jnt15"); 
+     	if 
+     	(jnt15.checked) 								
+     	{
+           document.getElementById("jntCrit15").innerHTML = "Your findings meet NHSN definitions for BJ-JNT Criterion 1";
+             } else {
+          document.getElementById("jntCrit15").innerHTML = "";
+             }
+     var jnt25 = document.getElementById("jnt25"); 
+     		if 
+     		(jnt25.checked) 								
+     	{
+           document.getElementById("jntCrit25").innerHTML = "Your findings meet NHSN definitions for BJ-JNT Criterion 2";
+             } else {
+          document.getElementById("jntCrit25").innerHTML = "";
+             }		
+     	
+     var jnt35a = document.getElementById("jnt35a"); 
+     var jnt35b = document.getElementById("jnt35b");
+     var jnt35c = document.getElementById("jnt35c");
+     var jnt35d = document.getElementById("jnt35d");
+     var jnt35e = document.getElementById("jnt35e");
+     var jnt45a = document.getElementById("jnt45a");
+     var jnt45b = document.getElementById("jnt45b");
+     var jnt45c = document.getElementById("jnt45c");
+     var jnt45d = document.getElementById("jnt45d");
+     var jnt45e = document.getElementById("jnt45e");
+     
+         if
+     ((((((((((((((((((((((((((((((((((((((((((((((((((
+      ((jnt35a.checked) && (jnt35b.checked) && (jnt45a.checked))) ||
+     ((jnt35a.checked) && (jnt35b.checked) && (jnt45b.checked))) ||
+     ((jnt35a.checked) && (jnt35b.checked) && (jnt45c.checked))) ||
+     ((jnt35a.checked) && (jnt35b.checked) && (jnt45d.checked))) ||
+     ((jnt35a.checked) && (jnt35b.checked) && (jnt45e.checked))) ||
+     ((jnt35a.checked) && (jnt35c.checked) && (jnt45a.checked))) ||
+     ((jnt35a.checked) && (jnt35c.checked) && (jnt45b.checked))) ||
+     ((jnt35a.checked) && (jnt35c.checked) && (jnt45c.checked))) ||
+     ((jnt35a.checked) && (jnt35c.checked) && (jnt45d.checked))) ||
+     ((jnt35a.checked) && (jnt35c.checked) && (jnt45e.checked))) ||
+     ((jnt35a.checked) && (jnt35d.checked) && (jnt45a.checked))) ||
+     ((jnt35a.checked) && (jnt35d.checked) && (jnt45b.checked))) ||
+     ((jnt35a.checked) && (jnt35d.checked) && (jnt45c.checked))) ||
+     ((jnt35a.checked) && (jnt35d.checked) && (jnt45d.checked))) ||
+     ((jnt35a.checked) && (jnt35d.checked) && (jnt45e.checked))) ||
+     ((jnt35a.checked) && (jnt35e.checked) && (jnt45a.checked))) ||
+     ((jnt35a.checked) && (jnt35e.checked) && (jnt45b.checked))) ||
+     ((jnt35a.checked) && (jnt35e.checked) && (jnt45c.checked))) ||
+     ((jnt35a.checked) && (jnt35e.checked) && (jnt45d.checked))) ||
+     ((jnt35a.checked) && (jnt35e.checked) && (jnt45e.checked))) ||
+     ((jnt35b.checked) && (jnt35c.checked) && (jnt45a.checked))) ||
+     ((jnt35b.checked) && (jnt35c.checked) && (jnt45b.checked))) ||
+     ((jnt35b.checked) && (jnt35c.checked) && (jnt45c.checked))) ||
+     ((jnt35b.checked) && (jnt35c.checked) && (jnt45d.checked))) ||
+     ((jnt35b.checked) && (jnt35c.checked) && (jnt45e.checked))) ||
+     ((jnt35b.checked) && (jnt35d.checked) && (jnt45a.checked))) ||
+     ((jnt35b.checked) && (jnt35d.checked) && (jnt45b.checked))) ||
+     ((jnt35b.checked) && (jnt35d.checked) && (jnt45c.checked))) ||
+     ((jnt35b.checked) && (jnt35d.checked) && (jnt45d.checked))) ||
+     ((jnt35b.checked) && (jnt35d.checked) && (jnt45e.checked))) ||
+     ((jnt35b.checked) && (jnt35e.checked) && (jnt45a.checked))) ||
+     ((jnt35b.checked) && (jnt35e.checked) && (jnt45b.checked))) ||
+     ((jnt35b.checked) && (jnt35e.checked) && (jnt45c.checked))) ||
+     ((jnt35b.checked) && (jnt35e.checked) && (jnt45d.checked))) ||
+     ((jnt35b.checked) && (jnt35e.checked) && (jnt45e.checked))) ||
+     ((jnt35c.checked) && (jnt35d.checked) && (jnt45a.checked))) ||
+     ((jnt35c.checked) && (jnt35d.checked) && (jnt45b.checked))) ||
+     ((jnt35c.checked) && (jnt35d.checked) && (jnt45c.checked))) ||
+     ((jnt35c.checked) && (jnt35d.checked) && (jnt45d.checked))) ||
+     ((jnt35c.checked) && (jnt35d.checked) && (jnt45e.checked))) ||
+     ((jnt35c.checked) && (jnt35e.checked) && (jnt45a.checked))) ||
+     ((jnt35c.checked) && (jnt35e.checked) && (jnt45b.checked))) ||
+     ((jnt35c.checked) && (jnt35e.checked) && (jnt45c.checked))) ||
+     ((jnt35c.checked) && (jnt35e.checked) && (jnt45d.checked))) ||
+     ((jnt35c.checked) && (jnt35e.checked) && (jnt45e.checked))) ||
+     ((jnt35d.checked) && (jnt35e.checked) && (jnt45a.checked))) ||
+     ((jnt35d.checked) && (jnt35e.checked) && (jnt45b.checked))) ||
+     ((jnt35d.checked) && (jnt35e.checked) && (jnt45c.checked))) ||
+     ((jnt35d.checked) && (jnt35e.checked) && (jnt45d.checked))) ||
+     ((jnt35d.checked) && (jnt35e.checked) && (jnt45e.checked))) 
+     	{
+           document.getElementById("jntCrit35").innerHTML = "Your findings meet NHSN definitions for BJ-JNT Criterion 3";
+             } else {
+          document.getElementById("jntCrit35").innerHTML = "";
+             }		
+     }
+     </script>
+
+        <br><br>
+        
+        
+     <form name="pjiForm2">
+      
+     
+       <div class="text-left">
+       <h5 class="bg-warning" id="pjiSP5" style="color:white"><strong>PJI &mdash; Prosthetic joint infection</strong></h5>
+      </div>   
+      
+         <p><strong>PJI-Periprosthetic Joint Infection (for use as Organ/Space SSI following HPRO and KPRO only)</strong></p>
+         
+    <div class="card">
+       <div class="card-body">
+        <div class="custom-file">
+         <input type="" class="custom-file-input1" id="histoPjiTitle19">
+         <label class="custom-file-label" for="histoBoneTitle19">Histopathology</label>
+        </div>
+        &nbsp;
+        <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="pji35d" id="pji35d" data-toggle="collapse"
+         data-target="#Datepickerpji35d" value="Positive histological analysis of periprosthetic tissue (&gt;5 neutrophils (PMNs) per high power field)">
+
+         <label class="custom-control-label" for="pji35d">Positive histological analysis of periprosthetic tissue (&gt;5 neutrophils (PMNs) per high power field).</label>
+
+         <input type="text" class="collapse" name="pji35d" id="Datepickerpji35d" placeholder="Enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+
+       </div>
+      </div>
+
+      <script>
+       $('#pji35d').click(function() { 
+             var cbIsChecked = $(this).prop('checked');
+             $('#Datepickerpji35d').prop('disabled', !cbIsChecked); 
+             
+             });
+             
+             $('[type="checkbox"]').on('change', function() {
+           if (!this.checked) {
+             $('[type="text"][name="' + this.name + '"]').val('');
+           }
+         });
+             $("#Datepickerpji35d").datepicker({
+             maxDate: 0
+         });
+      </script>
+
+         <br>
+
+         
+         
+         
+        <div class="card">
+       <div class="card-body">
+        <div class="custom-file">
+         <input type="" class="custom-file-input1" id="customFileDisc">
+         <label class="custom-file-label" for="customFileDisc">Microbiology</label>
+        </div>
+
+        <br>
+        <br> 
+         
+         
+       <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-input" name="pji15" id="pji15" data-toggle="collapse"
+         data-target="#Datepickerpji15" value="Two positive periprosthetic (tissue or fluid) cultures with matching organisms">
+
+         <label class="custom-control-label" for="pji15"><u>Two</u> positive periprosthetic (tissue or fluid) cultures with matching
+        organisms.</label>
+
+         <input type="text" class="collapse" name="pji15" id="Datepickerpji15" placeholder="Enter date"
+         value="" required />&nbsp; &nbsp; &nbsp;
+        </div>
+        
+           <br>
+         
+  <div class="row">
+       <div class="col-md-6">
+        <div class="panel panel-info">
+         <div class="panel-heading">
+          <p>1<sup>st</sup> positive culture:
+           <input type="text" id="Datepickerpji15CX1" placeholder="Enter date">
+          </p>
+
+          <select name="organisms">
+           <option value="0">Select an Organism</option>
+           <option value="Abiotrophia adiacens ">Abiotrophia adiacens - GRADJ</option>
+           <option value="Abiotrophia spp. ">Abiotrophia spp. - ABISP</option>
+           <option value="Acanthamoeba ">Acanthamoeba - ACANT</option>
+           <option value="Achromobacter spp. ">Achromobacter spp. - ACHSP</option>
+           <option value="Achromobacter xylosoxidans ">Achromobacter xylosoxidans - ALCXYL</option>
+           <option value="Achromobacter xylosoxidans xylosoxidans ">Achromobacter xylosoxidans xylosoxidans - ACHXYL</option>
+           <option value="Achromobacter, group Vd biotype 1 ">Achromobacter, group Vd biotype 1 - ACHVD1</option>
+           <option value="Achromobacter, group Vd biotype 2 ">Achromobacter, group Vd biotype 2 - ACHVD2</option>
+           <option value="Acidaminococcus fermentans ">Acidaminococcus fermentans - ACIFE</option>
+           <option value="Acidaminococcus spp. ">Acidaminococcus spp. - ACISP</option>
+           <option value="Acidovorax delafieldii ">Acidovorax delafieldii - ACDEL</option>
+           <option value="Acidovorax Genus  ">Acidovorax Genus - ACIDSP</option>
+           <option value="Acidovorax spp. ">Acidovorax spp. - ACIDSP</option>
+           <option value="Acinetobacter anitratus ">Acinetobacter anitratus - ACICBA</option>
+           <option value="Acinetobacter baumannii ">Acinetobacter baumannii - ACBA</option>
+           <option value="Acinetobacter calcoaceticus ">Acinetobacter calcoaceticus - ACICBA</option>
+           <option value="Acinetobacter calcoaceticus ss. Lwoffii ">Acinetobacter calcoaceticus ss. Lwoffii - ACLW</option>
+           <option value="Acinetobacter calcoaceticus-baumannii complex ">Acinetobacter calcoaceticus-baumannii complex - ACCA</option>
+           <option value="Acinetobacter genospecies 3 ">Acinetobacter genospecies 3 - ACIGEN</option>
+           <option value="Acinetobacter hemolyticus ">Acinetobacter hemolyticus - ACHA</option>
+           <option value="Acinetobacter johnsonii ">Acinetobacter johnsonii - ACJH</option>
+           <option value="Acinetobacter junii ">Acinetobacter junii - ACJU</option>
+           <option value="Acinetobacter lwoffii ">Acinetobacter lwoffii - ACLW</option>
+           <option value="Acinetobacter spp. ">Acinetobacter spp. - ACS</option>
+           <option value="Acremonium spp. ">Acremonium spp. - ACRE</option>
+          </select>&nbsp;&nbsp;
+          <br>
+         </div>
+        </div>
+       </div>
+      
+       <div class="col-md-6">
+        <div class="panel panel-info">
+         <div class="panel-heading">
+          <p>2<sup>nd</sup> positive culture:
+           <input type="text" id="Datepickerpji15CX2" placeholder="Enter date">
+          </p>
+          <select name="organisms">
+           <option value="0">Select an Organism</option>
+           <option value="Abiotrophia adiacens ">Abiotrophia adiacens - GRADJ</option>
+           <option value="Abiotrophia spp. ">Abiotrophia spp. - ABISP</option>
+           <option value="Acanthamoeba ">Acanthamoeba - ACANT</option>
+           <option value="Achromobacter spp. ">Achromobacter spp. - ACHSP</option>
+           <option value="Achromobacter xylosoxidans ">Achromobacter xylosoxidans - ALCXYL</option>
+           <option value="Achromobacter xylosoxidans xylosoxidans ">Achromobacter xylosoxidans xylosoxidans - ACHXYL</option>
+           <option value="Achromobacter, group Vd biotype 1 ">Achromobacter, group Vd biotype 1 - ACHVD1</option>
+           <option value="Achromobacter, group Vd biotype 2 ">Achromobacter, group Vd biotype 2 - ACHVD2</option>
+           <option value="Acidaminococcus fermentans ">Acidaminococcus fermentans - ACIFE</option>
+           <option value="Acidaminococcus spp. ">Acidaminococcus spp. - ACISP</option>
+           <option value="Acidovorax delafieldii ">Acidovorax delafieldii - ACDEL</option>
+           <option value="Acidovorax Genus  ">Acidovorax Genus - ACIDSP</option>
+           <option value="Acidovorax spp. ">Acidovorax spp. - ACIDSP</option>
+           <option value="Acinetobacter anitratus ">Acinetobacter anitratus - ACICBA</option>
+           <option value="Acinetobacter baumannii ">Acinetobacter baumannii - ACBA</option>
+           <option value="Acinetobacter calcoaceticus ">Acinetobacter calcoaceticus - ACICBA</option>
+           <option value="Acinetobacter calcoaceticus ss. Lwoffii ">Acinetobacter calcoaceticus ss. Lwoffii - ACLW</option>
+           <option value="Acinetobacter calcoaceticus-baumannii complex ">Acinetobacter calcoaceticus-baumannii complex - ACCA</option>
+           <option value="Acinetobacter genospecies 3 ">Acinetobacter genospecies 3 - ACIGEN</option>
+           <option value="Acinetobacter hemolyticus ">Acinetobacter hemolyticus - ACHA</option>
+           <option value="Acinetobacter johnsonii ">Acinetobacter johnsonii - ACJH</option>
+           <option value="Acinetobacter junii ">Acinetobacter junii - ACJU</option>
+           <option value="Acinetobacter lwoffii ">Acinetobacter lwoffii - ACLW</option>
+           <option value="Acinetobacter spp. ">Acinetobacter spp. - ACS</option>
+           <option value="Acremonium spp. ">Acremonium spp. - ACRE</option>
+          </select>&nbsp;&nbsp;
+          <br>
+         </div>
+        </div>
+       </div>
+      </div>
+
+     
+           
+        <script>
+       $('#pji15').click(function() { 
+             var cbIsChecked = $(this).prop('checked');
+             $('#Datepickerpji35d').prop('disabled', !cbIsChecked); 
+             
+             });
+             
+             $('[type="checkbox"]').on('change', function() {
+           if (!this.checked) {
+             $('[type="text"][name="' + this.name + '"]').val('');
+           }
+         });
+             $("#Datepickerpji15").datepicker({
+             maxDate: 0
+         });
+      </script>  <!-- NEED TO FIX THE TWO DATES ISSUE  -->
+    
+           
+         <br>  <br>      
+           
+           
+           
+        <div class="custom-control custom-checkbox">
+           <input type="checkbox" class="custom-control-input" name="pji35a" id="pji35a" data-toggle="collapse"
+           data-target="#Datepickerpji35a" value="Elevated serum C-reactive protein (CRP; &gt;100 mg/L) <u>AND</u> Erythrocyte sedimentation rate (ESR; &gt;30 mm/hr)">
+           <label class="custom-control-label" for="pji35a">Elevated serum C-reactive protein (CRP; &gt;100 mg/L) <u>AND</u> Erythrocyte
+        sedimentation rate (ESR; &gt;30 mm/hr)&lowast;
+           </label>
+           <input type="text" name="pji35a" class="collapse" id="Datepickerpji35a" placeholder="Enter date"
+           value="" required />&nbsp; &nbsp; &nbsp;
+          </div>
+
+          <script>
+           $('#pji35a').click(function() { 
+               var cbIsChecked = $(this).prop('checked');
+               $('#Datepickerpji35a').prop('disabled', !cbIsChecked); 
+           });
+               
+                $('[type="checkbox"]').on('change', function() {
+             if (!this.checked) {
+               $('[type="text"][name="' + this.name + '"]').val('');
+             }
+           });
+               
+               $("#Datepickerpji35a").datepicker({
+               maxDate: 0
+           });
+          </script>
+             
+             <br> 
+           
+           
+           
+           
+     <div class="custom-control custom-checkbox">
+           <input type="checkbox" class="custom-control-input" name="pji35b" id="pji35b" data-toggle="collapse"
+           data-target="#Datepickerpji35b" value="Elevated synovial fluid white blood cell (WBC; &gt;10,000 cells/¼L) count OR ++ (or greater) change on leukocyte esterase test strip of synovial fluid">
+           <label class="custom-control-label" for="pji35b">Elevated synovial fluid white blood cell (WBC; &gt;10,000 cells/uL)
+        count OR ++ (or greater) change on leukocyte esterase test strip of synovial fluid. </label>
+           <input type="text" name="pji35b" class="collapse" id="Datepickerpji35b" placeholder="Enter date"
+           value="" required />&nbsp; &nbsp; &nbsp;
+          </div>
+
+          <script>
+           $('#pji35b').click(function() { 
+               var cbIsChecked = $(this).prop('checked');
+               $('#Datepickerpji35b').prop('disabled', !cbIsChecked); 
+           });
+               
+                $('[type="checkbox"]').on('change', function() {
+             if (!this.checked) {
+               $('[type="text"][name="' + this.name + '"]').val('');
+             }
+           });
+               
+               $("#Datepickerpji35b").datepicker({
+               maxDate: 0
+           });
+          </script>
+             
+     <div class="custom-control custom-checkbox">
+           <input type="checkbox" class="custom-control-input" name="pji35c" id="pji35c" data-toggle="collapse"
+           data-target="#Datepickerpji35c" value="Elevated synovial fluid polymorphonuclear neutrophil percentage (PMN% &gt;90%)">
+           <label class="custom-control-label" for="pji35c">Elevated synovial fluid polymorphonuclear neutrophil percentage (PMN% &gt;90%). </label>
+           <input type="text" name="pji35c" class="collapse" id="Datepickerpji35c" placeholder="Enter date"
+           value="" required />&nbsp; &nbsp; &nbsp;
+          </div>
+
+          <script>
+           $('#pji35c').click(function() { 
+               var cbIsChecked = $(this).prop('checked');
+               $('#Datepickerpji35c').prop('disabled', !cbIsChecked); 
+           });
+               
+                $('[type="checkbox"]').on('change', function() {
+             if (!this.checked) {
+               $('[type="text"][name="' + this.name + '"]').val('');
+             }
+           });
+               
+               $("#Datepickerpji35c").datepicker({
+               maxDate: 0
+           });
+          </script>
+             
+             <br>       
+             
+       <div class="custom-control custom-checkbox">
+           <input type="checkbox" class="custom-control-input" name="pji35e" id="pji35e" data-toggle="collapse"
+           data-target="#Datepickerpji35e" value="A single positive periprosthetic (tissue or fluid) culture">
+           <label class="custom-control-label" for="pji35e">A single positive periprosthetic (tissue or fluid) culture. </label>
+           <input type="text" name="pji35e" class="collapse" id="Datepickerpji35e" placeholder="Enter date"
+           value="" required />&nbsp; &nbsp; &nbsp;
+          </div>
+
+          <script>
+           $('#pji35e').click(function() { 
+               var cbIsChecked = $(this).prop('checked');
+               $('#Datepickerpji35e').prop('disabled', !cbIsChecked); 
+           });
+               
+                $('[type="checkbox"]').on('change', function() {
+             if (!this.checked) {
+               $('[type="text"][name="' + this.name + '"]').val('');
+             }
+           });
+               
+               $("#Datepickerpji35e").datepicker({
+               maxDate: 0
+           });
+          </script>
+                 
+        </div>
+        </div>
+                
+        <br>        
+           
+           
+    <div class="card">
+       <div class="card-body">
+        <div class="custom-file">
+           <input type="" class="custom-file-input2">
+           <label class="custom-file-label" for="customFile">Signs and Symptoms</label>
+          </div>
+             
+        &nbsp;
+    <div class="custom-control custom-checkbox">
+           <input type="checkbox" class="custom-control-input" name="pji25" id="pji25" data-toggle="collapse"
+           data-target="#Datepickerpji25" value="A sinus tract* communicating with the joint identified on gross anatomic exam">
+           <label class="custom-control-label" for="pji25">A sinus tract&lowast; communicating with the joint identified on gross anatomic exam.
+           </label>
+           <input type="text" name="pji25" class="collapse" id="Datepickerpji25" placeholder="Enter date"
+           value="" required />&nbsp; &nbsp; &nbsp;
+          </div>
+
+          <script>
+           $('#pji25').click(function() { 
+               var cbIsChecked = $(this).prop('checked');
+               $('#Datepickerpji25').prop('disabled', !cbIsChecked); 
+           });
+               
+                $('[type="checkbox"]').on('change', function() {
+             if (!this.checked) {
+               $('[type="text"][name="' + this.name + '"]').val('');
+             }
+           });
+               
+               $("#Datepickerpji25").datepicker({
+               maxDate: 0
+           });
+          </script>  
+           
+         </div>
+        </div>
+
+      
+
+         <br><br>
+
+       <div class="card">
+       <div class="card-body">
+        <div class="text-left">
+         <h5 class="bg-warning" style="color:black">
+          <strong>Reporting Instructions</strong>
+         </h5>
+        </div>
+           
+    <p><span class="fas fa-arrow-circle-right" aria-hidden="true"></span>A matching organism is defined as one of the following:</p>
+      <p>1. If genus and species are identified in both cultures, they must be the same.</p>
+      
+           <p><strong>Example:</strong>Two joint fluid cultures reported as Enterobacter cloacae is a match.</p>
+      
+           <p><strong>Example:</strong>A joint tissue culture reported as Enterobacter cloacae and a synovial fluid culture reported as Enterobacter aerogenes are NOT matching organisms as the species are different.</p>
+      
+           <p><strong>Example:</strong>Two joint fluid cultures reported as Enterococcus species are considered matching organisms.</p>
+      
+           <br>
+
+      <p>2. If the organism is less definitively identified in one culture than the other, the identifications must be complementary.</p>
+      
+           <p><strong>Example:</strong>A joint fluid culture reported as Pseudomonas spp. and a joint tissue culture reported as Pseudomonas aeruginosa are considered a match at the genus level and therefore can be considered matching organisms.</p>
+      
+           <p><strong>Note:</strong>Organisms do not have to have matching antibiograms.</p>
+
+      <br>
+
+      <p><span class="fas fa-arrow-circle-right" aria-hidden="true"></span>Positive cultures of hardware from a hip or knee can be used to meet
+       criterion 1.</p>
+      
+        <p><span class="fas fa-arrow-circle-right" aria-hidden="true"></span>A sinus tract is defined as a narrow opening or passageway underneath
+       the skin that can extend in any direction through soft tissue and results in dead space with potential for abscess formation.</p>
+      
+        <p><span class="fas fa-arrow-circle-right" aria-hidden="true"></span>The NHSN definition of PJI is closely adapted from the Musculoskeletal
+       Infection Society's (MSIS's) definition of PJI (Proceedings of the International Consensus Meeting on Periprosthetic Joint Infection, 2013).</p>
+     
+        <p><span class="fas fa-arrow-circle-right" aria-hidden="true"></span>The standard laboratory cutoff values in criteria 3a - 3d are provided
+       by NHSN for HPRO and KPRO SSI surveillance purposes only. The NHSN laboratory cutoffs are not intended to guide clinicians in the actual clinical diagnosis and management of acute or chronic PJI. Clinicians should refer to the MSIS consensus definition for clinical use.</p>
+
+      <br>
+           
+         <p><strong>Click the <span class="fas fa-check-circle" aria-hidden="true"></span>Check Button after making your selection(s) and whenever you make
+          any changes to your selection(s)</strong></p>
+
+        <button type="button" class="btn btn-success" onclick="myFunctionPji2()"><span class="fas fa-check-circle" aria-hidden="true"></span>Check-PJI</button>
+           
+        <button type="button" value="Reset-PJI" class="btn btn-danger" data-toggle="modal" data-target="#myModalPji15"><span class="fas fa-ban" aria-hidden="true"></span>Reset-PJI</button>
+       
+        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#reportPJI-19" aria-expanded="false" aria-controls="reportPJI-19"><span class="fas fa-book-open" aria-hidden="true"></span>Report-PJI</button>
+
+        <br><br>
+
+        <div class="row">
+         <div class="col-sm-6">
+          <div class="card border-dark mb-3">
+           <div class="card-header">
+            <strong>Results</strong>
+           </div>
+           <div class="card-body text-dark">
+            <h6 class="card-title">(If no results, your findings don't meet HNSN definition)</h6>
+            <p class="card-text" id="pjiCrit15"></p>
+            <p class="card-text" id="pjiCrit25"></p>
+            <p class="card-text" id="pjiCrit35"></p>
+           </div>
+          </div>
+          </div>
+         
+            <div class="col-sm-6">
+          <div class="card border-dark mb-3">
+           <div class="card-header">
+            <strong>Outcome</strong>
+           </div>
+           <div class="card-body text-dark">
+            <h6 class="card-title">Infection status (POA or HAI)</h6>
+            <p class="card-text" id="pji2015CritOut_poa"></p>
+            <p class="card-text" id="pji2015CritOut_hai"></p>
+           </div>
+          </div>
+         </div>
+        </div>
+
+       </div>
+  </div>
+ 
+          <br><br>
+         
+         
+      <p align="left">
+       <a href="#topBJ2">
+        <span class="glyphicon glyphicon-arrow-up" style="color:gray" aria-hidden="true"></span><b>TOP</b>
+       </a>
+      </p>
+
+      <p type="button" id="" class="btn btn-link">
+       <a href="#tabs-eent1" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+        <span class="fas fa-arrow-circle-up" style="color:orange">&nbsp;</span>Back to Top</a>
+      </p>
+      <!-- /top-link-block -->
+
+
+      <br>
+
+      <div class="modal fade" id="myModalPji15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+       <div class="modal-dialog" role="document">
+        <div class="modal-content">
+         <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabelPji15">Confirm delete</h4>
+         </div>
+         <div class="modal-body">
+          Are you sure you want to delete your changes?
+         </div>
+         <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" onclick="clearForm(this.form);" class="btn btn-primary" data-dismiss="modal">Reset</button>
+         </div>
+        </div>
+       </div>
+      </div>
+
+     </form>
+
+     <script>
+      function myFunctionPji2() {
+      var pji15 = document.getElementById("pji15"); 
+      	if 
+      	(pji15.checked) 								
+      	{
+            document.getElementById("pjiCrit15").innerHTML = "Your findings meet NHSN definitions for BJ-PJI Criterion 1";
+              } else {
+           document.getElementById("pjiCrit15").innerHTML = "";
+              }
+      		
+      var pji25 = document.getElementById("pji25"); 
+      		if 
+      		(pji25.checked) 								
+      	{
+            document.getElementById("pjiCrit25").innerHTML = "Your findings meet NHSN definitions for BJ-PJI Criterion 2";
+              } else {
+           document.getElementById("pjiCrit25").innerHTML = "";
+              }		
+      
+      var pji35a = document.getElementById("pji35a"); 
+      var pji35b = document.getElementById("pji35b"); 
+      var pji35c = document.getElementById("pji35c"); 
+      var pji35d = document.getElementById("pji35d"); 
+      var pji35e = document.getElementById("pji35e"); 
+      
+      		if 
+      		
+      		((((((((((
+      ((pji35a.checked) && (pji35b.checked) && (pji35c.checked))) || 
+      ((pji35a.checked) && (pji35b.checked) && (pji35d.checked))) || 
+      ((pji35a.checked) && (pji35b.checked) && (pji35e.checked))) || 
+      ((pji35a.checked) && (pji35c.checked) && (pji35d.checked))) || 
+      ((pji35a.checked) && (pji35c.checked) && (pji35e.checked))) || 
+      ((pji35a.checked) && (pji35d.checked) && (pji35e.checked))) || 
+      ((pji35b.checked) && (pji35c.checked) && (pji35d.checked))) || 
+      ((pji35b.checked) && (pji35c.checked) && (pji35e.checked))) || 
+      ((pji35b.checked) && (pji35d.checked) && (pji35e.checked))) || 
+      ((pji35c.checked) && (pji35d.checked) && (pji35e.checked)))
+      
+      {
+            document.getElementById("pjiCrit35").innerHTML = "Your findings meet NHSN definitions for BJ-PJI Criterion 3";
+              } else {
+           document.getElementById("pjiCrit35").innerHTML = "";
+              }		
+      
+       }
+     </script>
+
+     <br><br>
+
+     <span id="top-link-block3" class="hidden">
+      <a href="#tabs-1" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+       <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+      </a>
+     </span>
+     <!-- /top-link-block -->
+
+     <!--<script>
+  if ( ($(window).height() + 100) < $(document).height() ) {
+    $('#top-link-block3').removeClass('hidden').affix({
+        // how far to scroll down before link "slides" into view
+        offset: {top:100}
+    });
+}
+  
+  </script>-->
+
+       </div>
+      </div>
+
+     <div id="tabs-4">
+
+      <br>
+
+      <button type="button" class="btn btn-secondary btn-lg btn-block" data-toggle="collapse"
+      data-target="#reportPNU2-19" aria-expanded="false" aria-controls="reportPNU2-19">
+       <span class="fas fa-book-open" aria-hidden="true"></span>Report-PNU</button>
+      <br>
+
+      <div class="collapse" id="reportPNU2-19">
+       <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
+        .tg .tg-s6z2{text-align:center}
+        .tg .tg-baqh{text-align:center;vertical-align:top}
+        .tg .tg-1z0l{background-color:#f8a102;text-align:center}
+        .tg .tg-34fq{font-weight:bold;text-align:right}
+        .tg .tg-hgcj{font-weight:bold;text-align:center}
+        .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+        .tg .tg-5ua9{font-weight:bold;text-align:left}
+        .tg .tg-0lax{text-align:left;vertical-align:top}
+        .tg .tg-s268{text-align:left}
+        .tg .tg-4qtd{font-weight:bold;background-color:#f8a102;text-align:left;vertical-align:top}
+       </style>
+       <table class="tg" style="undefined;table-layout: fixed; width: 607px">
+        <colgroup>
+         <col style="width: 121px">
+          <col style="width: 83px">
+           <col style="width: 256px">
+            <col style="width: 147px">
+        </colgroup>
+        <tr>
+         <th class="tg-34fq">Admission Date:</th>
+         <th class="tg-1wig" colspan="3">04/10/2019</th>
+        </tr>
+        <tr>
+         <td class="tg-hgcj">Hospital Day</td>
+         <td class="tg-amwm">Dates</td>
+         <td class="tg-hgcj">Signs/Symptoms/Diagnostics</td>
+         <td class="tg-5ua9">Status (POA or HAI)</td>
+        </tr>
+        <tr>
+         <td class="tg-s6z2">1</td>
+         <td class="tg-0lax">4/10/2019</td>
+         <td class="tg-s268"></td>
+         <td class="tg-s6z2"></td>
+        </tr>
+        <tr>
+         <td class="tg-s6z2">2</td>
+         <td class="tg-0lax">4/11/2019</td>
+         <td class="tg-s268">New onset cough</td>
+         <td class="tg-1z0l">
+          <span style="font-weight:bold">POA</span>
+         </td>
+        </tr>
+        <tr>
+         <td class="tg-s6z2">3</td>
+         <td class="tg-0lax">4/12/2019</td>
+         <td class="tg-s268">Infiltrate (diagnostic #1)</td>
+         <td class="tg-s6z2"></td>
+        </tr>
+        <tr>
+         <td class="tg-s6z2">4</td>
+         <td class="tg-0lax">4/13/2019</td>
+         <td class="tg-s268">Fever &gt;38.0 C</td>
+         <td class="tg-s6z2"></td>
+        </tr>
+        <tr>
+         <td class="tg-s6z2">5</td>
+         <td class="tg-0lax">4/14/2019</td>
+         <td class="tg-s268">Fever &gt;38.0 C</td>
+         <td class="tg-s6z2"></td>
+        </tr>
+        <tr>
+         <td class="tg-s6z2">6</td>
+         <td class="tg-0lax">4/15/2019</td>
+         <td class="tg-s268">A. baumannii (diagnostic #2)</td>
+         <td class="tg-s6z2"></td>
+        </tr>
+        <tr>
+         <td class="tg-s6z2">7</td>
+         <td class="tg-0lax">4/16/2019</td>
+         <td class="tg-s268">Rales, Fever &gt;38.0 C</td>
+         <td class="tg-s6z2"></td>
+        </tr>
+        <tr>
+         <td class="tg-baqh">8</td>
+         <td class="tg-0lax">4/17/2019</td>
+         <td class="tg-0lax">Cough, Rales</td>
+         <td class="tg-baqh"></td>
+        </tr>
+        <tr>
+         <td class="tg-0lax"></td>
+         <td class="tg-0lax"></td>
+         <td class="tg-4qtd" colspan="2">PNU2-POA, Date of Event 2</td>
+        </tr>
+       </table>
+
+      </div>
+
+      <br>
+      <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="collapse"
+      data-target="#reportSKIN-19" aria-expanded="false" aria-controls="reportSKIN-19">
+       <span class="fas fa-book-open" aria-hidden="true"></span>Report-skin 1</button>
+      <br>
+
+      <div class="collapse" id="reportSKIN-19">
+
+       <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg .tg-88nc{font-weight:bold;border-color:inherit;text-align:center}
+        .tg .tg-ycr8{background-color:#ffffff;text-align:left;vertical-align:top}
+        .tg .tg-kiyi{font-weight:bold;border-color:inherit;text-align:left}
+        .tg .tg-baqh{text-align:center;vertical-align:top}
+        .tg .tg-lto5{background-color:#f8a102;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-uys7{border-color:inherit;text-align:center}
+        .tg .tg-hvsw{background-color:#f8a102;border-color:inherit;text-align:center}
+        .tg .tg-pcyi{background-color:#c0c0c0;border-color:#343434;text-align:left}
+        .tg .tg-21r5{font-weight:bold;border-color:inherit;text-align:right}
+        .tg .tg-fymr{font-weight:bold;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-7btt{font-weight:bold;border-color:inherit;text-align:center;vertical-align:top}
+        .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-28l8{background-color:#ffffff;border-color:inherit;text-align:center}
+        .tg .tg-c6of{background-color:#ffffff;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-inpf{background-color:#f8a102;border-color:#343434;text-align:left}
+        .tg .tg-0lax{text-align:left;vertical-align:top}
+        .tg .tg-66je{font-weight:bold;background-color:#f8a102;border-color:inherit;text-align:left;vertical-align:top}
+       </style>
+       <table class="tg" style="undefined;table-layout: fixed; width: 642px">
+        <colgroup>
+         <col style="width: 128px">
+          <col style="width: 88px">
+           <col style="width: 271px">
+            <col style="width: 155px">
+        </colgroup>
+        <tr>
+         <th class="tg-21r5">Admission Date:</th>
+         <th class="tg-fymr" colspan="3">04/10/2019</th>
+        </tr>
+        <tr>
+         <td class="tg-88nc">Hospital Day</td>
+         <td class="tg-7btt">Dates</td>
+         <td class="tg-88nc">Signs/Symptoms/Diagnostics</td>
+         <td class="tg-kiyi">Status (POA or HAI)</td>
+        </tr>
+        <tr>
+         <td class="tg-uys7">-2</td>
+         <td class="tg-0pky">4/8/2019</td>
+         <td class="tg-pcyi"></td>
+         <td class="tg-uys7"></td>
+        </tr>
+        <tr>
+         <td class="tg-28l8">-1</td>
+         <td class="tg-c6of">4/9/2019</td>
+         <td class="tg-pcyi"></td>
+         <td class="tg-28l8"></td>
+        </tr>
+        <tr>
+         <td class="tg-uys7">1</td>
+         <td class="tg-0pky">4/10/2019</td>
+         <td class="tg-pcyi"></td>
+         <td class="tg-uys7"></td>
+        </tr>
+        <tr>
+         <td class="tg-hvsw">2</td>
+         <td class="tg-lto5">4/13/2019</td>
+         <td class="tg-inpf">Purulent drainage</td>
+         <td class="tg-hvsw">POA</td>
+        </tr>
+        <tr>
+         <td class="tg-uys7">3</td>
+         <td class="tg-0pky">4/14/2019</td>
+         <td class="tg-pcyi"></td>
+         <td class="tg-uys7"></td>
+        </tr>
+        <tr>
+         <td class="tg-28l8">4</td>
+         <td class="tg-c6of">4/15/2019</td>
+         <td class="tg-pcyi"></td>
+         <td class="tg-28l8"></td>
+        </tr>
+        <tr>
+         <td class="tg-uys7">5</td>
+         <td class="tg-0pky">4/16/2019</td>
+         <td class="tg-pcyi"></td>
+         <td class="tg-uys7"></td>
+        </tr>
+        <tr>
+         <td class="tg-baqh">6</td>
+         <td class="tg-0lax"></td>
+         <td class="tg-ycr8"></td>
+         <td class="tg-0lax"></td>
+        </tr>
+        <tr>
+         <td class="tg-baqh">7</td>
+         <td class="tg-0lax"></td>
+         <td class="tg-ycr8"></td>
+         <td class="tg-0lax"></td>
+        </tr>
+        <tr>
+         <td class="tg-0pky"></td>
+         <td class="tg-0pky"></td>
+         <td class="tg-66je" colspan="2">SKIN (Criterion 1)</td>
+        </tr>
+       </table>
+
+      </div>
+      <br>
+
+      <button type="button" class="btn btn-secondary btn-lg btn-block" data-toggle="collapse"
+      data-target="#reportSKIN2a-19" aria-expanded="false" aria-controls="reportSKIN2a-19">
+       <span class="fas fa-book-open" aria-hidden="true"></span>Report-SKIN 2a</button>
+      <br>
+
+      <div class="collapse" id="reportSKIN2a-19">
+
+       <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg .tg-88nc{font-weight:bold;border-color:inherit;text-align:center}
+        .tg .tg-kiyi{font-weight:bold;border-color:inherit;text-align:left}
+        .tg .tg-baqh{text-align:center;vertical-align:top}
+        .tg .tg-lto5{background-color:#f8a102;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-uys7{border-color:inherit;text-align:center}
+        .tg .tg-hvsw{background-color:#f8a102;border-color:inherit;text-align:center}
+        .tg .tg-pcyi{background-color:#c0c0c0;border-color:#343434;text-align:left}
+        .tg .tg-21r5{font-weight:bold;border-color:inherit;text-align:right}
+        .tg .tg-fymr{font-weight:bold;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-7btt{font-weight:bold;border-color:inherit;text-align:center;vertical-align:top}
+        .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-q667{background-color:#ffffff;border-color:#343434;text-align:left}
+        .tg .tg-28l8{background-color:#ffffff;border-color:inherit;text-align:center}
+        .tg .tg-c6of{background-color:#ffffff;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-inpf{background-color:#f8a102;border-color:#343434;text-align:left}
+        .tg .tg-0lax{text-align:left;vertical-align:top}
+        .tg .tg-y6fn{background-color:#c0c0c0;text-align:left;vertical-align:top}
+        .tg .tg-66je{font-weight:bold;background-color:#f8a102;border-color:inherit;text-align:left;vertical-align:top}
+       </style>
+       <table class="tg" style="undefined;table-layout: fixed; width: 642px">
+        <colgroup>
+         <col style="width: 128px">
+          <col style="width: 88px">
+           <col style="width: 271px">
+            <col style="width: 155px">
+        </colgroup>
+        <tr>
+         <th class="tg-21r5">Admission Date:</th>
+         <th class="tg-fymr" colspan="3">04/10/2019</th>
+        </tr>
+        <tr>
+         <td class="tg-88nc">Hospital Day</td>
+         <td class="tg-7btt">Dates</td>
+         <td class="tg-88nc">Signs/Symptoms/Diagnostics</td>
+         <td class="tg-kiyi">Status (POA or HAI)</td>
+        </tr>
+        <tr>
+         <td class="tg-uys7">-2</td>
+         <td class="tg-0pky">4/8/2019</td>
+         <td class="tg-q667"></td>
+         <td class="tg-uys7"></td>
+        </tr>
+        <tr>
+         <td class="tg-28l8">-1</td>
+         <td class="tg-c6of">4/9/2019</td>
+         <td class="tg-q667"></td>
+         <td class="tg-28l8"></td>
+        </tr>
+        <tr>
+         <td class="tg-uys7">1</td>
+         <td class="tg-0pky">4/10/2019</td>
+         <td class="tg-pcyi"></td>
+         <td class="tg-uys7"></td>
+        </tr>
+        <tr>
+         <td class="tg-28l8">2</td>
+         <td class="tg-c6of">4/13/2019</td>
+         <td class="tg-pcyi"></td>
+         <td class="tg-28l8"></td>
+        </tr>
+        <tr>
+         <td class="tg-uys7">3</td>
+         <td class="tg-0pky">4/14/2019</td>
+         <td class="tg-pcyi">Pain, Swelling</td>
+         <td class="tg-uys7"></td>
+        </tr>
+        <tr>
+         <td class="tg-hvsw">4</td>
+         <td class="tg-lto5">4/15/2019</td>
+         <td class="tg-inpf">Drainage culture: S. aureus</td>
+         <td class="tg-hvsw">HAI</td>
+        </tr>
+        <tr>
+         <td class="tg-uys7">5</td>
+         <td class="tg-0pky">4/16/2019</td>
+         <td class="tg-pcyi"></td>
+         <td class="tg-uys7"></td>
+        </tr>
+        <tr>
+         <td class="tg-baqh">6</td>
+         <td class="tg-0lax"></td>
+         <td class="tg-y6fn"></td>
+         <td class="tg-0lax"></td>
+        </tr>
+        <tr>
+         <td class="tg-baqh">7</td>
+         <td class="tg-0lax"></td>
+         <td class="tg-y6fn"></td>
+         <td class="tg-0lax"></td>
+        </tr>
+        <tr>
+         <td class="tg-0pky"></td>
+         <td class="tg-0pky"></td>
+         <td class="tg-66je" colspan="2">SKIN (Criterion 2a)</td>
+        </tr>
+       </table>
+      </div>
+
+      <br>
+
+      <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="collapse"
+      data-target="#reportSUTI-19" aria-expanded="false" aria-controls="reportSUTI-19">
+       <span class="fas fa-book-open" aria-hidden="true"></span>Report-SUTI</button>
+      <br>
+
+      <div class="collapse" id="reportSUTI-19">
+
+
+       <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg .tg-88nc{font-weight:bold;border-color:inherit;text-align:center}
+        .tg .tg-kiyi{font-weight:bold;border-color:inherit;text-align:left}
+        .tg .tg-baqh{text-align:center;vertical-align:top}
+        .tg .tg-lto5{background-color:#f8a102;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-uys7{border-color:inherit;text-align:center}
+        .tg .tg-o5tf{font-weight:bold;background-color:#ffffff;border-color:inherit;text-align:center}
+        .tg .tg-hvsw{background-color:#f8a102;border-color:inherit;text-align:center}
+        .tg .tg-pcyi{background-color:#c0c0c0;border-color:#343434;text-align:left}
+        .tg .tg-21r5{font-weight:bold;border-color:inherit;text-align:right}
+        .tg .tg-fymr{font-weight:bold;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-7btt{font-weight:bold;border-color:inherit;text-align:center;vertical-align:top}
+        .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-q667{background-color:#ffffff;border-color:#343434;text-align:left}
+        .tg .tg-28l8{background-color:#ffffff;border-color:inherit;text-align:center}
+        .tg .tg-c6of{background-color:#ffffff;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-203b{font-weight:bold;background-color:#c0c0c0;border-color:#343434;text-align:left}
+        .tg .tg-5ys4{font-weight:bold;background-color:#f8a102;border-color:#343434;text-align:left}
+        .tg .tg-0lax{text-align:left;vertical-align:top}
+        .tg .tg-y6fn{background-color:#c0c0c0;text-align:left;vertical-align:top}
+        .tg .tg-66je{font-weight:bold;background-color:#f8a102;border-color:inherit;text-align:left;vertical-align:top}
+       </style>
+       <table class="tg" style="undefined;table-layout: fixed; width: 642px">
+        <colgroup>
+         <col style="width: 128px">
+          <col style="width: 88px">
+           <col style="width: 271px">
+            <col style="width: 155px">
+        </colgroup>
+        <tr>
+         <th class="tg-21r5">Admission Date:</th>
+         <th class="tg-fymr" colspan="3">04/10/2019 (Patient age &lt; 65)</th>
+        </tr>
+        <tr>
+         <td class="tg-88nc">Hospital Day</td>
+         <td class="tg-7btt">Dates</td>
+         <td class="tg-88nc">Signs/Symptoms/Diagnostics</td>
+         <td class="tg-kiyi">Status (POA or HAI)</td>
+        </tr>
+        <tr>
+         <td class="tg-uys7">-2</td>
+         <td class="tg-0pky">4/8/2019</td>
+         <td class="tg-q667"></td>
+         <td class="tg-uys7"></td>
+        </tr>
+        <tr>
+         <td class="tg-28l8">-1</td>
+         <td class="tg-c6of">4/9/2019</td>
+         <td class="tg-q667"></td>
+         <td class="tg-28l8"></td>
+        </tr>
+        <tr>
+         <td class="tg-uys7">1</td>
+         <td class="tg-0pky">4/10/2019</td>
+         <td class="tg-pcyi"></td>
+         <td class="tg-uys7"></td>
+        </tr>
+        <tr>
+         <td class="tg-28l8">2</td>
+         <td class="tg-c6of">4/13/2019</td>
+         <td class="tg-203b">Fever &gt; 38.0 C</td>
+         <td class="tg-o5tf">POA</td>
+        </tr>
+        <tr>
+         <td class="tg-uys7">3</td>
+         <td class="tg-0pky">4/14/2019</td>
+         <td class="tg-pcyi"></td>
+         <td class="tg-uys7"></td>
+        </tr>
+        <tr>
+         <td class="tg-hvsw">4</td>
+         <td class="tg-lto5">4/15/2019</td>
+         <td class="tg-5ys4">Urine culture &gt;100,000, E. coli</td>
+         <td class="tg-hvsw"></td>
+        </tr>
+        <tr>
+         <td class="tg-uys7">5</td>
+         <td class="tg-0pky">4/16/2019</td>
+         <td class="tg-pcyi"></td>
+         <td class="tg-uys7"></td>
+        </tr>
+        <tr>
+         <td class="tg-baqh">6</td>
+         <td class="tg-0lax"></td>
+         <td class="tg-y6fn"></td>
+         <td class="tg-0lax"></td>
+        </tr>
+        <tr>
+         <td class="tg-baqh">7</td>
+         <td class="tg-0lax"></td>
+         <td class="tg-y6fn"></td>
+         <td class="tg-0lax"></td>
+        </tr>
+        <tr>
+         <td class="tg-0pky"></td>
+         <td class="tg-0pky"></td>
+         <td class="tg-66je" colspan="2">SUTI - POA , Date of Event = 2, Pathogen = E.coli</td>
+        </tr>
+       </table>
+      </div>
+
+      <br>
+
+      <button type="button" class="btn btn-secondary btn-lg btn-block" data-toggle="collapse"
+      data-target="#reportSUTI2-19" aria-expanded="false" aria-controls="reportSUTI2-19">
+       <span class="fas fa-book-open" aria-hidden="true"></span>Report-SUTI-2</button>
+      <br>
+
+      <div class="collapse" id="reportSUTI2-19">
+
+
+       <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg .tg-b0iq{font-weight:bold;background-color:#c0c0c0;color:#343434;border-color:#343434;text-align:left}
+        .tg .tg-88nc{font-weight:bold;border-color:inherit;text-align:center}
+        .tg .tg-kiyi{font-weight:bold;border-color:inherit;text-align:left}
+        .tg .tg-14fs{background-color:#ffffff;color:#343434;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-wu2u{background-color:#c0c0c0;color:#343434;text-align:left;vertical-align:top}
+        .tg .tg-3sxx{font-weight:bold;background-color:#f8a102;color:#343434;border-color:#343434;text-align:left}
+        .tg .tg-b7xv{background-color:#c0c0c0;color:#343434;border-color:#343434;text-align:left}
+        .tg .tg-vujd{background-color:#f8a102;color:#343434;border-color:inherit;text-align:center}
+        .tg .tg-21r5{font-weight:bold;border-color:inherit;text-align:right}
+        .tg .tg-fymr{font-weight:bold;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-7btt{font-weight:bold;border-color:inherit;text-align:center;vertical-align:top}
+        .tg .tg-ce03{background-color:#ffffff;color:#343434;border-color:inherit;text-align:center}
+        .tg .tg-7luu{background-color:#ffffff;color:#343434;border-color:#343434;text-align:left}
+        .tg .tg-hmwk{font-weight:bold;background-color:#ffffff;color:#343434;border-color:inherit;text-align:center}
+        .tg .tg-4a2s{background-color:#f8a102;color:#343434;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-znq9{background-color:#ffffff;color:#343434;text-align:center;vertical-align:top}
+        .tg .tg-orwz{background-color:#ffffff;color:#343434;text-align:left;vertical-align:top}
+        .tg .tg-nkaz{font-weight:bold;background-color:#c0c0c0;color:#343434;text-align:left;vertical-align:top}
+        .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-66je{font-weight:bold;background-color:#f8a102;border-color:inherit;text-align:left;vertical-align:top}
+       </style>
+       <table class="tg" style="undefined;table-layout: fixed; width: 642px">
+        <colgroup>
+         <col style="width: 128px">
+          <col style="width: 88px">
+           <col style="width: 271px">
+            <col style="width: 155px">
+        </colgroup>
+        <tr>
+         <th class="tg-21r5">Admission Date:</th>
+         <th class="tg-fymr" colspan="3">04/10/2019 (Patient age &lt; 65)</th>
+        </tr>
+        <tr>
+         <td class="tg-88nc">Hospital Day</td>
+         <td class="tg-7btt">Dates</td>
+         <td class="tg-88nc">Signs/Symptoms/Diagnostics</td>
+         <td class="tg-kiyi">Status (POA or HAI)</td>
+        </tr>
+        <tr>
+         <td class="tg-ce03">-2</td>
+         <td class="tg-14fs">4/8/2019</td>
+         <td class="tg-7luu"></td>
+         <td class="tg-ce03"></td>
+        </tr>
+        <tr>
+         <td class="tg-ce03">-1</td>
+         <td class="tg-14fs">4/9/2019</td>
+         <td class="tg-7luu"></td>
+         <td class="tg-ce03"></td>
+        </tr>
+        <tr>
+         <td class="tg-ce03">1</td>
+         <td class="tg-14fs">4/10/2019</td>
+         <td class="tg-b7xv"></td>
+         <td class="tg-ce03"></td>
+        </tr>
+        <tr>
+         <td class="tg-ce03">2</td>
+         <td class="tg-14fs">4/13/2019</td>
+         <td class="tg-b0iq"></td>
+         <td class="tg-hmwk"></td>
+        </tr>
+        <tr>
+         <td class="tg-ce03">3</td>
+         <td class="tg-14fs">4/14/2019</td>
+         <td class="tg-b7xv"></td>
+         <td class="tg-ce03"></td>
+        </tr>
+        <tr>
+         <td class="tg-vujd">4</td>
+         <td class="tg-4a2s">4/15/2019</td>
+         <td class="tg-3sxx">Urine Culture, &gt;100,000, E. coli</td>
+         <td class="tg-vujd">HAI</td>
+        </tr>
+        <tr>
+         <td class="tg-ce03">5</td>
+         <td class="tg-14fs">4/16/2019</td>
+         <td class="tg-b0iq">Fever &gt;38.0 C</td>
+         <td class="tg-ce03"></td>
+        </tr>
+        <tr>
+         <td class="tg-znq9">6</td>
+         <td class="tg-orwz">4/17/2019</td>
+         <td class="tg-nkaz">Fever &gt;38.0 C</td>
+         <td class="tg-orwz"></td>
+        </tr>
+        <tr>
+         <td class="tg-znq9">7</td>
+         <td class="tg-orwz"></td>
+         <td class="tg-wu2u"></td>
+         <td class="tg-orwz"></td>
+        </tr>
+        <tr>
+         <td class="tg-0pky"></td>
+         <td class="tg-0pky"></td>
+         <td class="tg-66je" colspan="2">SUTI - HAI , Date of Event = 4, Pathogen = E.coli</td>
+        </tr>
+       </table>
+
+      </div>
+
+      <br>
+      <br>
+
+
+     
+     </div>
+
+    </div>
+   </div>
+
+
+   <div class="row">
+    <div class="col-md-3">
+     <p>UNDER CONSTRUCTION</p>
+    </div>
+    <div class="col-md-3">
+     <p>2019 Definitions</p>
+    </div>
+    <div class="col-md-3">
+     <p>UNDER CONSTRUCTION</p>
+    </div>
+    <div class="col-md-3">
+     <p>2019 Definitions</p>
+    </div>
+   </div>
+
+   <script type="text/javascript">
+    $(function() {
+    	$( "#Tabs1" ).tabs(); 
+    	
+    	});
+    $(function() {
+    	$( "#Datepickerbone1" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerbone2" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerbone4" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerbone5" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerbone6" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerbone7" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerbone8" ).datepicker(); 
+    });
+    
+    
+    $(function() {
+    	$( "#Datepickerbone9" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerbone10" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerbone3a" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerbone3b" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerbone3c" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerbone3d" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerbone3e" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerbone4a" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerbone4b" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerbone4c" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerbone15" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerbone25" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerbone35a" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerbone35b" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerbone35c" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerbone35e" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerbone35f" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerbone35g" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerbone35h" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerbone35i" ).datepicker();
+    });
+    
+    $(function() {
+    	$( "#Datepickerdisc1" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Button1" ).button(); 
+    });
+    $(function() {
+    	$( "#Datepickerdisc2" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#DatepickerBJ1" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#DatepickerBJ2" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#DatepickerBJ3" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerdisc3a" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerdisc3b" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerdisc3c" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerdisc4" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerdisc15" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerdisc25" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerdisc35a" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerdisc35b" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerdisc45a" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerdisc45b" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerdisc45c" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerjnt1" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerjnt2" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerjnt3a" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerjnt3b" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerjnt3c" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerjnt3d" ).datepicker(); 
+    $(function() {
+    	$( "#Datepickerjnt3e" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerjnt4a" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerjnt4b" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerjnt4c" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerjnt4d" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerjnt15" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerjnt25" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerjnt35a" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerjnt35b" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerjnt35c" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerjnt35d" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerjnt35e" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerjnt45a" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerjnt45b" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerjnt45c" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerjnt45d" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerjnt45e" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerpji15" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerpji25" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerpji35a" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerpji35b" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerpji35c" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerpji35d" ).datepicker(); 
+    });
+    
+    $(function() {
+    	$( "#Datepickerpji35e" ).datepicker(); 
+    });
+    $(function() {
+    	$( "#Datepickerpji15CX1" ).datepicker();
+    	}); 
+    $(function() {
+    	$( "#Datepickerpji15CX2" ).datepicker(); 	
+    		
+    });
+    
+    });
+    
+    
+    function clearForm(oForm) {
+         
+       var elements = oForm.elements; 
+         
+       oForm.reset();
+    
+       for(i=0; i<elements.length; i++) {
+           
+       field_type = elements[i].type.toLowerCase();
+       
+       switch(field_type) {
+       
+         case "text": 
+         case "password": 
+         case "textarea":
+               case "hidden":   
+           
+           elements[i].value = ""; 
+           break;
+             
+         case "radio":
+         case "checkbox":
+             if (elements[i].checked) {
+               elements[i].checked = false; 
+           }
+           break;
+    
+         case "select-one":
+         case "select-multi":
+                     elements[i].selectedIndex = -1;
+           break;
+    
+         default: 
+           break;
+       }
+         }
+     };
+   </script>
+</body>
+
+</html>
