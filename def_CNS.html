@@ -702,7 +702,7 @@
 
 
 
-                            <div class="card">
+                            <div class="card bg-dark text-white">
                                 <div class="card-body">
                                     <div class="custom-file">
                                         <input type="" class="custom-file-input2">
@@ -887,7 +887,7 @@
                             <br>
 
 
-                            <div class="card">
+                            <div class="card bg-dark text-white">
                                 <div class="card-body">
                                     <div class="custom-file">
                                         <input type="" class="custom-file-input1">
@@ -927,7 +927,7 @@
                             <br>
 
 
-                            <div class="card">
+                            <div class="card bg-dark text-white">
                                 <div class="card-body">
                                     <div class="custom-file">
                                         <input type="" class="custom-file-input1">
@@ -1540,7 +1540,7 @@
 
 
 
-                        <div class="card">
+                        <div class="card bg-dark text-white">
                             <div class="card-body">
                                 <div class="custom-file">
                                     <input type="" class="custom-file-input2">
@@ -1740,220 +1740,282 @@
                                     });
                                 </script>
 
+
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="card bg-dark text-white">
+                            <div class="card-body">
+                                <div class="custom-file">
+                                    <input type="" class="custom-file-input1">
+                                    <label class="custom-file-label" for="customFile">Microbiology (Patients ≤1 year of age)</label>
+                                </div>
+
+                                <br>
                                 <br>
 
 
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="men3j" id="men3j" data-toggle="collapse" data-target="#Datepickermen3j" value="Organism(s) seen on Gram stain of CSF.">
+                                    <label class="custom-control-label" for="men3j">Organism(s) seen on Gram stain of CSF.</label>
+                                    <input class="collapse" type="text" name="men3j" id="Datepickermen3j" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+
+                                <script>
+                                    $('#men3j').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickermen3j').prop('disabled', !cbIsChecked);
+
+                                    });
+
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickermen3j").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+                                <br>
+
+
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="men3l" id="men3l" data-toggle="collapse" data-target="#Datepickermen3l" value="Increased white cells, elevated protein, and decreased glucose in CSF (per reporting laboratory’s reference range).">
+                                    <label class="custom-control-label" for="men3l">Increased white cells, elevated protein, and decreased glucose in CSF (per reporting laboratory’s reference range).</label>
+                                    <input class="collapse" type="text" name="men3l" id="Datepickermen3l" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+
+                                <script>
+                                    $('#men3l').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickermen3l').prop('disabled', !cbIsChecked);
+
+                                    });
+
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickermen3l").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+                                <br>
+
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="men3m" id="men3m" data-toggle="collapse" data-target="#Datepickermen3m" value="Diagnostic single antibody titer (IgM) or 4-fold increase in paired sera (IgG) for organism.">
+                                    <label class="custom-control-label" for="men3m">Diagnostic single antibody titer (IgM) or 4-fold increase in paired sera (IgG) for organism.</label>
+                                    <input class="collapse" type="text" name="men3m" id="Datepickermen3m" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+
+                                <script>
+                                    $('#men3m').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickermen3m').prop('disabled', !cbIsChecked);
+
+                                    });
+
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickermen3m").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+                                <br>
+
+
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="men3kDate" id="men3k" data-toggle="collapse" data-target="#Datepickermen3k, #men3kOrgSelect-19" value="Organism(s) identified from blood by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST)." />
+                                    <label class="custom-control-label" for="men3k">Organism(s) identified from blood by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).
+                                    </label>
+                                    <input type="text" class="collapse" name="men3kDate" id="Datepickermen3k" placeholder="Please enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <br>
+
+                                <script>
+                                    $('#men3k').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickermen3k').prop('disabled', !cbIsChecked);
+
+                                    });
+
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickermen3k").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+
+
+                                <div id="men3kOrgSelect-19" class="collapse">
+
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="text-left">
+                                                <h5 class="bg-warning" style="color:black">
+                                                    <strong>Select organism(s)</strong>
+                                                </h5>
+                                            </div>
+
+                                            <div id="myformmen3kOrg2-19">
+                                                <table>
+                                                    <tr>
+                                                        <td>Organism:</td>
+                                                        <td>
+                                                            <select name="organisms" id="orgmen3kOrg2">
+                                                                <option value="0">Select an Organism</option>
+                                                                <option value="Abiotrophia adiacens ">Abiotrophia adiacens - GRADJ</option>
+                                                                <option value="Abiotrophia spp. ">Abiotrophia spp. - ABISP</option>
+                                                                <option value="Acanthamoeba ">Acanthamoeba - ACANT</option>
+                                                                <option value="Achromobacter spp. ">Achromobacter spp. - ACHSP</option>
+                                                                <option value="Achromobacter xylosoxidans ">Achromobacter xylosoxidans - ALCXYL</option>
+                                                                <option value="Achromobacter xylosoxidans xylosoxidans ">Achromobacter xylosoxidans xylosoxidans - ACHXYL</option>
+                                                                <option value="Achromobacter, group Vd biotype 1 ">Achromobacter, group Vd biotype 1 - ACHVD1</option>
+                                                                <option value="Achromobacter, group Vd biotype 2 ">Achromobacter, group Vd biotype 2 - ACHVD2</option>
+                                                                <option value="Acidaminococcus fermentans ">Acidaminococcus fermentans - ACIFE</option>
+                                                                <option value="Acidaminococcus spp. ">Acidaminococcus spp. - ACISP</option>
+                                                                <option value="Acidovorax delafieldii ">Acidovorax delafieldii - ACDEL</option>
+                                                                <option value="Acidovorax Genus  ">Acidovorax Genus - ACIDSP</option>
+                                                                <option value="Acidovorax spp. ">Acidovorax spp. - ACIDSP</option>
+                                                                <option value="Acinetobacter anitratus ">Acinetobacter anitratus - ACICBA</option>
+                                                                <option value="Acinetobacter baumannii ">Acinetobacter baumannii - ACBA</option>
+                                                                <option value="Acinetobacter calcoaceticus ">Acinetobacter calcoaceticus - ACICBA</option>
+                                                                <option value="Acinetobacter calcoaceticus ss. Lwoffii ">Acinetobacter calcoaceticus ss. Lwoffii - ACLW</option>
+                                                                <option value="Acinetobacter calcoaceticus-baumannii complex ">Acinetobacter calcoaceticus-baumannii complex - ACCA</option>
+                                                                <option value="Acinetobacter genospecies 3 ">Acinetobacter genospecies 3 - ACIGEN</option>
+                                                                <option value="Acinetobacter hemolyticus ">Acinetobacter hemolyticus - ACHA</option>
+                                                                <option value="Acinetobacter johnsonii ">Acinetobacter johnsonii - ACJH</option>
+                                                                <option value="Acinetobacter junii ">Acinetobacter junii - ACJU</option>
+                                                                <option value="Acinetobacter lwoffii ">Acinetobacter lwoffii - ACLW</option>
+                                                                <option value="Acinetobacter spp. ">Acinetobacter spp. - ACS</option>
+                                                                <option value="Acremonium spp. ">Acremonium spp. - ACRE</option>
+                                                            </select>
+                                                            <input type="button" id="addmen3kOrg2" value="Add" onclick="Javascript:addRowmen3kOrg2()">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="card" id="mydatamen3kOrg2">
+                                            <div class="card-body">
+                                                <div class="text-left">
+                                                    <h5 class="bg-warning" style="color:black">
+                                                        <strong>Selected:</strong>
+                                                    </h5>
+                                                </div>
+                                                <table id="myTableDatamen3kOrg2">
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                        <td></td>
+                                                    </tr>
+                                                </table>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <script>
+                                    function addRowDiscOrg2() {
+                                        var org = document.getElementById("orgmen3kOrg2");
+                                        var table = document.getElementById("myTableDatamen3kOrg2");
+                                        var rowCount = table.rows.length;
+                                        var row = table.insertRow(rowCount);
+                                        row.insertCell(0).innerHTML = '<input type="button" value = "Remove" onClick="Javacsript:deleteRowmen3kOrg2(this)">';
+                                        row.insertCell(1).innerHTML = org.value;
+                                    }
+
+                                    function deleteRowDiscOrg2(obj) {
+                                        var index = obj.parentNode.parentNode.rowIndex;
+                                        var table = document.getElementById("myTableDatamen3kOrg2");
+                                        table.deleteRow(index);
+                                    }
+
+                                    function load() {
+                                        console.log("Page load finished");
+                                    }
+                                </script>
+
                             </div>
                         </div>
 
-
-
-
-
-
-
-
-
-                        <!--
-                                      <div class="checkbox">
-                            <label><input type="checkbox" name="men3g" id="men3g" value="">Cranial nerve signs </label>
-                            <input type="text" id="Datepickermen3g" placeholder="Enter date" disabled>
-                        </div>
-
-                        <script>
-                            $('#men3g').click(function() {
-                                var cbIsChecked = $(this).prop('checked');
-                                $('#Datepickermen3g').prop('disabled', !cbIsChecked);
-                            });
-                        </script>
-
--->
-
-                        <p class="bg-primary">Microbiology (Patient ≤1 year of age)</p>
-
-                        <div class="checkbox">
-                            <label><input name="men3i" type="checkbox" id="men3i" value="">Positive CSF examination with increased white cells, elevated protein, and/or decreased glucose</label>
-                            <input type="text" id="Datepickermen3i" placeholder="Enter date" disabled>
-                        </div>
-
-                        <script>
-                            $('#men3i').click(function() {
-                                var cbIsChecked = $(this).prop('checked');
-                                $('#Datepickermen3i').prop('disabled', !cbIsChecked);
-                            });
-                        </script>
-
-                        <div class="checkbox">
-                            <label><input name="men3j" type="checkbox" id="men3j" value="">Positive Gram’s stain of CSF</label>
-                            <input type="text" id="Datepickermen3j" placeholder="Enter date" disabled>
-                        </div>
-
-                        <script>
-                            $('#men3j').click(function() {
-                                var cbIsChecked = $(this).prop('checked');
-                                $('#Datepickermen3j').prop('disabled', !cbIsChecked);
-                            });
-                        </script>
-
-                        <div class="checkbox">
-                            <label><input name="men3l" type="checkbox" id="men3l" value="">Positive antigen test of CSF, blood, or urine</label>
-                            <input type="text" id="Datepickermen3l" placeholder="Enter date" disabled>
-                        </div>
-
-                        <script>
-                            $('#men3l').click(function() {
-                                var cbIsChecked = $(this).prop('checked');
-                                $('#Datepickermen3l').prop('disabled', !cbIsChecked);
-                            });
-                        </script>
-
-                        <div class="checkbox">
-                            <label><input name="men3m" type="checkbox" id="men3m" value="">Diagnostic single antibody titer (IgM) <u>OR</u> 4-fold increase in paired sera (IgG) for pathogen </label>
-                            <input type="text" id="Datepickermen3m" placeholder="Enter date" disabled>
-                        </div>
-
-                        <script>
-                            $('#men3m').click(function() {
-                                var cbIsChecked = $(this).prop('checked');
-                                $('#Datepickermen3m').prop('disabled', !cbIsChecked);
-                            });
-                        </script>
-
-                        <div class="checkbox">
-                            <label><input name="men3k" type="checkbox" id="men3k" value=""><a href="#" onclick="return false;" data-toggle="tooltip" data-placement="top" title="For a bloodstream infection to be determined secondary to another site of infection, the blood culture must be collected during the site-specific infection Secondary BSI Attribution Period and satisfy one of the following: 1. The blood culture must contain at least one organism that matches an organism found in a site-specific infection culture used to meet the site-specific infection criterion OR 2. The blood culture must be an element used to meet the site-specific infection criterion. 
-"><span class="glyphicon glyphicon-flag" style="color:red" aria-hidden="true"></span><em>Organisms cultured from blood</em></a></label>
-                            <input type="text" id="Datepickermen3k" placeholder="Enter date" disabled>
-                        </div>
-
-                        <script>
-                            $('#men3k').click(function() {
-                                var cbIsChecked = $(this).prop('checked');
-                                $('#Datepickermen3k').prop('disabled', !cbIsChecked);
-                            });
-                        </script>
 
                         <br>
-
-                        <div class="panel panel-info">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><strong>Select organism(s)</strong></h3>
-                            </div>
-                            <div class="panel-body">
-
-                                <div id="myformMenOrg2">
-                                    <table>
-                                        <tr>
-                                            <td>Organism:</td>
-                                            <td>
-
-                                                <select name="organisms" id="orgMenOrg2">
-                                                    <option value="0">Select an Organism</option>
-                                                    <option value="Abiotrophia adiacens ">Abiotrophia adiacens - GRADJ</option>
-                                                    <option value="Abiotrophia spp. ">Abiotrophia spp. - ABISP</option>
-                                                    <option value="Acanthamoeba ">Acanthamoeba - ACANT</option>
-                                                    <option value="Achromobacter spp. ">Achromobacter spp. - ACHSP</option>
-                                                    <option value="Achromobacter xylosoxidans ">Achromobacter xylosoxidans - ALCXYL</option>
-                                                    <option value="Achromobacter xylosoxidans xylosoxidans ">Achromobacter xylosoxidans xylosoxidans - ACHXYL</option>
-                                                    <option value="Achromobacter, group Vd biotype 1 ">Achromobacter, group Vd biotype 1 - ACHVD1</option>
-                                                    <option value="Achromobacter, group Vd biotype 2 ">Achromobacter, group Vd biotype 2 - ACHVD2</option>
-                                                    <option value="Acidaminococcus fermentans ">Acidaminococcus fermentans - ACIFE</option>
-                                                    <option value="Acidaminococcus spp. ">Acidaminococcus spp. - ACISP</option>
-                                                    <option value="Acidovorax delafieldii ">Acidovorax delafieldii - ACDEL</option>
-                                                    <option value="Acidovorax Genus  ">Acidovorax Genus - ACIDSP </option>
-                                                    <option value="Acidovorax spp. ">Acidovorax spp. - ACIDSP</option>
-                                                    <option value="Acinetobacter anitratus ">Acinetobacter anitratus - ACICBA</option>
-                                                    <option value="Acinetobacter baumannii ">Acinetobacter baumannii - ACBA</option>
-                                                    <option value="Acinetobacter calcoaceticus ">Acinetobacter calcoaceticus - ACICBA</option>
-                                                    <option value="Acinetobacter calcoaceticus ss. Lwoffii ">Acinetobacter calcoaceticus ss. Lwoffii - ACLW</option>
-                                                    <option value="Acinetobacter calcoaceticus-baumannii complex ">Acinetobacter calcoaceticus-baumannii complex - ACCA</option>
-                                                    <option value="Acinetobacter genospecies 3 ">Acinetobacter genospecies 3 - ACIGEN</option>
-                                                    <option value="Acinetobacter hemolyticus ">Acinetobacter hemolyticus - ACHA</option>
-                                                    <option value="Acinetobacter johnsonii ">Acinetobacter johnsonii - ACJH</option>
-                                                    <option value="Acinetobacter junii ">Acinetobacter junii - ACJU</option>
-                                                    <option value="Acinetobacter lwoffii ">Acinetobacter lwoffii - ACLW</option>
-                                                    <option value="Acinetobacter spp. ">Acinetobacter spp. - ACS</option>
-                                                    <option value="Acremonium spp. ">Acremonium spp. - ACRE</option>
-                                                </select>
-                                                <input type="button" id="addMenOrg2" value="Add" onclick="Javascript:addRowMenOrg2()"></td>
-                                        </tr>
-                                        <tr>
-                                            <td>&nbsp;</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div id="mydataMenOrg2">
-
-                                    <p class="bg-warning"><b>Selected:</b></p>
-                                    <table id="myTableDataMenOrg2">
-                                        <tr>
-                                            <td>&nbsp;</td>
-                                            <td></td>
-                                        </tr>
-                                    </table>
-
-                                </div>
-                            </div>
-                        </div>
-                        <script>
-                            function addRowMenOrg2() {
-
-                                var org = document.getElementById("orgMenOrg2");
-                                var table = document.getElementById("myTableDataMenOrg2");
-
-                                var rowCount = table.rows.length;
-                                var row = table.insertRow(rowCount);
-
-                                row.insertCell(0).innerHTML = '<input type="button" value = "Remove" onClick="Javacsript:deleteRowMenOrg2(this)">';
-                                row.insertCell(1).innerHTML = org.value;
-
-                            }
-
-                            function deleteRowMenOrg2(obj) {
-
-                                var index = obj.parentNode.parentNode.rowIndex;
-                                var table = document.getElementById("myTableDataMenOrg2");
-                                table.deleteRow(index);
-
-                            }
-
-                            function load() {
-
-                                console.log("Page load finished");
-
-                            }
-                        </script>
-
-
-                        <br>
-
-
-                        <p class="bg-primary">Antimicrobial therapy (Patient ≤1 year of age)</p>
-
-                        <div class="checkbox">
-                            <label><input name="men3n" type="checkbox" id="men3n" value=""> If diagnosis is made antemortem, physician institutes appropriate antimicrobial therapy </label>
-                            <input type="text" id="Datepickermen3n" placeholder="Enter date" disabled>
-                        </div>
-
-                        <script>
-                            $('#men3n').click(function() {
-                                var cbIsChecked = $(this).prop('checked');
-                                $('#Datepickermen3n').prop('disabled', !cbIsChecked);
-                            });
-                        </script>
 
                     </div>
 
-                    <br> <br>
-                    <p class="bg-warning"><strong>Reporting instructions</strong></p>
-                    <p><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> Report meningitis in the newborn as healthcare-associated unless there is compelling evidence indicating the meningitis was acquired transplacentally (i.e., unless it was apparent on the day of birth or the next day).</p>
-
-                    <p><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> Report CSF shunt infection as SSI-MEN if it occurs ≤1 year of placement; if later or after manipulation/access of the shunt, report as CNS-MEN.</p>
-
-                    <p><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> Report meningoencephalitis as MEN.</p>
-
-                    <p><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> Report spinal abscess with meningitis as MEN.</p>
 
                     <br><br>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="bg-warning" style="color:black">
+                                    <strong>Reporting instructions</strong>
+                                </h5>
+                            </div>
+                            <p>
+                                <strong>*</strong>With no other recognized cause</p>
+
+
+                            <br>
+
+                            <p>
+                                <span class="fas fa-arrow-circle-right" style="color:black" aria-hidden="true"></span> Report CSF shunt infection as SSI-MEN if it occurs within 90 days of placement; if later or after manipulation/access, it is considered CNS-MEN but is not reportable as an SSI.
+                            </p>
+
+                            <p>
+                                <span class="fas fa-arrow-circle-right" style="color:black" aria-hidden="true"></span> Report as MEN if meningitis (MEN) and encephalitis (IC) are present together.
+                            </p>
+
+                            <p>
+                                <span class="fas fa-arrow-circle-right" style="color:black" aria-hidden="true"></span> Report as IC if meningitis (MEN) and a brain abscess (IC) are present together after operation.
+                            </p>
+
+                            <p>
+                                <span class="fas fa-arrow-circle-right" style="color:black" aria-hidden="true"></span> Report as SA if meningitis (MEN) and spinal abscess/infection (SA) are present together.
+                            </p>
+
+
+                        </div>
+                    </div>
+
+                    <br><br>
+
+
+
+
+
+
+
 
                     <p><strong>Click the <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check Button after making your selection(s) and whenever you make any changes to your selection(s)</strong></p>
 
