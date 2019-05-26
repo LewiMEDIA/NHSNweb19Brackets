@@ -482,15 +482,6 @@ function getdate() {
         </div>
 
         <br><br>
-        <!--<div class="alert alert-primary" role="alert">Histopathology</div>-->
-
-        <!--<div class="custom-control custom-checkbox">
-  <label><input type="checkbox" name="bone15" id="bone25" value="Patient has evidence of osteomyelitis on gross anatomic or histopathologic exam">Patient has evidence of osteomyelitis on gross anatomic or histopathologic exam</label>
-    
-    
-  <input type="text" id="Datepickerbone25" placeholder="Enter date" disabled, required>
-  &nbsp;  &nbsp;  &nbsp; 
-</div>-->
 
         <div class="custom-control custom-checkbox">
          <input type="checkbox" class="custom-control-input" name="bone25" id="bone25" data-toggle="collapse"
@@ -504,44 +495,10 @@ function getdate() {
          value="" required />&nbsp; &nbsp; &nbsp;
         </div>
 
-        <!--  <script>  
-       $("#bone25").keyup(function () {
-    if (this.value == this.checked) {
-      var $next = $(this).next('#Datepickerbone25');
-      if ($next."")
-          $(this).next('#Datepickerbone25').focus();
-      else
-          $(this).blur();
-    }
-});
- $( "#bone25" ).click(function() {
-  $( "#Datepickerbone25" ).focus();
-});
-      $(':input').keypress(function() {
-    $(this).next(':input').focus();
-});  
- </script>
 
-<script>
-var $conditionalInput = $('input.conditionally-loaded');
-var $subscribeInput = $('input[name="bone25"]');
-    $conditionalInput.hide();
-    $subscribeInput.on('click', function(){
-    if ( $(this).is(':checked') )
-        $conditionalInput.show();
-    else
-        $conditionalInput.hide();
-        $conditionalInput.val('');
-});
-      </script>-->
        </div>
       </div>
-      <!--<script>
-$('#bone25').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerbone25').prop('disabled', !cbIsChecked); 
-});
-</script>-->
+
 
       <script>
        $('#bone25').click(function() { 
@@ -603,28 +560,7 @@ $('#bone25').click(function() {
       </script>
       <br>
 
-      <!--<script>  
-    $(function() {
-    $("#bone35i").click(function() {
-        ToggleSection();
-    });
 
-    ToggleSection();
-});
-
-function ToggleSection() {    
-    var $txt = $("#Datepickerbone35i"); // Save textbox's reference
-    
-    // The right way to check if a checkbox is checked is with .prop method
-    if ($("#bone35i").prop("checked")) {
-        $txt.prop("disabled", false);
-    }
-    else {
-        $txt.prop("disabled", true).val("");
-    }
-    
-}
-    </script>-->
       <div class="card">
        <div class="card-body">
         <div class="custom-file">
@@ -659,28 +595,6 @@ function ToggleSection() {
          });
         </script>
 
-        <!-- <script>  
-    $(function() {
-    $("#bone15").click(function() {
-        ToggleSection();
-    });
-
-    ToggleSection();
-});
-
-function ToggleSection() {    
-    var $txt = $("#Datepickerbone15"); // Save textbox's reference
-    
-    // The right way to check if a checkbox is checked is with .prop method
-    if ($("#bone15").prop("checked")) {
-        $txt.prop("disabled", false);
-    }
-    else {
-        $txt.prop("disabled", true).val("");
-    }
-    
-}
-    </script>-->
 
         <div class="custom-control custom-checkbox">
          <input type="checkbox" class="custom-control-input" name="bone35h" id="bone35h"
@@ -692,12 +606,7 @@ function ToggleSection() {
          value="" required />&nbsp; &nbsp; &nbsp;
         </div>
 
-        <!--<script>
-$('#bone35h').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerbone35h').prop('disabled', !cbIsChecked); 
-});
-</script>-->
+
 
         <script>
          $('#bone35h').click(function() { 
@@ -734,12 +643,6 @@ $('#bone35h').click(function() {
        </div>
       </div>
 
-      <!--<script>
-$('#bone35g').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerbone35g').prop('disabled', !cbIsChecked); 
-});
-</script>-->
 
       <script>
        $('#bone35g').click(function() { 
