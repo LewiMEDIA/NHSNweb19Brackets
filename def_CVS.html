@@ -2383,7 +2383,235 @@
                             <br>
 
 
-                            <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#PatientOneYear4"> <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Click this button for Patients ≤1 year of age</button>
+                            
+                             <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#endoTogglePed1"> <span class="fas fa-hand-point-right" aria-hidden="true"></span> Click this button for Patients ≤1 year of age</button>
+                        <br>
+
+                        <div id="endoTogglePed1" class="collapse"> <br>
+
+                            <div class="card bg-dark text-white">
+                                <div class="card-body">
+                                    <div class="custom-file">
+                                        <input type="" class="custom-file-input2">
+                                        <label class="custom-file-label" for="customFile">Signs and Symptoms (Patients ≤1 year of age)</label>
+                                    </div>
+
+                                    <br><br>
+                           
+                                 
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="endo3a" id="endo3a" data-toggle="collapse" data-target="#Datepickerendo3a" value="Fever">
+
+                                        <label class="custom-control-label" for="endo3a">Fever (&gt;38&deg;C)</label>
+
+                                        <input class="collapse" type="text" name="endo3a" id="Datepickerendo3a" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
+
+                                    <script>
+                                        $('#endo3a').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickerendo3a').prop('disabled', !cbIsChecked);
+                                        });
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickerendo3a").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>
+
+                                    <br>
+                                    
+                                    
+                                   <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="endo3c" id="endo3c" data-toggle="collapse" data-target="#Datepickerendo3c" value="Apnea">
+
+                                        <label class="custom-control-label" for="endo3a">Apnea&#42;</label>
+
+                                        <input class="collapse" type="text" name="endo3c" id="Datepickerendo3c" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
+
+                                    <script>
+                                        $('#endo3c').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickerendo3c').prop('disabled', !cbIsChecked);
+                                        });
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickerendo3c").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>
+
+                                    <br>
+                                      
+                              <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="endo3d" id="endo3d" data-toggle="collapse" data-target="#Datepickerendo3d" value="Bradycardia">
+
+                                        <label class="custom-control-label" for="endo3d">Bradycardia&#42;</label>
+
+                                        <input class="collapse" type="text" name="endo3d" id="Datepickerendo3d" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
+
+                                    <script>
+                                        $('#endo3d').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickerendo3d').prop('disabled', !cbIsChecked);
+                                        });
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickerendo3d").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>
+
+                                    <br>
+                                             
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="endo3e" id="endo3e" data-toggle="collapse" data-target="#Datepickerendo3e" value="New or changing murmur">
+
+                                        <label class="custom-control-label" for="endo3e">New or changing murmur&#42;</label>
+
+                                        <input class="collapse" type="text" name="endo3e" id="Datepickerendo3e" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
+
+                                    <script>
+                                        $('#endo3e').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickerendo3e').prop('disabled', !cbIsChecked);
+                                        });
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickerendo3e").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>
+
+                                    <br>
+                                             
+                                    
+                        <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="endo3f" id="endo3f" data-toggle="collapse" data-target="#Datepickerendo3f" value="Embolic phenomena">
+
+                                        <label class="custom-control-label" for="endo3f">Embolic phenomena&#42;</label>
+
+                                        <input class="collapse" type="text" name="endo3f" id="Datepickerendo3f" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
+
+                                    <script>
+                                        $('#endo3f').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickerendo3f').prop('disabled', !cbIsChecked);
+                                        });
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickerendo3f").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>
+
+                                    <br>
+                                                         
+                            
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="endo3g" id="endo3g" data-toggle="collapse" data-target="#Datepickerendo3g" value="Skin manifestations (i.e. petechiae, splinter hemorrhages, painful subcutaneous nodules)">
+
+                                        <label class="custom-control-label" for="endo3g">Skin manifestations (i.e. petechiae, splinter hemorrhages, painful subcutaneous nodules)&#42;</label>
+
+                                        <input class="collapse" type="text" name="endo3g" id="Datepickerendo3g" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
+
+                                    <script>
+                                        $('#endo3g').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickerendo3g').prop('disabled', !cbIsChecked);
+                                        });
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickerendo3g").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>
+
+                                    <br>
+                                    
+                              
+                                      <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="endo3h" id="endo3h" data-toggle="collapse" data-target="#Datepickerendo3h" value="SCongestive heart failure">
+
+                                        <label class="custom-control-label" for="endo3h">Congestive heart failure&#42;</label>
+
+                                        <input class="collapse" type="text" name="endo3h" id="Datepickerendo3h" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
+
+                                    <script>
+                                        $('#endo3h').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickerendo3h').prop('disabled', !cbIsChecked);
+                                        });
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickerendo3h").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>
+
+                                    <br>
+                                    
+                             
+                                    
+                                      <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="endo3i" id="endo3i" data-toggle="collapse" data-target="#Datepickerendo3i" value="Cardiac conduction abnormality">
+
+                                        <label class="custom-control-label" for="endo3i">Cardiac conduction abnormality&#42;</label>
+
+                                        <input class="collapse" type="text" name="endo3i" id="Datepickerendo3i" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
+
+                                    <script>
+                                        $('#endo3i').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickerendo3i').prop('disabled', !cbIsChecked);
+                                        });
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickerendo3i").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>
+
+                                    
+                                </div>
+                            </div>
+                                    
+                           
+                                    <br>
+                            
+                            
+                        <!--    <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#PatientOneYear4"> <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Click this button for Patients ≤1 year of age</button>
                             <div id="PatientOneYear4" class="collapse"> <br>
 
                                 <p class="bg-primary">Signs and Symptoms (Patients ≤1 year of age)</p>
@@ -2503,9 +2731,123 @@
                                         $('#Datepickerendo3i').prop('disabled', !cbIsChecked);
                                     });
 
-                                </script>
+                                </script>-->
 
-                                <p class="bg-primary">Microbiology (Patients ≤1 year of age)</p>
+                              
+                                    
+                                <div class="card bg-dark text-white">
+                                <div class="card-body">
+                                    <div class="custom-file">
+                                        <input type="" class="custom-file-input1">
+                                        <label class="custom-file-label" for="customFile">Microbiology (Patients ≤1 year of age)</label>
+                                    </div>
+
+                                    <br>
+                                    <br>
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="endo3k" id="endo3k" data-toggle="collapse" data-target="#Datepickerendo3k" value="Organism(s) seen on microscopic examination of brain or abscess tissue obtained by needle aspiration or during an invasive procedure or autopsy.">
+                                        <label class="custom-control-label" for="endo3k">Organism(s) seen on microscopic examination of brain or abscess tissue obtained by needle aspiration or during an invasive procedure or autopsy.</label>
+                                        <input class="collapse" type="text" name="endo3k" id="Datepickerendo3k" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
+
+
+                                    <script>
+                                        $('#endo3k').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickerendo3k').prop('disabled', !cbIsChecked);
+                                        });
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickerendo3k").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>   
+                            
+                                    <br>
+                                    
+                                     <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="endo3l" id="endo3l" data-toggle="collapse" data-target="#Datepickerendo3l" value="Valvular vegetation seen during a surgical operation or autopsy.">
+                                        <label class="custom-control-label" for="endo3l">Valvular vegetation seen during a surgical operation or autopsy.</label>
+                                        <input class="collapse" type="text" name="endo3l" id="Datepickerendo3l" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
+
+
+                                    <script>
+                                        $('#endo3l').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickerendo3l').prop('disabled', !cbIsChecked);
+                                        });
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickerendo3l").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>   
+                            
+                                    
+                                    <br>
+                                    
+                                    
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="endo3l" id="endo3l" data-toggle="collapse" data-target="#Datepickerendo3l" value="Valvular vegetation seen during a surgical operation or autopsy.">
+                                        <label class="custom-control-label" for="endo3l">Valvular vegetation seen during a surgical operation or autopsy.</label>
+                                        <input class="collapse" type="text" name="endo3l" id="Datepickerendo3l" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
+
+
+                                    <script>
+                                        $('#endo3l').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickerendo3l').prop('disabled', !cbIsChecked);
+                                        });
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickerendo3l").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>   
+                            
+                                    <br>
+                                    
+                         
+                                        <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="endo3m" id="endo3m" data-toggle="collapse" data-target="#Datepickerendo3m" value="Positive antigen test on blood or urine (e.g., H. influenzae, S. pneumoniae, N. meningitidis, or Group B Streptococcus).">
+                                        <label class="custom-control-label" for="endo3m">Positive antigen test on blood or urine (e.g., H. influenzae, S. pneumoniae, N. meningitidis, or Group B Streptococcus).</label>
+                                        <input class="collapse" type="text" name="endo3m" id="Datepickerendo3m" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
+
+
+                                    <script>
+                                        $('#endo3m').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickerendo3m').prop('disabled', !cbIsChecked);
+                                        });
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickerendo3m").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>   
+                            
+                                    <br>
+                                    
+                                    
+                                    
+                                    
+                             <!--       <p class="bg-primary">Microbiology (Patients ≤1 year of age)</p>
 
                                 <div class="checkbox">
                                     <label><input type="checkbox" name="endo3k" id="endo3k" value="">Organisms seen on Gram’s stain of valve when culture is negative or <u>NOT</u> done</label>
@@ -2533,20 +2875,124 @@
 
                                 </script>
 
-                                <div class="checkbox">
-                                    <label><input type="checkbox" name="endo3m" id="endo3m" value="">Positive antigen test on blood or urine (e.g., H. influenzae, S. pneumoniae, N. meningitidis, or Group B Streptococcus)</label>
-                                    <input type="text" id="Datepickerendo3m" placeholder="Enter date" disabled>
+                               
+                                    <div class="checkbox">
+  <label><input type="checkbox" name="endo3m" id="endo3m" value="">Positive antigen test on blood or urine (e.g., H. influenzae, S. pneumoniae, N. meningitidis, or Group B Streptococcus)</label>
+  <input type="text" id="Datepickerendo3m" placeholder="Enter date" disabled>
+</div>
+
+<script>
+$('#endo3m').click(function() { 
+    var cbIsChecked = $(this).prop('checked');
+    $('#Datepickerendo3m').prop('disabled', !cbIsChecked); 
+});
+</script>-->
+                   
+                                    
+                                     <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="endo3j15Date" id="endo3j" data-toggle="collapse" data-target="#Datepickerendo3j, #endo3jOrgSelect-19" value="Organism(s) identified from blood by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST)." />
+                                <label class="custom-control-label" for="endo3j">Organism(s) identified from blood by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).
+                                </label>
+                                <input type="text" class="collapse" name="endo3j15Date" id="Datepickerendo3j" placeholder="Please enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+
+                            <script>
+                                $('#endo3j').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerendo3j').prop('disabled', !cbIsChecked);
+                                });
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerendo3j").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>
+
+
+                            <div id="endo3jOrgSelect-19" class="collapse">
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="text-left">
+                                            <h5 class="bg-warning" style="color:black">
+                                                <strong>Select organism(s)</strong>
+                                            </h5>
+                                        </div>
+
+                                        <div id="myformendo3jOrg2-19">
+                                            <table>
+                                                <tr>
+                                                    <td>Organism:</td>
+                                                    <td>
+                                                        <select name="organisms" id="orgendo3jOrg2">
+                                                            <option value="0">Select an Organism</option>
+                                                            <option value="Abiotrophia adiacens ">Abiotrophia adiacens - GRADJ</option>
+                                                            <option value="Abiotrophia spp. ">Abiotrophia spp. - ABISP</option>
+                                                            <option value="Acanthamoeba ">Acanthamoeba - ACANT</option>
+                                                            <option value="Achromobacter spp. ">Achromobacter spp. - ACHSP</option>
+                                                            <option value="Achromobacter xylosoxidans ">Achromobacter xylosoxidans - ALCXYL</option>
+                                                            <option value="Achromobacter xylosoxidans xylosoxidans ">Achromobacter xylosoxidans xylosoxidans - ACHXYL</option>
+                                                            <option value="Achromobacter, group Vd biotype 1 ">Achromobacter, group Vd biotype 1 - ACHVD1</option>
+                                                            <option value="Achromobacter, group Vd biotype 2 ">Achromobacter, group Vd biotype 2 - ACHVD2</option>
+                                                            <option value="Acidaminococcus fermentans ">Acidaminococcus fermentans - ACIFE</option>
+                                                            <option value="Acidaminococcus spp. ">Acidaminococcus spp. - ACISP</option>
+                                                            <option value="Acidovorax delafieldii ">Acidovorax delafieldii - ACDEL</option>
+                                                            <option value="Acidovorax Genus  ">Acidovorax Genus - ACIDSP</option>
+                                                            <option value="Acidovorax spp. ">Acidovorax spp. - ACIDSP</option>
+                                                            <option value="Acinetobacter anitratus ">Acinetobacter anitratus - ACICBA</option>
+                                                            <option value="Acinetobacter baumannii ">Acinetobacter baumannii - ACBA</option>
+                                                            <option value="Acinetobacter calcoaceticus ">Acinetobacter calcoaceticus - ACICBA</option>
+                                                            <option value="Acinetobacter calcoaceticus ss. Lwoffii ">Acinetobacter calcoaceticus ss. Lwoffii - ACLW</option>
+                                                            <option value="Acinetobacter calcoaceticus-baumannii complex ">Acinetobacter calcoaceticus-baumannii complex - ACCA</option>
+                                                            <option value="Acinetobacter genospecies 3 ">Acinetobacter genospecies 3 - ACIGEN</option>
+                                                            <option value="Acinetobacter hemolyticus ">Acinetobacter hemolyticus - ACHA</option>
+                                                            <option value="Acinetobacter johnsonii ">Acinetobacter johnsonii - ACJH</option>
+                                                            <option value="Acinetobacter junii ">Acinetobacter junii - ACJU</option>
+                                                            <option value="Acinetobacter lwoffii ">Acinetobacter lwoffii - ACLW</option>
+                                                            <option value="Acinetobacter spp. ">Acinetobacter spp. - ACS</option>
+                                                            <option value="Acremonium spp. ">Acremonium spp. - ACRE</option>
+                                                        </select>
+                                                        <input type="button" id="addendo3jOrg2" value="Add" onclick="Javascript:addRowendo3jOrg2()">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card" id="mydataendo3jOrg2">
+                                        <div class="card-body">
+                                            <div class="text-left">
+                                                <h5 class="bg-warning" style="color:black">
+                                                    <strong>Selected:</strong>
+                                                </h5>
+                                            </div>
+                                            <table id="myTableDataendo3jOrg2">
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+
+                                        </div>
+                                    </div>
+
                                 </div>
 
-                                <script>
-                                    $('#endo3m').click(function() {
-                                        var cbIsChecked = $(this).prop('checked');
-                                        $('#Datepickerendo3m').prop('disabled', !cbIsChecked);
-                                    });
+                            </div>
 
-                                </script>
-
-                                <div class="checkbox">
+                                    
+                                    
+                                    
+                                    
+                            <!--        <div class="checkbox">
                                     <label><input type="checkbox" name="endo3j" id="endo3j" value=""><a href="#" onclick="return false;" data-toggle="tooltip" data-placement="top" title="For a bloodstream infection to be determined secondary to another site of infection, the blood culture must be collected during the site-specific infection Secondary BSI Attribution Period and satisfy one of the following: 1. The blood culture must contain at least one organism that matches an organism found in a site-specific infection culture used to meet the site-specific infection criterion OR 2. The blood culture must be an element used to meet the site-specific infection criterion.
 "><span class="glyphicon glyphicon-flag" style="color:red" aria-hidden="true"></span> <em>Organisms cultured from two or more blood cultures</em></a></label>
                                     <input type="text" id="Datepickerendo3j" placeholder="Enter date" disabled>
@@ -2621,25 +3067,30 @@
 
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
+                                    
+                                    
+                                    
+                                    
+                                    
                                 <script>
-                                    function addRowEndoOrg2() {
+                                    function addRowendo3jOrg2() {
 
-                                        var org = document.getElementById("orgEndoOrg2");
-                                        var table = document.getElementById("myTableDataEndoOrg2");
+                                        var org = document.getElementById("orgendo3jOrg2");
+                                        var table = document.getElementById("myTableDataendo3jOrg2");
 
                                         var rowCount = table.rows.length;
                                         var row = table.insertRow(rowCount);
 
-                                        row.insertCell(0).innerHTML = '<input type="button" value = "Remove" onClick="Javacsript:deleteRowEndoOrg2(this)">';
+                                        row.insertCell(0).innerHTML = '<input type="button" value = "Remove" onClick="Javacsript:deleteRowendo3jOrg2(this)">';
                                         row.insertCell(1).innerHTML = org.value;
 
                                     }
 
-                                    function deleteRowEndoOrg2(obj) {
+                                    function deleteRowendo3jOrg2(obj) {
 
                                         var index = obj.parentNode.parentNode.rowIndex;
-                                        var table = document.getElementById("myTableDataEndoOrg2");
+                                        var table = document.getElementById("myTableDataendo3jOrg2");
                                         table.deleteRow(index);
 
                                     }
@@ -2653,6 +3104,13 @@
                                 </script>
 
                                 <br>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
 
                                 <p class="bg-primary">Imaging (Patients ≤1 year of age)</p>
 
