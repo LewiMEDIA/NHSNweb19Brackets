@@ -3026,10 +3026,6 @@ $('#endo3m').click(function() {
                                     </div>
                                 </div>-->
 
-
-
-
-
                         <script>
                             function addRowendo3jOrg2() {
 
@@ -3061,14 +3057,45 @@ $('#endo3m').click(function() {
 
                         <br>
 
+ <div class="card bg-dark text-white">
+                                <div class="card-body">
+                                    <div class="custom-file">
+                                        <input type="" class="custom-file-input1">
+                                        <label class="custom-file-label" for="customFile">Imaging (Patients ≤1 year of age)</label>
+                                    </div>
+
+                                    <br>
+                                    <br>
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="endo3n" id="endo3n" data-toggle="collapse" data-target="#Datepickerendo3n" value=">Evidence of new vegetation seen on echocardiogram.">
+                                        <label class="custom-control-label" for="endo3n">Evidence of new vegetation seen on echocardiogram.</label>
+                                        <input class="collapse" type="text" name="endo3n" id="Datepickerendo3n" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
 
 
+                                    <script>
+                                        $('#endo3n').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickerendo3n').prop('disabled', !cbIsChecked);
+                                        });
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickerendo3n").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>
 
+                                </div>
+                            </div>
 
+                            <br>
 
-
-
-                        <p class="bg-primary">Imaging (Patients ≤1 year of age)</p>
+          
+                      <!--  <p class="bg-primary">Imaging (Patients ≤1 year of age)</p>
 
 
                         <div class="checkbox">
@@ -3098,11 +3125,62 @@ $('#endo3m').click(function() {
                                 var cbIsChecked = $(this).prop('checked');
                                 $('#Datepickerendo3o').prop('disabled', !cbIsChecked);
                             });
-                        </script>
+                        </script>-->
 
                     </div>
 
                     <br><br><br>
+                    
+                    
+                    <p><strong>Click the <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check Button after making your selection(s) and whenever you make any changes to your selection(s)</strong></p>
+
+                        <button type="button" class="btn btn-success" onclick="myFunctionIc1()">
+                            <span class="fas fa-check-circle" aria-hidden="true"></span>Check-IC</button>
+                        <button type="button" value="Reset-IC" class="btn btn-danger" data-toggle="modal" data-target="#myModalIc15">
+                            <span class="fas fa-ban" aria-hidden="true"></span>Reset-IC</button>
+                        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#reportIC-19" aria-expanded="false" aria-controls="reportIC-19">
+                            <span class="fas fa-book-open" aria-hidden="true"></span>Report-IC</button>
+
+
+
+                        <br><br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card border-dark mb-3">
+                                    <div class="card-header">
+                                        <strong>Results</strong>
+                                    </div>
+                                    <div class="card-body text-dark">
+                                        <h6 class="card-title">(If no results, your findings don't meet HNSN definition)</h6>
+                                        <p class="card-text" id="icCrit1"></p>
+                                        <p class="card-text" id="icCrit2"></p>
+                                        <p class="card-text" id="icCrit3"></p>
+                                        <p class="card-text" id="icCrit4"></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-dark mb-3">
+                                    <div class="card-header">
+                                        <strong>Outcome</strong>
+                                    </div>
+                                    <div class="card-body text-dark">
+                                        <h6 class="panel-title">Infection status (POA or HAI)</h6>
+                                        <p id="ic2011CritOut_poa2"></p>
+                                        <p id="ic2011CritOut_hai2"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
 
                     <p><strong>Click the <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check Button after making your selection(s) and whenever you make any changes to your selection(s)</strong></p>
 
