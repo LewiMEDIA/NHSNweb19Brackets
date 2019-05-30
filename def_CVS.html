@@ -1287,8 +1287,8 @@
                     </div>
 
                     </div>
-                    <br><br>
 
+                        </div>
 
 
                     <div class="card">
@@ -1311,21 +1311,10 @@
                         </div>
                     </div>
                     <br>
-
-
-
-
-
                     <!--  <p class="bg-warning"><strong>Comment</strong></p>
                                 <p><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> Most cases of postcardiac surgery or postmyocardial infarction pericarditis are not infectious.</p>-->
 
-                    <br><br>
-
-
-
-
-                    <br>
-                    <p><strong>Click the <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check Button after making your selection(s) and whenever you make any changes to your selection(s)</strong></p>
+                <p><strong>Click the <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check Button after making your selection(s) and whenever you make any changes to your selection(s)</strong></p>
 
                     <button type="button" class="btn btn-success" onclick="myFunctionCard1()">
                         <span class="fas fa-check-circle" aria-hidden="true"></span>Check-CARD</button>
@@ -1333,8 +1322,6 @@
                         <span class="fas fa-ban" aria-hidden="true"></span>Reset-CARD</button>
                     <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#reportCARD-19" aria-expanded="false" aria-controls="reportCARD-19">
                         <span class="fas fa-book-open" aria-hidden="true"></span>Report-CARD</button>
-
-
 
                     <br><br>
                     <div class="row">
@@ -1418,7 +1405,7 @@
                         <a href="#tabs-eent1" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
                             <span class="fas fa-arrow-circle-up" style="color:orange">&nbsp;</span>Back to Top</a>
                     </p>
-                    <br>
+                    <br><br>
 
                     <!--   <br>
                                 <p align="left"><a href="#topCVS2"><span class="glyphicon glyphicon-arrow-up" style="color:gray" aria-hidden="true"></span><b>TOP</b></a></p>
@@ -1701,11 +1688,6 @@
 
                     <br>
 
-
-
-
-
-
                     <!--   <p class="bg-primary">Imaging</p>
 
                             <div class="checkbox">
@@ -1720,9 +1702,6 @@
                                 });
 
                             </script>-->
-
-
-
 
                     <div class="card">
                         <div class="card-body">
@@ -1781,8 +1760,6 @@
         </script>
 
         <br>
-
-
 
         <div class="custom-control custom-checkbox">
             <input type="checkbox" class="custom-control-input" name="endo2j" id="endo2j" data-toggle="collapse" data-target="#Datepickerendo2j" value="Positive antigen test on blood or urine (e.g. H. influenzae, S. pneumoniae, N. meningitidis, or Group B Streptococcus)">
@@ -2039,10 +2016,6 @@
                                 </div>
                             </div>-->
 
-
-
-
-
     <script>
         function addRowEndoOrg1() {
 
@@ -2069,11 +2042,7 @@
         }
     </script>
 
-    <br>
-
-
-
-    <!--<p class="bg-primary">Antimicrobial therapy</p>
+     <!--<p class="bg-primary">Antimicrobial therapy</p>
 
                             <div class="checkbox">
                                 <label><input name="endo2l" type="checkbox" id="endo2l" value="">If diagnosis is made antemortem, physician institutes appropriate antimicrobial therapy </label>
@@ -2089,8 +2058,6 @@
                             </script>-->
 
     <br>
-
-
 
     <div class="card">
         <div class="card-body">
@@ -2337,8 +2304,6 @@
                             </script>-->
 
             <br>
-
-
 
             <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#endoTogglePed1"> <span class="fas fa-hand-point-right" aria-hidden="true"></span> Click this button for Patients ≤1 year of age</button>
             <br>
@@ -2831,16 +2796,16 @@
 
                                 </script>
 
-                               
+
                                     <div class="checkbox">
   <label><input type="checkbox" name="endo3m" id="endo3m" value="">Positive antigen test on blood or urine (e.g., H. influenzae, S. pneumoniae, N. meningitidis, or Group B Streptococcus)</label>
   <input type="text" id="Datepickerendo3m" placeholder="Enter date" disabled>
 </div>
 
 <script>
-$('#endo3m').click(function() { 
+$('#endo3m').click(function() {
     var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerendo3m').prop('disabled', !cbIsChecked); 
+    $('#Datepickerendo3m').prop('disabled', !cbIsChecked);
 });
 </script>-->
 
@@ -3026,10 +2991,6 @@ $('#endo3m').click(function() {
                                     </div>
                                 </div>-->
 
-
-
-
-
                         <script>
                             function addRowendo3jOrg2() {
 
@@ -3062,13 +3023,84 @@ $('#endo3m').click(function() {
                         <br>
 
 
+                           <!-- <div class="card">
+                            <div class="card-body">
+                                <div class="custom-file">
+                                    <input type="" class="custom-file-input1" id="customFileIC">
+                                    <label class="custom-file-label" for="customFileIC">Microbiology</label>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="ic4a" id="ic4a" data-toggle="collapse" data-target="#Datepickeric4a" value="Patient has organism(s) identified from identified from brain tissue or dura by a culture or nonculture based microbiologic testing method which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).">
+                                    <label class="custom-control-label" for="ic4a">Patient has organism(s) identified from identified from brain tissue or dura by a culture or nonculture based microbiologic testing method which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).
+                                    </label>
+                                    <input type="text" class="collapse" name="ic4a" id="Datepickeric4a" placeholder="Please enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#ic4a').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickeric4a').prop('disabled', !cbIsChecked);
+
+                                    });
+
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickeric4a").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
 
 
+    </div>
+                </div>
+-->
+<br><br>
+
+<div class="card bg-dark text-white">
+                                <div class="card-body">
+                                    <div class="custom-file">
+                                        <input type="" class="custom-file-input1">
+                                        <label class="custom-file-label" for="customFile">Imaging (Patients ≤1 year of age)</label>
+                                    </div>
+
+                                    <br>
+                                    <br>
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="endo3n" id="endo3n" data-toggle="collapse" data-target="#Datepickerendo3n" value="Evidence of new vegetation seen on echocardiogram.">
+                                        <label class="custom-control-label" for="endo3n">Evidence of new vegetation seen on echocardiogram.</label>
+                                        <input class="collapse" type="text" name="endo3n" id="Datepickerendo3n" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
 
 
+                                    <script>
+                                        $('#endo3n').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickerendo3n').prop('disabled', !cbIsChecked);
 
+                                        });
 
-                        <p class="bg-primary">Imaging (Patients ≤1 year of age)</p>
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickerendo3n").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>
+
+                                </div>
+                            </div>
+
+                            <br>
+
+                        <!--<p class="bg-primary">Imaging (Patients ≤1 year of age)</p>
 
 
                         <div class="checkbox">
@@ -3101,7 +3133,7 @@ $('#endo3m').click(function() {
                         </script>
 
                     </div>
-
+-->
                     <br><br><br>
 
                     <p><strong>Click the <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check Button after making your selection(s) and whenever you make any changes to your selection(s)</strong></p>
