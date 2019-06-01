@@ -119,20 +119,30 @@
 
 
 <div class="container" id="topCVSdefn">
+
+
   <div id="Tabs1">
     <ul>
-      <li><a href="#tabs-cvs1">CVS – Cardiovascular System Infection</a></li>
-      <li><a href="#tabs-cvs2">2011 - Definitions</a></li>
-      <li><a href="#tabs-cvs3">2015 - Definitions</a></li>
+      <li><a href="#tabs-cvs1">CVS &mdash; Cardiovascular System Infection</a></li>
+      <li><a href="#tabs-cvs2">2019 &mdash; Definitions</a></li>
+      <li><a href="#tabs-cvs3">Reports</a></li>
     </ul>
 
 <div id="tabs-cvs1">
  <br>
- <h2>CVS – Cardiovascular System Infection</h2>
- <h3>Current Definitions</h3>
- <h2><span class="label label-warning">CARD – Myocarditis or pericarditis</span></h2>
 
- <br>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="alert alert-primary">
+                            <h3> <strong>CVS &mdash; Cardiovascular System Infection</strong></h3>
+                        </div>
+
+
+
+                        <div class="alert alert-primary">
+                            <strong>CARD&mdash;Myocarditis or pericarditis </strong>
+                        </div>
 
   Myocarditis or pericarditis must meet at least one of the following criteria:<br>
   1. Patient has organisms cultured from pericardial tissue or fluid.<br>
@@ -219,8 +229,7 @@
 
 <p>
 
-<h2><span class="label label-warning">MED – Mediastinitis</span></h2>
-
+<div class="alert alert-primary"><strong>MED&mdash;Mediastinitis</strong></div>
    Mediastinitis must meet at least one of the following criteria:<br>
   1. Patient has organisms cultured from mediastinal tissue or fluid.<br>
   2. Patient has evidence of mediastinitis on gross anatomic or histopathologic exam.
@@ -243,8 +252,11 @@
 
 <br>
 
-<h2><span class="label label-warning">VASC – Arterial or venous infection</span></h2>
-   <p> <strong>Note: If a patient meets the criteria for an LCBI in the presence of an intravascular infection report as an LCBI not as a VASC. </strong></p>
+
+<div class="alert alert-primary">
+                            <strong>VASC&mdash;Arterial or venous infection</strong>
+                        </div>
+  <p> <strong>Note: If a patient meets the criteria for an LCBI in the presence of an intravascular infection report as an LCBI not as a VASC. </strong></p>
 
 
   Arterial or venous infection must meet at least one of the following criteria:<br>
@@ -271,17 +283,26 @@
   • Report intravascular infections with organisms cultured from the blood and meeting the LCBI criteria, as BSI-LCBI.<br>
   • Report Organ Space VASC infections as an SSI and not an LCBI when you have a SSI with secondary BSI.<br>
 
-<br><br>
 
- <div class="well well-sm" align="center" style="color:orange"><a href="http://www.cdc.gov/nhsn/PDFs/pscManual/17pscNosInfDef_current.pdf" target="_blank" ><span class="glyphicon glyphicon-link" style="color:orange" aria-hidden="true"></span><h4>The original document (source) can be access here</h4></a></div>
 
- <br><br>
+      </div>
+    </div>
 
-  <span id="top-link-blockCvs1" class="hidden">
-    <a href="#tabs-cvs1" class="well well-sm"  onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
-        <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
-    </a>
-</span><!-- /top-link-block -->
+  <br>
+
+ <div class="card" align="center">
+                    <div class="card-body">
+                        <span class="fas fa-link" style="color:orange" aria-hidden="true"></span>Original document<a href="https://www.cdc.gov/nhsn/pdfs/pscmanual/pcsmanual_current.pdf" target="_blank" style="color:blue" data-toggle="tooltip" data-placement="bottom" title="https://www.cdc.gov/nhsn/pdfs/pscmanual/pcsmanual_current.pdf"> (source)</a> can be access here
+                    </div>
+                </div>
+
+ <br>
+
+ <p type="button" id="top-link-blockCNS1" class="btn btn-link">
+                    <a href="#tabs-eent1" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+                        <span class="fas fa-arrow-circle-up" style="color:orange">&nbsp;</span>Back to Top</a>
+                </p><!-- /top-link-block -->
+
 
   <script>
   if ( ($(window).height() + 100) < $(document).height() ) {
@@ -297,371 +318,768 @@
 
   <div id="tabs-cvs2">
       <div class="bjDef2011">
-      <p align="right"><strong>Admission date:</strong>
-  <input type="text" id="DatepickerCVS" placeholder="Enter date"><span aria-hidden="true"></span></p>
 
-<div class="row">
-    <div class="col-md-6">
-    <h3 align="left">CVS – Cardiovascular System Infection</h3>
-    </div>
-    <p id="topCVS2"></p>
-    <div class="col-md-6">
-      <nav>
-  <ul class="pager" style="float:right">
-    <li><a href="#cardSP" data-toggle="tooltip" data-placement="top" title="CARD-Myocarditis or pericarditis">CARD</a></li>
-    <li><a href="#endoSP" data-toggle="tooltip" data-placement="top" title="ENDO-Endocarditis">ENDO</a></li>
-    <li><a href="#medSP" data-toggle="tooltip" data-placement="top" title="MED-Mediastinitis">MED</a></li>
-    <li><a href="#vascSP" data-toggle="tooltip" data-placement="top" title="VASC-Arterial or venous infection">VASC</a></li>
-  </ul>
-  </nav>
-    </div>
 
-</div>
+      <div class="row">
+
+                        <div class="col-md-6">
+                            <p></p>
+                        </div>
+
+                        <div class="col-md-6">
+                            <p align="right" id="admDateCvs-19">
+                                <strong>Admission Date:</strong>
+                                <input type="text" id="DatepickerCVS-19" placeholder="Date required" value="" required>
+                            </p>
+                        </div>
+
+                        <script>
+                            $('#admDateCvs-19').click(function() {
+                                var cbIsChecked = $(this).prop('checked');
+                                $('#DatepickerCVS-19').prop('disabled', !cbIsChecked);
+
+                            });
+
+                            $('[type="checkbox"]').on('change', function() {
+                                if (!this.checked) {
+                                    $('[type="text"][name="' + this.name + '"]').val('');
+                                }
+                            });
+                            $("#DatepickerCVS-19").datepicker({
+                                maxDate: 0
+                            });
+                        </script>
+
+                    </div>
+
+                    <p id="topCVS"></p>
+
+  <nav>
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a type="button" class="btn btn-outline-warning" href="#cardSP" style="background-color:#lightgrey" onclick="return false;" data-toggle="tooltip" data-placement="top" title="CARD-Myocarditis or pericarditis">CARD</a>
+                            </li>
+                            &nbsp;
+                            <li class="nav-item">
+                                <a type="button" class="btn btn-outline-warning" href="#endoSP" style="background-color:#lightgrey" data-toggle="tooltip" data-placement="top" title="ENDO-Endocarditis">ENDO</a>
+                            </li>
+                            &nbsp;
+                            <li class="nav-item">
+                                <a type="button" class="btn btn-outline-warning" href="#medSP" style="background-color:#lightgrey" data-toggle="tooltip" data-placement="top" title="MED-Mediastinitis">MED</a>
+                            </li>
+                            &nbsp;
+                            <li class="nav-item">
+                                <a type="button" class="btn btn-outline-warning" href="#vascSP" style="background-color:#lightgrey" data-toggle="tooltip" data-placement="top" title="VASC-Arterial or venous infection">VASC</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                    <br><br>
+
+
+<div class="text-left">
+                        <h5 class="bg-warning" id="cardSP" style="color:white">
+                            <strong>CARD &mdash; Myocarditis or pericarditis</strong>
+                        </h5>
+                    </div>
 
  <form name="cardForm">
- <h3><a id="cardSP"></a><span class="label label-warning">CARD – Myocarditis or pericarditis</span></h3>
 
- <p class="bg-primary">Histopathology</p>
 
-<div class="checkbox">
-  <label><input type="checkbox" name="card2g" id="card2g" value="">Evidence of myocarditis or pericarditis on histologic examination of heart tissue </label>
-  <input type="text" id="Datepickercard2g" placeholder="Enter date" disabled>
-</div>
 
- <script>
-$('#card2g').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickercard2g').prop('disabled', !cbIsChecked);
-});
-</script>
+<div class="card">
+                            <div class="card-body">
+                                <div class="custom-file">
+                                    <input type="" class="custom-file-input1" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Histopathology</label>
+                                </div>
+
+                                <br><br>
+
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="card2g" id="card2g" data-toggle="collapse" data-target="#Datepickercard2g" value="Evidence of myocarditis or pericarditis on histologic examination of heart tissue">
+
+                                    <label class="custom-control-label" for="card2g">Evidence of myocarditis or pericarditis on histologic exam of heart tissue.</label>
+
+                                    <input class="collapse" type="text" name="card2g" id="Datepickercard2g" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#card2g').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickercard2g').prop('disabled', !cbIsChecked);
+
+                                    });
+
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickercard2g").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+                            </div>
+                        </div>
+<br>
+
+<div class="card">
+                            <div class="card-body">
+                                <div class="custom-file">
+                                    <input type="" class="custom-file-input1">
+                                    <label class="custom-file-label" for="customFile">Imaging</label>
+                                </div>
+
+                                <br>
+                                <br>
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="card2e" id="card2e" data-toggle="collapse" data-target="#Datepickercard2e" value="Abnormal EKG consistent with myocarditis or pericarditis.">
+                                    <label class="custom-control-label" for="card2e">Abnormal EKG consistent with myocarditis or pericarditis.</label>
+                                    <input class="collapse" type="text" name="card2e" id="Datepickercard2e" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+
+                        <script>
+                            $('#card2e').click(function() {
+                                var cbIsChecked = $(this).prop('checked');
+                                $('#Datepickercard2e').prop('disabled', !cbIsChecked);
+
+                            });
+
+                            $('[type="checkbox"]').on('change', function() {
+                                if (!this.checked) {
+                                    $('[type="text"][name="' + this.name + '"]').val('');
+                                }
+                            });
+                            $("#Datepickercard2e").datepicker({
+                                maxDate: 0
+                            });
+                        </script>
+
+                        <br>
+
+                        <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="card2i" id="card2i" data-toggle="collapse" data-target="#Datepickercard2i" value="Pericardial effusion identified by echocardiogram, CT scan, MRI, or angiography. ">
+                                    <label class="custom-control-label" for="card2i">Pericardial effusion identified by echocardiogram, CT scan, MRI, or angiography. </label>
+                                    <input class="collapse" type="text" name="card2i" id="Datepickercard2i" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+
+                        <script>
+                            $('#card2i').click(function() {
+                                var cbIsChecked = $(this).prop('checked');
+                                $('#Datepickercard2i').prop('disabled', !cbIsChecked);
+
+                            });
+
+                            $('[type="checkbox"]').on('change', function() {
+                                if (!this.checked) {
+                                    $('[type="text"][name="' + this.name + '"]').val('');
+                                }
+                            });
+                            $("#Datepickercard2i").datepicker({
+                                maxDate: 0
+                            });
+                        </script>
+
+
+                         </div>
+                        </div>
+
+                        <br>
+
+
+<div class="card">
+                            <div class="card-body">
+                                <div class="custom-file">
+                                    <input type="" class="custom-file-input1" id="customFileIC">
+                                    <label class="custom-file-label" for="customFileIC">Microbiology</label>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="card1" id="card1" data-toggle="collapse" data-target="#Datepickercard1" value=" Patient has organism(s) identified from pericardial tissue or fluid by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).">
+                                    <label class="custom-control-label" for="card1"> Patient has organism(s) identified from pericardial tissue or fluid by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).
+                                    </label>
+                                    <input type="text" class="collapse" name="card1" id="Datepickercard1" placeholder="Please enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#card1').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickercard1').prop('disabled', !cbIsChecked);
+
+                                    });
+
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickercard1").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+
+
+<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="card2h" id="card2h" data-toggle="collapse" data-target="#Datepickercard2h" value="4-fold rise in paired sera from IgG antibody titer. ">
+                                    <label class="custom-control-label" for="card2h">4-fold rise in paired sera from IgG antibody titer.
+                                    </label>
+                                    <input type="text" class="collapse" name="card2h" id="Datepickercard2h" placeholder="Please enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#card2h').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickercard2h').prop('disabled', !cbIsChecked);
+
+                                    });
+
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickercard2h").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+    </div>
+     </div>
 
 <br>
 
-<p class="bg-primary">Imaging</p>
 
-<div class="checkbox">
-  <label><input type="checkbox" name="card2e" id="card2e" value="">Abnormal EKG consistent with myocarditis or pericarditis</label>
-  <input type="text" id="Datepickercard2e" placeholder="Enter date" disabled>
-</div>
+ <div class="card">
+                            <div class="card-body">
+                                <div class="custom-file">
+                                    <input type="" class="custom-file-input2">
+                                    <label class="custom-file-label" for="customFile">Signs and Symptoms</label>
+                                </div>
 
- <script>
-$('#card2e').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickercard2e').prop('disabled', !cbIsChecked);
-});
-</script>
-
-<div class="checkbox">
-  <label><input type="checkbox" name="card2i" id="card2i" value="">Pericardial effusion identified by echocardiogram, CT scan, MRI, or angiography</label>
-  <input type="text" id="Datepickercard2i" placeholder="Enter date" disabled>
-</div>
-
- <script>
-$('#card2i').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickercard2i').prop('disabled', !cbIsChecked);
-});
-</script>
-
-<br>
-
-<p class="bg-primary">Microbiology</p>
-
-<div class="checkbox">
-  <label><input name="card1" type="checkbox" id="card1" value="">Patient has organisms cultured from pericardial tissue or fluid obtained by needle aspiration or during a surgical operation</label>
-  <input type="text" id="Datepickercard1" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#card1').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickercard1').prop('disabled', !cbIsChecked);
-});
-</script>
-
-<div class="checkbox">
-  <label><input type="checkbox" name="card2f" id="card2f" value="">Positive antigen test on blood (e.g., H. influenzae, S. pneumoniae)  </label>
-  <input type="text" id="Datepickercard2f" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#card2f').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickercard2f').prop('disabled', !cbIsChecked);
-});
-</script>
-
-<div class="checkbox">
-  <label><input type="checkbox" name="card2h" id="card2h" value="">4-fold rise in type-specific antibody with or without isolation of virus from pharynx or feces </label>
-  <input type="text" id="Datepickercard2h" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#card2h').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickercard2h').prop('disabled', !cbIsChecked);
-});
-</script>
-
-<br>
-
-  <div id="OtherPatient">
-<p class="bg-primary">Signs and Symptoms</p>
-
-<div class="checkbox">
-  <label><input type="checkbox" name="card2a" id="card2a" value=""> Fever (&gt;38◦C)</label>
-  <input type="text" id="Datepickercard2a" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#card2a').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickercard2a').prop('disabled', !cbIsChecked);
-});
-</script>
-
-<div class="checkbox">
-  <label><input type="checkbox" name="card2b" id="card2b" value="">Chest pain</label>
-  <input type="text" id="Datepickercard2b" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#card2b').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickercard2b').prop('disabled', !cbIsChecked);
-});
-</script>
-
-<div class="checkbox">
-  <label><input type="checkbox" name="card2c" id="card2c" value="">Paradoxical pulse</label>
-  <input type="text" id="Datepickercard2c" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#card2c').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickercard2c').prop('disabled', !cbIsChecked);
-});
-</script>
-
-<div class="checkbox">
-  <label><input type="checkbox" name="card2d" id="card2d" value="">Increased heart size</label>
-  <input type="text" id="Datepickercard2d" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#card2d').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickercard2d').prop('disabled', !cbIsChecked);
-});
-</script>
-
-</div>
-<br><br>
-
-<button type="button" class="btn btn-success" data-toggle="collapse" data-target="#PatientOneYear5" > <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Click this button for Patients ≤1 year of age</button>
-
-<div id="PatientOneYear5" class="collapse"> <br>
-
-<p class="bg-primary">Signs and Symptoms (Patients ≤1 year of age)</p>
-
-<div class="checkbox">
-  <label><input type="checkbox" name="card3a" id="card3a" value="">Fever (&gt;38◦C rectal)</label>
-  <input type="text" id="Datepickercard3a" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#card3a').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickercard3a').prop('disabled', !cbIsChecked);
-});
-</script>
-
-<div class="checkbox">
-  <label><input type="checkbox" name="card3b" id="card3b" value="">Hypothermia (&lt;37◦C rectal)</label>
-  <input type="text" id="Datepickercard3b" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#card3b').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickercard3b').prop('disabled', !cbIsChecked);
-});
-</script>
-
-<div class="checkbox">
-  <label><input type="checkbox" name="card3c" id="card3c" value="">Apnea</label>
-  <input type="text" id="Datepickercard3c" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#card3c').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickercard3c').prop('disabled', !cbIsChecked);
-});
-</script>
-
-<div class="checkbox">
-  <label><input type="checkbox" name="card3d" id="card3d" value="">Bradycardia</label>
-  <input type="text" id="Datepickercard3d" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#card3d').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickercard3d').prop('disabled', !cbIsChecked);
-});
-</script>
-
-<div class="checkbox">
-  <label><input type="checkbox" name="card3e" id="card3e" value="">Paradoxical pulse</label>
-  <input type="text" id="Datepickercard3e" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#card3e').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickercard3e').prop('disabled', !cbIsChecked);
-});
-</script>
-
-<div class="checkbox">
-  <label><input type="checkbox" name="card3f" id="card3f" value=""> Increased heart size</label>
-  <input type="text" id="Datepickercard3f" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#card3f').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickercard3f').prop('disabled', !cbIsChecked);
-});
-</script>
-
-<br>
-
-<p class="bg-primary">Microbiology (Patients ≤1 year of age)</p>
-
-<div class="checkbox">
-  <label><input type="checkbox" name="card3h" id="card3h" value="">Positive antigen test on blood (e.g., H. influenzae, S. pneumoniae)  </label>
-  <input type="text" id="Datepickercard3h" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#card3h').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickercard3h').prop('disabled', !cbIsChecked);
-});
-</script>
-
-<div class="checkbox">
-  <label><input type="checkbox" name="card3j" id="card3j" value="">4-fold rise in type-specific antibody with or without isolation of virus from pharynx or feces </label>
-  <input type="text" id="Datepickercard3j" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#card3j').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickercard3j').prop('disabled', !cbIsChecked);
-});
-</script>
-
-<br>
-
-<p class="bg-primary">Imaging (Patients ≤1 year of age)</p>
-
-<div class="checkbox">
-  <label><input type="checkbox" name="card3g" id="card3g" value="">Abnormal EKG consistent with myocarditis or pericarditis</label>
-  <input type="text" id="Datepickercard3g" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#card3g').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickercard3g').prop('disabled', !cbIsChecked);
-});
-</script>
-
-<div class="checkbox">
-  <label><input type="checkbox" name="card3k" id="card3k" value="">Pericardial effusion identified by echocardiogram, CT scan, MRI, or angiography</label>
-  <input type="text" id="Datepickercard3k" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#card3k').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickercard3k').prop('disabled', !cbIsChecked);
-});
-</script>
-
-<br>
-<p class="bg-primary">Histopathology (Patients ≤1 year of age)</p>
+                                <br><br>
 
 
-<div class="checkbox">
-  <label><input type="checkbox" name="card3i" id="card3i" value="">Histologic examination of heart tissue shows evidence of myocarditis or pericarditis</label>
-  <input type="text" id="Datepickercard3i" placeholder="Enter date" disabled>
-</div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="card2a" id="card2a" data-toggle="collapse" data-target="#Datepickercard2a" value="Fever">
 
-<script>
-$('#card3i').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickercard3i').prop('disabled', !cbIsChecked);
-});
-</script>
+                                    <label class="custom-control-label" for="card2a">Fever (&gt;38&deg;C)&#42;</label>
 
-<br>
+                                    <input class="collapse" type="text" name="card2a" id="Datepickercard2a" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
 
-</div>
-<br><br>
+                                <script>
+                                    $('#card2a').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickercard2a').prop('disabled', !cbIsChecked);
 
-<p class="bg-warning"><strong>Comment</strong></p>
-<p><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> Most cases of postcardiac surgery or postmyocardial infarction pericarditis are not infectious.</p>
+                                    });
+
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickercard2a").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+                                <br>
+                             <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="card2b" id="card2b" data-toggle="collapse" data-target="#Datepickercard2b" value="Chest pain">
+
+                                    <label class="custom-control-label" for="card2b">Chest pain&#42;</label>
+
+                                    <input class="collapse" type="text" name="card2b" id="Datepickercard2b" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#card2b').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickercard2b').prop('disabled', !cbIsChecked);
+
+                                    });
+
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickercard2b").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+                                <br>
+
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="card2c" id="card2c" data-toggle="collapse" data-target="#Datepickercard2c" value="Paradoxical pulse">
+
+                                    <label class="custom-control-label" for="card2c">Paradoxical pulse&#42;</label>
+
+                                    <input class="collapse" type="text" name="card2c" id="Datepickercard2c" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#card2c').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickercard2c').prop('disabled', !cbIsChecked);
+
+                                    });
+
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickercard2c").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+                                <br>
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="card2d" id="card2d" data-toggle="collapse" data-target="#Datepickercard2d" value="Increased heart size">
+
+                                    <label class="custom-control-label" for="card2d">Increased heart size&#42;</label>
+
+                                    <input class="collapse" type="text" name="card2d" id="Datepickercard2d" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#card2d').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickercard2d').prop('disabled', !cbIsChecked);
+
+                                    });
+
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickercard2d").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+                                <br>
+
+
+     </div>
+     </div>
 
 <br><br>
 
-<p><strong>Click the <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check Button after making your selection(s) and whenever you make any changes to your selection(s)</strong></p>
 
-<button type="button" class="btn btn-success" onclick="myFunctionCard1()"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check-CARD</button>
 
- <button type="reset" value="Reset-CARD" class="btn btn-danger" onclick="return confirm_reset();"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> Reset-CARD</button>
+<button type="button" class="btn btn-success" data-toggle="collapse" data-target="#cardTogglePed1"> <span class="fas fa-hand-point-right" aria-hidden="true"></span> Click this button for Patients ≤1 year of age</button>
+                        <br>
+
+
+<div id="cardTogglePed1" class="collapse"> <br>
+
+
+<div class="card bg-dark text-white">
+                                <div class="card-body">
+                                    <div class="custom-file">
+                                        <input type="" class="custom-file-input2">
+                                        <label class="custom-file-label" for="customFile">Signs and Symptoms (Patients ≤1 year of age)</label>
+                                    </div>
+
+                                    <br><br>
+
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="card3a" id="card3a" data-toggle="collapse" data-target="#Datepickercard3a" value="Fever">
+
+                                        <label class="custom-control-label" for="card3a">Fever (&gt;38&deg;C)</label>
+
+                                        <input class="collapse" type="text" name="card3a" id="Datepickercard3a" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
+
+                                    <script>
+                                        $('#card3a').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickercard3a').prop('disabled', !cbIsChecked);
+
+                                        });
+
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickercard3a").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>
+
+                                    <br>
+
+<div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="card3b" id="card3b" data-toggle="collapse" data-target="#Datepickercard3b" value="Hypothermia">
+
+                                        <label class="custom-control-label" for="card3b">Hypothermia (&lt;37&deg;C)</label>
+
+                                        <input class="collapse" type="text" name="card3b" id="Datepickercard3b" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
+
+                                    <script>
+                                        $('#card3b').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickercard3b').prop('disabled', !cbIsChecked);
+
+                                        });
+
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickercard3b").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>
+
+                                    <br>
+
+<div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="card3c" id="card3c" data-toggle="collapse" data-target="#Datepickercard3c" value="Apnea">
+
+                                        <label class="custom-control-label" for="card3c">Apnea&#42;</label>
+
+                                        <input class="collapse" type="text" name="card3c" id="Datepickercard3c" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
+
+                                    <script>
+                                        $('#card3c').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickercard3c').prop('disabled', !cbIsChecked);
+
+                                        });
+
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickercard3c").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>
+
+                                    <br>
+
+<div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="card3d" id="card3d" data-toggle="collapse" data-target="#Datepickercard3d" value="Bradycardia">
+
+                                        <label class="custom-control-label" for="card3d">Bradycardia&#42;</label>
+
+                                        <input class="collapse" type="text" name="card3d" id="Datepickercard3d" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
+
+                                    <script>
+                                        $('#card3d').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickercard3d').prop('disabled', !cbIsChecked);
+
+                                        });
+
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickercard3d").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>
+
+                                    <br>
+<div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="card3e" id="card3e" data-toggle="collapse" data-target="#Datepickercard3e" value="Paradoxical pulse">
+
+                                        <label class="custom-control-label" for="card3e">Paradoxical pulse&#42;</label>
+
+                                        <input class="collapse" type="text" name="card3e" id="Datepickercard3d" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
+
+                                    <script>
+                                        $('#card3e').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickercard3e').prop('disabled', !cbIsChecked);
+
+                                        });
+
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickercard3e").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>
+
+                                    <br>
+<div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="card3f" id="card3f" data-toggle="collapse" data-target="#Datepickercard3f" value="Paradoxical pulse">
+
+                                        <label class="custom-control-label" for="card3f">Paradoxical pulse&#42;</label>
+
+                                        <input class="collapse" type="text" name="card3f" id="Datepickercard3f" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
+
+                                    <script>
+                                        $('#card3f').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickercard3f').prop('disabled', !cbIsChecked);
+
+                                        });
+
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickercard3f").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>
+    </div>
+    </div>
+
+<br>
+
+<div class="card bg-dark text-white">
+                                <div class="card-body">
+                                    <div class="custom-file">
+                                        <input type="" class="custom-file-input1">
+                                        <label class="custom-file-label" for="customFile">Microbiology (Patients ≤1 year of age)</label>
+                                    </div>
+
+                                    <br>
+                                    <br>
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="card3j" id="card3j" data-toggle="collapse" data-target="#Datepickercard3j" value="4-fold rise in paired sera from IgG antibody titer. ">
+                                        <label class="custom-control-label" for="card3j">4-fold rise in paired sera from IgG antibody titer.</label>
+                                        <input class="collapse" type="text" name="card3j" id="Datepickercard3j" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
+
+
+                                    <script>
+                                        $('#card3j').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickercard3j').prop('disabled', !cbIsChecked);
+
+                                        });
+
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickercard3j").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>
+
+    </div>
+    </div>
+
+
+<br>
+
+
+<div class="card bg-dark text-white">
+                                <div class="card-body">
+                                    <div class="custom-file">
+                                        <input type="" class="custom-file-input1">
+                                        <label class="custom-file-label" for="customFile">Imaging (Patients ≤1 year of age)</label>
+                                    </div>
+
+                                    <br>
+                                    <br>
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="card3g" id="card3g" data-toggle="collapse" data-target="#Datepickercard3g" value="Abnormal EKG consistent with myocarditis or pericarditis.">
+                                        <label class="custom-control-label" for="card3g">Abnormal EKG consistent with myocarditis or pericarditis.</label>
+                                        <input class="collapse" type="text" name="card3g" id="Datepickercard3g" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
+
+
+                                    <script>
+                                        $('#card3g').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickercard3g').prop('disabled', !cbIsChecked);
+
+                                        });
+
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickercard3g").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>
+
+                              <br>
+
+                              <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="card3k" id="card3k" data-toggle="collapse" data-target="#Datepickercard3k" value="Pericardial effusion identified by echocardiogram, CT scan, MRI, or angiography.">
+                                        <label class="custom-control-label" for="card3k">Pericardial effusion identified by echocardiogram, CT scan, MRI, or angiography.</label>
+                                        <input class="collapse" type="text" name="card3k" id="Datepickercard3k" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
+
+
+                                    <script>
+                                        $('#card3k').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickercard3k').prop('disabled', !cbIsChecked);
+
+                                        });
+
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickercard3k").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>
+
+                                </div>
+                            </div>
+
+                            <br>
+
+
+
+<div class="card bg-dark text-white">
+                                <div class="card-body">
+                                    <div class="custom-file">
+                                        <input type="" class="custom-file-input1">
+                                        <label class="custom-file-label" for="customFile">Histopathology (Patients ≤1 year of age)</label>
+                                    </div>
+
+                                    <br>
+                                    <br>
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="card3i" id="card3i" data-toggle="collapse" data-target="#Datepickercard3i" value="Histologic examination of heart tissue shows evidence of myocarditis or pericarditis.">
+                                        <label class="custom-control-label" for="card3i">Histologic examination of heart tissue shows evidence of myocarditis or pericarditis.</label>
+                                        <input class="collapse" type="text" name="card3i" id="Datepickercard3i" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                    </div>
+
+
+                                    <script>
+                                        $('#card3i').click(function() {
+                                            var cbIsChecked = $(this).prop('checked');
+                                            $('#Datepickercard3i').prop('disabled', !cbIsChecked);
+
+                                        });
+
+                                        $('[type="checkbox"]').on('change', function() {
+                                            if (!this.checked) {
+                                                $('[type="text"][name="' + this.name + '"]').val('');
+                                            }
+                                        });
+                                        $("#Datepickercard3i").datepicker({
+                                            maxDate: 0
+                                        });
+                                    </script>
+
+                                </div>
+                            </div>
+
+                            <br>
+</div>
+
+<br><br>
+
+
+<div class="card">
+                            <div class="card-body">
+                                <div class="text-left">
+                                    <h5 class="bg-warning" style="color:black">
+                                        <strong>Comment</strong>
+                                    </h5>
+                                </div>
+                                <p>
+                                    <strong>*</strong>With no other recognized cause</p>
+
+    </div>
+     </div>
+
+<br><br>
+
+<p>
+         <strong>Click the
+          <span class="fas fa-check-circle" aria-hidden="true"></span>Check Button after making your selection(s) and whenever you make
+          any changes to your selection(s)</strong>
+        </p>
+
+        <button type="button" class="btn btn-success" onclick="myFunctionCard1()">
+         <span class="fas fa-check-circle" aria-hidden="true"></span>Check-CARD</button>
+        <button type="button" value="Reset-CARD" class="btn btn-danger" data-toggle="modal"
+        data-target="#myModalCard19">
+         <span class="fas fa-ban" aria-hidden="true"></span>Reset-CARD</button>
+        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#reportCARD-19"
+        aria-expanded="false" aria-controls="reportCARD-19">
+         <span class="fas fa-book-open" aria-hidden="true"></span>Report-CARD</button>
+
+        <br>
+        <br>
+<div class="row">
+                            <div class="col-md-6">
+                                <div class="card border-dark mb-3">
+                                    <div class="card-header">
+                                        <strong>Results</strong>
+                                    </div>
+                                    <div class="card-body text-dark">
+                                        <h6 class="card-title">(If no results, your findings don't meet HNSN definition)</h6>
+                                        <p class="card-text" id="cardCrit1"></p>
+                                        <p class="card-text" id="cardCrit2"></p>
+                                        <p class="card-text" id="cardCrit3"></p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-dark mb-3">
+                                    <div class="card-header">
+                                        <strong>Outcome</strong>
+                                    </div>
+                                    <div class="card-body text-dark">
+                                        <h6 class="panel-title">Infection status (POA or HAI)</h6>
+                                        <p id="card2015CritOut_poa2"></p>
+                                        <p id="card2015CritOut_hai2"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 <br> <br>
-<div class="row">
- <div class="col-md-6">
-<div class="panel panel-info">
-  <div class="panel-heading">
- <h3 class="panel-title"><u><strong>Results</strong></u></h3>
-    <h6 class="panel-title">(If no results displayed, your findings don't meet NHSN defintions)</h6></div>
 
-  <div class="panel-body">
-    <p id="cardCrit1"></p>
-    <p id="cardCrit2"></p>
-    <p id="cardCrit3"></p>
-  </div>
-
- </div>
- </div>
- <div class="col-md-6">
-                  <div class="panel panel-info">
-                    <div class="panel-heading">
-                      <h3 class="panel-title">
-                        <u>
-                          <strong>Outcome</strong>
-                        </u>
-                      </h3>
-                      <h6 class="panel-title">Infection status (POA or HAI)</h6>
-                    </div>
-                    <div class="panel-body">
-                      <p id="card2015CritOut_poa2"></p>
-                      <p id="card2015CritOut_hai2"></p>
-                    </div>
-                  </div>
-                </div>
- </div>
-
-<br>
- <p align="left"><a href="#topCVS2"><span class="glyphicon glyphicon-arrow-up" style="color:gray" aria-hidden="true"></span><b>TOP</b></a></p>
-<br>
+                        <p type="button" id="" class="btn btn-link">
+                            <a href="#tabs-eent1" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+                                <span class="fas fa-arrow-circle-up" style="color:orange">&nbsp;</span>Back to Top</a>
+                        </p>
+                        <br>
 
 <script>
 
