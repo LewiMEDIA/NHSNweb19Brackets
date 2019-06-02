@@ -317,7 +317,7 @@
  </div>
 
   <div id="tabs-cvs2">
-      <div class="bjDef2011">
+      <div class="cvsDef2019">
 
 
       <div class="row">
@@ -385,8 +385,6 @@
                     </div>
 
  <form name="cardForm">
-
-
 
 <div class="card">
                             <div class="card-body">
@@ -1073,8 +1071,7 @@
                             </div>
                         </div>
 
-<br> <br>
-
+<br>
                         <p type="button" id="" class="btn btn-link">
                             <a href="#tabs-eent1" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
                                 <span class="fas fa-arrow-circle-up" style="color:orange">&nbsp;</span>Back to Top</a>
@@ -1260,196 +1257,519 @@ if
 
 </div>
 
- <form name="endoForm1">
-    <h3><a id="endoSP"></a><span class="label label-warning">ENDO – Endocarditis</span></h3>
 
-  <p class="bg-primary">Histopathology</p>
+   <form name="endoForm1">
 
-<div class="checkbox">
-  <label><input name="endo2i" type="checkbox" id="endo2i" value="">Valvular vegetation seen during a surgical operation or autopsy</label>
-  <input type="text" id="Datepickerendo2i" placeholder="Enter date" disabled>
-</div>
+<div class="text-left">
+                        <h5 class="bg-warning" id="endoSP" style="color:white">
+                            <strong>ENDO &mdash; Endocarditis</strong>
+                        </h5>
+                    </div>
 
- <script>
-$('#endo2i').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerendo2i').prop('disabled', !cbIsChecked);
-});
-</script>
 
- <br>
- <p class="bg-primary">Imaging</p>
+<div class="card">
+                        <div class="card-body">
+                            <div class="custom-file">
+                                <input type="" class="custom-file-input1" id="histoEndoTitle19">
+                                <label class="custom-file-label" for="histoEndoTitle19">Histopathology</label>
+                            </div>
+                            &nbsp;
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="endo2" id="endo2" data-toggle="collapse" data-target="#Datepickerendo2" value="Organism(s) seen on histopathologic examination of cardiac vegetation, embolized vegetation (for example, solid organ abscess) documented as originating from cardiac source, or intracardiac abscess.">
 
- <div class="checkbox">
-  <label><input name="endo2k" type="checkbox" id="endo2k" value="">Evidence of new vegetation seen on echocardiogram</label>
-  <input type="text" id="Datepickerendo2k" placeholder="Enter date" disabled>
-</div>
+                                <label class="custom-control-label" for="endo2">Organism(s) seen on histopathologic examination of cardiac vegetation, embolized vegetation (for example, solid organ abscess) documented as originating from cardiac source, or intracardiac abscess.</label>
 
- <script>
-$('#endo2k').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerendo2k').prop('disabled', !cbIsChecked);
-});
-</script>
+                                <input type="text" class="collapse" name="endo2" id="Datepickerendo2" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
 
- <br>
 
- <p class="bg-primary">Microbiology</p>
+                            <script>
+                                $('#endo2').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerendo2').prop('disabled', !cbIsChecked);
 
-<div class="checkbox">
-  <label><input name="endo1" type="checkbox" id="endo1" value=""> Patient has organisms cultured from valve or vegetation</label>
-  <input type="text" id="Datepickerendo1" placeholder="Enter date" disabled>
-</div>
+                                });
 
- <script>
-$('#endo1').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerendo1').prop('disabled', !cbIsChecked);
-});
-</script>
-
- <div class="checkbox">
-  <label><input name="endo2h" type="checkbox" id="endo2h" value="">Organisms seen on Gram’s stain of valve when culture is negative or not done  </label>
-  <input type="text" id="Datepickerendo2h" placeholder="Enter date" disabled>
-</div>
-
-  <script>
-$('#endo2h').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerendo2h').prop('disabled', !cbIsChecked);
-});
-</script>
-
- <div class="checkbox">
-  <label><input name="endo2j" type="checkbox" id="endo2j" value="">Positive antigen test on blood or urine (e.g. H. influenzae, S. pneumoniae, N. meningitidis, or Group B Streptococcus) </label>
-  <input type="text" id="Datepickerendo2j" placeholder="Enter date" disabled>
-</div>
-
-   <script>
-$('#endo2j').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerendo2j').prop('disabled', !cbIsChecked);
-});
-</script>
-
-  <div class="checkbox">
-  <label><input type="checkbox" name="endo2g" id="endo2g" value=""><a href="#" onclick="return false;" data-toggle="tooltip" data-placement="top" title="For a bloodstream infection to be determined secondary to another site of infection, the blood culture must be collected during the site-specific infection Secondary BSI Attribution Period and satisfy one of the following: 1. The blood culture must contain at least one organism that matches an organism found in a site-specific infection culture used to meet the site-specific infection criterion OR 2. The blood culture must be an element used to meet the site-specific infection criterion.
-"><span class="glyphicon glyphicon-flag" style="color:red" aria-hidden="true"></span> <em>Organisms cultured from two or more blood cultures</em></a></label>
-  <input type="text" id="Datepickerendo2g" placeholder="Enter date" disabled>
- </div>
-
-   <script>
-$('#endo2g').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerendo2g').prop('disabled', !cbIsChecked);
-});
-</script>
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerendo2").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>
 
 <br>
 
-   <div class="panel panel-info">
-  <div class="panel-heading">
-    <h3 class="panel-title"><strong>Select organism(s)</strong></h3>
-  </div>
-  <div class="panel-body">
+   <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="endo3" id="endo3" data-toggle="collapse" data-target="#Datepickerendo3" value="Endocarditis seen on histopathologic examination of cardiac vegetation or intracardiac abscess.">
 
- <div id="myformEndoOrg1">
-<table>
-      <tr>
-        <td>Organism:</td>
-        <td>
-        <select name="organisms" id="orgEndoOrg1">
-<option value="0">Select an Organism</option>
-<option value="Abiotrophia adiacens ">Abiotrophia adiacens - GRADJ</option>
-<option value="Abiotrophia spp. ">Abiotrophia spp. - ABISP</option>
-<option value="Acanthamoeba ">Acanthamoeba - ACANT</option>
-<option value="Achromobacter spp. ">Achromobacter spp. - ACHSP</option>
-<option value="Achromobacter xylosoxidans ">Achromobacter xylosoxidans - ALCXYL</option>
-<option value="Achromobacter xylosoxidans xylosoxidans ">Achromobacter xylosoxidans xylosoxidans - ACHXYL</option>
-<option value="Achromobacter, group Vd biotype 1 ">Achromobacter, group Vd biotype 1 - ACHVD1</option>
-<option value="Achromobacter, group Vd biotype 2 ">Achromobacter, group Vd biotype 2 - ACHVD2</option>
-<option value="Acidaminococcus fermentans ">Acidaminococcus fermentans - ACIFE</option>
-<option value="Acidaminococcus spp. ">Acidaminococcus spp. - ACISP</option>
-<option value="Acidovorax delafieldii ">Acidovorax delafieldii - ACDEL</option>
-<option value="Acidovorax Genus  ">Acidovorax Genus  - ACIDSP </option>
-<option value="Acidovorax spp. ">Acidovorax spp. - ACIDSP</option>
-<option value="Acinetobacter anitratus ">Acinetobacter anitratus - ACICBA</option>
-<option value="Acinetobacter baumannii ">Acinetobacter baumannii - ACBA</option>
-<option value="Acinetobacter calcoaceticus ">Acinetobacter calcoaceticus - ACICBA</option>
-<option value="Acinetobacter calcoaceticus ss. Lwoffii ">Acinetobacter calcoaceticus ss. Lwoffii - ACLW</option>
-<option value="Acinetobacter calcoaceticus-baumannii complex ">Acinetobacter calcoaceticus-baumannii complex - ACCA</option>
-<option value="Acinetobacter genospecies 3 ">Acinetobacter genospecies 3 - ACIGEN</option>
-<option value="Acinetobacter hemolyticus ">Acinetobacter hemolyticus - ACHA</option>
-<option value="Acinetobacter johnsonii ">Acinetobacter johnsonii - ACJH</option>
-<option value="Acinetobacter junii ">Acinetobacter junii - ACJU</option>
-<option value="Acinetobacter lwoffii ">Acinetobacter lwoffii - ACLW</option>
-<option value="Acinetobacter spp. ">Acinetobacter spp. - ACS</option>
-<option value="Acremonium spp. ">Acremonium spp. - ACRE</option>
-</select>
-       <input type="button" id="addEndoOrg1" value="Add" onclick="Javascript:addRowEndoOrg1()"></td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-</table>
-</div>
-<div id="mydataEndoOrg1">
+                                <label class="custom-control-label" for="endo3">Endocarditis seen on histopathologic examination of cardiac vegetation or intracardiac abscess. </label>
 
-<p class="bg-warning"><b>Selected:</b></p>
-<table id="myTableDataEndoOrg1">
-    <tr>
-        <td>&nbsp;</td>
-        <td></td>
-    </tr>
-</table>
+                                <input type="text" class="collapse" name="endo3" id="Datepickerendo3" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
 
-</div>
-</div>
-</div>
-<script>
 
-function addRowEndoOrg1() {
+                            <script>
+                                $('#endo3').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerendo3').prop('disabled', !cbIsChecked);
 
-    var org = document.getElementById("orgEndoOrg1");
-    var table = document.getElementById("myTableDataEndoOrg1");
+                                });
 
-    var rowCount = table.rows.length;
-    var row = table.insertRow(rowCount);
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerendo3").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>
 
-    row.insertCell(0).innerHTML= '<input type="button" value = "Remove" onClick="Javacsript:deleteRowEndoOrg1(this)">';
-    row.insertCell(1).innerHTML= org.value;
- }
+    </div>
+       </div>
 
-function deleteRowEndoOrg1(obj) {
 
-    var index = obj.parentNode.parentNode.rowIndex;
-    var table = document.getElementById("myTableDataEndoOrg1");
-    table.deleteRow(index);
-}
- function load() {
+   <br>
 
-    console.log("Page load finished");
- }
+ <div class="card">
+                        <div class="card-body">
+                            <div class="custom-file">
+                                <input type="" class="custom-file-input1" id="imageEndoTitle19">
+                                <label class="custom-file-label" for="imageEndoTitle19">Imaging</label>
+                            </div>
+                            &nbsp;
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="endo4a" id="endo4a" data-toggle="collapse" data-target="#Datepickerendo4a" value="Vegetation on cardiac valve or supporting structures">
 
-</script>
+                                <label class="custom-control-label" for="endo4a">Vegetation on cardiac valve or supporting structures.</label>
 
- <br>
+                                <input type="text" class="collapse" name="endo4a" id="Datepickerendo4a" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
 
-<p class="bg-primary">Antimicrobial therapy</p>
 
-<div class="checkbox">
-  <label><input name="endo2l" type="checkbox" id="endo2l" value="">If diagnosis is made antemortem, physician institutes appropriate antimicrobial therapy </label>
-  <input type="text" id="Datepickerendo2l" placeholder="Enter date" disabled>
-</div>
+                            <script>
+                                $('#endo4a').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerendo4a').prop('disabled', !cbIsChecked);
 
+                                });
+
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerendo4a").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>
+<br>
+
+     <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="endo4b" id="endo4b" data-toggle="collapse" data-target="#Datepickerendo4b" value="Intracardiac abscess">
+
+                                <label class="custom-control-label" for="endo4b">Intracardiac abscess.</label>
+
+                                <input type="text" class="collapse" name="endo4b" id="Datepickerendo4b" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+
+                            <script>
+                                $('#endo4b').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerendo4b').prop('disabled', !cbIsChecked);
+
+                                });
+
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerendo4b").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>
+
+     <br>
+
+     <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="endo4c" id="endo4c" data-toggle="collapse" data-target="#Datepickerendo4c" value="New partial dehiscence of prosthetic valve">
+
+                                <label class="custom-control-label" for="endo4c">New partial dehiscence of prosthetic valve.</label>
+
+                                <input type="text" class="collapse" name="endo4c" id="Datepickerendo4c" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+
+                            <script>
+                                $('#endo4c').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerendo4c').prop('disabled', !cbIsChecked);
+
+                                });
+
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerendo4c").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>
+
+       </div>
+       </div>
+
+<br>
+
+
+ <div class="card">
+                        <div class="card-body">
+                            <div class="custom-file">
+                                <input type="" class="custom-file-input1" id="microEndoTitle19">
+                                <label class="custom-file-label" for="microEndoTitle19">Microbiology</label>
+                            </div>
+                            &nbsp;
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="endo1" id="endo1" data-toggle="collapse" data-target="#Datepickerendo1" value="Organism(s) identified from cardiac vegetation*, embolized vegetation (for example, solid-organ abscess) documented as originating from cardiac source, or intracardiac abscess by a culture or nonculture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST)">
+
+                                <label class="custom-control-label" for="endo1">Organism(s) identified from cardiac vegetation*, embolized vegetation (for example, solid-organ abscess) documented as originating from cardiac source, or intracardiac abscess by a culture or nonculture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).</label>
+
+                                <input type="text" class="collapse" name="endo1" id="Datepickerendo1" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+
+                            <script>
+                                $('#endo1').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerendo1').prop('disabled', !cbIsChecked);
+
+                                });
+
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerendo1").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>
+
+
+    <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="endo4d" id="endo4d" data-toggle="collapse" data-target="#Datepickerendo4d" value="Typical infectious endocarditis organism(s) (specifically, Viridans group streptococci, Streptococcus bovis, Haemophilus spp., Actinobacillus actinomycetemcomitans, Cardiobacterium hominis, Eikenella corrodens, Kingella spp., Staphylococcus aureus,  Enterococcus spp.) identified from ≥2 blood collections drawn on separate occasions with no more than 1 calendar day between specimens by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).">
+
+                                <label class="custom-control-label" for="endo4d">Typical infectious endocarditis organism(s) (specifically, Viridans group streptococci, Streptococcus bovis, Haemophilus spp., Actinobacillus actinomycetemcomitans, Cardiobacterium hominis, Eikenella corrodens, Kingella spp., Staphylococcus aureus, Enterococcus spp.) identified from ≥2 blood collections drawn on separate occasions with no more than 1 calendar day between specimens by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).</label>
+
+                                <input type="text" class="collapse" name="endo4d" id="Datepickerendo4d" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+
+                            <script>
+                                $('#endo4d').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerendo4d').prop('disabled', !cbIsChecked);
+
+                                });
+
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerendo4d").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>
+
+
+
+    <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="endo4e" id="endo4e" data-toggle="collapse" data-target="#Datepickerendo4e" value="Coxiella burnetii identified by anti-phase I IgG antibody titer >1:800 or identified from blood by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).">
+
+                                <label class="custom-control-label" for="endo4e">Coxiella burnetii identified by anti-phase I IgG antibody titer >1:800 or identified from blood by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).</label>
+
+                                <input type="text" class="collapse" name="endo4e" id="Datepickerendo4e" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+
+                            <script>
+                                $('#endo4e').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerendo4e').prop('disabled', !cbIsChecked);
+
+                                });
+
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerendo4e").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>
+
+
+
+<div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="endo6h" id="endo6h" data-toggle="collapse" data-target="#Datepickerendo6h, #endoOrgSelect-19" value="Organism(s) identified from blood by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST)." />
+                                <label class="custom-control-label" for="endo6h">Organism(s) identified from blood by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).
+                                </label>
+                                <input type="text" class="collapse" name="endo6h" id="Datepickerendo6h" placeholder="Please enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+<br>
+
+                            <script>
+                                $('#endo6h').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerendo6h').prop('disabled', !cbIsChecked);
+
+                                });
+
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerendo6h").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>
+
+
+<div id="endoOrgSelect-19" class="collapse">
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="text-left">
+                                            <h5 class="bg-warning" style="color:black">
+                                                <strong>Select organism(s)</strong>
+                                            </h5>
+                                        </div>
+
+                                        <div id="myformEndoOrg2-19">
+                                            <table>
+                                                <tr>
+                                                    <td>Organism:</td>
+                                                    <td>
+                                                        <select name="organisms" id="orgEndoOrg2">
+                                                            <option value="0">Select an Organism</option>
+                                                            <option value="Abiotrophia adiacens ">Abiotrophia adiacens - GRADJ</option>
+                                                            <option value="Abiotrophia spp. ">Abiotrophia spp. - ABISP</option>
+                                                            <option value="Acanthamoeba ">Acanthamoeba - ACANT</option>
+                                                            <option value="Achromobacter spp. ">Achromobacter spp. - ACHSP</option>
+                                                            <option value="Achromobacter xylosoxidans ">Achromobacter xylosoxidans - ALCXYL</option>
+                                                            <option value="Achromobacter xylosoxidans xylosoxidans ">Achromobacter xylosoxidans xylosoxidans - ACHXYL</option>
+                                                            <option value="Achromobacter, group Vd biotype 1 ">Achromobacter, group Vd biotype 1 - ACHVD1</option>
+                                                            <option value="Achromobacter, group Vd biotype 2 ">Achromobacter, group Vd biotype 2 - ACHVD2</option>
+                                                            <option value="Acidaminococcus fermentans ">Acidaminococcus fermentans - ACIFE</option>
+                                                            <option value="Acidaminococcus spp. ">Acidaminococcus spp. - ACISP</option>
+                                                            <option value="Acidovorax delafieldii ">Acidovorax delafieldii - ACDEL</option>
+                                                            <option value="Acidovorax Genus  ">Acidovorax Genus - ACIDSP</option>
+                                                            <option value="Acidovorax spp. ">Acidovorax spp. - ACIDSP</option>
+                                                            <option value="Acinetobacter anitratus ">Acinetobacter anitratus - ACICBA</option>
+                                                            <option value="Acinetobacter baumannii ">Acinetobacter baumannii - ACBA</option>
+                                                            <option value="Acinetobacter calcoaceticus ">Acinetobacter calcoaceticus - ACICBA</option>
+                                                            <option value="Acinetobacter calcoaceticus ss. Lwoffii ">Acinetobacter calcoaceticus ss. Lwoffii - ACLW</option>
+                                                            <option value="Acinetobacter calcoaceticus-baumannii complex ">Acinetobacter calcoaceticus-baumannii complex - ACCA</option>
+                                                            <option value="Acinetobacter genospecies 3 ">Acinetobacter genospecies 3 - ACIGEN</option>
+                                                            <option value="Acinetobacter hemolyticus ">Acinetobacter hemolyticus - ACHA</option>
+                                                            <option value="Acinetobacter johnsonii ">Acinetobacter johnsonii - ACJH</option>
+                                                            <option value="Acinetobacter junii ">Acinetobacter junii - ACJU</option>
+                                                            <option value="Acinetobacter lwoffii ">Acinetobacter lwoffii - ACLW</option>
+                                                            <option value="Acinetobacter spp. ">Acinetobacter spp. - ACS</option>
+                                                            <option value="Acremonium spp. ">Acremonium spp. - ACRE</option>
+                                                        </select>
+                                                        <input type="button" id="addEndoOrg2" value="Add" onclick="Javascript:addRowEndoOrg2()">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+<div class="card" id="mydataEndoOrg2">
+                                        <div class="card-body">
+                                            <div class="text-left">
+                                                <h5 class="bg-warning" style="color:black">
+                                                    <strong>Selected:</strong>
+                                                </h5>
+                                            </div>
+                                            <table id="myTableDataEndoOrg2">
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+
+                                        </div>
+                                    </div>
+
+    </div>
+                            </div>
+
+                               <script>
+                                function addRowDiscOrg2() {
+                                    var org = document.getElementById("orgEndoOrg2");
+                                    var table = document.getElementById("myTableDataEndoOrg2");
+                                    var rowCount = table.rows.length;
+                                    var row = table.insertRow(rowCount);
+                                    row.insertCell(0).innerHTML = '<input type="button" value = "Remove" onClick="Javacsript:deleteRowEndoOrg2(this)">';
+                                    row.insertCell(1).innerHTML = org.value;
+                                }
+
+                                function deleteRowDiscOrg2(obj) {
+                                    var index = obj.parentNode.parentNode.rowIndex;
+                                    var table = document.getElementById("myTableDataEndoOrg2");
+                                    table.deleteRow(index);
+                                }
+
+                                function load() {
+                                    console.log("Page load finished");
+                                }
+                            </script>
+
+    <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="endo6i" id="endo6i" data-toggle="collapse" data-target="#Datepickerendo6i, #endo6iOrgSelect-19" value="Same common commensal organism(s) identified from ≥2 blood collections drawn on separate occasions on the same or consecutive days by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST)." />
+                                <label class="custom-control-label" for="endo6i">Same common commensal organism(s) identified from ≥2 blood collections drawn on separate occasions on the same or consecutive days by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).
+                                </label>
+                                <input type="text" class="collapse" name="endo6i" id="Datepickerendo6i" placeholder="Please enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+<br>
+                            <script>
+                                $('#endo6i').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerendo6i').prop('disabled', !cbIsChecked);
+
+                                });
+
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerendo6i").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>
+
+
+<div id="endo6iOrgSelect-19" class="collapse">
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="text-left">
+                                            <h5 class="bg-warning" style="color:black">
+                                                <strong>Select organism(s)</strong>
+                                            </h5>
+                                        </div>
+
+                                        <div id="myformEndo6iOrg2-19">
+                                            <table>
+                                                <tr>
+                                                    <td>Organism:</td>
+                                                    <td>
+                                                        <select name="organisms" id="orgendo6iOrg2">
+                                                            <option value="0">Select an Organism</option>
+                                                            <option value="Abiotrophia adiacens ">Abiotrophia adiacens - GRADJ</option>
+                                                            <option value="Abiotrophia spp. ">Abiotrophia spp. - ABISP</option>
+                                                            <option value="Acanthamoeba ">Acanthamoeba - ACANT</option>
+                                                            <option value="Achromobacter spp. ">Achromobacter spp. - ACHSP</option>
+                                                            <option value="Achromobacter xylosoxidans ">Achromobacter xylosoxidans - ALCXYL</option>
+                                                            <option value="Achromobacter xylosoxidans xylosoxidans ">Achromobacter xylosoxidans xylosoxidans - ACHXYL</option>
+                                                            <option value="Achromobacter, group Vd biotype 1 ">Achromobacter, group Vd biotype 1 - ACHVD1</option>
+                                                            <option value="Achromobacter, group Vd biotype 2 ">Achromobacter, group Vd biotype 2 - ACHVD2</option>
+                                                            <option value="Acidaminococcus fermentans ">Acidaminococcus fermentans - ACIFE</option>
+                                                            <option value="Acidaminococcus spp. ">Acidaminococcus spp. - ACISP</option>
+                                                            <option value="Acidovorax delafieldii ">Acidovorax delafieldii - ACDEL</option>
+                                                            <option value="Acidovorax Genus  ">Acidovorax Genus - ACIDSP</option>
+                                                            <option value="Acidovorax spp. ">Acidovorax spp. - ACIDSP</option>
+                                                            <option value="Acinetobacter anitratus ">Acinetobacter anitratus - ACICBA</option>
+                                                            <option value="Acinetobacter baumannii ">Acinetobacter baumannii - ACBA</option>
+                                                            <option value="Acinetobacter calcoaceticus ">Acinetobacter calcoaceticus - ACICBA</option>
+                                                            <option value="Acinetobacter calcoaceticus ss. Lwoffii ">Acinetobacter calcoaceticus ss. Lwoffii - ACLW</option>
+                                                            <option value="Acinetobacter calcoaceticus-baumannii complex ">Acinetobacter calcoaceticus-baumannii complex - ACCA</option>
+                                                            <option value="Acinetobacter genospecies 3 ">Acinetobacter genospecies 3 - ACIGEN</option>
+                                                            <option value="Acinetobacter hemolyticus ">Acinetobacter hemolyticus - ACHA</option>
+                                                            <option value="Acinetobacter johnsonii ">Acinetobacter johnsonii - ACJH</option>
+                                                            <option value="Acinetobacter junii ">Acinetobacter junii - ACJU</option>
+                                                            <option value="Acinetobacter lwoffii ">Acinetobacter lwoffii - ACLW</option>
+                                                            <option value="Acinetobacter spp. ">Acinetobacter spp. - ACS</option>
+                                                            <option value="Acremonium spp. ">Acremonium spp. - ACRE</option>
+                                                        </select>
+                                                        <input type="button" id="addendo6iOrg2" value="Add" onclick="Javascript:addRowendo6iOrg2()">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+<div class="card" id="mydataEndo6iOrg2">
+                                        <div class="card-body">
+                                            <div class="text-left">
+                                                <h5 class="bg-warning" style="color:black">
+                                                    <strong>Selected:</strong>
+                                                </h5>
+                                            </div>
+                                            <table id="myTableDataEndo6iOrg2">
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+
+                                        </div>
+                                    </div>
+
+    </div>
+                                    </div>
  <script>
-$('#endo2l').click(function() {
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerendo2l').prop('disabled', !cbIsChecked);
-});
-</script>
+                                function addRowDiscOrg2() {
+                                    var org = document.getElementById("orgEndo6iOrg2");
+                                    var table = document.getElementById("myTableDataEndo6iOrg2");
+                                    var rowCount = table.rows.length;
+                                    var row = table.insertRow(rowCount);
+                                    row.insertCell(0).innerHTML = '<input type="button" value = "Remove" onClick="Javacsript:deleteRowEndo6iOrg2(this)">';
+                                    row.insertCell(1).innerHTML = org.value;
+                                }
 
- <br>
+                                function deleteRowDiscOrg2(obj) {
+                                    var index = obj.parentNode.parentNode.rowIndex;
+                                    var table = document.getElementById("myTableDataEndo6iOrg2");
+                                    table.deleteRow(index);
+                                }
+
+                                function load() {
+                                    console.log("Page load finished");
+                                }
+                            </script>
+
+
+
+
+     </div>
+       </div>
+
+
+<br>
+
+
+
+
+
 
  <p class="bg-primary">Signs and Symptoms</p>
 
