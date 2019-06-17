@@ -801,7 +801,7 @@ if
 				
 <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" name="ear2b" id="ear2b" data-toggle="collapse" data-target="#Datepickerear2b" value="Pain">
-                                <label class="custom-control-label" for="ear2b">Pain&#42</label>
+                                <label class="custom-control-label" for="ear2b">Pain&#42;</label>
                                 <input type="text" name="ear2a" class="collapse" id="Datepickerear2a" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
                             </div>
 
@@ -826,7 +826,7 @@ if
 
 <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" name="ear2c" id="ear2c" data-toggle="collapse" data-target="#Datepickerear2c" value="Erythema">
-                                <label class="custom-control-label" for="ear2c">Erythema&#42</label>
+                                <label class="custom-control-label" for="ear2c">Erythema&#42;</label>
                                 <input type="text" name="ear2c" class="collapse" id="Datepickerear2c" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
                             </div>
 
@@ -933,7 +933,7 @@ Patient has organism(s) identified from fluid from middle ear obtained during an
  
 <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" name="ear3b" id="ear3b" data-toggle="collapse" data-target="#Datepickerear3b" value="Pain">
-                                <label class="custom-control-label" for="ear3a">Pain&#42</label>
+                                <label class="custom-control-label" for="ear3a">Pain&#42;</label>
                                 <input type="text" name="ear3b" class="collapse" id="Datepickerear3b" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
                             </div>
 
@@ -957,7 +957,7 @@ Patient has organism(s) identified from fluid from middle ear obtained during an
  
 <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" name="ear3c" id="ear3c" data-toggle="collapse" data-target="#Datepickerear3c" value="Inflammation">
-                                <label class="custom-control-label" for="ear3a">Inflammation&#42</label>
+                                <label class="custom-control-label" for="ear3a">Inflammation&#42;</label>
                                 <input type="text" name="ear3c" class="collapse" id="Datepickerear3c" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
                             </div>
 
@@ -981,7 +981,7 @@ Patient has organism(s) identified from fluid from middle ear obtained during an
 				
 	<div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" name="ear3d" id="ear3d" data-toggle="collapse" data-target="#Datepickerear3d" value="Retraction or decreased mobility of eardrum">
-                                <label class="custom-control-label" for="ear3d">Retraction&#42 or decreased mobility of eardrum</label>
+                                <label class="custom-control-label" for="ear3d">Retraction&#42; or decreased mobility of eardrum</label>
                                 <input type="text" name="ear3d" class="collapse" id="Datepickerear3d" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
                             </div>
 
@@ -1005,7 +1005,7 @@ Patient has organism(s) identified from fluid from middle ear obtained during an
 				
 <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" name="ear3f" id="ear3f" data-toggle="collapse" data-target="#Datepickerear3f" value="Fluid behind eardrum">
-                                <label class="custom-control-label" for="ear3f">Fluid behind eardrum&#42</label>
+                                <label class="custom-control-label" for="ear3f">Fluid behind eardrum&#42;</label>
                                 <input type="text" name="ear3d" class="collapse" id="Datepickerear3f" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
                             </div>
 
@@ -1133,90 +1133,283 @@ $('#ear3c').click(function() {
 				
 	
 				
+<div class="card">
+                        <div class="card-body">
+                            <div class="custom-file">
+                                <input type="" class="custom-file-input1" id="histoEentmtdTitle19">
+                                <label class="custom-file-label" for="histoEentmtdTitle19">Microbiology</label>
+                            </div>
+                            &nbsp;
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="ear5" id="ear5" data-toggle="collapse" data-target="#Datepickerear5" value="Patient has organism(s) identified from fluid or tissue from mastoid by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).">
+
+                                <label class="custom-control-label" for="ear5">Patient has organism(s) identified from fluid or tissue from mastoid by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).</label>
+
+                                <input type="text" class="collapse" name="ear5" id="Datepickerear5" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+
+                            <script>
+                                $('#ear5').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerear5').prop('disabled', !cbIsChecked);
+                                });
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerear5").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>
 				
 				
-				
+<div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="ear5g" id="ear5g" data-toggle="collapse" data-target="#Datepickerear5g" value="Organism(s) seen on Gram stain of fluid or tissue from mastoid.">
+
+                                <label class="custom-control-label" for="ear5g">Organism(s) seen on Gram stain of fluid or tissue from mastoid.</label>
+
+                                <input type="text" class="collapse" name="ear5g" id="Datepickerear5g" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+
+                            <script>
+                                $('#ear5g').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerear5g').prop('disabled', !cbIsChecked);
+                                });
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerear5g").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>				
   
-  <h4><span class="label label-warning">Mastoiditis </span></h4>
- 
- <p class="bg-primary">Microbiology</p>
-
-<div class="checkbox">
-  <label><input name="ear5" type="checkbox" id="ear5" value=""> Patient has organisms cultured from purulent drainage from mastoid </label>
-  <input type="text" id="Datepickerear5" placeholder="Enter date" disabled>
-</div>
-
- <script>
-$('#ear5').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerear5').prop('disabled', !cbIsChecked); 
-});
-</script>
-
-<div class="checkbox">
-  <label><input name="ear5g" type="checkbox" id="ear5g" value="">Organisms seen on Gram’s stain of purulent material from mastoid </label>
-  <input type="text" id="Datepickerear5g" placeholder="Enter date" disabled>
-</div>
- 
-       <script>
-$('#ear5g').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerear5g').prop('disabled', !cbIsChecked); 
-});
-</script>
-
-<div class="checkbox">
-  <label><input name="ear5h" type="checkbox" id="ear5h" value="">Positive antigen test on blood </label>
-  <input type="text" id="Datepickerear5h" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#ear5h').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerear5h').prop('disabled', !cbIsChecked); 
-});
-</script>
-
+	</div>
+				</div>
+				
 <br>
- 
- <p class="bg-primary">Signs and Symptoms</p>
 
-<div class="checkbox">
-  <label><input type="checkbox" name="ear5a" id="ear5a" value="">Fever (&gt;38◦C)</label>
-  <input type="text" id="Datepickerear5a" placeholder="Enter date" disabled>
-</div>
- 
- <script>
-$('#ear5a').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerear5a').prop('disabled', !cbIsChecked); 
-});
-</script>
- 
- <div class="checkbox">
-  <label><input type="checkbox" name="ear5b" id="ear5b" value="">Pain</label>
-  <input type="text" id="Datepickerear5b" placeholder="Enter date" disabled>
-</div>
+<div class="card">
+                        <div class="card-body">
+                            <div class="custom-file">
+                                <input type="" class="custom-file-input1" id="imagingEarTitle19">
+                                <label class="custom-file-label" for="imagingEarTitle19">Imaging</label>
+                            </div>
+                            &nbsp;
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="ear5i" id="ear5i" data-toggle="collapse" data-target="#Datepickerear5i" value="Imaging test evidence suggestive of infection (for example, CT scan), which if equivocal is supported by clinical correlation, specifically, physician documentation of antimicrobial treatment for mastoid infection.">
 
-<script>
-$('#ear5b').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerear5b').prop('disabled', !cbIsChecked); 
-});
-</script>
+                                <label class="custom-control-label" for="ear5i">Imaging test evidence suggestive of infection (for example, CT scan), which if equivocal is supported by clinical correlation, specifically, physician documentation of antimicrobial treatment for mastoid infection. </label>
 
-<div class="checkbox">
-  <label><input type="checkbox" name="ear5c" id="ear5c" value="">Tenderness</label>
-  <input type="text" id="Datepickerear5c" placeholder="Enter date" disabled>
-</div>
+                                <input type="text" class="collapse" name="ear5i" id="Datepickerear5i" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+
+
+                            <script>
+                                $('#ear5i').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerear5i').prop('disabled', !cbIsChecked);
+                                });
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerear5i").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>
+	</div>
+				</div>
+
+				
+				<br>
+
+				
+				
+				
+<div class="card">
+                            <div class="card-body">
+                                <div class="custom-file">
+                                    <input type="" class="custom-file-input2">
+                                    <label class="custom-file-label" for="customFile">Signs and Symptoms</label>
+                                </div>
+
+                                <br><br>
+
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="ear5a" id="ear5a" data-toggle="collapse" data-target="#Datepickerear5a" value="Fever">
+
+                                    <label class="custom-control-label" for="ear5a">Fever (&gt;38◦C)</label>
+
+                                    <input class="collapse" type="text" name="ear5a" id="Datepickerear5a" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#ear5a').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickerear5a').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickerear5a").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+                                <br>
+				
+<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="ear5b" id="ear5b" data-toggle="collapse" data-target="#Datepickerear5b" value="Pain or tenderness">
+
+                                    <label class="custom-control-label" for="ear5b">Pain or tenderness&#42;</label>
+
+                                    <input class="collapse" type="text" name="ear5b" id="Datepickerear5b" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#ear5b').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickerear5b').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickerear5b").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+		
+	<br>
+				    
+				    
+<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="ear5c" id="ear5c" data-toggle="collapse" data-target="#Datepickerear5c" value="Post auricular swelling">
+
+                                    <label class="custom-control-label" for="ear5c">Post auricular swelling&#42;</label>
+
+                                    <input class="collapse" type="text" name="ear5c" id="Datepickerear5c" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#ear5c').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickerear5c').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickerear5c").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+		
+	<br>
+						    
+
+				    
+<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="ear5d" id="ear5d" data-toggle="collapse" data-target="#Datepickerear5d" value="Erythema">
+
+                                    <label class="custom-control-label" for="ear5c">Erythema&#42;</label>
+
+                                    <input class="collapse" type="text" name="ear5d" id="Datepickerear5d" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#ear5d').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickerear5d').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickerear5d").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+		
+	<br>    
+				
+
+<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="ear5e" id="ear5e" data-toggle="collapse" data-target="#Datepickerear5e" value="Headache">
+
+                                    <label class="custom-control-label" for="ear5e">Headache&#42;</label>
+
+                                    <input class="collapse" type="text" name="ear5e" id="Datepickerear5e" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#ear5e').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickerear5e').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickerear5e").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+		
+	<br>    				    
+                                   
+
+<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="ear5f" id="ear5f" data-toggle="collapse" data-target="#Datepickerear5f" value="Facial paralysis">
+
+                                    <label class="custom-control-label" for="ear5f">Facial paralysis&#42;</label>
+
+                                    <input class="collapse" type="text" name="ear5f" id="Datepickerear5f" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#ear5f').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickerear5f').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickerear5f").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+		
+	</div>
+				</div>
+				
+				
+				
+				
+				
  
- <script>
-$('#ear5c').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerear5c').prop('disabled', !cbIsChecked); 
-});
-</script>
  
+ 
+
+
+ <!--
  <div class="checkbox">
   <label><input type="checkbox" name="ear5d" id="ear5d" value=""><a href="#" onclick="return false;" data-toggle="tooltip" data-placement="top" title="superficial reddening of the skin, usually in patches, as a result of injury or irritation causing dilatation of the blood capillaries"><i>Erythema</i> </a></label>
   <input type="text" id="Datepickerear5d" placeholder="Enter date" disabled>
@@ -1228,80 +1421,64 @@ $('#ear5d').click(function() {
     $('#Datepickerear5d').prop('disabled', !cbIsChecked); 
 });
 </script> 
+ -->
+				
+  <p>
+         <strong>Click the<span class="fas fa-check-circle" aria-hidden="true"></span>Check Button after making your selection(s) and whenever you make any changes to your selection(s)</strong>
+        </p>
+
+                        <button type="button" class="btn btn-success" onclick="myFunctionEar1()">
+                            <span class="fas fa-check-circle" aria-hidden="true"></span>Check-EAR</button>
+                        <button type="button" value="Reset-EAR" class="btn btn-danger" data-toggle="modal" data-target="#myModalEar19">
+                            <span class="fas fa-ban" aria-hidden="true"></span>Reset-EAR</button>
+                        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#reportEAR-19" aria-expanded="false" aria-controls="reportEAR-19">
+                            <span class="fas fa-book-open" aria-hidden="true"></span>Report-EAR</button>
+
+
+
+                        <br><br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card border-dark mb-3">
+                                    <div class="card-header">
+                                        <strong>Results</strong>
+                                    </div>
+                                    <div class="card-body text-dark">
+                                        <h6 class="card-title">(If no results, your findings don't meet HNSN definition)</h6>
+                                        <p class="card-text" id="externaCrit1"></p>
+                                        <p class="card-text" id="externaCrit2"></p>
+                                        <p class="card-text" id="mediaCrit1"></p>
+                                        <p class="card-text" id="mediaCrit2"></p>
+					<p class="card-text" id="internaCrit1"></p>
+                                        <p class="card-text" id="internaCrit2"></p>
+                                        <p class="card-text" id="mastoidCrit1"></p>
+                                        <p class="card-text" id="mastoidCrit2"></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-dark mb-3">
+                                    <div class="card-header">
+                                        <strong>Outcome</strong>
+                                    </div>
+                                    <div class="card-body text-dark">
+                                        <h6 class="panel-title">Infection status (POA or HAI)</h6>
+                                        <p id="ear2019CritOut_poa2"></p>
+                                        <p id="ear2019CritOut_hai2"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+				
+				
+  
  
-  <div class="checkbox">
-  <label><input type="checkbox" name="ear5e" id="ear5e" value="">Headache</label>
-  <input type="text" id="Datepickerear5e" placeholder="Enter date" disabled>
-</div>
- 
-   <script>
-$('#ear5e').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerear5e').prop('disabled', !cbIsChecked); 
-});
-</script> 
- 
- <div class="checkbox">
-  <label><input type="checkbox" name="ear5f" id="ear5f" value="">Facial paralysis</label>
-  <input type="text" id="Datepickerear5f" placeholder="Enter date" disabled>
-</div>
- 
-    <script>
-$('#ear5f').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerear5f').prop('disabled', !cbIsChecked); 
-});
-</script> 
  
  <br> 
  
-<p><strong>Click the <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check Button after making your selection(s) and whenever you make any changes to your selection(s)</strong></p>
-
-<button type="button" class="btn btn-success" onclick="myFunctionEar1()"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check-EAR</button>
-
-<button type="button" value="Reset-EAR" class="btn btn-danger" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Reset-EAR</button>
-
-
-<br><br>
-
-<div class="row">
- <div class="col-md-6">
-<div class="panel panel-info">
-  <div class="panel-heading">
- <h3 class="panel-title"><u><strong>Results</strong></u></h3>
-    <h6 class="panel-title">(If no results displayed, your findings don't meet NHSN defintions)</h6>  </div>
-    
-  <div class="panel-body">
-    <p id="externaCrit1"></p>
-    <p id="externaCrit2"></p>
-    <p id="mediaCrit1"></p>
-    <p id="mediaCrit2"></p>
-    <p id="internaCrit1"></p>
-    <p id="internaCrit2"></p>
-    <p id="mastoidCrit1"></p>
-    <p id="mastoidCrit2"></p>
-  </div>
-</div>
-</div> 
-
- <div class="col-md-6">
-                  <div class="panel panel-info">
-                    <div class="panel-heading">
-                      <h3 class="panel-title">
-                        <u>
-                          <strong>Outcome</strong>
-                        </u>
-                      </h3>
-                      <h6 class="panel-title">Infection status (POA or HAI)</h6>
-                    </div>
-                    <div class="panel-body">
-                      <p id="ear2015CritOut_poa2"></p>
-                      <p id="ear2015CritOut_hai2"></p>
-                    </div>
-                  </div>
-          </div>
-
-</div>
+<!--
 
 <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
@@ -1320,13 +1497,18 @@ $('#ear5f').click(function() {
     </div>
   </div>
 </div>
-
+-->
 
 </form>
  
-<br>
- <p align="left"><a href="#topEENT2"><span class="glyphicon glyphicon-arrow-up" style="color:gray" aria-hidden="true"></span><b>TOP</b></a></p> 
-<br>
+ <br>
+                        <p type="button" id="" class="btn btn-link">
+                            <a href="#tabs-eent1" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+                                <span class="fas fa-arrow-circle-up" style="color:orange">&nbsp;</span>Back to Top</a>
+                        </p>
+                        <br>
+	
+	
 
 <script>
  function myFunctionEar1() {
@@ -1466,6 +1648,21 @@ if
 }
 </script>		
  
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
   <form name="eyeForm1"> 
   <h3><a id="eyeSP"></a><span class="label label-warning">EYE – Eye infection, other than conjunctivitis</span></h3>
  
