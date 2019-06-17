@@ -292,226 +292,340 @@ Upper respiratory tract infections must meet at least one of the following crite
             </div>
                
                   
-                  
-                  
-                  
-                  
-    
-  <div id="tabs-eent2">
-      <div class="bjDef2011">  
-      <p align="right"><strong>Admission date:</strong>
-  <input type="text" id="DatepickerEENT" placeholder="Enter date"><span aria-hidden="true"></span></p>
+        
+ <div id="tabs-eent2">
+                <div class="eentDef2019">
 
-<div class="row">
-    <div class="col-md-6">
-    <h3 align="left">EENT – Eye, Ear, Nose, Throat, or Mouth Infection</h3>
-    </div>
-    
-     <p id="topEENT2"></p>
-    
-    <div class="col-md-6"> 
-      <nav>
-  <ul class="pager" style="float:right">
-    <li><a href="#conjSP" data-toggle="tooltip" data-placement="top" title="CONJ-Conjunctivitis">CONJ</a></li>
-    <li><a href="#earSP" data-toggle="tooltip" data-placement="top" title="EAR-Ear, mastoid infection">EAR</a></li>
-    <li><a href="#eyeSP" data-toggle="tooltip" data-placement="top" title="EYE-Eye infection, other than conjunctivitis">EYE</a></li>
-    <li><a href="#oralSP" data-toggle="tooltip" data-placement="top" title="ORAL-Oral cavity infection (mouth, tongue, or gums)">ORAL</a></li>
-    <li><a href="#sinuSP" data-toggle="tooltip" data-placement="top" title="SINU-Sinusitis">SINU</a></li>
-    <li><a href="#urSP" data-toggle="tooltip" data-placement="top" title="UR-Upper respiratory tract infection, pharyngitis, laryngitis, epiglottitis">UR</a></li>
-  </ul>
-  </nav>  
-    </div>
-    
-</div>  
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <p></p>
+                        </div>
+
+                        <div class="col-md-6">
+                            <p align="right" id="admDateEent-19">
+                                <strong>Admission Date:</strong>
+                                <input type="text" id="DatepickerEENT3" placeholder="Date required" value="" required>
+                            </p>
+                        </div>
+
+                        <script>
+                            $('#admDateEent-19').click(function() {
+                                var cbIsChecked = $(this).prop('checked');
+                                $('#DatepickerEENT3').prop('disabled', !cbIsChecked);
+                            });
+                            $('[type="checkbox"]').on('change', function() {
+                                if (!this.checked) {
+                                    $('[type="text"][name="' + this.name + '"]').val('');
+                                }
+                            });
+                            $("#DatepickerEENT3").datepicker({
+                                maxDate: 0
+                            });
+                        </script>
+
+                    </div>	    
+	    
+	    
+	    
+ <p id="topEENT2"></p>
+
+                    <nav>
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a type="button" class="btn btn-outline-warning" href="#conjSP" style="background-color:#lightgrey" onclick="return false;" data-toggle="tooltip" data-placement="top" title="CONJ&mdash;Conjunctivitis">CONJ</a>
+                            </li>
+                            &nbsp;
+                            <li class="nav-item">
+                                <a type="button" class="btn btn-outline-warning" href="#earSP" style="background-color:#lightgrey" data-toggle="tooltip" data-placement="top" title="EAR&mdash;Ear, mastoid infection">EAR</a>
+                            </li>
+                            &nbsp;
+                            <li class="nav-item">
+                                <a type="button" class="btn btn-outline-warning" href="#eyeSP" style="background-color:#lightgrey" data-toggle="tooltip" data-placement="top" title="EYE&mdash;Eye infection, other than conjunctivitis">EYE</a>
+                            </li>
+			   <li class="nav-item">
+                                <a type="button" class="btn btn-outline-warning" href="#sinuSP" style="background-color:#lightgrey" onclick="return false;" data-toggle="tooltip" data-placement="top" title="SINU&mdash;Sinusitis">SINU</a>
+                            </li>
+                            &nbsp;
+                            <li class="nav-item">
+                                <a type="button" class="btn btn-outline-warning" href="#oralSP" style="background-color:#lightgrey" data-toggle="tooltip" data-placement="top" title="ORAL&mdash;Oral cavity infection (mouth, tongue, or gums)">ORAL</a>
+                            </li>
+                            &nbsp;
+                            <li class="nav-item">
+                                <a type="button" class="btn btn-outline-warning" href="#urSP" style="background-color:#lightgrey" data-toggle="tooltip" data-placement="top" title="UR&mdash;Upper respiratory tract infection, pharyngitis, laryngitis, epiglottitis">UR</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                    <br><br>	    
+                  
+                  
+                     <div class="text-left">
+                        <h5 class="bg-warning" id="conjSP" style="color:white">
+                            <strong>CONJ &mdash; Conjunctivitis</strong>
+                        </h5>
+                    </div>
 
 
-<form name="conjForm1"   action="#">
- <h3><a id="conjSP"></a><span class="label label-warning">CONJ – Conjunctivitis</span></h3>
+                    <form name="conjForm1" id="conjForm1">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="custom-file">
+                                    <input type="" class="custom-file-input1" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Microbiology</label>
+                                </div>
+
+                                <br><br>               
+    
+  
+<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="conj1" id="conj1" data-toggle="collapse" data-target="#Datepickerconj1" value="
+Patient has organism(s) identified from conjunctival scraping or purulent exudate obtained from the conjunctiva or contiguous tissues (for example, eyelid, cornea, meibomian glands, or lacrimal glands) by a culture or 
+       non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST). 
+">
+
+                                    <label class="custom-control-label" for="conj1">
+Patient has organism(s) identified from conjunctival scraping or purulent exudate obtained from the conjunctiva or contiguous tissues (for example, eyelid, cornea, meibomian glands, or lacrimal glands) by a culture or  
+       non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST). 
+</label>
+
+                                    <input class="collapse" type="text" name="conj1" id="Datepickerconj1" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#conj1').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickerconj1').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickerconj1").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+ <br>
+
+<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="conj2b" id="conj2b" data-toggle="collapse" data-target="#Datepickerconj2b" value="WBCs and organism(s) seen on Gram stain of exudate.">
+
+                                    <label class="custom-control-label" for="conj2b">WBCs and organism(s) seen on Gram stain of exudate.</label>
+
+                                    <input class="collapse" type="text" name="conj2b" id="Datepickerconj2b" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#conj2b').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickerconj2b').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickerconj2b").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+				    
+				     <br>
+
+<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="conj2e" id="conj2e" data-toggle="collapse" data-target="#Datepickerconj2e" value="Multinucleated giant cells seen on microscopic examination of conjunctival exudate or scrapings.">
+
+                                    <label class="custom-control-label" for="conj2e">Multinucleated giant cells seen on microscopic examination of conjunctival exudate or scrapings.</label>
+
+                                    <input class="collapse" type="text" name="conj2e" id="Datepickerconj2e" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#conj2e').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickerconj2e').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickerconj2e").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="conj2g1" id="conj2g1" data-toggle="collapse" data-target="#Datepickerconj2g1" value="Diagnostic single antibody titer (IgM) or 4-fold increase in paired sera (IgG) for organism
+.">
+
+                                    <label class="custom-control-label" for="conj2g1">Diagnostic single antibody titer (IgM) or 4-fold increase in paired sera (IgG) for organism
+.</label>
+
+                                    <input class="collapse" type="text" name="conj2g1" id="Datepickerconj2g1" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#conj2g1').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickerconj2g1').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickerconj2g1").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+                            </div>
+                        </div>
+
+                        <br>
+
+				    
+<div class="card">
+                            <div class="card-body">
+                                <div class="custom-file">
+                                    <input type="" class="custom-file-input2">
+                                    <label class="custom-file-label" for="customFile">Signs and Symptoms</label>
+                                </div>
+
+                                <br><br>
+
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="conj2a" id="conj2a" data-toggle="collapse" data-target="#Datepickerconj2a" value="Patient has pain or redness of conjunctiva or around eye.">
+
+                                    <label class="custom-control-label" for="conj2a">Patient has pain or redness of conjunctiva or around eye.</label>
+
+                                    <input class="collapse" type="text" name="conj2a" id="Datepickerconj2a" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#conj2a').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickerconj2a').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickerconj2a").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+                                <br>				    
+
+<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="conj2c" id="conj2c" data-toggle="collapse" data-target="#Datepickerconj2c" value="Purulent exudate.">
+
+                                    <label class="custom-control-label" for="conj2c">Purulent exudate.</label>
+
+                                    <input class="collapse" type="text" name="conj2c" id="Datepickerconj2c" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#conj2c').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickerconj2c').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickerconj2c").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+
+ <br><br>
+                        <div class="conj">
+                            <div class="card-body">
+                                <div class="text-left">
+                                    <h5 class="bg-warning" style="color:black">
+                                        <strong>Reporting instructions</strong>
+                                    </h5>
+                                </div>
+                               <br>
+
+                                <p>
+                                    <span class="fas fa-arrow-circle-right" style="color:black" aria-hidden="true"></span>Report other infections of the eye as EYE.  
+                                </p>
+
+                                <p>
+                                    <span class="fas fa-arrow-circle-right" style="color:black" aria-hidden="true"></span>Do not report chemical conjunctivitis, caused by silver nitrate (AgNO3), as a healthcare–associated infection.
+                                </p>
+
+                                <p>
+                                    <span class="fas fa-arrow-circle-right" style="color:black" aria-hidden="true"></span>Do not report a separate case of conjunctivitis (CONJ) that occurs as a part of another viral illness (for example, UR).
+                                </p>
+
+
+
+                            </div>
+                        </div>
+                        <br>
+
+
  
-<p class="bg-primary">Microbiology</p>
+                        <p>
+         <strong>Click the<span class="fas fa-check-circle" aria-hidden="true"></span>Check Button after making your selection(s) and whenever you make any changes to your selection(s)</strong>
+        </p>
 
-<div class="checkbox">
-  <label><input name="conj1" type="checkbox" id="conj1" value="">Patient has pathogens cultured from purulent exudate obtained from the conjunctiva or contiguous tissues, such as eyelid, cornea, meibomian glands, or lacrimal glands</label>
-  <input type="text" id="Datepickerconj1"  name="Datepickerconj1" placeholder="Enter date" disabled value="" required>
-</div>
-
-<script>
-$('#conj1').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerconj1').prop('disabled', !cbIsChecked); 
-});
-</script>
-
-<div class="checkbox">
-  <label><input name="conj2b" type="checkbox" id="conj2b" value="">WBCs and organisms seen on Gram’s stain of exudate </label>
-  <input type="text" id="Datepickerconj2b" placeholder="Enter date" disabled required>
-</div>
-
-<script>
-$('#conj2b').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerconj2b').prop('disabled', !cbIsChecked); 
-});
-</script>
+                        <button type="button" class="btn btn-success" onclick="myFunctionConj1()">
+                            <span class="fas fa-check-circle" aria-hidden="true"></span>Check-CONJ</button>
+                        <button type="button" value="Reset-IC" class="btn btn-danger" data-toggle="modal" data-target="#myModalConj19">
+                            <span class="fas fa-ban" aria-hidden="true"></span>Reset-CONJ</button>
+                        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#reportCONJ-19" aria-expanded="false" aria-controls="reportCONJ-19">
+                            <span class="fas fa-book-open" aria-hidden="true"></span>Report-CONJ</button>
 
 
-
-<div class="checkbox">
-  <label><input name="conj2d" type="checkbox" id="conj2d" value="">Positive antigen test (e.g. ELISA or IF for Chlamydia trachomatis, herpes simplex virus, adenovirus) on exudate or conjunctival scraping </label>
-  <input type="text" id="Datepickerconj2d" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#conj2d').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerconj2d').prop('disabled', !cbIsChecked); 
-});
-</script>
-
-
-<div class="checkbox">
-  <label><input name="conj2e" type="checkbox" id="conj2e" value="">Multinucleated giant cells seen on microscopic examination of conjunctival exudate or scrapings </label>
-  <input type="text" id="Datepickerconj2e" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#conj2e').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerconj2e').prop('disabled', !cbIsChecked); 
-});
-</script>
-
-
-
-<div class="checkbox">
-  <label><input name="conj2f" type="checkbox" id="conj2f" value="">Positive viral culture </label>
-  <input type="text" id="Datepickerconj2f" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#conj2f').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerconj2f').prop('disabled', !cbIsChecked); 
-});
-</script>
-
-
-<div class="checkbox">
-  <label><input name="conj2g1" type="checkbox" id="conj2g1" value="">Diagnostic single antibody titer (IgM) for pathogen</label>
-  <input type="text" id="Datepickerconj2g1" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#conj2g1').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerconj2g1').prop('disabled', !cbIsChecked); 
-});
-</script>
-
-<div class="checkbox">
-  <label><input name="conj2g2" type="checkbox" id="conj2g2" value="">4-fold increase in paired sera (IgG) for pathogen</label>
-  <input type="text" id="Datepickerconj2g2" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#conj2g2').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerconj2g2').prop('disabled', !cbIsChecked); 
-});
-</script>
-
-
-<br>
-
-<p class="bg-primary">Signs and Symptoms</p>
-
-<div class="checkbox">
-  <label><input type="checkbox" name="conj2a" id="conj2a" value=""> Patient has pain or redness of conjunctiva or around eye</label>
-  <input type="text" id="Datepickerconj2a" placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#conj2a').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerconj2a').prop('disabled', !cbIsChecked); 
-});
-</script>
-
-<div class="checkbox">
-  <label><input type="checkbox" name="conj2c" id="conj2c" value="">Purulent exudate</label>
-  <input type="text" id="Datepickerconj2c"  placeholder="Enter date" disabled>
-</div>
-
-<script>
-$('#conj2c').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerconj2c').prop('disabled', !cbIsChecked); 
-});
-</script>
-
-<br>
-
-<p class="bg-warning"><strong>Reporting instructions</strong></p>
-<p><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> Report other infections of the eye as EYE.</p>
-<p><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> Do not report chemical conjunctivitis caused by silver nitrate (AgNO3) as a health care–associated infection.</p>
-<p><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> Do not report conjunctivitis that occurs as a part of a more widely disseminated viral illness (such as measles, chickenpox, or a URI).</p>
-
-<br>
-
-<p><strong>Click the <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check Button after making your selection(s) and whenever you make any changes to your selection(s)</strong></p>
-
-<button type="button" class="btn btn-success" onclick="myFunctionConj1()"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check-CONJ</button>
-
-<button type="button" value="Reset-CONJ" class="btn btn-danger" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> Reset-CONJ</button>
 
 <br><br>
-
-<!-- Button trigger modal 
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
--->
-
-<!-- Modal -->
-
-
-<div class="row">
- <div class="col-md-6">
-<div class="panel panel-info">
-  <div class="panel-heading">
- <h3 class="panel-title"><u><strong>Results</strong></u></h3>
-    <h6 class="panel-title">(If no results displayed, your findings don't meet NHSN defintions)</h6>  </div>
-    
-  <div class="panel-body">
-    <p id="conjCrit1"></p>
-    <p id="conjCrit2"></p>
-  </div>
-  </div>
-  </div> 
-    
-    <div class="col-md-6">
-                  <div class="panel panel-info">
-                    <div class="panel-heading">
-                      <h3 class="panel-title">
-                        <u>
-                          <strong>Outcome</strong>
-                        </u>
-                      </h3>
-                      <h6 class="panel-title">Infection status (POA or HAI)</h6>
-                    </div>
-                    <div class="panel-body">
-                      <p id="conj2015CritOut_poa2"></p>
-                      <p id="conj2015CritOut_hai2"></p>
-                    </div>
-                  </div>
-          </div>
-</div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card border-dark mb-3">
+                                    <div class="card-header">
+                                        <strong>Results</strong>
+                                    </div>
+                                    <div class="card-body text-dark">
+                                        <h6 class="card-title">(If no results, your findings don't meet HNSN definition)</h6>
+                                        <p class="card-text" id="conjCrit1"></p>
+                                        <p class="card-text" id="conjCrit2"></p>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-dark mb-3">
+                                    <div class="card-header">
+                                        <strong>Outcome</strong>
+                                    </div>
+                                    <div class="card-body text-dark">
+                                        <h6 class="panel-title">Infection status (POA or HAI)</h6>
+                                        <p id="conj2019CritOut_poa2"></p>
+                                        <p id="conj2019CritOut_hai2"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 <br>
- <p align="left"><a href="#topEENT2"><span class="glyphicon glyphicon-arrow-up" style="color:gray" aria-hidden="true"></span><b>TOP</b></a></p> 
-<br>
-
-
+                        <p type="button" id="" class="btn btn-link">
+                            <a href="#tabs-eent1" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+                                <span class="fas fa-arrow-circle-up" style="color:orange">&nbsp;</span>Back to Top</a>
+                        </p>
+                        <br>				    
+ 
+<!--				    
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -529,6 +643,7 @@ $('#conj2c').click(function() {
     </div>
   </div>
 </div>
+-->				    
 
 </form>
 
@@ -574,107 +689,218 @@ if
 </div>
  
  
- <form name="earForm1"> 
-    <h3><a id="earSP"></a><span class="label label-warning">EAR – Ear, mastoid infection</span></h3>
-  <h4><span class="label label-warning">Otitis externa</span></h4>
-   
- <p class="bg-primary">Microbiology</p>
 
-<div class="checkbox">
-  <label><input name="ear1" type="checkbox" id="ear1" value=""> Patient has pathogens cultured from purulent drainage from ear canal</label>
-  <input type="text" id="Datepickerear1" placeholder="Enter date" disabled>
-</div>
+<form name="earForm1">
+                    <div class="text-left">
+                        <h5 class="bg-warning" id="earSP" style="color:white">
+                            <strong>EAR &mdash; Ear, mastoid infection</strong>
+                        </h5>
+                    </div>
+	
+	<div class="alert alert-primary">
+                            <strong>>Otitis externa</strong>
+                        </div>		    
+			    
+<br>			    
+			    
 
-<script>
-$('#ear1').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerear1').prop('disabled', !cbIsChecked); 
-});
-</script>
+	<div class="card">
+                        <div class="card-body">
+                            <div class="custom-file">
+                                <input type="" class="custom-file-input1" id="histoEENToeTitle19">
+                                <label class="custom-file-label" for="histoEENToeTitle19">Microbiology</label>
+                            </div>
+                            &nbsp;
+						
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="ear1" id="ear1" data-toggle="collapse" data-target="#Datepickerear1" value="Patient has organism(s) identified from purulent drainage from ear canal by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).">
 
+                                <label class="custom-control-label" for="ear1">Patient has organism(s) identified from purulent drainage from ear canal by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).</label>
+
+                                <input type="text" class="collapse" name="ear1" id="Datepickerear1" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+
+                            <script>
+                                $('#ear1').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerear1').prop('disabled', !cbIsChecked);
+                                });
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerear1").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>
  
- <div class="checkbox">
-  <label><input name="ear2e" type="checkbox" id="ear2e" value="">Organisms seen on Gram’s stain of purulent drainage  </label>
-  <input type="text" id="Datepickerear2e" placeholder="Enter date" disabled>
-</div>
+   <br>
+				
+				
+ <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="ear2e" id="ear2e" data-toggle="collapse" data-target="#Datepickerear2e" value=" Organism(s) seen on Gram stain of purulent drainage from ear canal.">
+
+                                <label class="custom-control-label" for="ear2e"> Organism(s) seen on Gram stain of purulent drainage from ear canal.</label>
+
+                                <input type="text" class="collapse" name="ear2e" id="Datepickerear2e" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+
+                            <script>
+                                $('#ear2e').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerear2e').prop('disabled', !cbIsChecked);
+                                });
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerear2e").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>
+ 				
+
+				
+ <div class="card">
+                        <div class="card-body">
+                            <div class="custom-file">
+                                <input type="" class="custom-file-input2">
+                                <label class="custom-file-label" for="customFile">Signs and Symptoms</label>
+                            </div>
+                            <br>
+                            <br>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="ear2a" id="ear2a" data-toggle="collapse" data-target="#Datepickerear2a" value="Fever">
+                                <label class="custom-control-label" for="ear2a">Fever (&gt;38.0&deg;C)</label>
+                                <input type="text" name="ear2a" class="collapse" id="Datepickerear2a" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+
+                            <script>
+                                $('#ear2a').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerear2a').prop('disabled', !cbIsChecked);
+                                });
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerear2a").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>
+
+                            <br>
+				
+				
+<div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="ear2b" id="ear2b" data-toggle="collapse" data-target="#Datepickerear2b" value="Pain">
+                                <label class="custom-control-label" for="ear2b">Pain&#42</label>
+                                <input type="text" name="ear2a" class="collapse" id="Datepickerear2a" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+
+                            <script>
+                                $('#ear2b').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerear2b').prop('disabled', !cbIsChecked);
+                                });
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerear2b").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>
+
+                            <br>				
  
- <script>
-$('#ear2e').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerear2e').prop('disabled', !cbIsChecked); 
-});
-</script>
+
+<div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="ear2c" id="ear2c" data-toggle="collapse" data-target="#Datepickerear2c" value="Erythema">
+                                <label class="custom-control-label" for="ear2c">Erythema&#42</label>
+                                <input type="text" name="ear2c" class="collapse" id="Datepickerear2c" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+
+                            <script>
+                                $('#ear2c').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerear2c').prop('disabled', !cbIsChecked);
+                                });
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerear2c").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>
+				
+	 </div>
+				</div>
+				
  
  <br>
  
- <p class="bg-primary">Signs and Symptoms</p>
-
-<div class="checkbox">
-  <label><input type="checkbox" name="ear2a" id="ear2a" value="">Fever (&gt;38◦C)</label>
-  <input type="text" id="Datepickerear2a" placeholder="Enter date" disabled>
-</div>
  
-  <script>
-$('#ear2a').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerear2a').prop('disabled', !cbIsChecked); 
-});
-</script>
- 
- <div class="checkbox">
-  <label><input type="checkbox" name="ear2b" id="ear2b" value="">Pain  </label>
-  <input type="text" id="Datepickerear2b" placeholder="Enter date" disabled>
-</div>
- 
-<script>
-$('#ear2b').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerear2b').prop('disabled', !cbIsChecked); 
-});
-</script>
- 
- <div class="checkbox">
-  <label><input type="checkbox" name="ear2c" id="ear2c" value="">Redness  </label>
-  <input type="text" id="Datepickerear2c" placeholder="Enter date" disabled>
-</div>
- 
- <script>
-$('#ear2c').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerear2c').prop('disabled', !cbIsChecked); 
-});
-</script>
- 
- 
- <div class="checkbox">
-  <label><input type="checkbox" name="ear2d" id="ear2d" value="">Drainage from ear canal </label>
-  <input type="text" id="Datepickerear2d" placeholder="Enter date" disabled>
-</div>
- 
-  <script>
-$('#ear2d').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerear2d').prop('disabled', !cbIsChecked); 
-});
-</script>
+ <div class="alert alert-primary">
+                            <strong>>Otitis media</strong>
+                        </div>	
  
  <br>
  
- <h4><span class="label label-warning">Otitis media</span></h4>
  
- <p class="bg-primary">Microbiology</p>
+				
+<div class="card">
+                        <div class="card-body">
+                            <div class="custom-file">
+                                <input type="" class="custom-file-input1" id="histoEENTomTitle19">
+                                <label class="custom-file-label" for="histoEENTomTitle19">Microbiology</label>
+                            </div>
+                            &nbsp;
+						
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="ear3" id="ear3" data-toggle="collapse" data-target="#Datepickerear3" value="
+Patient has organism(s) identified from fluid from middle ear obtained during an invasive procedure (for example, tympanocentesis) by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).">
 
-<div class="checkbox">
-  <label><input name="ear3" type="checkbox" id="ear3" value=""> Patient has organisms cultured from fluid from middle ear obtained by tympanocentesis or at surgical operation </label>
-  <input type="text" id="Datepickerear3" placeholder="Enter date" disabled>
-</div>
+                                <label class="custom-control-label" for="ear3">Patient has organism(s) identified from fluid from middle ear obtained during an invasive procedure (for example, tympanocentesis) by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).
+</label>
+
+                                <input type="text" class="collapse" name="ear3" id="Datepickerear3" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+
+                            <script>
+                                $('#ear3').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerear3').prop('disabled', !cbIsChecked);
+                                });
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerear3").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>
+ 				
+<br>				
+				
+				
+				
  
-   <script>
-$('#ear3').click(function() { 
-    var cbIsChecked = $(this).prop('checked');
-    $('#Datepickerear3').prop('disabled', !cbIsChecked); 
-});
-</script>
+
  
   <br>
  
