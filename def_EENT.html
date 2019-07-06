@@ -290,7 +290,8 @@ Upper respiratory tract infections must meet at least one of the following crite
                 <br>
 
         </div>
-
+      </div>
+    </div>
 
 
  <div id="tabs-eent2">
@@ -373,8 +374,8 @@ Upper respiratory tract infections must meet at least one of the following crite
                         <div class="card">
                             <div class="card-body">
                                 <div class="custom-file">
-                                    <input type="" class="custom-file-input1" id="customFile">
-                                    <label class="custom-file-label" for="customFile">Microbiology</label>
+                                    <input type="" class="custom-file-input1" id="customFileIC">
+                                    <label class="custom-file-label" for="customFileIC">Microbiology</label>
                                 </div>
 
                                 <br><br>
@@ -548,9 +549,7 @@ Patient has organism(s) identified from conjunctival scraping or purulent exudat
 
     </div>
                         </div>
-
-
- <br><br>
+ <br>
                         <div class="conj">
                             <div class="card-body">
                                 <div class="text-left">
@@ -630,7 +629,12 @@ Patient has organism(s) identified from conjunctival scraping or purulent exudat
 
 
 
-</form>
+                    </form>
+
+
+</div>
+
+
 
 
 <script>
@@ -671,8 +675,7 @@ if
  </script>
 
 
-</div>
-</div>
+
 
 
 
@@ -683,18 +686,17 @@ if
                         </h5>
                     </div>
 
-	<div class="alert alert-primary">
-                            <strong>>Otitis externa</strong>
-                        </div>
-
-<br>
-
 
 	<div class="card">
+
+                       <div class="alert alert-primary">
+                            <strong>Otitis externa</strong>
+                        </div>
+
                         <div class="card-body">
                             <div class="custom-file">
-                                <input type="" class="custom-file-input1" id="histoEENToeTitle19">
-                                <label class="custom-file-label" for="histoEENToeTitle19">Microbiology</label>
+                                <input type="" class="custom-file-input1" id="microEENToeTitle19">
+                                <label class="custom-file-label" for="microEENToeTitle19">Microbiology</label>
                             </div>
                             &nbsp;
 
@@ -749,7 +751,10 @@ if
                                 });
                             </script>
 
+        </div>
+    </div>
 
+<br>
 
  <div class="card">
                         <div class="card-body">
@@ -836,18 +841,17 @@ if
 				</div>
 
 
- <br>
-
-
- <div class="alert alert-primary">
-                            <strong>Otitis media</strong>
-                        </div>
-
- <br>
+ <br><br>
 
 
 
 <div class="card">
+
+                     <div class="alert alert-primary">
+                            <strong>Otitis media</strong>
+                        </div>
+
+
                         <div class="card-body">
                             <div class="custom-file">
                                 <input type="" class="custom-file-input1" id="histoEENTomTitle19">
@@ -880,6 +884,8 @@ Patient has organism(s) identified from fluid from middle ear obtained during an
                                     maxDate: 0
                                 });
                             </script>
+
+    </div></div>
 
 <br>
 
@@ -1034,16 +1040,14 @@ $('#ear3c').click(function() {
 </script>
  -->
 
-
-
 <br>
 
-
- <div class="alert alert-primary">
+<div class="card">
+                        <div class="alert alert-primary">
                             <strong>Otitis interna</strong>
                         </div>
 
-<div class="card">
+
                         <div class="card-body">
                             <div class="custom-file">
                                 <input type="" class="custom-file-input1" id="histoEENToiTitle19">
@@ -1075,14 +1079,17 @@ $('#ear3c').click(function() {
                                 });
                             </script>
 
-
-
 <br>
 
+<div class="custom-file">
+                                <input type="" class="custom-file-input1" id="phyDxEENToiTitle19">
+                                <label class="custom-file-label" for="phyDxEENToiTitle19">Physician diagnosis</label>
+                            </div>
+                            &nbsp;
 
- <div class="alert alert-primary">
+ <!--<div class="alert alert-primary">
                             <strong>Physician diagnosis</strong>
-                        </div>
+                        </div>-->
 
  <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" name="ear4a" id="ear4a" data-toggle="collapse" data-target="#Datepickerear4a" value="Patient has a physician diagnosis of inner ear infection">
@@ -1105,21 +1112,17 @@ $('#ear3c').click(function() {
                                     maxDate: 0
                                 });
                             </script>
+    </div></div>
+
 
                             <br>
 
+<div class="card">
 
- <br>
-
-
-
-<div class="alert alert-primary">
+                       <div class="alert alert-primary">
                             <strong>Mastoiditis</strong>
                         </div>
 
-
-
-<div class="card">
                         <div class="card-body">
                             <div class="custom-file">
                                 <input type="" class="custom-file-input1" id="histoEentmtdTitle19">
@@ -1306,12 +1309,10 @@ $('#ear3c').click(function() {
 
 	<br>
 
-
-
 <div class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" name="ear5d" id="ear5d" data-toggle="collapse" data-target="#Datepickerear5d" value="Erythema">
 
-                                    <label class="custom-control-label" for="ear5c">Erythema&#42;</label>
+                                    <label class="custom-control-label" for="ear5d">Erythema&#42;</label>
 
                                     <input class="collapse" type="text" name="ear5d" id="Datepickerear5d" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
                                 </div>
@@ -1408,6 +1409,7 @@ $('#ear5d').click(function() {
 });
 </script>
  -->
+<br>
 
   <p>
          <strong>Click the<span class="fas fa-check-circle" aria-hidden="true"></span>Check Button after making your selection(s) and whenever you make any changes to your selection(s)</strong>
@@ -1458,11 +1460,7 @@ $('#ear5d').click(function() {
                         </div>
 
 
-
-
-
-
- <br>
+                        <br>
 
 <!--
 
@@ -1485,15 +1483,13 @@ $('#ear5d').click(function() {
 </div>
 -->
 
-</form>
-
- <br>
                         <p type="button" id="" class="btn btn-link">
                             <a href="#tabs-eent1" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
                                 <span class="fas fa-arrow-circle-up" style="color:orange">&nbsp;</span>Back to Top</a>
                         </p>
                         <br>
 
+</form>
 
 
 <script>
@@ -1637,20 +1633,36 @@ if
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
   <form name="eyeForm1">
-  <h3><a id="eyeSP"></a><span class="label label-warning">EYE – Eye infection, other than conjunctivitis</span></h3>
+
+  <div class="text-left">
+                        <h5 class="bg-warning" id="earSP" style="color:white">
+                            <strong>EYE &mdash; Eye infection, other than conjunctivitis</strong>
+                        </h5>
+                    </div>
+
+
+
+
+  <!--<h3><a id="eyeSP"></a><span class="label label-warning">EYE – Eye infection, other than conjunctivitis</span></h3>-->
+
+
+ <div class="card">
+                            <div class="card-body">
+                                <div class="custom-file">
+                                    <input type="" class="custom-file-input1" id="customFileEYE">
+                                    <label class="custom-file-label" for="customFileEYE">Microbiology</label>
+                                </div>
+                                <br>
+                                <br>
+
+
+
+
+
+
+
+
 
  <p class="bg-primary">Microbiology</p>
 
