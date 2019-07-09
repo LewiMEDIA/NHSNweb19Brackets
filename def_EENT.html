@@ -1932,13 +1932,270 @@ if
 </script>
 
 
+<form name="sinuForm1">
+  
+<div class="text-left">
+                        <h5 class="bg-warning" id="sinuSP" style="color:white">
+                            <strong>SINU &mdash; Sinusitis</strong>
+                        </h5>
+                    </div>
+	 
+<div class="card">
+                            <div class="card-body">
+                                <div class="custom-file">
+                                    <input type="" class="custom-file-input1" id="customFileSINU">
+                                    <label class="custom-file-label" for="customFileSINU">Microbiology</label>
+                                </div>
+                                <br>
+                                <br> 
+	 <h3><a id="sinuSP"></a><span class="label label-warning">SINU – Sinusitis</span></h3>
+
+<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="sinu1" id="sinu1" data-toggle="collapse" data-target="#Datepickersinu1" value="Patient has organism(s) identified from fluid or tissue from the sinus cavity obtained during an invasive procedure by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).">
+                                    <label class="custom-control-label" for="sinu1">Patient has organism(s) identified from fluid or tissue from the sinus cavity obtained during an invasive procedure by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST). 
+                                    </label>
+                                    <input type="text" class="collapse" name="sinu1" id="Datepickersinu1" placeholder="Please enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#sinu1').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickersinu1').prop('disabled', !cbIsChecked);
+
+                                    });
+
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickersinu1").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+     </div>
+      </div>
+				    
+	<br>
+	
+<div class="card">
+                            <div class="card-body">
+                                <div class="custom-file">
+                                    <input type="" class="custom-file-input1">
+                                    <label class="custom-file-label" for="customFile">Imaging</label>
+                                </div>
+
+                                <br>
+                                <br>
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="sinu1g" id="sinu1g" data-toggle="collapse" data-target="#Datepickersinu1g" value=" Imaging test evidence of sinusitis (for example, x-ray, CT scan).">
+                                    <label class="custom-control-label" for="sinu1g"> Imaging test evidence of sinusitis (for example, x-ray, CT scan).</label>
+                                    <input class="collapse" type="text" name="sinu1g" id="Datepickersinu1g" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
 
 
+                        <script>
+                            $('#sinu1g').click(function() {
+                                var cbIsChecked = $(this).prop('checked');
+                                $('#Datepickersinu1g').prop('disabled', !cbIsChecked);
+                            });
+                            $('[type="checkbox"]').on('change', function() {
+                                if (!this.checked) {
+                                    $('[type="text"][name="' + this.name + '"]').val('');
+                                }
+                            });
+                            $("#Datepickersinu1g").datepicker({
+                                maxDate: 0
+                            });
+                        </script>
+                         </div>
+                        </div>
 
- <form name="sinuForm1">
-  <h3><a id="sinuSP"></a><span class="label label-warning">SINU – Sinusitis</span></h3>
+                        <br>				    
+				    
+				    
+<div class="card">
+                            <div class="card-body">
+                                <div class="custom-file">
+                                    <input type="" class="custom-file-input2">
+                                    <label class="custom-file-label" for="customFile">Signs and Symptoms</label>
+                                </div>
 
- <p class="bg-primary">Imaging</p>
+                                <br><br>
+
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="sinu1a" id="sinu1a" data-toggle="collapse" data-target="#Datepickersinu1a" value="Fever">
+
+                                    <label class="custom-control-label" for="sinu1a">Fever (&gt;38◦C)&#42;</label>
+
+                                    <input class="collapse" type="text" name="sinu1a" id="Datepickersinu1a" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#sinu1a').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickersinu1a').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickersinu1a").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+                                <br>
+
+	 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="sinu1b" id="sinu1b" data-toggle="collapse" data-target="#Datepickersinu1b" value="Pain or tenderness over the involved sinus">
+
+                                    <label class="custom-control-label" for="sinu1b">Pain or tenderness over the involved sinus&#42;</label>
+
+                                    <input class="collapse" type="text" name="sinu1b" id="Datepickersinu1b" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#sinu1b').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickersinu1b').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickersinu1b").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+	<br>
+				    
+				    
+ <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="sinu1c" id="sinu1c" data-toggle="collapse" data-target="#Datepickersinu1c" value="Headache">
+
+                                    <label class="custom-control-label" for="sinu1c">Headache&#42;</label>
+
+                                    <input class="collapse" type="text" name="sinu1c" id="Datepickersinu1c" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#sinu1c').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickersinu1c').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickersinu1c").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>				    
+				    
+				    
+	<br>
+				    
+	
+				    
+<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="sinu1d" id="sinu1d" data-toggle="collapse" data-target="#Datepickersinu1d" value="Purulent exudate">
+
+                                    <label class="custom-control-label" for="sinu1d">Purulent exudate&#42;</label>
+
+                                    <input class="collapse" type="text" name="sinu1d" id="Datepickersinu1d" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#sinu1d').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickersinu1d').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickersinu1d").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>				    
+				    
+				    
+	<br>				    
+				    
+				    
+<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="sinu1e" id="sinu1e" data-toggle="collapse" data-target="#Datepickersinu1e" value=" Nasal obstruction">
+
+                                    <label class="custom-control-label" for="sinu1e"> Nasal obstruction&#42;</label>
+
+                                    <input class="collapse" type="text" name="sinu1e" id="Datepickersinu1e" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#sinu1e').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickersinu1e').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickersinu1e").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>				    
+				    
+				    
+	<br>				    
+
+<div class="card">
+                            <div class="card-body">
+                                <div class="text-left">
+                                    <h5 class="bg-warning" style="color:black">
+                                        <strong>Reporting instructions</strong>
+                                    </h5>
+                                </div>
+                                <p>
+                                    <strong>*</strong>With no other recognized cause</p>
+
+
+                                <br>
+
+                                <p>
+                                    <span class="fas fa-arrow-circle-right" style="color:black" aria-hidden="true"></span>
+*With no other recognized cause  
+
+                                </p>
+
+                             </div>
+                        </div>
+                        <br>				    
+				    
+<p>
+         <strong>Click the<span class="fas fa-check-circle" aria-hidden="true"></span>Check Button after making your selection(s) and whenever you make any changes to your selection(s)</strong>
+        </p>
+
+                        <button type="button" class="btn btn-success" onclick="myFunctionSinu11()">
+                            <span class="fas fa-check-circle" aria-hidden="true"></span>Check-SINU</button>
+                        <button type="button" value="Reset-SINU" class="btn btn-danger" data-toggle="modal" data-target="#myModalSinu19">
+                            <span class="fas fa-ban" aria-hidden="true"></span>Reset-SINU</button>
+                        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#reportSINU-19" aria-expanded="false" aria-controls="reportSINU-19">
+                            <span class="fas fa-book-open" aria-hidden="true"></span>Report-SINU</button>
+
+				    
+				    
+<!--				    
+				    
+	<p class="bg-primary">Imaging</p>
 
   <div class="checkbox">
   <label><input type="checkbox" name="sinu1g" id="sinu1g" value="">Positive radiographic examination (including CT scan)</label>
@@ -2053,8 +2310,39 @@ $('#sinu1e').click(function() {
 
 <button type="button" value="Reset-SINU" class="btn btn-danger" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> Reset-SINU</button>
 
+				    
+				    -->
 <br><br>
 
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card border-dark mb-3">
+                                    <div class="card-header">
+                                        <strong>Results</strong>
+                                    </div>
+                                    <div class="card-body text-dark">
+                                        <h6 class="card-title">(If no results, your findings don't meet HNSN definition)</h6>
+                                        <p class="card-text" id="sinuCrit1"></p>
+                                        <p class="card-text" id="sinuCrit2"></p>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-dark mb-3">
+                                    <div class="card-header">
+                                        <strong>Outcome</strong>
+                                    </div>
+                                    <div class="card-body text-dark">
+                                        <h6 class="panel-title">Infection status (POA or HAI)</h6>
+                                        <p id="sinu2015CritOut_poa2"></p>
+                                        <p id="sinu2015CritOut_hai2"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+				    
+<!--				    
+				    
 <div class="row">
  <div class="col-md-6">
 <div class="panel panel-info">
@@ -2087,9 +2375,14 @@ $('#sinu1e').click(function() {
           </div>
 </div>
 
+				    -->
+				    
 <br>
- <p align="left"><a href="#topEENT2"><span class="glyphicon glyphicon-arrow-up" style="color:gray" aria-hidden="true"></span><b>TOP</b></a></p>
-<br>
+                        <p type="button" id="" class="btn btn-link">
+                            <a href="#tabs-eent1" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+                                <span class="fas fa-arrow-circle-up" style="color:orange">&nbsp;</span>Back to Top</a>
+                        </p>
+                        <br>
 
 <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
