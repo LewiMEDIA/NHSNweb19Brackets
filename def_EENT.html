@@ -2447,10 +2447,382 @@ if
 
 
 
+<div class="text-left">
+                        <h5 class="bg-warning" id="oralSP" style="color:white">
+                            <strong>ORAL &mdash; Oral cavity infection (mouth, tongue, or gums)</strong>
+                        </h5>
+                    </div>
 
 
 
  <form name="oralForm1">
+	 <div class="card">
+                            <div class="card-body">
+                                <div class="custom-file">
+                                    <input type="" class="custom-file-input1" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Histopathology</label>
+                                </div>
+
+                                <br><br>
+
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="oral1a" id="oral1a" data-toggle="collapse" data-target="#Datepickeroral1a" value="Patient has an abscess or other evidence of oral cavity infection found on invasive procedure, gross anatomic exam, or histopathologic exam.">
+
+                                    <label class="custom-control-label" for="oral1a">Patient has an abscess or other evidence of oral cavity infection found on invasive procedure, gross anatomic exam, or histopathologic exam.</label>
+
+                                    <input class="collapse" type="text" name="oral1a" id="Datepickeroral1a" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#oral1a').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickeroral1a').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickeroral1a").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+                            </div>
+                        </div>
+<br>
+
+	 
+<div class="card">
+                        <div class="card-body">
+                                <div class="custom-file">
+                                    <input type="" class="custom-file-input1" id="customFileORAL">
+                                    <label class="custom-file-label" for="customFileORAL">Microbiology</label>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="oral1" id="oral1" data-toggle="collapse" data-target="#Datepickeroral1" value="Patient has an abscess or other evidence of oral cavity infection found on invasive procedure, gross anatomic exam, or histopathologic exam. ">
+                                    <label class="custom-control-label" for="oral1">Patient has an abscess or other evidence of oral cavity infection found on invasive procedure, gross anatomic exam, or histopathologic exam. 
+                                    </label>
+                                    <input type="text" class="collapse" name="oral1" id="Datepickeroral1" placeholder="Please enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#oral1').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickeroral1').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickeroral1").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>	 
+	 
+ <br>
+                               
+				<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="oral1f" id="oral1f" data-toggle="collapse" data-target="#Datepickeroral1f" value="Virus identified from mucosal scrapings or exudate by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).">
+                                    <label class="custom-control-label" for="oral1f">Virus identified from mucosal scrapings or exudate by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST). 
+                                    </label>
+                                    <input type="text" class="collapse" name="oral1f" id="Datepickeroral1f" placeholder="Please enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#oral1f').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickeroral1f').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickeroral1f").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>	 	 
+	 
+	
+<br>
+				
+                             
+				<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="oral1g" id="oral1g" data-toggle="collapse" data-target="#Datepickeroral1g" value="Virus identified from mucosal scrapings or exudate by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).">
+                                    <label class="custom-control-label" for="oral1g">Virus identified from mucosal scrapings or exudate by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST). 
+                                    </label>
+                                    <input type="text" class="collapse" name="oral1g" id="Datepickeroral1g" placeholder="Please enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#oral1g').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickeroral1g').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickeroral1g").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>	 	 
+	 
+	
+<br>
+								
+
+<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="oral1h" id="oral1h" data-toggle="collapse" data-target="#Datepickeroral1h" value="Diagnostic single antibody titer (IgM) or 4-fold increase in paired sera (IgG) for organism.">
+                                    <label class="custom-control-label" for="oral1h">Diagnostic single antibody titer (IgM) or 4-fold increase in paired sera (IgG) for organism.  
+                                    </label>
+                                    <input type="text" class="collapse" name="oral1h" id="Datepickeroral1h" placeholder="Please enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#oral1h').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickeroral1h').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickeroral1h").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>	 	 
+	 
+	
+<br>
+								
+				
+<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="oral1i" id="oral1i" data-toggle="collapse" data-target="#Datepickeroral1i" value="Fungal elements seen on microscopic exam of mucosal scrapings or exudate (for example, Gram stain, KOH ).">
+                                    <label class="custom-control-label" for="oral1i">Fungal elements seen on microscopic exam of mucosal scrapings or exudate (for example, Gram stain, KOH ).  
+                                    </label>
+                                    <input type="text" class="collapse" name="oral1i" id="Datepickeroral1i" placeholder="Please enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#oral1i').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickeroral1i').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickeroral1i").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>	 	 
+	 
+	
+<br>				
+				
+
+<div class="card">
+                        <div class="card-body">
+                                <div class="custom-file">
+                                    <input type="" class="custom-file-input1" id="customFileORALcdx">
+                                    <label class="custom-file-label" for="customFileORALcdx">Clinical Diagnosis</label>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="oral1l" id="oral1l" data-toggle="collapse" data-target="#Datepickeroral1l" value="Physician initiates antimicrobial therapy within 2 days of onset or worsening of symptoms.">
+                                    <label class="custom-control-label" for="oral1l">Physician initiates antimicrobial therapy within 2 days of onset or worsening of symptoms. 
+                                    </label>
+                                    <input type="text" class="collapse" name="oral1l" id="Datepickeroral1l" placeholder="Please enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#oral1l').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickeroral1l').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickeroral1l").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>				
+				
+				
+<br>
+
+
+ <div class="card">
+                            <div class="card-body">
+                                <div class="custom-file">
+                                    <input type="" class="custom-file-input2">
+                                    <label class="custom-file-label" for="customFile">Signs and Symptoms</label>
+                                </div>
+
+                                <br><br>
+
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="oral1c" id="oral1c" data-toggle="collapse" data-target="#Datepickeroral1c" value="Ulceration">
+
+                                    <label class="custom-control-label" for="oral1c">Ulceration</label>
+
+                                    <input class="collapse" type="text" name="oral1c" id="Datepickeroral1c" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#oral1c').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickeroral1c').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickeroral1c").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+                                <br>
+				    
+ <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="oral1d" id="oral1d" data-toggle="collapse" data-target="#Datepickeroral1d" value="Raised white patches on inflamed mucosa.">
+
+                                    <label class="custom-control-label" for="oral1d">Raised white patches on inflamed mucosa.</label>
+
+                                    <input class="collapse" type="text" name="oral1d" id="Datepickeroral1d" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#oral1d').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickeroral1d').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickeroral1d").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+                                <br>
+				    	
+<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="oral1e" id="oral1e" data-toggle="collapse" data-target="#Datepickeroral1e" value="Plaques on oral mucosa.">
+
+                                    <label class="custom-control-label" for="oral1e">Plaques on oral mucosa.</label>
+
+                                    <input class="collapse" type="text" name="oral1e" id="Datepickeroral1e" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#oral1e').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickeroral1e').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickeroral1e").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+                                <br>				    
+				    
+				    
+
+<br><br>
+
+<div class="card">
+                            <div class="card-body">
+                                <div class="text-left">
+                                    <h5 class="bg-warning" style="color:black">
+                                        <strong>Reporting Instructions</strong>
+                                    </h5>
+                                </div>
+                                <p>Report healthcare associated primary herpes simplex infections of the oral cavity as ORAL; recurrent herpes infections are not healthcare associated.</p>
+
+    </div>
+     </div>
+
+<br><br>
+				    
+<p>
+         <strong>Click the
+          <span class="fas fa-check-circle" aria-hidden="true"></span>Check Button after making your selection(s) and whenever you make
+          any changes to your selection(s)</strong>
+        </p>
+
+        <button type="button" class="btn btn-success" onclick="myFunctionOral1()">
+         <span class="fas fa-check-circle" aria-hidden="true"></span>Check-ORAL</button>
+        <button type="button" value="Reset-ORAL" class="btn btn-danger" data-toggle="modal"
+        data-target="#myModalOral19">
+         <span class="fas fa-ban" aria-hidden="true"></span>Reset-ORAL</button>
+        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#reportORAL-19"
+        aria-expanded="false" aria-controls="reportORAL-19">
+         <span class="fas fa-book-open" aria-hidden="true"></span>Report-ORAL</button>
+
+        <br>
+        <br>
+<div class="row">
+                            <div class="col-md-6">
+                                <div class="card border-dark mb-3">
+                                    <div class="card-header">
+                                        <strong>Results</strong>
+                                    </div>
+                                    <div class="card-body text-dark">
+                                        <h6 class="card-title">(If no results, your findings don't meet HNSN definition)</h6>
+                                        <p class="card-text" id="oralCrit1"></p>
+                                        <p class="card-text" id="oralCrit2"></p>
+                                        <p class="card-text" id="oralCrit3"></p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-dark mb-3">
+                                    <div class="card-header">
+                                        <strong>Outcome</strong>
+                                    </div>
+                                    <div class="card-body text-dark">
+                                        <h6 class="panel-title">Infection status (POA or HAI)</h6>
+                                        <p id="oral2019CritOut_poa2"></p>
+                                        <p id="oral2019CritOut_poa2"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+<br>
+                        <p type="button" id="" class="btn btn-link">
+                            <a href="#tabs-eent1" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+                                <span class="fas fa-arrow-circle-up" style="color:orange">&nbsp;</span>Back to Top</a>
+                        </p>
+                        <br>
+
+				    
+<!--				    
+	 
   <h3><a id="oralSP"></a><span class="label label-warning">ORAL – Oral cavity infection (mouth, tongue, or gums)</span></h3>
 
  <p class="bg-primary">Histopathology</p>
@@ -2635,6 +3007,8 @@ $('#oral1e').click(function() {
 
 <button type="button" value="Reset-ORAL" class="btn btn-danger" data-toggle="modal" data-target="#myModal4"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> Reset-ORAL</button>
 
+				    
+				    
 <br><br>
 
 <div class="row">
@@ -2673,7 +3047,7 @@ $('#oral1e').click(function() {
 <br>
  <p align="left"><a href="#topEENT2"><span class="glyphicon glyphicon-arrow-up" style="color:gray" aria-hidden="true"></span><b>TOP</b></a></p>
 <br>
-
+-->
 
 <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
@@ -2766,15 +3140,7 @@ if
 
 
 
-
-
-
-
-
-
-
-
- <form name="urForm1">
+<form name="urForm1">
   <h3><a id="urSP"></a><span class="label label-warning">UR – Upper respiratory tract infection, pharyngitis, laryngitis, epiglottitis</span></h3>
 
   <p class="bg-primary">Histopathology</p>
