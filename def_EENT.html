@@ -5878,7 +5878,123 @@ if
 
 <br>
 
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
 <form name="urForm2">
+<div class="text-left">
+                        <h5 class="bg-warning" id="urSP" style="color:white">
+                            <strong>UR &mdash; Upper respiratory tract infection, pharyngitis, laryngitis, epiglottitis</strong>
+                        </h5>
+                    </div>	
+	
+	
+<div class="card">
+                    <div class="card-body">
+                            <div class="custom-file">
+                                <input type="" class="custom-file-input1" id="histoEndoTitle19">
+                                <label class="custom-file-label" for="histoEndoTitle19">Histopathology</label>
+                            </div>
+                            &nbsp;
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="ur25" id="ur25" data-toggle="collapse" data-target="#Datepickerur25" value="Patient has an abscess on gross anatomical or histopathologic exam or imaging test.">
+
+                                <label class="custom-control-label" for="ur25">Patient has an abscess on gross anatomical or histopathologic exam or imaging test.</label>
+
+                                <input type="text" class="collapse" name="ur25" id="Datepickerur25" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+
+                            <script>
+                                $('#ur25').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerur25').prop('disabled', !cbIsChecked);
+                                });
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerur25").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>
+
+<br>
+	
+<div class="card">
+                    <div class="card-body">
+                            <div class="custom-file">
+                                <input type="" class="custom-file-input1" id="microUrTitle19">
+                                <label class="custom-file-label" for="microUrTitle19">Microbiology</label>
+                            </div>
+                            &nbsp;
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="ur15g" id="ur15g" data-toggle="collapse" data-target="#Datepickerur15g" value="Organism(s) identified from upper respiratory site [specifically: larynx, pharynx, and epiglottis] by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST). Note: excludes sputum and tracheal aspirate because these are not upper respiratory specimens."><label class="custom-control-label" for="ur15g">Organism(s) identified from upper respiratory site [specifically: larynx, pharynx, and epiglottis] by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST). Note: excludes sputum and tracheal aspirate because these are not upper respiratory specimens.</label>
+
+                                <input type="text" class="collapse" name="ur15g" id="Datepickerur15g" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+
+                            <script>
+                                $('#ur15g').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerur15g').prop('disabled', !cbIsChecked);
+                                });
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerur15g").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>
+			    
+<br>
+			    
+<br>
+	
+<div class="card">
+                    <div class="card-body">
+                            <div class="custom-file">
+                                <input type="" class="custom-file-input1" id="microUrTitle19">
+                                <label class="custom-file-label" for="microUrTitle19">Microbiology</label>
+                            </div>
+                            &nbsp;
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="ur15h" id="ur15h" data-toggle="collapse" data-target="#Datepickerur15h" value="Diagnostic single antibody titer (IgM) or 4-fold increase in paired sera (IgG) for organism."><label class="custom-control-label" for="ur15h">Diagnostic single antibody titer (IgM) or 4-fold increase in paired sera (IgG) for organism.</label>
+
+                                <input type="text" class="collapse" name="ur15h" id="Datepickerur15h" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+
+                            <script>
+                                $('#ur15h').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerur15h').prop('disabled', !cbIsChecked);
+                                });
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerur15h").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>
+			    
+<br>
+			    		    
+			    
+	
+	
   <h3><a id="urSP2"></a><span class="label label-warning">UR – Upper respiratory tract infection, pharyngitis, laryngitis, epiglottitis</span></h3>
 
 
