@@ -27,6 +27,7 @@
 
 
 
+
 <body style="background-color:white">
 
     <nav class="navbar navbar-dark bg-dark">
@@ -41,32 +42,6 @@
         </div>
     </nav>
     <!-- NHSN definitions nav -->
-
-
-
-<!--<div class="well well-sm">
-<nav>
-  <ul class="pager">
-    <li><a href="analyzerBJ_menu.html" data-toggle="tooltip" data-placement="top" title="BJ – Bone and Joint Infection">BJ</a></li>
-    <li><a href="analyzerBSI_menu.html" data-toggle="tooltip" data-placement="top" title="BSI – Bloodstream Infection">BSI</a></li>
-    <li><a href="analyzerCNS_menu.html" data-toggle="tooltip" data-placement="top" title="CNS – Central Nervous System">CNS</a></li>
-    <li><a href="analyzerCVS_menu.html" data-toggle="tooltip" data-placement="top" title="CVS – Cardiovascular System Infection">CVS</a></li>
-    <li><a href="analyzerEENT_menu.html" data-toggle="tooltip" data-placement="top" title="EENT – Eye, Ear, Nose, Throat, or Mouth Infection">EENT</a></li>
- <li class="disabled"><a href="#" style="background-color:#F7AF39" onclick="return false;" data-toggle="tooltip" data-placement="top" title="You are here">GI</a></li>
-    <li><a href="analyzerLRI_menu.html" data-toggle="tooltip" data-placement="top" title="LRI – Lower Respiratory System Infection, Other Than Pneumonia">LRI</a></li>
-    <li><a href="analyzerPNEU_menu.html" data-toggle="tooltip" data-placement="top" title="PNEU-Pneumonia">PNEU</a></li>
-    <li><a href="analyzerREPR_menu.html" data-toggle="tooltip" data-placement="top" title="REPR – Reproductive Tract Infection">REPR</a></li>
-    <li><a href="analyzerSSI_menu.html" data-toggle="tooltip" data-placement="top" title="SSI – Surgical Site Infection">SSI</a></li>
-    <li><a href="analyzerSST_menu.html" data-placement="top" title="SST-Skin and Soft Tissue Infection">SST</a></li>
-    <li><a href="analyzerSYS_menu.html" data-placement="top" title="SYS-Systemic Infection">SYS</a></li>
-    <li><a href="analyzerUTI_menu.html" data-placement="top" title="UTI-Urinary Tract Infection
-">UTI</a></li>
-    <li><a href="analyzerVAE_menu.html" data-placement="top" title="VAE-Ventilator Associated Event">VAE</a></li>
-  </ul>
-</nav>
-
-</div>-->
-
 
 
 
@@ -142,7 +117,7 @@
         </div>
     </div>
 
-<div class="container">
+<div class="container" id="topGIdefn">
 
 <div id="Tabs1">
 
@@ -276,8 +251,8 @@ Since necrotizing enterocolitis (NEC) criteria include neither a site specific c
 
 <br><br>
 
-<p type="button" id="top-link-blockCNS1" class="btn btn-link">
-                    <a href="#tabs-eent1" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+<p type="button" id="top-link-topGIdefn" class="btn btn-link">
+                    <a href="#tabs-GI1" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
                         <span class="fas fa-arrow-circle-up" style="color:orange">&nbsp;</span>Back to Top</a>
                 </p><!-- /top-link-block -->
 
@@ -300,8 +275,6 @@ Since necrotizing enterocolitis (NEC) criteria include neither a site specific c
 <div id="tabs-GI2">
 
 <div class="giDef2019">
-
-
 
 <div class="row">
 
@@ -377,15 +350,96 @@ Since necrotizing enterocolitis (NEC) criteria include neither a site specific c
                         </ul>
                     </nav>
 
+<br><br>
 
+<div class="text-left">
+                        <h5 class="bg-warning" id="cdiSP" style="color:white">
+                            <strong>CDI &mdash; Clostridioides difficile Infection </strong>
+                        </h5>
+ </div>	
+	
+<!--	
+ <h3><a id="cdiSP"></a><span class="label label-warning">CDI-Clostridium difficile Infection</span></h3>	
+-->	
+	
 <form name="cdiForm1" id="cdiForm1">
 
+<div class="card">
+                            <div class="card-body">
+                                <div class="custom-file">
+                                    <input type="" class="custom-file-input1" id="customFileIC">
+                                    <label class="custom-file-label" for="customFileIC">Microbiology</label>
+                                </div>
+				<br><br>
+				
+				 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="cdi1" id="cdi1" data-toggle="collapse" data-target="#Datepickercdi1" value="Positive test for toxin-producing C. difficile on an unformed stool specimen (conforms to the shape of the container).">
+                                    <label class="custom-control-label" for="cdi1">Positive test for toxin-producing C. difficile on an unformed stool specimen (conforms to the shape of the container).
+                                    </label>
+                                    <input type="text" class="collapse" name="cdi1" id="Datepickercdi1" placeholder="Please enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#cdi1').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickercdi1').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickercdi1").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>    
+	
+	
+</div>	
+	</div>	
+
+	<br>
+	
+	
+	<div class="card">
+                            <div class="card-body">
+                                <div class="custom-file">
+                                    <input type="" class="custom-file-input1" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Histopathology</label>
+                                </div>
+
+                                <br><br>
 
 
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="cdi2" id="cdi2" data-toggle="collapse" data-target="#Datepickercdi2" value="Patient has evidence of pseudomembranous colitis on gross anatomic (includes endoscopic exams) or histopathologic exam.">
 
+                                    <label class="custom-control-label" for="cdi2">Evidence of myocarditis or pericarditis on histologic exam of heart tissue.</label>
 
- <h3><a id="cdiSP"></a><span class="label label-warning">CDI-Clostridium difficile Infection</span></h3>
+                                    <input class="collapse" type="text" name="cdi2" id="Datepickercdi2" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
 
+                                <script>
+                                    $('#cdi2').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickercdi2').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickercdi2").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+                            </div>
+                        </div>
+<br>	
+	
+	
+	
+<!--
 <p class="bg-primary">Microbiology</p>
 
 <div class="checkbox">
@@ -453,13 +507,145 @@ $('#cdi3c').click(function() {
 });
 </script>
 
+-->
+
+	
+<div class="card">
+                            <div class="card-body">
+                                <div class="text-left">
+                                    <h5 class="bg-warning" style="color:black">
+                                        <strong>Comment</strong>
+                                    </h5>
+                                </div>
+                                <p>
+                                    <strong>*</strong>When using a multi-testing methodology for CD identification, the result of the final test performed, which is placed onto the patient medical record, will determine if GI-CDI criterion 1 is met.  
+				 </p>
+				    
+				    <p>
+                                    <strong>*</strong>
+
+The date of event for CDI criterion 1 will always be the specimen collection date of the unformed stool, specifically, not the date of onset of unformed stool.   
+
+
+				 </p>
+				    
+				    
+				    <p>
+                                    <strong>*</strong>A positive test for toxin-producing C. difficile and an unformed stool specimen is a single element and both are required to meet criterion.  
+				 </p>
+
+    </div>
+     </div>
+
+<br><br>	
+	
+	
+	
+	
+<div class="card">
+                            <div class="card-body">
+                                <div class="text-left">
+                                    <h5 class="bg-warning" style="color:black">
+                                        <strong>Reporting Instruction</strong>
+                                    </h5>
+                                </div>
+                                <p>
+                                    <strong>*</strong>
+
+Report the CDI and the GE or GIT if additional enteric organism(s) are identified and criteria are met for GE or GIT.   
+
+  
+				 </p>
+				    
+				    <p>
+                                    <strong>*</strong>
+
+Report each new GI-CDI according to the Repeat Infection Timeframe (RIT) rule for HAIs (see NHSN HAI definitions in Chapter 2 for further details and guidance). 
+
+
+				 </p>
+				    
+				    
+				    <p>
+                                    <strong>*</strong>
+
+CDI laboratory-identified event (LabID Event) categorizations (for example, recurrent CDI assay, incident CDI assay, healthcare facility-onset, community-onset, community-onset healthcare facility-associated) do not apply to HAIs, including C. difficile associated gastrointestinal infections (GI-CDI).   
+
+ 
+				 </p>
+
+    </div>
+     </div>
+
+<br><br>	
+		
+	
+<!--	
 <p class="bg-warning"><strong>Reporting instructions</strong></p>
 <p><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> Report healthcare-associated C. difficile infection as GI/GE or GI/GIT if the patient meets criteria for GI/GE or GI/GIT. </p>
 
 <p><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> If the patient has a positive laboratory result for C. difficile and does not meet GI/GE or GI/GIT, then apply the GI/CDI definition above. If the patient meets the GI/CDI definition, report the HAI as GI/CDI.</p>
 
+	-->
+	
+	
 <br>
 
+	
+	
+	<p>
+         <strong>Click the
+          <span class="fas fa-check-circle" aria-hidden="true"></span>Check Button after making your selection(s) and whenever you make
+          any changes to your selection(s)</strong>
+        </p>
+
+        <button type="button" class="btn btn-success" onclick="myFunctionCdi11()">
+         <span class="fas fa-check-circle" aria-hidden="true"></span>Check-CDI</button>
+        <button type="button" value="Reset-CDI" class="btn btn-danger" data-toggle="modal"
+        data-target="#myModalCdi19">
+         <span class="fas fa-ban" aria-hidden="true"></span>Reset-CDI</button>
+        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#reportCDI-19"
+        aria-expanded="false" aria-controls="reportCDI-19">
+         <span class="fas fa-book-open" aria-hidden="true"></span>Report-CDI</button>
+
+        <br>
+        <br>
+<div class="row">
+                            <div class="col-md-6">
+                                <div class="card border-dark mb-3">
+                                    <div class="card-header">
+                                        <strong>Results</strong>
+                                    </div>
+                                    <div class="card-body text-dark">
+                                        <h6 class="card-title">(If no results, your findings don't meet HNSN definition)</h6>
+                                        <p class="card-text" id="cdiCrit77"></p>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-dark mb-3">
+                                    <div class="card-header">
+                                        <strong>Outcome</strong>
+                                    </div>
+                                    <div class="card-body text-dark">
+                                        <h6 class="panel-title">Infection status (POA or HAI)</h6>
+                                        <p id="cdiCritOut77_poa2"></p>
+                                        <p id="cdiCritOut77_hai2"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+<br>
+                        <p type="button" id="" class="btn btn-link">
+                            <a href="#tabs-eent1" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+                                <span class="fas fa-arrow-circle-up" style="color:orange">&nbsp;</span>Back to Top</a>
+                        </p>
+                        <br>
+
+<!--
+	
+	
 <p><strong>Click the <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check Button after making your selection(s) and whenever you make any changes to your selection(s).</strong></p>
 
 <p class="panel-title"><strong>If no results are displayed in the box below after clicking the <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check button, then your findings do NOT meet NHSN definitions.</strong></p>
@@ -504,7 +690,11 @@ $('#cdi3c').click(function() {
 
 <br>
  <p align="left"><a href="#topGI2"><span class="glyphicon glyphicon-arrow-up" style="color:gray" aria-hidden="true"></span><b>TOP</b></a></p>
-<br>
+
+-->
+	
+	
+	<br>
 
 <script>
 function myFunctionCdi1() {
@@ -530,6 +720,14 @@ var Datepickercdi1 = document.getElementById("Datepickercdi1").value;
 </script>
 
 </div>
+	
+	
+	
+	
+	
+	
+	
+	
 
  <form name="geForm1">
 
