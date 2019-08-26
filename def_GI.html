@@ -731,10 +731,279 @@ var Datepickercdi1 = document.getElementById("Datepickercdi1").value;
 
  <form name="geForm1">
 
+<div class="text-left">
+                        <h5 class="bg-warning" id="geSP" style="color:white">
+                            <strong>GE &mdash; Gastroenteritis (excluding C. difficile infections)</strong>
+                        </h5>
+                    </div>	 
+	 
+	 
+ <!--
   <h3><a id="geSP"></a><span class="label label-warning">GE – Gastroenteritis</span></h3>
 
   <p><span class="glyphicon glyphicon-info-sign" style="color:orange" aria-hidden="true"></span> Includes C. difficile infections (in fact, CDI should be reported as GE or GIT if it meets one of these definitions; if not, then use CDI definition). </p>
 
+-->	 
+
+<div class="card">
+                    <div class="card-body">
+                            <div class="custom-file">
+                                <input type="" class="custom-file-input1" id="microEndoTitle19">
+                                <label class="custom-file-label" for="microGeTitle19">Microbiology</label>
+                            </div>
+                            &nbsp;
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="ge1a" id="ge1a" data-toggle="collapse" data-target="#Datepickerge1a" value="Patient has an acute onset of diarrhea (liquid stools for > 12 hours) and no likely noninfectious cause (for example, diagnostic tests, therapeutic regimen other than antimicrobial agents, acute exacerbation of a chronic condition, or psychological stress information).">
+
+                                <label class="custom-control-label" for="ge1a">Patient has an acute onset of diarrhea (liquid stools for > 12 hours) and no likely noninfectious cause (for example, diagnostic tests, therapeutic regimen other than antimicrobial agents, acute exacerbation of a chronic condition, or psychological stress information).</label>
+
+                                <input type="text" class="collapse" name="ge1a" id="Datepickerge1a" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+
+                            <script>
+                                $('#ge1a').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerge1a').prop('disabled', !cbIsChecked);
+                                });
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerge1a").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>	 
+	 
+	
+	<br>
+			    
+			    
+<div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="ge3a" id="ge3a" data-toggle="collapse" data-target="#Datepickerge3a" value=" An enteric pathogen is identified from stool or rectal swab by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).">
+
+                                <label class="custom-control-label" for="ge3a"> An enteric pathogen is identified from stool or rectal swab by a culture or non-culture based microbiologic testing method, which is performed for purposes of clinical diagnosis or treatment, for example, not Active Surveillance Culture/Testing (ASC/AST).</label>
+
+                                <input type="text" class="collapse" name="ge3a" id="Datepickerge3a" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+
+                            <script>
+                                $('#ge3a').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerge3a').prop('disabled', !cbIsChecked);
+                                });
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerge3a").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>	 
+	 
+	<br>
+			    
+
+<div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="ge3b" id="ge3b" data-toggle="collapse" data-target="#Datepickerge3b" value="An enteric pathogen is detected by microscopy on stool.">
+
+                                <label class="custom-control-label" for="ge3b">An enteric pathogen is detected by microscopy on stool. </label>
+
+                                <input type="text" class="collapse" name="ge3b" id="Datepickerge3b" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+
+                            <script>
+                                $('#ge3b').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerge3b').prop('disabled', !cbIsChecked);
+                                });
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerge3b").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>	 			    
+
+<br>
+			    
+<div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="ge3c" id="ge3c" data-toggle="collapse" data-target="#Datepickerge3c" value="Diagnostic single antibody titer (IgM) or 4-fold increase in paired sera (IgG) for organism.">
+
+                                <label class="custom-control-label" for="ge3c">Diagnostic single antibody titer (IgM) or 4-fold increase in paired sera (IgG) for organism.</label>
+
+                                <input type="text" class="collapse" name="ge3c" id="Datepickerge3c" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                            </div>
+
+
+                            <script>
+                                $('#ge3c').click(function() {
+                                    var cbIsChecked = $(this).prop('checked');
+                                    $('#Datepickerge3c').prop('disabled', !cbIsChecked);
+                                });
+                                $('[type="checkbox"]').on('change', function() {
+                                    if (!this.checked) {
+                                        $('[type="text"][name="' + this.name + '"]').val('');
+                                    }
+                                });
+                                $("#Datepickerge3c").datepicker({
+                                    maxDate: 0
+                                });
+                            </script>	 			    
+			    
+	
+	</div>
+	 </div>
+	 
+<br><br>
+	 
+	 
+<div class="card">
+                            <div class="card-body">
+                                <div class="custom-file">
+                                    <input type="" class="custom-file-input2">
+                                    <label class="custom-file-label" for="customFile">Signs and Symptoms</label>
+                                </div>
+
+                                <br><br>
+
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="ge2a" id="ge2a" data-toggle="collapse" data-target="#Datepickerge2a" value="Nausea">
+
+                                    <label class="custom-control-label" for="ge2a">Nausea&#42;</label>
+
+                                    <input class="collapse" type="text" name="ge2a" id="Datepickerge2a" placeholder="Enter date" value="Nausea" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#ge2a').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickerge2a').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickerge2a").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+                                <br>	 
+	 
+	 
+<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="ge2b" id="ge2b" data-toggle="collapse" data-target="#Datepickerge2b" value="Vomiting">
+
+                                    <label class="custom-control-label" for="ge2b">Vomiting&#42;</label>
+
+                                    <input class="collapse" type="text" name="ge2b" id="Datepickerge2b" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#ge2b').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickerge2b').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickerge2b").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+                                <br>	 
+	 	 
+	 
+<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="ge2c" id="ge2c" data-toggle="collapse" data-target="#Datepickerge2b" value="Abdominal pain">
+
+                                    <label class="custom-control-label" for="ge2b">Abdominal pain&#42;</label>
+
+                                    <input class="collapse" type="text" name="ge2b" id="Datepickerge2b" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#ge2c').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickerge2c').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickerge2c").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+                                <br>	 	 
+	 
+
+<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="ge2d" id="ge2d" data-toggle="collapse" data-target="#Datepickerge2d" value="Fever">
+
+                                    <label class="custom-control-label" for="ge2d">Fever (&gt;38&deg;C)</label>
+
+                                    <input class="collapse" type="text" name="ge2d" id="Datepickerge2d" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#ge2d').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickerge2d').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickerge2d").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+                                <br>				    
+				    
+<div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="ge2e" id="ge2e" data-toggle="collapse" data-target="#Datepickerge2e" value="Abdominal pain">
+
+                                    <label class="custom-control-label" for="ge2e">Headache&#42;</label>
+
+                                    <input class="collapse" type="text" name="ge2e" id="Datepickerge2e" placeholder="Enter date" value="" required />&nbsp; &nbsp; &nbsp;
+                                </div>
+
+                                <script>
+                                    $('#ge2e').click(function() {
+                                        var cbIsChecked = $(this).prop('checked');
+                                        $('#Datepickerge2e').prop('disabled', !cbIsChecked);
+                                    });
+                                    $('[type="checkbox"]').on('change', function() {
+                                        if (!this.checked) {
+                                            $('[type="text"][name="' + this.name + '"]').val('');
+                                        }
+                                    });
+                                    $("#Datepickerge2e").datepicker({
+                                        maxDate: 0
+                                    });
+                                </script>
+
+                                <br>	 	 			    
+				    
+<!--	 
+	 
  <p class="bg-primary">Signs and Symptoms</p>
 
  <div class="checkbox">
@@ -888,7 +1157,98 @@ $('#ge2j').click(function() {
     $('#Datepickerge2j').prop('disabled', !cbIsChecked);
 });
 </script>
+				    
+-->				    
+				    
 
+				    
+				    
+<br><br>
+
+
+<div class="card">
+                            <div class="card-body">
+                                <div class="text-left">
+                                    <h5 class="bg-warning" style="color:black">
+                                        <strong>Comment</strong>
+                                    </h5>
+                                </div>
+                                <p><strong>*</strong>With no other recognized cause</p>
+				    <p>The reference to “enteric pathogens” describes pathogens that are not considered to be normal flora of the intestinal tract. Enteric pathogens identified on culture or with the use of other diagnostic laboratory tests include Salmonella, Shigella, Yersinia, Campylobacter, Listeria, Vibrio, Enteropathogenic or Enterohemorrhagic E.coli, or Giardia. </p>
+				    
+
+    </div>
+     </div>
+				    
+				    
+<div class="card">
+                            <div class="card-body">
+                                <div class="text-left">
+                                    <h5 class="bg-warning" style="color:black">
+                                        <strong>Reporting Instruction:</strong>
+                                    </h5>
+                                </div>
+                               <p>Report only GI-GIT using the event date as that of GI-GIT if the patient meets criteria for both GI-GE and GI-GIT.</p>
+				    
+ </div>
+     </div>				    
+
+
+<br><br>
+
+<p>
+         <strong>Click the
+          <span class="fas fa-check-circle" aria-hidden="true"></span>Check Button after making your selection(s) and whenever you make
+          any changes to your selection(s)</strong>
+        </p>
+
+        <button type="button" class="btn btn-success" onclick="myFunctionGe1()">
+		 <span class="fas fa-check-circle" aria-hidden="true"></span>Check-GE</button>
+        <button type="button" value="Reset-GE" class="btn btn-danger" data-toggle="modal"
+        data-target="#myModalGe19">
+         <span class="fas fa-ban" aria-hidden="true"></span>Reset-GE</button>
+        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#reportGe-19"
+        aria-expanded="false" aria-controls="reportGE-19">
+         <span class="fas fa-book-open" aria-hidden="true"></span>Report-GE</button>
+
+        <br>
+        <br>
+<div class="row">
+                            <div class="col-md-6">
+                                <div class="card border-dark mb-3">
+                                    <div class="card-header">
+                                        <strong>Results</strong>
+                                    </div>
+                                    <div class="card-body text-dark">
+                                        <h6 class="card-title">(If no results, your findings don't meet HNSN definition)</h6>
+                                        <p class="card-text" id="geCrit1"></p>
+                                        <p class="card-text" id="geCrit2"></p>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-dark mb-3">
+                                    <div class="card-header">
+                                        <strong>Outcome</strong>
+                                    </div>
+                                    <div class="card-body text-dark">
+                                        <h6 class="panel-title">Infection status (POA or HAI)</h6>
+                                        <p id="ge2019CritOut_poa2"></p>
+                                        <p id="ge2019CritOut_hai2"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+<br>
+                        <p type="button" id="" class="btn btn-link">
+                            <a href="#tabs-eent1" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+                                <span class="fas fa-arrow-circle-up" style="color:orange">&nbsp;</span>Back to Top</a>
+                        </p>
+                        <br>
+				    
+<!--
 <p><strong>Click the <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check Button after making your selection(s) and whenever you make any changes to your selection(s)</strong></p>
 
 <button type="button" class="btn btn-success" onclick="myFunctionGe1()"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Check-GE</button>
@@ -931,6 +1291,11 @@ $('#ge2j').click(function() {
  <p align="left"><a href="#topGI2"><span class="glyphicon glyphicon-arrow-up" style="color:gray" aria-hidden="true"></span><b>TOP</b></a></p>
 <br>
 
+-->
+				    
+				    
+				    
+				    
 <script>
 function myFunctionGe1() {
 var ge1b = document.getElementById("ge1b");
@@ -1028,7 +1393,15 @@ if
 
 </script>
 
-  <form name="gitForm1">
+ 
+				    
+				    
+				    
+				    
+				    
+				    
+				    
+<form name="gitForm1">
   <h3><a id="gitSP"></a><span class="label label-warning">GIT – Gastrointestinal (GI) tract infection</span></h3>
 
 <p><span class="glyphicon glyphicon-info-sign" style="color:orange" aria-hidden="true"></span> GIT (esophagus, stomach, small and large bowel, and rectum, excluding gastroenteritis and appendicitis).</p>
